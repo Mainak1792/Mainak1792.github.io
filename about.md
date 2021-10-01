@@ -4,43 +4,32 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+Hi, my name is Mainak Chakraborty, and I’m a 1st-year PhD student  at Indian Institute of Technology Delhi. I work in the ![Centre for Sensors, Instrumentation and cyber-physical system engineering](https://sense.iitd.ac.in/content/about-us).
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+Previously, I have worked in ![CSIR-CMERI](https://www.cmeri.res.in/department/robotics-and-automation), as a research trainee under Dr. Srinivasan Aruchamy. My research topic has been in "Human Activity Classification using Machine learning and seismic sensor". 
+
+I graduated with a Master’s in mechatronics from IIEST-Shibpur in 2021, and have interned at RemoCardia(2021) ![Remocardia](https://remo.care/) in the past. My research in IIEST, Shibpur was supported by GATE Fellowship(2019-2021).
+
+I also Volunteer at ![https://proxmaq.com/](ProxMaq), a Deep learning startup where we are developing a wearable device(glasses) for blind people. 
+
+You can find me on GitHub. Feel free to take a look at my resume or contact me.
 
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
 	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
+	<li>Tensorflow - Pytorch - ScikitLearn</li>
+	<li>Pandas - numpy - matplotlib</li>
+	<li>SQL</li>
+	<li>Machine Learning Algortihms</li>
+	<li>Deep Learning Algorithms(YOLO/SSD)</li>
+	<li>Git</li>
 </ul>
 
 <h2>Projects</h2>
 
 <ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
+	<li><a href="https://github.com/ProxMaq/ProxVision">ProxMaq</a></li>
+	<li><a href="https://github.com/Mainak1792/Human_Activity_Recognition_using_seismic_sensor"> Human Activity Classification using Seismic Sensor</a></li>
 </ul>

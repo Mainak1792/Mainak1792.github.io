@@ -1,6 +1,15 @@
 # main text of home
 name: Mainak Chakraborty
-bio: Passionate about Cyberphysical Systems and Blues
+
+bio:
+Hi, my name is Mainak Chakraborty, and I’m a 1st-year PhD student  at Indian Institute of Technology Delhi. I work in the Centre for Sensors, Instrumentation and cyber-physical system engineering.
+Previously, I have worked in CSIR-CMERI, as a research trainee under Dr. Srinivasan Aruchamy. My research topic has been in "Human Activity Classification using Machine learning and seismic sensor". 
+I graduated with a Master’s in mechatronics from IIEST-Shibpur in 2021, and have interned at RemoCardia(2021) in the past.
+My research in IIEST, Shibpur was supported by GATE Fellowship(2019-2021).
+You can find me on GitHub. Feel free to take a look at my resume or contact me.
+
+
+
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -8,7 +17,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: https://github.com/Mainak1792/Mainak1792.github.io/blob/main/assets/IMG_20191214_162554.jpg
+picture: assets/IMG_7969.JPG
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
