@@ -8,7 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: https://github.com/Mainak1792/Mainak1792.github.io/blob/main/assets/IMG_20191214_162554.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://drive.google.com/file/d/16wJbGLTJS-zA8wffnxu718eC95CZ6IN7/view?usp=sharing
 
-url: https://Mainak1792.github.io/indigo
+url: https://Mainak1792.github.io
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -35,19 +35,19 @@ disqus:
 
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
-twitter: https://twitter.com/mainak_1996
+twitter: mainak_1996
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: https://www.linkedin.com/in/mainak001/
+linkedin: mainak001
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: Mainak1792
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: https://mainak1996.medium.com/
+medium: mainak1996
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: mainakchakraborty92@gmail.com
@@ -84,7 +84,7 @@ projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: true
+#blog: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
