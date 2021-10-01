@@ -1,12 +1,7 @@
 # main text of home
 name: Mainak Chakraborty
 
-bio:
-Hi, my name is Mainak Chakraborty, and I’m a 1st-year PhD student  at Indian Institute of Technology Delhi. I work in the Centre for Sensors, Instrumentation and cyber-physical system engineering.
-Previously, I have worked in CSIR-CMERI, as a research trainee under Dr. Srinivasan Aruchamy. My research topic has been in "Human Activity Classification using Machine learning and seismic sensor". 
-I graduated with a Master’s in mechatronics from IIEST-Shibpur in 2021, and have interned at RemoCardia(2021) in the past.
-My research in IIEST, Shibpur was supported by GATE Fellowship(2019-2021).
-You can find me on GitHub. Feel free to take a look at my resume or contact me.
+bio: Passionate about Engineering and Blues. 
 
 
 
@@ -78,7 +73,7 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
@@ -89,7 +84,7 @@ pagination:
   permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+projects: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
