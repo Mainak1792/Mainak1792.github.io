@@ -13,7 +13,7 @@ description: A blog about technology and stuff related
 # better with square images
 external-image: false
 picture: assets/IMG_7969.JPG
-
+#https://github.com/Mainak1792/Mainak1792.github.io/blob/main/assets/IMG_7969.JPG
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
