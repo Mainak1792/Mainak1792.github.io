@@ -1,7 +1,7 @@
 # main text of home
 name: Mainak Chakraborty
 
-bio: Passionate about Engineering and Blues. 
+bio: Passionate about optimising loss function in life
 
 
 
@@ -88,7 +88,7 @@ projects: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-#blog: true
+blog: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
