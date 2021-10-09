@@ -4,9 +4,7 @@ layout: post
 date: 2021-09-10 10:00
 image: assets/images/favicon/34.PNG
 headerImage: true
-tag:
-- markdown
-- elements
+
 star: true
 category: blog
 author: Mainak Chakraborty
@@ -20,8 +18,8 @@ description: Welcome To my Blog corner
 **Welcome To my Blog corner**
 
 
-Hi, you have found my Blog corner. I generally write in [Medium](https://medium.com/). 
-I write about tech, leadership and anything I find interesting. Look into it and let me know what you think.
+Hi, Somehow amidst all the things in the world, you have found my Blog corner. I generally write in [here](https://mainak1996.medium.com/). 
+I write about tech, leadership styles and anything I find interesting. Look into the blogs written below and let me know what you think.
 
 
 
