@@ -2,7 +2,7 @@
 title: "Blog Description"
 layout: post
 date: 2021-09-10 10:00
-image: assets/images/favicon/34.PNG
+image: assets/kimbhut.jpg
 headerImage: true
 category: blog
 author: Mainak Chakraborty
@@ -24,7 +24,7 @@ Hi, Somehow amidst all the things in the world, you have found my Blog corner. I
 - [Tesla AI day](https://mainak1996.medium.com/what-i-learned-from-tesla-ai-day-19c5e32c825a)
 
 
-<img width="386" alt="gartner" src="https://github.com/Mainak1792/Mainak1792.github.io/blob/main/assets/gartner.PNG">
+<img width="386" alt="gartner-min" src="https://user-images.githubusercontent.com/76518189/136649194-f52c909b-2b90-4d27-8b9e-8fca9ea97a0e.PNG">
 
 - [Gartner Hype Cycle 2021](https://mainak1996.medium.com/the-gartner-hype-cycle-for-emerging-technology-2021-and-what-it-means-for-us-e4a4455dab07)
 
