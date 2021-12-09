@@ -11,8 +11,8 @@ Previously, I have worked at the Robotics and Automation department of [CSIR-Cen
 
 I graduated with a Master’s in mechatronics from IIEST-Shibpur in 2021, and have interned at RemoCardia(2021) [Remocardia](https://remo.care/) in the past, where I worked on multiple arrythmia classification using bi-LSTM. My research in IIEST, Shibpur was supported by GATE Fellowship(2019-2021) under [Dr. Subhasis Bhaumik](https://www.iiests.ac.in/IIEST/Faculty/aero-subhasis). I have also worked for [Wobot.ai](https://wobot.ai/) as a Data Engineer(2021), for couple months.
 
-I also Volunteereed at [ProxMaq](https://proxmaq.com/), a Deep learning startup where we were developing a wearable device(glasses) for blind people [1](https://github.com/Mainak1792/Mainak1792.github.io/files/7682781/Certificate.of.Recognition.pdf)
-,[2](https://github.com/Mainak1792/Mainak1792.github.io/files/7682784/Certificate.of.appreciation.pdf)
+I also Volunteereed at [ProxMaq](https://proxmaq.com/), a Deep learning startup where we were developing a wearable device(glasses) for blind people (Cerificates [1](https://github.com/Mainak1792/Mainak1792.github.io/files/7682781/Certificate.of.Recognition.pdf)
+,[2](https://github.com/Mainak1792/Mainak1792.github.io/files/7682784/Certificate.of.appreciation.pdf))
 . 
 
 You can find also me on [Linkedin](https://www.linkedin.com/in/mainak001/) and [twitter](https://twitter.com/mainak_1996). Feel free to contact me with any suggestions/advice. In case you are not sure, fill [this](https://docs.google.com/forms/d/e/1FAIpQLSetyqyFlgeuoaVTCO9WQ7BjMf_dXxfnWPSM4NDYbd5yvITf7w/viewform?usp=sf_link), I will connect with you. 
