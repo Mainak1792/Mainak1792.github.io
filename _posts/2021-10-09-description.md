@@ -2,7 +2,7 @@
 title: "Blog Description"
 layout: post
 date: 2021-09-10 10:00
-image: assets/kimbhut.jpg
+image: assets/images/favicon/34.PNG
 headerImage: true
 category: blog
 author: Mainak Chakraborty
