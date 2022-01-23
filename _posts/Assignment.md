@@ -2,7 +2,7 @@
 title: "Project Description"
 layout: post
 date: 2021-23-01 10:00
-image: assets/IIT_dELHILOGO.PNG
+image: https://github.com/Mainak1792/Mainak1792.github.io/blob/main/assets/IIT_dELHILOGO.PNG
 headerImage: true
 category: blog
 author: Mainak Chakraborty
