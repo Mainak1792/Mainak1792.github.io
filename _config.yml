@@ -8,10 +8,10 @@ description: My personal website
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/gang.jpg
+picture: assets/IMG-20190322-WA0002.jpg
 
 # your site color theme, false to light theme
-dark-theme: true
+dark-theme: false
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
