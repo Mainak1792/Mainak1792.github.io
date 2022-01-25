@@ -8,7 +8,7 @@ description: My personal website
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/IMG-20190322-WA0002.jpg
+picture: assets/profile1.jpg
 
 # your site color theme, false to light theme
 dark-theme: true
