@@ -20,7 +20,7 @@ You can find also me on [Linkedin](https://www.linkedin.com/in/mainak001/) and [
 
  
 <!-- ![Mindmap](https://user-images.githubusercontent.com/76518189/151029146-95532592-4866-4ff9-a78a-715e82d27a9e.png) -->
-<img src="https://user-images.githubusercontent.com/76518189/151029146-95532592-4866-4ff9-a78a-715e82d27a9e.png" width="500" height="250">
+<img src="https://user-images.githubusercontent.com/76518189/151029146-95532592-4866-4ff9-a78a-715e82d27a9e.png" width="500" height="150">
 
 <h2>Skills</h2>
 
