@@ -14,13 +14,13 @@ I graduated with a Master’s in mechatronics from IIEST-Shibpur in 2021, and ha
 
 I also Volunteereed at [ProxMaq](https://proxmaq.com/), a Deep learning startup where we were developing a wearable device(glasses) for blind people.
 
-[2022 Update: I cofounded a startup [Etaaide](etaaide.com)]
+2022 Update: I cofounded a startup [Etaaide](www.etaaide.com)
 
 You can find also me on [Linkedin](https://www.linkedin.com/in/mainak001/) and [twitter](https://twitter.com/mainak_1996). Feel free to contact me with any suggestions/advice. In case you are not sure, fill [this](https://docs.google.com/forms/d/e/1FAIpQLSetyqyFlgeuoaVTCO9WQ7BjMf_dXxfnWPSM4NDYbd5yvITf7w/viewform?usp=sf_link), I will connect with you. 
 
  
-![Mindmap](https://user-images.githubusercontent.com/76518189/151029146-95532592-4866-4ff9-a78a-715e82d27a9e.png)
-
+<!-- ![Mindmap](https://user-images.githubusercontent.com/76518189/151029146-95532592-4866-4ff9-a78a-715e82d27a9e.png) -->
+<img src="https://user-images.githubusercontent.com/76518189/151029146-95532592-4866-4ff9-a78a-715e82d27a9e.png" width="800" height="500">
 
 <h2>Skills</h2>
 
