@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grafana on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/grafana/</link>
+    <description>Recent content in grafana on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Fri, 21 Jan 2022 18:23:47 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/grafana/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Canonical Observability with Simon Aronsson and Michele Mancioppi (k6 Office Hours #38)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220121-koh38-canonical-observability/</link>
+      <pubDate>Fri, 21 Jan 2022 18:23:47 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220121-koh38-canonical-observability/</guid>
+      <description>&lt;p&gt;Today, my former colleague &lt;a href=&#34;https://simme.dev&#34;&gt;Simon Aronsson&lt;/a&gt; brought his &lt;em&gt;new&lt;/em&gt; colleague, &lt;a href=&#34;https://twitter.com/mmanciop&#34;&gt;Michele Mancioppi&lt;/a&gt;, to k6 Office Hours to talk about observability, and how they do it at &lt;a href=&#34;https://canonical.com&#34;&gt;Canonical&lt;/a&gt;. It turned into a great conversation about trends in observability from the last decade, and how it relates to performance and reliability testing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SD5Y4QejEu4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How Eurofunk uses k6 for load testing emergency services (k6 Office Hours #37)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211217-koh37-daniel-knittl-frank/</link>
+      <pubDate>Fri, 17 Dec 2021 17:17:07 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211217-koh37-daniel-knittl-frank/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/PHJQuYDdNps&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this k6 Office Hours, k6 CEO Robin Gustafsson joined me to talk to Daniel Knittl-Frank, a software engineer at Eurofunk, about how k6 is used in the emergency services industry. Daniel has an interesting use case for k6: he uses it to load test calls in Austria received from the 112 emergency services hotline!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s new with k6 Cloud, with front-end lead Simon Legander (k6 Office Hours #36)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211203-koh36-whats-new-with-k6-cloud/</link>
+      <pubDate>Fri, 03 Dec 2021 17:09:45 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211203-koh36-whats-new-with-k6-cloud/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oyl9HNMC-ug&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this week&amp;rsquo;s k6 Office Hours, I was joined by my colleagues &lt;a href=&#34;https://twitter.com/markjmeier&#34;&gt;Mark Meier&lt;/a&gt; and Simon Legander, front-end lead at k6, to talk about the new features that have come to k6 Cloud this year so far. Simon also gives us a sneak peek of all the cool features coming on the horizon&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Performance Objective: Intro to Load Testing With k6 and Grafana</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211123-intro-to-load-testing-with-k6-and-grafana/</link>
+      <pubDate>Tue, 23 Nov 2021 17:05:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211123-intro-to-load-testing-with-k6-and-grafana/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fjq-JmrLjPc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I spoke at the Performance Objective meetup to talk about how to use k6 and Grafana for beginners. I always enjoy talking to like-minded engineers, and I think sharing ideas in a meetup context is probably the best way to do it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Everyone Can Contribute: Load Performance Testing With k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211123-load-performance-testing-with-k6/</link>
+      <pubDate>Tue, 23 Nov 2021 16:57:26 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211123-load-performance-testing-with-k6/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_ty40gSaaw8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is a recording of a live meetup I spoke at, the Everybody Can Contribute Café hosted by Michael Friedrich, Senior Developer Evangelist at GitLab. This was a more casual conversation and show-and-tell about k6&amp;rsquo;s capabilities, and I really enjoyed it!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Browser testing and API load testing in the same script with k6 (k6 Office Hours #35)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211112-koh35-browser-testing-and-api-load-testing-with-k6/</link>
+      <pubDate>Fri, 12 Nov 2021 00:28:02 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211112-koh35-browser-testing-and-api-load-testing-with-k6/</guid>
+      <description>&lt;p&gt;Earlier this week, at &lt;a href=&#34;https://grafana.com/go/observabilitycon/2021/k6-load-testing/&#34;&gt;ObservabilityCON 2021&lt;/a&gt;, we announced something new: k6 now supports browser-based testing with xk6-browser. Here&amp;rsquo;s a few of us from the k6 team talking about the announcement!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Y4qDAaJgxV0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources-mentioned&#34;&gt;Resources mentioned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://grafana.com/go/observabilitycon/2021/k6-load-testing/&#34;&gt;Catch the announcement here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/blog/extending-k6-with-xk6/&#34;&gt;Learn more about the xk6 extension system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/xk6-browser&#34;&gt;Try the xk6-browser extension&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>k6 load testing on Kubernetes using the k6 Operator, with Hans Knecht (k6 Office Hours #34)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211105-koh34-k6-load-testing-on-kubernetes-using-k6-operator/</link>
+      <pubDate>Fri, 05 Nov 2021 00:23:15 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211105-koh34-k6-load-testing-on-kubernetes-using-k6-operator/</guid>
+      <description>&lt;p&gt;I was really excited to have Hans Knecht on this week&amp;rsquo;s Office Hours. Hans works at Mission Lane, and is one of the biggest contributors to a k6 extension called k6 operator. k6 Operator lets you create a k6 custom resource object in Kubernetes.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/IJ0uQgn7gI8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;resources-mentioned&#34;&gt;Resources mentioned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/grafana/k6-operator&#34;&gt;k6 operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k6.io/blog/running-distributed-tests-on-k8s/&#34;&gt;Running distributed k6 tests on Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=KPyI8rM3LvE&#34;&gt;Previous k6 Office Hours on the Operator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Common performance testing problems and fears (k6 Office Hours #33)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211029-koh33-common-performance-testing-fears-and-issues/</link>
+      <pubDate>Fri, 29 Oct 2021 00:20:27 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211029-koh33-common-performance-testing-fears-and-issues/</guid>
+      <description>&lt;p&gt;For this week&amp;rsquo;s k6 Office Hours, we attempted to steer into Halloween by talking about some of the most common performance testing issues we&amp;rsquo;ve faced in our careers as performance testing consultants. For this one, I had Tom Miseur join me to commiserate and swap stories.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/jVa3noSOyg8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to install and use the k6 Cloud Grafana data source plugin</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211019-how-to-install-and-use-k6-cloud-grafana-datasource-plugin/</link>
+      <pubDate>Tue, 19 Oct 2021 00:02:05 +0000</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211019-how-to-install-and-use-k6-cloud-grafana-datasource-plugin/</guid>
+      <description>&lt;p&gt;In this video, I talk about the k6 Cloud Grafana data source plugin, which lets you use k6 Cloud as a data source for your Grafana visualizations.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Q2oihIg9Zjg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://k6.io/docs/cloud/integrations/grafana-plugin/&#34;&gt;Installing and using the k6 Cloud Grafana data source plugin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://grafana.com/plugins/grafana-k6cloud-datasource/?tab=installation&#34;&gt;Installing the plugin for Grafana Cloud&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://k6.io/docs/cloud/integrations/token&#34;&gt;Get your k6 Cloud API token on this page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/grafana/helm-charts/blob/main/charts/grafana/values.yaml&#34;&gt;Grafana Helm Charts repository&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Conf42 podcast: in the k6 Universe</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211014-conf42-in-the-k6-universe/</link>
+      <pubDate>Thu, 14 Oct 2021 01:27:45 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211014-conf42-in-the-k6-universe/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/mikopawlikowski&#34;&gt;Miko Pawlikowski&lt;/a&gt; interviewed &lt;a href=&#34;https://simme.dev&#34;&gt;Simme Aronsson&lt;/a&gt; and I for the &lt;a href=&#34;https://www.conf42.com/podcast&#34;&gt;Conf42 podcast&lt;/a&gt;, and we talked about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;why I love to learn human languages, and what Esperanto sounds like&lt;/li&gt;
+&lt;li&gt;the Grafana acquisition of k6&lt;/li&gt;
+&lt;li&gt;what performance testing is, anyway&lt;/li&gt;
+&lt;li&gt;whether everyone needs to do performance testing, and my personal setup for this blog&lt;/li&gt;
+&lt;li&gt;chaos engineering and Schrödinger&amp;rsquo;s Pokémon&lt;/li&gt;
+&lt;li&gt;an overview of the Grafana Labs projects landscape&lt;/li&gt;
+&lt;li&gt;what k6 is, and how we would get started for free (k6 OSS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3Ja3RVi53YM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Basics of load testing with k6 and Grafana in 20 minutes</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</link>
+      <pubDate>Tue, 12 Oct 2021 01:04:02 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211012-basics-of-load-testing-with-k6-and-grafana/</guid>
+      <description>&lt;p&gt;This was a video I pre-recorded in preparation for &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20211005-testing-with-k6-and-grafana-better-together/&#34;&gt;the first Grafana EMEA virtual meetup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/gvounvDSDGg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In mid-June (just three months ago), k6 joined the Grafana Labs family. Many people didn&amp;rsquo;t quite understand what the connection was between k6 and Grafana, but I thought it made a lot of sense.&lt;/p&gt;
+&lt;p&gt;Google&amp;rsquo;s Site Reliability Engineering book talks about 4 golden signals that we should measure in a system: latency, traffic, errors, and saturation. Load testing provides 3 of those (latency, traffic, and errors), but it doesn&amp;rsquo;t show saturation, and it doesn&amp;rsquo;t give us visibility into the system.&lt;/p&gt;
+&lt;p&gt;Grafana brings observability. k6 brings data. They work really well together, which is why we&amp;rsquo;ve been using each other&amp;rsquo;s products for a few years now, before there was ever any talk of an acquisition.&lt;/p&gt;
+&lt;p&gt;In this video, I talk about why k6 and Grafana are better together and also demonstrate:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;how to run a simple script in k6 OSS&lt;/li&gt;
+&lt;li&gt;how to make sense of the results of a load test&lt;/li&gt;
+&lt;li&gt;test execution options: running locally, sending results to k6 Cloud, and running a test from k6 Cloud&amp;ndash; all triggered using the CLI&lt;/li&gt;
+&lt;li&gt;two different integration options to bring k6 and Grafana together: the k6 Cloud Grafana data source plugin and Prometheus Remote Write&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Testing With k6 &#43; Grafana: Better Together (Grafana virtual meetup EMEA)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</link>
+      <pubDate>Tue, 05 Oct 2021 21:49:13 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20211005-testing-with-k6-and-grafana-better-together/</guid>
+      <description>&lt;p&gt;In this first EMEA session of the Grafana Labs virtual meetups, I talked about how to use k6 and Grafana together to get the full performance picture for a software application. Observability, using tools like Prometheus and Grafana, lets us see what&amp;rsquo;s going on inside the application, and load testing, using k6, helps us get those insights earlier on in software cycles, such as during pre-production.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MUd5xuuxt0A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Intro to Load Testing With k6 and Grafana (webinar)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</link>
+      <pubDate>Thu, 16 Sep 2021 22:11:16 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210916-intro-to-load-testing-with-k6-and-grafana/</guid>
+      <description>&lt;p&gt;Tonight I did a webinar with Grafana Labs&amp;ndash; the first k6-related webinar since the acquisition. I was more than a little nervous to give it, because I knew I was introducing k6 to a lot of new users, but also to Grafana for the first time. I think it went pretty well! I was still quite relieved when it was over, however. :)&lt;/p&gt;
+&lt;p&gt;In the webinar, I talk about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;why it&amp;rsquo;s still a good idea to do load testing in pre-production&lt;/li&gt;
+&lt;li&gt;what k6 is&lt;/li&gt;
+&lt;li&gt;why k6 and Grafana together make sense&lt;/li&gt;
+&lt;li&gt;and how to integrate k6 and Grafana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&amp;rsquo;s quite a bit of demo in it, and I also had the k6 CEO, Robin Gustafsson, join me for Q&amp;amp;A as a nice treat.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tFsIgbqXbxM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Check out the full webinar &lt;a href=&#34;https://grafana.com/go/webinar/intro-to-load-testing-with-grafana-and-k6/&#34;&gt;here&lt;/a&gt;&amp;ndash; it&amp;rsquo;s already up on the Grafana site. You can also go through my slides &lt;a href=&#34;https://docs.google.com/presentation/d/1WOA50nqIv1NoiHBxGIH_JM02rZqSjX81gHTlwPJ5i1U/edit?usp=sharing&#34;&gt;here&lt;/a&gt;, if you&amp;rsquo;d like.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Schrödinger&#39;s Pokémon: k6 and Grafana edition</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</link>
+      <pubDate>Wed, 15 Sep 2021 18:22:31 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210908-schrodingers-pokemon-k6-and-grafana/</guid>
+      <description>&lt;p&gt;Earlier this year, I gave a presentation at New Relic&amp;rsquo;s FutureStack conference about &lt;a href=&#34;https://nicolevanderhoeven.com/blog/20210730-schrodingers-pokemon/&#34;&gt;chaos engineering with k6 and New Relic&lt;/a&gt;. A few months ago, k6 got acquired by &lt;a href=&#34;https://grafana.com&#34;&gt;Grafana Labs&lt;/a&gt;, and so I wanted to redo it, but with the Grafana stack this time.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the result, and I think I like this iteration even better:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2QHs_HEX7r0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I presented this talk at &lt;a href=&#34;https://www.youtube.com/watch?v=jSgH3I8_ldk&#34;&gt;TestCon Europe 2021&lt;/a&gt; today, although the audio sync issues were not great, so I recommend you watch the video above instead.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/11HakdG0w2RsOunVnD6qPkTfTPpBxtXFECK_ynSOBraE/edit&#34;&gt;Slides are here.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Meet the Grafana Labs team: Nicole Van Der Hoeven, Developer Advocate at k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210813-grafana-profile-nicole-van-der-hoeven/</link>
+      <pubDate>Fri, 13 Aug 2021 15:29:37 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210813-grafana-profile-nicole-van-der-hoeven/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://grafana.com/blog/2021/08/13/meet-the-grafana-labs-team-nicole-van-der-hoeven-a-developer-advocate-who-does-performance-testing-at-k6/&#34;&gt;Originally posted here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+
+&lt;link rel=&#34;canonical&#34; href=&#34;https://grafana.com/blog/2021/08/13/meet-the-grafana-labs-team-nicole-van-der-hoeven-a-developer-advocate-who-does-performance-testing-at-k6/&#34;&gt;
+
+As Grafana Labs continues to grow, we’d like you to get to know the team members who are working on the cool stuff you’re using. Check out the latest of our Friday team profiles.&lt;/p&gt;
+&lt;h2 id=&#34;meet-nicole&#34;&gt;Meet Nicole!&lt;/h2&gt;
+&lt;p&gt;Name: Nicole van der Hoeven&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/profilepic-1MB.png&#34; alt=&#34;photo of Nicole&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;current-locationtime-zone&#34;&gt;Current location/time zone&lt;/h3&gt;
+&lt;p&gt;I currently live in Maastricht, in the Netherlands. I moved here with my husband four years ago from Melbourne, Australia.&lt;/p&gt;
+&lt;h3 id=&#34;what-do-you-do-at-grafana-labs&#34;&gt;What do you do at Grafana Labs?&lt;/h3&gt;
+&lt;p&gt;I’m a Developer Advocate at &lt;a href=&#34;https://k6.io&#34;&gt;k6&lt;/a&gt;, but I’m not actually a developer — I’m a performance tester! I guess there’s no such thing as a Performance Tester Advocate? My job is part engineering, part content creation: I write load testing scripts and code, but I also write blog posts, produce videos, and give presentations. I found out I was joining Grafana Labs a few months ago &lt;a href=&#34;https://grafana.com/about/press/2021-06-17-grafana-labs-brings-modern-open-source-load-testing-to-observability-with-acquisition-of-k6/&#34;&gt;when k6 was acquired&lt;/a&gt;, but I was happy to join the team! I’ve met some fun and motivated people at Grafana Labs that I’m eager to collaborate with.&lt;/p&gt;
+&lt;h3 id=&#34;what-open-source-projects-do-you-contribute-to&#34;&gt;What open source projects do you contribute to?&lt;/h3&gt;
+&lt;p&gt;I’m a budding developer and still learning the ins and outs of social coding, but some things I’ve contributed to recently are &lt;a href=&#34;https://github.com/nicolevanderhoeven/xk6-chaos&#34;&gt;a chaos engineering extension for k6&lt;/a&gt; (created by my colleague, the talented &lt;a href=&#34;https://simme.dev&#34;&gt;Simon Aronsson&lt;/a&gt;), an application called &lt;a href=&#34;https://github.com/nicolevanderhoeven/pokeapi&#34;&gt;Poké API&lt;/a&gt; that I’ve added chaos experiments to, and &lt;a href=&#34;https://github.com/nicolevanderhoeven/readwise2directory&#34;&gt;a Python script&lt;/a&gt; for pushing my Kindle highlights to my note-taking app of choice, &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-are-your-github-and-twitter-handles&#34;&gt;What are your GitHub and Twitter handles?&lt;/h3&gt;
+&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/nicolevanderhoeven&#34;&gt;nicolevanderhoeven&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Twitter: &lt;a href=&#34;https://twitter.com/n_vanderhoeven&#34;&gt;n_vanderhoeven&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-do-you-like-to-do-in-your-free-time&#34;&gt;What do you like to do in your free time?&lt;/h3&gt;
+&lt;p&gt;I play Dungeons &amp;amp; Dragons eight hours a week, &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Fork+My+Brain&#34;&gt;take a ridiculous amount of notes on everything&lt;/a&gt;, and vlog about &lt;a href=&#34;https://www.youtube.com/c/luckydippers&#34;&gt;my (pre-COVID) travels&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/battlemap.jpg&#34; alt=&#34;Battle map on a TV lying on a table, from a Dungeons &amp; Dragons game&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A battle map in one of my Dungeons &amp;amp; Dragons games.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-your-favorite-new-gadget-or-tech-toy&#34;&gt;What’s your favorite new gadget or tech toy?&lt;/h3&gt;
+&lt;p&gt;My new Rødecaster Pro, an audio mixer that has quickly become an essential part of my audio and video production process. It takes up a huge amount of precious real estate on my desk, but it is absolutely worth it!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/desksetup.jpg&#34; alt=&#34;Bird&amp;rsquo;s eye view of Nicole&amp;rsquo;s current desk&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;My current desk setup, including the Rødecaster Pro peeking out from underneath the laptop in the upper right.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-the-best-part-of-your-job&#34;&gt;What’s the best part of your job?&lt;/h3&gt;
+&lt;p&gt;I got into Developer Relations and advocacy in general because I realized that, as a performance testing consultant, I was being asked the same questions and solving the same problems. So I started to share my experience online, and I’ve found that significantly more efficient. Why explain something repeatedly to one person at a time, on the spot, when you could post a more considered explanation online and potentially help an unlimited amount of people? A large part of my job is simplifying technical concepts and making it accessible to beginners, and I love being able to help others by creating the content I looked for when I was a beginner, too.&lt;/p&gt;
+&lt;p&gt;Here’s one of my YouTube videos:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_DB-lNZW7LQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;whats-the-last-thing-you-binge-watched&#34;&gt;What’s the last thing you binge-watched?&lt;/h3&gt;
+&lt;p&gt;I have binge-watched the entire two campaigns of &lt;a href=&#34;https://www.youtube.com/c/criticalrole&#34;&gt;Critical Role&lt;/a&gt;, a livestream of a Dungeons &amp;amp; Dragons game with a bunch of voice actors, which is over 1000 hours of watch time. Totally worth it!&lt;/p&gt;
+&lt;h3 id=&#34;what-superpowers-do-you-have&#34;&gt;What superpowers do you have?&lt;/h3&gt;
+&lt;p&gt;I speak several languages: Tagalog (my native language), English, Dutch, Spanish, Esperanto, German, and French — in that order and to varying degrees. I am learning and have learned more, but don’t yet feel confident enough to claim to “speak” them! I choose travel destinations based on how interested I am in learning the local language.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/esperanto-superpower.jpg&#34; alt=&#34;Nicole wearing a shirt that says &amp;ldquo;I speak Esperanto. What&amp;rsquo;s your superpower?&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;whats-your-zoom-virtual-background-and-why&#34;&gt;What’s your Zoom virtual background and why?&lt;/h3&gt;
+&lt;p&gt;I don’t use virtual backgrounds. The thing I like most about video is that it’s the most honest form of expression: writing, podcasting, and photography can all be edited far more easily. I like that my home office gives clues about who I am and what I like, and I would never want to hide that — mess and all!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Monitoring your k6 load test: how to install Grafana and Prometheus on a Kubernetes cluster</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210811-how-to-install-grafana-prometheus-in-kubernetes/</link>
+      <pubDate>Wed, 11 Aug 2021 18:55:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210811-how-to-install-grafana-prometheus-in-kubernetes/</guid>
+      <description>&lt;p&gt;Running a load test is half of the equation, and not having the right observability tools to see how your application responds to the load can sometimes flat-out invalidate a test.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how to install open-source tools Grafana and Prometheus on a Kubernetes cluster in DigitalOcean and how a performance user could use them for increased visibility during a load test.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GL2v81xYuAQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How we work at k6 - building software &amp; working remotely with CTO Pawel Suwala (k6 Office Hours #23)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210806-koh23-pawel/</link>
+      <pubDate>Fri, 06 Aug 2021 18:09:05 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210806-koh23-pawel/</guid>
+      <description>&lt;p&gt;For this episode of k6 Office Hours, I got the k6 Chief Technical Officer, Pawel Suwala, to give a bit of a behind-the-scenes of how we work at k6 and what we&amp;rsquo;re working on next. We talked about the methodology we use for building k6, the different teams we have, and exciting new features that are coming soon!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/95PP2zwMlc0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>A tester&#39;s overview of Grafana Labs open-source projects</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210719-grafana-labs-overview/</link>
+      <pubDate>Mon, 19 Jul 2021 18:23:33 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210719-grafana-labs-overview/</guid>
+      <description>&lt;p&gt;Since the acquisition of k6 by Grafana Labs, the entire k6 team has been absorbed into the new, larger team that we&amp;rsquo;re suddenly a part of. Grafana Labs maintains a lot of projects, so I was very quickly overwhelmed with things to learn about all of them. Here&amp;rsquo;s my attempt to make sense of the Grafana Labs landscape, and perhaps it can help some of you as well:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/_DB-lNZW7LQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Acquisition talk with CEOs Raj Dutt (Grafana) and Robin Gustafsson (k6) (k6 Office Hours #19)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210702-koh-raj-robin/</link>
+      <pubDate>Fri, 02 Jul 2021 21:04:13 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210702-koh-raj-robin/</guid>
+      <description>&lt;p&gt;This week on k6 Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I were joined by two CEOs: k6 CEO &lt;a href=&#34;https://www.linkedin.com/in/robinegustafsson/&#34;&gt;Robin Gustafsson&lt;/a&gt; and Grafana Labs CEO &lt;a href=&#34;https://twitter.com/nopzor&#34;&gt;Raj Dutt&lt;/a&gt;. It was a little nerve-wracking to have two CEOs on the stream, but it did give us the opportunity to ask both of them pointed questions on Grafana Labs&amp;rsquo;s acquisition of k6, including any plans they have for how both companies could integrate better in the future.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sfWIB-myito&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>What you need to know about Grafana Labs&#39;s acquisition of k6</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210630-gl-acquisition/</link>
+      <pubDate>Wed, 30 Jun 2021 18:29:24 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210630-gl-acquisition/</guid>
+      <description>&lt;p&gt;Recently, during Grafanaconline 2021, &lt;a href=&#34;https://grafana.com/about/press/2021-06-17-grafana-labs-brings-modern-open-source-load-testing-to-observability-with-acquisition-of-k6/&#34;&gt;Grafana Labs CEO Raj Dutt announced&lt;/a&gt; the acquisition of k6&amp;ndash; the company I work for. What does this mean? Here&amp;rsquo;s a video I made to explain it all:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/t1agJsLwrGE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I have also discussed the acquisition twice on k6 Office Hours:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=RrDo2wMeV80&#34;&gt;once with our CEO, Robin Gustafsson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;and another time with &lt;a href=&#34;https://www.youtube.com/watch?v=sfWIB-myito&#34;&gt;both Robin and Raj, Grafana Labs CEO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TL;DW: We unanimously agree it&amp;rsquo;s a positive thing. I myself am cautiously optimistic about the future of both k6 and Grafana Labs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>k6 is part of Grafana Labs! AMA with CEO Robin Gustafsson (k6 Office Hours #17)</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20210618-koh-with-robin-grafana/</link>
+      <pubDate>Fri, 18 Jun 2021 22:26:49 +0200</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20210618-koh-with-robin-grafana/</guid>
+      <description>&lt;p&gt;On this week&amp;rsquo;s Office Hours, &lt;a href=&#34;https://simme.dev&#34;&gt;Simme&lt;/a&gt; and I were joined by &lt;a href=&#34;https://www.linkedin.com/in/robinegustafsson/&#34;&gt;Robin Gustafsson&lt;/a&gt;, the CEO of k6, to make a big announcement: k6 has been acquired by Grafana Labs.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RrDo2wMeV80&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The folks at Grafana Labs have been fans of k6 for a while, and we&amp;rsquo;ve been fans (and users) of their work since almost the beginning of k6. While a surprise to many, Grafana and k6 together is a combination that makes sense.&lt;/p&gt;
+&lt;p&gt;Read &lt;a href=&#34;https://grafana.com/about/press/2021-06-17-grafana-labs-brings-modern-open-source-load-testing-to-observability-with-acquisition-of-k6/&#34;&gt;Grafana&amp;rsquo;s press release here&lt;/a&gt; to hear more about this milestone.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

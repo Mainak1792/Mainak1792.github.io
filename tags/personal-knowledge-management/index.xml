@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal knowledge management on Nicole van der Hoeven</title>
+    <link>https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/</link>
+    <description>Recent content in personal knowledge management on Nicole van der Hoeven</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nicole van der Hoeven</copyright>
+    <lastBuildDate>Mon, 24 Jan 2022 21:47:59 +0100</lastBuildDate><atom:link href="https://nicolevanderhoeven.github.io/tags/personal-knowledge-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Actually Remember What You Learn, for Engineers with Long Reading Lists</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220124-how-to-actually-remember-what-you-learn/</link>
+      <pubDate>Mon, 24 Jan 2022 21:47:59 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220124-how-to-actually-remember-what-you-learn/</guid>
+      <description>&lt;p&gt;Who says you need the terminology of the Zettelkasten process? Here&amp;rsquo;s how I&amp;rsquo;ve learned how to learn and how to apply new ideas to my daily work.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re reading this, you probably make your living on what you&amp;rsquo;ve learned that other people haven&amp;rsquo;t. Unfortunately, if you don&amp;rsquo;t have a written system to keep track of new ideas, you&amp;rsquo;ll probably unlearn everything in a few years.&lt;/p&gt;
+&lt;h2 id=&#34;most-people-think-reading--learning&#34;&gt;Most people think reading = learning.&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s why reading isn&amp;rsquo;t enough.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Our brains are best at linking concepts, not at remembering them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Writing doesn&amp;rsquo;t help us learn; it IS how we learn.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can&amp;rsquo;t learn to swim by reading about it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If reading isn&amp;rsquo;t enough, then what should you do instead?&lt;/p&gt;
+&lt;h3 id=&#34;step-1-consume&#34;&gt;&lt;strong&gt;Step 1: Consume&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The first step is to consume content, but &lt;em&gt;selectively&lt;/em&gt; so.&lt;/p&gt;
+&lt;p&gt;Content could be a book, a video, a podcast, an article, or even a conversation. &lt;em&gt;Take notes&lt;/em&gt; on the author&amp;rsquo;s main points.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt; Shape Up is a methodology emphasising iterative cycles, &amp;ldquo;betting&amp;rdquo; on work to be done, and building fully integrated slices of work.&lt;/p&gt;
+&lt;h3 id=&#34;step-2-redefine&#34;&gt;&lt;strong&gt;Step 2: Redefine&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Next, go beyond facts and add your thoughts.&lt;/p&gt;
+&lt;p&gt;Think about the broader picture of what the author might be saying, and supplement it with &lt;em&gt;your&lt;/em&gt; opinions. &lt;em&gt;Example:&lt;/em&gt; Shape Up is an Agile methodology concerned with the limits we should apply to different stages of work.&lt;/p&gt;
+&lt;h3 id=&#34;step-3-contextualize&#34;&gt;&lt;strong&gt;Step 3: Contextualize&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Think about what the content means to you, specifically&amp;ndash; how does it stack with other things you&amp;rsquo;ve learned? Where does it fit into your interests? Accept that your context, and your notes, will change.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example:&lt;/em&gt; Shape Up&amp;rsquo;s idea of fully integrated work supports the notion of context-switching (see: Continuous integration, Multithreading) but could be in contention with productivity concepts like deep work (David Allen), batching, and Productivity Momentum.&lt;/p&gt;
+&lt;h2 id=&#34;its-your-brain&#34;&gt;It&amp;rsquo;s your brain!&lt;/h2&gt;
+&lt;p&gt;In the end, nobody can tell you the &amp;ldquo;right&amp;rdquo; way to learn.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to use Dataview and Templater to run JavaScript in Obsidian for automating task management</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</link>
+      <pubDate>Sun, 16 Jan 2022 16:30:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220116-how-to-use-dataview-and-templater-to-run-javascript-in-obsidian/</guid>
+      <description>&lt;p&gt;TIL how to run JavaScript in @obsdmd. A friend of mine had an interesting use case: He had a long reading list from his studies, and wanted to use Obsidian to decide what he could read given a certain amount of time.&lt;/p&gt;
+&lt;p&gt;TL;DR: &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244&#34;&gt;Here&amp;rsquo;s the script&lt;/a&gt;.
+And here&amp;rsquo;s the end result:
+&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/templater-demo.gif&#34; alt=&#34;Gif of the full setup working&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Requires: Obsidian. The Dataview and Templater plugins. Also requires a separate markdown page for every chapter or bite-sized section of the book or course, with the metadata &lt;code&gt;time_required&lt;/code&gt; in the YAML frontmatter.&lt;/p&gt;
+&lt;p&gt;Why Dataview? Dataview can parse that frontmatter, grab the value for &lt;code&gt;time_required&lt;/code&gt;, and return a list of pages and links. There is a Dataview Query Language, but dataviewjs is more extensible.&lt;/p&gt;
+&lt;p&gt;Why Templater? I initially wanted to write a script within a dataviewjs block, but:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dataview results are only rendered in Preview mode (which I don&amp;rsquo;t spend much time in)&lt;/li&gt;
+&lt;li&gt;I hate testing JavaScript within Obsidian.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Instead, I created a folder &lt;code&gt;scripts&lt;/code&gt; within my vault and selected it as the &amp;ldquo;user scripts folder&amp;rdquo; in Templater settings. Then, I created a script, &lt;code&gt;returnStudyOptions.js&lt;/code&gt;. &lt;a href=&#34;https://gist.github.com/nicolevanderhoeven/eccc6f910cdc48a5b7934b53a5a0f244&#34;&gt;Here&amp;rsquo;s the gist for that&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In a new note, I typed &lt;code&gt;&amp;lt;% tp.user.returnStudyOptions(tp, 60) %&amp;gt;&lt;/code&gt;. This line calls the script I created and also passes 60 minutes as the time available.&lt;/p&gt;
+&lt;p&gt;I selected &amp;ldquo;Templater: Replace templates in the active file&amp;rdquo; from the Command Pane, which runs the script and replaces the line with the script&amp;rsquo;s returned value, which looks something like this:
+&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/templater-result.png&#34; alt=&#34;Screenshot of the notes returned by the script&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I also assigned a hotkey to for replacing the template, for ease of use. That&amp;rsquo;s it! I thought this was a fun way to learn how to use JavaScript in Obsidian. Thanks to &lt;a href=&#34;https://twitter.com/ealameda&#34;&gt;@ealameda&lt;/a&gt; for the use case!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building a DM&#39;s Brain Attic</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</link>
+      <pubDate>Sat, 15 Jan 2022 16:45:22 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220115-building-a-dms-brain-attic/</guid>
+      <description>&lt;p&gt;Anyone other DMs have this problem? My TRPGs folder, containing paid third-party assets for D&amp;amp;D and other RPGs, is made up of 37,884 items (287 GB).&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how I make sure I actually get value out of this embarrassment of riches: 👇&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/trpgs.png&#34; alt=&#34;Screenshot of my TRPGs folder with all my third-party items&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mike from &lt;a href=&#34;https://twitter.com/SlyFlourish&#34;&gt;@SlyFlourish&lt;/a&gt; wrote an article applying Sherlock Holmes&amp;rsquo;s brain attic for lazy dungeon masters, and he called it the &amp;ldquo;[DM Brain Attic](&lt;a href=&#34;https://slyflourish.com/brain_attic.html%22&#34;&gt;https://slyflourish.com/brain_attic.html&amp;quot;&lt;/a&gt;. The idea is to collect interesting techniques or ideas and file them away for later.&lt;/p&gt;
+&lt;p&gt;Sounds like a good idea, but for most of us, this attic is theoretical. We read books, we watch videos, and we read blog posts on monsters and settings and plots, and we trust that they&amp;rsquo;ll all be saved somewhere in our heads.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s not how it works. Our minds are good at making connections, not remembering CRs from monster statblocks. So how do we make this DM Brain Attic less theoretical and more practical?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read and take notes. If you haven&amp;rsquo;t read everything you&amp;rsquo;ve bought, you&amp;rsquo;re buying too much. Read what you&amp;rsquo;ve got and write down the parts that are actually relevant to you and your game. Here&amp;rsquo;s what mine looks like for the first Arcadia (@helloMCDM) issue.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/arcadia.png&#34; alt=&#34;Screenshot of my notes on Arcadia issue 1&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Combine like with like. This is the hard part, because it involves creating a central place for monsters, items, spells, etc. &lt;a href=&#34;https://github.com/nicolevanderhoeven/xios-guide-to-monsters&#34;&gt;This&lt;/a&gt; is my attempt to do this for monsters. It creates one page per monster that includes its source. Here&amp;rsquo;s a monster example.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/zombie.png&#34; alt=&#34;Screenshot of a monster page&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an example for items that includes SRD items and Vault of Magic Items (by &lt;a href=&#34;https://twitter.com/KoboldPress&#34;&gt;@KoboldPress&lt;/a&gt;). Each one links to a page for the item with full details.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/vault-of-magic.png&#34; alt=&#34;Screenshot of my page of items&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Resurface via search: You may have noticed the metadata in the previous page. The metadata gives me criteria to search monsters by. Here&amp;rsquo;s how I can query my monster database using the &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;Dataview plugin&lt;/a&gt; for &lt;a href=&#34;https://obsidian.md&#34;&gt;Obsidian&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/dataview-query.png&#34; alt=&#34;Screenshot of a monster query using Dataview&#34;&gt;&lt;/p&gt;
+&lt;p&gt;And here&amp;rsquo;s the result of that query, returning monsters that fit my criteria and, importantly, which of my PDFs they come from.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/dataview-result.png&#34; alt=&#34;Screenshot of the results from the Dataview query shown earlier&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Resurface via random table generators. Another way that I resurface content is by using random table generators using the &lt;a href=&#34;https://github.com/valentine195/obsidian-dice-roller&#34;&gt;Dice Roller plugin&lt;/a&gt; for Obsidian by Jeremy Valentine. Here&amp;rsquo;s my NPC page, compiled from multiple sources.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/npc-rolls.png&#34; alt=&#34;My NPC creation page with randomized traits&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each die icon can be clicked to generate a new &amp;ldquo;roll&amp;rdquo;. Here&amp;rsquo;s a gif for how that works, using stuff from Sly Flourish&amp;rsquo;s Uncovered Secrets, accessible to &lt;a href=&#34;https://www.patreon.com/slyflourish&#34;&gt;his Patreons&lt;/a&gt;. Each click &amp;ldquo;rolls&amp;rdquo; on a table I&amp;rsquo;ve defined in a separate note.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nicolevanderhoeven.github.io/assets/uncoveredsecrets_02.gif&#34; alt=&#34;Gif of how my random tables created from Sly Flourish&amp;rsquo;s Uncovered Secrets&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Is building a DM Brain Attic a lot of work? Yes.&lt;/p&gt;
+&lt;p&gt;But how likely is it that I&amp;rsquo;d use my 287 GB of third-party stuff while preparing for my game if I didn&amp;rsquo;t have this system? Not very.&lt;/p&gt;
+&lt;p&gt;At least this way, I&amp;rsquo;m using what I&amp;rsquo;ve actually bought and putting good content into a very real DM&amp;rsquo;s Brain Attic that I can actually scrounge around for good ideas in, before or during a game.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;d like to know more, check out this video I made about how I use Obsidian to run and play D&amp;amp;D online:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3pt6_srUZ7U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>How to Set Goals in Obsidian for 2022</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220112-how-to-set-goals-in-obsidian-for-2022/</link>
+      <pubDate>Wed, 12 Jan 2022 16:58:39 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220112-how-to-set-goals-in-obsidian-for-2022/</guid>
+      <description>&lt;p&gt;How do you set goals in Obsidian?&lt;/p&gt;
+&lt;p&gt;New Year&amp;rsquo;s Resolutions are infamously left undone. So what should you do instead? OKRs.&lt;/p&gt;
+&lt;p&gt;Setting OKRs (Objective Key Results) instead of resolutions increases your chances of succeeding. Tracking your progress throughout the year also make sure you&amp;rsquo;re getting things done. In this video, I talk about what OKRs are and how I&amp;rsquo;ve set them up in Obsidian for the year ahead.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/T2Aeaq4sk7M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>The Tester&#39;s Toolbox Is Flawed</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</link>
+      <pubDate>Tue, 11 Jan 2022 16:30:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220111-the-testers-toolbox-is-flawed/</guid>
+      <description>&lt;p&gt;Every tester has a toolbox.&lt;/p&gt;
+&lt;p&gt;In the toolbox rests a variety of tools for every conceivable purpose. Part of our job, as testers, is to choose the right one for the job. Sounds reasonable, right?&lt;/p&gt;
+&lt;p&gt;That kind of thinking could be dangerous.&lt;/p&gt;
+&lt;h2 id=&#34;the-right-tool-for-every-job-fails-for-multiple-jobs&#34;&gt;&amp;ldquo;The right tool for every job&amp;rdquo; fails for multiple jobs.&lt;/h2&gt;
+&lt;p&gt;You end up with multiple tools. One for accessibility testing. Another for API testing. Another for browser testing. Another for load testing. &lt;em&gt;This is the modern tester&amp;rsquo;s dilemma&lt;/em&gt;: we spend more time working with our tools than with the application under test.&lt;/p&gt;
+&lt;p&gt;In the real world, including a new tool in your testing stack means a new framework, usually a new programming language, and sometimes even new colleagues with experience in those tools. And what about continuous testing? All those tools have to talk to each other at some point.&lt;/p&gt;
+&lt;p&gt;More tools = more time, effort, and money.&lt;/p&gt;
+&lt;h3 id=&#34;when-choosing-tools-prioritize-multitools&#34;&gt;&lt;strong&gt;When choosing tools, prioritize multitools.&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A multitool can be used for different purposes and prioritizes flexibility.&lt;/p&gt;
+&lt;p&gt;Here are a few ways to spot a multitool:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#1: It is a polymath.&lt;/strong&gt; A multitool is good at many things and is limited in use case only by the imagination of those that use it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#2: It uses what you know.&lt;/strong&gt; A multitool is built on languages and frameworks you and your team already know, reducing ramp-up time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#3 It plays well with others.&lt;/strong&gt; A multitool doesn&amp;rsquo;t force you to use it to the exclusion of everything else. It integrates well with best-in-class tools.&lt;/p&gt;
+&lt;p&gt;When you optimize for individual jobs, you&amp;rsquo;re missing the big picture. You&amp;rsquo;re ultimately left holding the ends of multiple tools and creating a kraken of a test suite with all these tools cobbled together.&lt;/p&gt;
+&lt;p&gt;Instead, prioritize multitools.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Obsidian for the Uninitiated</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</link>
+      <pubDate>Mon, 10 Jan 2022 23:07:06 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220110-obsidian-for-the-uninitiated/</guid>
+      <description>&lt;h1 id=&#34;obsidian-for-the-uninitiated&#34;&gt;Obsidian for the Uninitiated&lt;/h1&gt;
+&lt;p&gt;You&amp;rsquo;ve installed Obsidian and created a new vault. Now what?&lt;/p&gt;
+&lt;p&gt;Unfortunately, it can be more than a little daunting to get started with. It doesn&amp;rsquo;t help that there are terms like &lt;em&gt;Zettelkasten&lt;/em&gt; and &lt;em&gt;Maps of Content&lt;/em&gt; and &lt;em&gt;fleeting notes&lt;/em&gt; and &lt;em&gt;digital garden&lt;/em&gt; that are all just trying to structure what we all learned to do in primary school.&lt;/p&gt;
+&lt;h2 id=&#34;start-by-logging-what-youre-doing&#34;&gt;Start by logging what you&amp;rsquo;re doing.&lt;/h2&gt;
+&lt;p&gt;Having a rigid structure does wonders for curtailing creativity and plain fun. Instead, I recommend starting small.&lt;/p&gt;
+&lt;p&gt;Here are some small steps to take after installing Obsidian:&lt;/p&gt;
+&lt;h3 id=&#34;step-1-enable-the-daily-notes-plugin&#34;&gt;&lt;strong&gt;Step 1: Enable the Daily Notes plugin&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The most game-changing feature of Obsidian is plugins.&lt;/p&gt;
+&lt;p&gt;Go into Settings &amp;gt; Core Plugins, and enable the &lt;em&gt;Daily notes&lt;/em&gt; plugin.&lt;/p&gt;
+&lt;p&gt;Then, exit out of the dialog boxes and hit CMD P (Mac) or CTRL P (Windows) to bring up the command pane. Search for and select &lt;em&gt;Daily notes: Open today&amp;rsquo;s daily note&lt;/em&gt;. That creates a new note in your vault with today&amp;rsquo;s date.&lt;/p&gt;
+&lt;p&gt;From now on, do this every day and log things you do during the day: things to do, appointments to keep, videos you watched.&lt;/p&gt;
+&lt;h3 id=&#34;step-2-the-next-time-you-consume-content-take-notes&#34;&gt;&lt;strong&gt;Step 2: The next time you consume content, take notes.&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Now, the next time you read or watch something interesting, type its title into Obsidian with brackets:&lt;code&gt;[[Cool video I watched]]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s now a link. CMD+click on that link, or click the glasses icon on the top right to switch to Preview mode, and then click on the link. You should now have a new note. Write about what you thought of the video.&lt;/p&gt;
+&lt;h3 id=&#34;step-3-start-identifying-and-fleshing-out-ideas&#34;&gt;&lt;strong&gt;Step 3: Start identifying and fleshing out ideas.&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Keep going with these steps and every now and then, start to identify cool ideas you come across. Create new notes from them just like you did in Step 2. Don&amp;rsquo;t worry about getting it all; just do it when and until you feel like it.&lt;/p&gt;
+&lt;p&gt;These three simple steps, over time, will be the foundations of your own Personal Knowlege Management system with Obsidian.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>5 Ways to Use Obsidian as a Software Engineer</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</link>
+      <pubDate>Sun, 09 Jan 2022 19:20:49 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220109-5-ways-to-use-obsidian-as-a-software-engineer/</guid>
+      <description>&lt;p&gt;Yesterday, I wrote about why I think taking notes is the surprising foundation of a tester&amp;rsquo;s career.&lt;/p&gt;
+&lt;p&gt;But it&amp;rsquo;s not just testers. Every software engineer is a knowledge worker, and that means we get paid for what we know. Using a Personal Knowledge Management (PKM) system such as &lt;a href=&#34;http://Obsidian.md&#34;&gt;Obsidian.md&lt;/a&gt; helps us keep up with the constant barrage of new ideas in tech.&lt;/p&gt;
+&lt;p&gt;Here are 5 things I use Obsidian for.&lt;/p&gt;
+&lt;h2 id=&#34;1-my-very-own-stack-overflow&#34;&gt;#1: My very own Stack Overflow&lt;/h2&gt;
+&lt;p&gt;If you code, you&amp;rsquo;ve used Stack Overflow.&lt;/p&gt;
+&lt;p&gt;What if you had your &lt;strong&gt;own&lt;/strong&gt; Stack Overflow, one that contained cheat sheets of every language you&amp;rsquo;ve ever tried to hack something up in, including only commands relevant to your job? This is exactly &lt;a href=&#34;https://notes.nicolevanderhoeven.com/Python&#34;&gt;what I&amp;rsquo;ve done for Python&lt;/a&gt; recently, and it&amp;rsquo;s helping me solidify my knowledge.&lt;/p&gt;
+&lt;h2 id=&#34;2-tools-database&#34;&gt;#2: Tools database&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s a tool for everything.&lt;/p&gt;
+&lt;p&gt;To keep them straight, I have a page for every load testing tool I try, with tutorials for how to get started, an assessment of its features, and observations I had while attempting to learn it. &lt;a href=&#34;https://notes.nicolevanderhoeven.com/k6+(tool)&#34;&gt;Here&amp;rsquo;s what I have for the load testing tool k6&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bonus: I also use &lt;a href=&#34;https://github.com/blacksmithgu/obsidian-dataview&#34;&gt;the Dataview plugin&lt;/a&gt; to query tools that fit my criteria.&lt;/p&gt;
+&lt;h2 id=&#34;3-an-agile-workspace&#34;&gt;#3: An Agile workspace&lt;/h2&gt;
+&lt;p&gt;If Agile is good enough for my professional work, it&amp;rsquo;s good enough for my personal work.&lt;/p&gt;
+&lt;p&gt;I use the &lt;a href=&#34;https://github.com/mgmeyers/obsidian-kanban&#34;&gt;Kanban plugin&lt;/a&gt; to keep track of projects, create weekly and monthly review/retro templates, and work iteratively using &lt;a href=&#34;https://github.com/bjsi/incremental-writing&#34;&gt;the Incremental Writing plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;4-a-public-learning-log&#34;&gt;#4: A public learning log&lt;/h2&gt;
+&lt;p&gt;Learning in public is the fastest way to improve.&lt;/p&gt;
+&lt;p&gt;When I&amp;rsquo;m trying to figure something out, I document my attempts. With Obsidian Publish, I can quickly push this log out to my domain and share them with colleagues to get a quick review so that they can easily follow my train of thought and tell me where I went wrong.&lt;/p&gt;
+&lt;h2 id=&#34;5-a-digital-garden-of-software-ideas&#34;&gt;#5: A digital garden of software ideas&lt;/h2&gt;
+&lt;p&gt;Build libraries, not feeds.&lt;/p&gt;
+&lt;p&gt;I use Obsidian to save things I read/watch/listen to but also to save space for ideas I&amp;rsquo;ve learned to germinate. I publish notes before they&amp;rsquo;re fully fleshed out, with the goal of growing everything over time.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://notes.nicolevanderhoeven.com&#34;&gt;Today, I have 4,567 notes&lt;/a&gt;, all about things that matter to me.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Every engineer should have a PKM system.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Take Notes, Not Tools</title>
+      <link>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</link>
+      <pubDate>Sat, 08 Jan 2022 17:00:44 +0100</pubDate>
+      
+      <guid>https://nicolevanderhoeven.github.io/blog/20220108-take-notes-not-tools/</guid>
+      <description>&lt;p&gt;When I first got into testing, I thought that testing was about learning different tools and frameworks.&lt;/p&gt;
+&lt;p&gt;I learned how to use Neoload, then LoadRunner, then JMeter, and then SeleniumSilkPerformerVisualStudioGatlingPuppeteerPlaywrightk6 in short succession. I took courses on JavaScript, on C, on Java. I ticked off tools like a grocery list.&lt;/p&gt;
+&lt;p&gt;It didn&amp;rsquo;t take me long to realize that I still wasn&amp;rsquo;t a good tester.&lt;/p&gt;
+&lt;h2 id=&#34;taking-notes-not-tools-is-what-makes-a-good-tester&#34;&gt;Taking notes, not tools, is what makes a good tester.&lt;/h2&gt;
+&lt;p&gt;When you think about it, a lot of things a tester does revolves around taking good notes.&lt;/p&gt;
+&lt;p&gt;Requirements are just notes on what the business wants to achieve. Test scenarios are notes on situations that the team wants to simulate. Test cases are notes on how a user would use an application. Defects are notes on issues.&lt;/p&gt;
+&lt;p&gt;The quality of a tester&amp;rsquo;s notes dictates the quality of their work.&lt;/p&gt;
+&lt;h3 id=&#34;listen-to-people-not-tool-tutorials&#34;&gt;&lt;strong&gt;Listen to people, not tool tutorials&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Take notes on what users do.&lt;/strong&gt; Talk to the business. Pore through Google Analytics logs. Piece together a story of the kind of people who use your application, and how they use it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Take notes on problem areas.&lt;/strong&gt; Talk to customer support about the most common questions they get&amp;ndash; they know more about pain points than anyone else in the company. Talk to the ops engineers who were on call during the last production incident. These problems are what you&amp;rsquo;ll need to test later.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Take notes on what you&amp;rsquo;ve learned.&lt;/strong&gt; If you don&amp;rsquo;t like learning, you&amp;rsquo;re in the wrong field. Document everything, even things you think you&amp;rsquo;ll never forget, because one day, you WILL forget.&lt;/p&gt;
+&lt;p&gt;Taking notes, not tools, is the foundation every testing career is built on.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
