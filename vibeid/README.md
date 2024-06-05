@@ -1,1 +1,1 @@
-This is the webpage of VIBeID dataset for pErson Identification.
+This is the webpage of VIBeID dataset for Person Identification.
