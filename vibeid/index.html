@@ -208,7 +208,7 @@
             <div class="rooms-image-container">
                 <div class="image-wrapper">
                     <h3>Wooden Floor</h3>
-                    <img src="./images/wooden_test.jpg" alt="VIBeID A3.1" />
+                    <img src="./images/Wooden_left_view.jpg" alt="VIBeID A3.1" />
                 </div>
                 <div class="image-wrapper">
                     <h3>Carpet Floor</h3>
@@ -216,7 +216,7 @@
                 </div>
                 <div class="image-wrapper">
                     <h3>Cement Floor</h3>
-                    <img src="./images/cement_test.jpg" alt="VIBeID A3.3" />
+                    <img src="./images/Cement_2.jpg" alt="VIBeID A3.3" />
                 </div>
                 <div class="image-wrapper">
                     <h3>Outdoor Ground</h3>
@@ -275,12 +275,23 @@
                     </li>
                 </ul>
             </p>
+            <hr>
         </div>
-            <h3>Dataset Organization</h3>
+            <h3>Dataset details and preparation</h3>
             <p class="abstract-text"> 
-                The preprocessed data will serve most use cases. Its organization is as follows:
+                Our preprocessed data will serve most use cases. To ensure privacy and identity protection, participants are anonymized and referred to by identifiers such as P1, P2, and so on.
+                The raw dataset details are listed below :
             </p>
-            <h4>Hierarchy</h4>
+            <h4>VIBeID A1 Details</h4>
+            <p class="abstract-text">
+                The VIBeID A1 dataset comprises recordings from 100 participants, each of whom walked for 20 minutes. The data was captured using geophones on cement floor. Each person completed four sets of 5-minute walks.
+                The figure below depicts the setup location for collecting the VIBeID A1 dataset.
+                <div class="img-container">
+                    <div class="image-wrapper-1">
+                        <img src="./images/Cement_2.jpg" alt="VIBeID A1 data collection location" />
+                    </div>
+                </div>
+            </p>
             <p class="abstract-text"> 
                 VIBeID  A1 dataset file contains
                 <ul>
@@ -289,6 +300,19 @@
                     <li>Each folder consists of atleast 4 mat files, each worth of 5 minutes of vibration data</li>
                     <li>each File names follows FolderName_FileNumber, like P1_1.mat, P1_2.mat, ...</li>
                 </ul>
+            </p>
+            <hr>
+            <h4>
+                VIBeID A2 details
+            </h4>
+            <p class="abstract-text">
+                The VIBeID A2 dataset comprises recordings from 30 participants, each of whom walked for 15 minutes at three different distances (1.5 m, 2.5 m, and 4.0 m) from geophone sensors. The data was recorded on cement floor. Each person completed three sets of 5-minute walks.
+                The figure below depicts the setup location for collecting the VIBeID A1 dataset.
+                <div class="img-container">
+                    <div class="image-wrapper-1">
+                        <img src="./images/cement_multi_distance.png" alt="VIBeID A3 data collection location" />
+                    </div>
+                </div>
             </p>
             <p class="abstract-text"> 
                 VIBeID A2 dataset file contains
@@ -303,6 +327,18 @@
                     <li>Each File names follows FolderName_FileNumber, like P1_1.mat, P1_2.mat, ...</li>    
                 </ul>
             </p>
+            <hr>
+            <h4>
+                VIBeID A3 details
+            </h4>
+            <p class="abstract-text">
+                The VIBeID A3 dataset comprises recordings from 40 participants, each of whom walked for 15 minutes at three floors (Wooden, Carpet, Cement) from geophone sensors. Each person completed three sets of 5-minute walks.
+            </p>
+                <p>The Figure belows shows the data collection on wooden floor for VIBeID A3.1 of Person 14.
+                <div class="img-container">
+                    <img width="80%" class="gif" src="./images/wooden_gif_2.gif">
+                </div>
+            </p>
             <p class="abstract-text"> 
                 VIBeID A3 dataset file contains
                 <ul>
@@ -316,6 +352,10 @@
                     <li>Each File names follows FolderName_FileNumber, like P1_1.mat, P1_2.mat, ...</li>    
                 </ul>
             </p>
+            <hr>
+            <h4>
+                VIBeID A4 details 
+            </h4>
             <p class="abstract-text"> 
                 VIBeID A4 dataset file contains
                 <ul>
@@ -347,6 +387,7 @@
 <!--             <h4>Raw Files</h4>
             <p class="abstract-text"> 
                 The raw files are provided. -->
+            <hr>
             </p>
             <h3>Maintenance</h3>
             <p class="abstract-text">
