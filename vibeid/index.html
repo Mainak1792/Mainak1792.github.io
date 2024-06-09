@@ -173,7 +173,7 @@
                     </div>
                     <div class="image-wrapper" style="text-align: center; flex: 1;">
                       <h3>VIBeID A4.2</h3>
-                      <img src="./images/a4.png" alt="VIBeID A4.2" style="width: 150px; height: 150px;" />
+                      <img src="./images/a4.2.png" alt="VIBeID A4.2" style="width: 150px; height: 150px;" />
                       <div class="dataset-links">
                         <a href="https://www.kaggle.com/code/mainakml/vibeida4ab"><i class="fas fa-code"></i> VIBeID A4.2 Code</a>
                         <a href="https://www.kaggle.com/datasets/mainakml/geitttt/data">
@@ -203,12 +203,11 @@
                 </ul>
             <div class="preprocessed-list">
 
-
-            <h3>Sample Dataset</h3>
+            <!-- <h3>Sample Dataset</h3>
             <p class="abstract-text">  
                 We provide a small downloadable sample dataset: <a href="#home" target="_blank" rel="noopener noreferrer">Download small_sampledataset</a>
                 The files are VIBeID A1 dataset, preprocessed, but the number of persons and data points has been significantly reduced. Information on the data's organization is included below.
-            </p>
+            </p> -->
               <div class="section" id="rooms">
             <h2 class="section-title">Setup Locations</h2>
             <div class="rooms-image-container">
@@ -365,16 +364,16 @@
             <p class="abstract-text"> 
                 VIBeID A4 dataset file contains
                 <ul>
-                    <li>3 folder 1 for vibration data, 2 for camera datas in the dataset</li>
+                    <li>3 folder 1 for vibration data, 2 for camera data in the dataset</li>
                     <li>A4_1 represents vibration data on Wooden Floor</li>
                     <li>A4_2a represents vision data from Right camera</li>
-                    <li>A4_2b represents vision data from Left amera</li>
+                    <li>A4_2b represents vision data from Left camera</li>
                     <li>Each folder (A4_1, A4_2a, and A4_2b) has one folder for each human in the dataset</li>
                     <li>Folder names are mentioned as P1, P2, ..., P15</li>
                     <li>In A4_1, each subfolder consists of 1 mat file, each worth of 10 minutes of vibration data</li>
                     <li>Each File names follows FolderName_FileNumber, like P1_1.mat, P1_2.mat, ...</li>
-                    <li>In A4_2a, and A4_2b, each subfolder consists of ----</li>
-                    <li>Each File names follows -------</li>
+                    <li>In A4_2a, and A4_2b, each subfolder consists of Folder as P1, P2, ..., P15 </li>
+                    <li>Each Folder consists of human silhouettes like frame_0,...frame_5000</li>
                 </ul>
             </p>
 <!--             <h4>Preprocessed Files</h4> -->
@@ -401,8 +400,8 @@
                 and Chandan can be contacted at <a href = "mailto: chandan@ee.iitd.ac.in">chandan@ee.iitd.ac.in</a>.
             </p>
             <p class="abstract-text">   
-                Please contact us if you notice any errors with the dataset. To the extent that we notice errors, they will be fixed 
-                and the dataset will be updated. Previous versions of the dataset will be maintained. Errors and previous versions will be posted below.
+                Please contact us if you notice any errors or have any suggestion with the dataset. To the extent that we notice errors, they will be fixed 
+                and the dataset will be updated. Previous versions of the dataset will be maintained below and errors and previous versions will be posted below.
             </p>
         </div>
         <!--
