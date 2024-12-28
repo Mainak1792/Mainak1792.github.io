@@ -136,6 +136,24 @@
             margin-bottom: 1rem;
             color: var(--primary-color);
         }
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between logos */
+            margin-top: 20px; /* Space above the logo row */
+            margin-bottom: 20px; /* Space below the logo row */
+        }
+
+        .partner-logo {
+            height: 50px; /* Control the size of the logos */
+            width: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s ease; /* Smooth transform on hover */
+        }
+
+        .partner-logo:hover {
+            transform: scale(1.1); /* Slightly enlarge logos on hover */
+        }
+
 
         .cta-buttons {
             margin-top: 1rem;
@@ -577,11 +595,30 @@
         <section id="home">
             <h1>Welcome to our Sound Detection Project</h1>
             <p>Advanced sound recognition technology using cutting-edge machine learning techniques and models.</p>
+            <p>Currently, this project is being built with the collaboration of Uni Kassel, Germany, IRRI, Philippines, and IIT Delhi, India.</p>
+        
+            <!-- Partner Logos -->
+            <div class="partner-logos">
+                <img src="path/to/uni_kassel_logo.png" alt="Uni Kassel Logo" class="partner-logo">
+                <img src="path/to/irri_logo.png" alt="IRRI Logo" class="partner-logo">
+                <img src="path/to/iit_delhi_logo.png" alt="IIT Delhi Logo" class="partner-logo">
+            </div>
+        
             <div class="cta-buttons">
                 <a href="#about" class="btn btn-primary" onclick="navigateToSection('about')">Learn More</a>
                 <a href="#data-visualization" class="btn btn-secondary" onclick="navigateToSection('data-visualization')">View Visualizations</a>
             </div>
         </section>
+
+        <!-- <section id="home">
+            <h1>Welcome to our Sound Detection Project</h1>
+            <p>Advanced sound recognition technology using cutting-edge machine learning techniques and models.</p>
+            <p>Currently is being built with collaboration of Uni Kassel, Germany,  IRRI, Philippines and IIT Delhi, India</p>
+            <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary" onclick="navigateToSection('about')">Learn More</a>
+                <a href="#data-visualization" class="btn btn-secondary" onclick="navigateToSection('data-visualization')">View Visualizations</a>
+            </div>
+        </section> -->
 
         <section id="about" style="display:none;">
             <h1>About the Project</h1>
