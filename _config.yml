@@ -22,7 +22,7 @@ repository               : "https://Mainak1792.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "/images/profile.png"
   name             : "Mainak Chakraborty"
   pronouns         : # example: "she/her"  
   bio              : "PhD @ IIT-Delhi"
