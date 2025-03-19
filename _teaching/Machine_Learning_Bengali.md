@@ -1,4 +1,12 @@
-
+---
+title: "Teaching experience 2"
+collection: teaching
+type: "Undergraduate course"
+permalink: /teaching/2023-fall-teaching-2
+venue: "NPTEL"
+date: 2024-06-01
+location: "New Delhi, India"
+---
 # PMRF - Foundations and Applications of Machine Learning (Bengali)
 
 ## Video Lectures (PUBLIC SHEET)

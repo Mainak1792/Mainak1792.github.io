@@ -1,4 +1,12 @@
-
+---
+title: "Teaching experience 4"
+collection: teaching
+type: "Postgraduate course"
+permalink: /teaching/2025-spring-teaching-1
+venue: "NPTEL"
+date: 2025-01-01
+location: "New Delhi, India"
+---
 # PMRF - Foundations and Applications of Machine Learning (Bengali)
 
 ## Video Lectures (PUBLIC SHEET)
