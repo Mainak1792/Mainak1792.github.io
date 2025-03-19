@@ -25,7 +25,7 @@ redirect_from:
   <li>2024 Our Paper Selected at IEEE Sensor Letter, 2024 "<a href="https://ieeexplore.ieee.org/document/10634750">Gaj-Gamini</a>"</li>
   <li>2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich</li>
   <li>2023 TensorFlow Developer Certificate, Credential ID:87883013, Remote</li>
-  <li>2024 Our Paper Selected at IEEE Signal Processing Letter, 2024 "<a href="https://ieeexplore.ieee.org/document/10314463">GAN-SEIS</a>"</li>
+  <li>2023 Our Paper Selected at IEEE Signal Processing Letter, 2023 "<a href="https://ieeexplore.ieee.org/document/10314463">GAN-SEIS</a>"</li>
   <li>2022 Raised 10k USD for "Eta-aide" - vibration based predictive maintenance startup (Exited 2023), India</li>
   <li>2022 PMRF Scholarship, within top 0.5% of candidates among 2,12,568 candidates, India</li>
   <li>2019 GATE fellowship, within top 6% among 167376 candidates, India</li>
