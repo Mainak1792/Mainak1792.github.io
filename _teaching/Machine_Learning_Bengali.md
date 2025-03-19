@@ -12,7 +12,7 @@ Course Name : NOC:Foundations And Applications Of Machine Learning (Bengali)
 Professor : Prof. Adway Mitra
 Host Institute :  IIT Kharagpur
 Notes : Available on Request
-Current Course Link ![NPTEL Website](https://nptel.ac.in/courses/106105247)
+Current Course Link [NPTEL Website](https://nptel.ac.in/courses/106105247)
 ---
 
 ## Video Lectures (PUBLIC SHEET)

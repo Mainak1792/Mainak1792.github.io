@@ -13,7 +13,7 @@ Course Name : Statistical Inference
 Professor : Prof. Niladri Chatterjee 
 Host Institute :   IIT Delhi
 Notes : Available on Request
-Current Course Link ![NPTEL Website](https://onlinecourses.nptel.ac.in/noc20_ma19/preview)
+Current Course Link [NPTEL Website](https://onlinecourses.nptel.ac.in/noc20_ma19/preview)
 ---
 ## Video Lectures (Sheet1)
 
