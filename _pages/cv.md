@@ -33,6 +33,7 @@ Education
   * Supervisor: Professor Git
    -->
 Scholarships
+
 ======
 - **2015:** ASDC Scholarship, top 1% among the batch (India)  
 - **2019:** GATE Fellowship, top 6% among 167,376 candidates (India)  
@@ -43,9 +44,18 @@ Scholarships
 
 
 Skills
+
 ======
 * Python, C/C++, C#, Embedded C, CUDA, MATLAB, Git, Bash, LaTeX, HTML  
-* Linux, TensorFlow, PyTorch, Docker, OpenCV, OpenSim, AnyBody, SCONE, Unity Engine  
+* Linux, TensorFlow, PyTorch, Docker, OpenCV, OpenSim, AnyBody, SCONE, Unity Engine 
+ 
+ Certifications
+ 
+ ======
+- TensorFlow Developer Certificate [ID: 87883013] (2023)  
+- Associate Member of the Institution of Engineers (AMIE) [ID: AM3115693] (2023)  
+- Deeplearning.ai TensorFlow Developer (2021)
+
 
 Publications
 ======
@@ -66,5 +76,11 @@ Teaching
   {% endfor %}</ul>
   
 Service and leadership
+
+Volunteering
+
+- **2020:** IIEST Covid‑19 Volunteering Team (Kolkata)  
+- **2021:** Proxmaq, Computer Vision Engineer (Remote)  
+- **2023:** Hindu College, Deep Learning Workshop (AtoZ) for Delhi University Students (New Delhi)  
+- **2024-continuing:** Youth Ideathon 2024, Mentor at India’s largest high‑school‑level competition of ideas (Remote)
 ======
-* To-Be-Updated
