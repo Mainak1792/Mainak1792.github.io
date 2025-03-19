@@ -1,20 +1,31 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "PhD researcher in Artificial Intelligence at IIT Delhi 🤖 "
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-<div style="text-align: justify;"> <p> I am a PhD researcher at the Indian Institute of Technology, Delhi, focusing on advanced sensor‑based machine learning and seismic data analysis. My work combines deep learning, embedded systems, and signal processing to tackle challenges in predictive maintenance, remote health diagnostics, and wildlife conservation. Awarded fellowships such as the Prime Minister’s Research Fellowship (PMRF) and IEEE SPS Fellowship, I have led interdisciplinary teams to develop vibration sensor–based early warning systems and deploy AI models on edge devices. My research contributions have been published in premier venues like ICASSP and IEEE Signal Processing Letters, and I continually strive to engineer scalable, data‑driven solutions that bridge real‑world challenges with cutting‑edge AI technologies. </p>
+<div style="text-align: justify;"> <p> I am a researcher and engineer specializing in machine learning and sensor-based signal processing. I have served as a Course Instructor at Delhi University and Guest Lecturer at Jawaharlal Nehru University (JNU), while my professional experience includes leading a team at Etaaide that developed a vibration sensor-based early warning system for predictive maintenance. My research has been published in prestigious venues, with my "VibeGait" project accepted for ICASSP 2025, and I have filed three patents related to my work. I have recieved multiple scholarships including the IEEE Signal Processing Society Scholarship (2024), PMRF Scholarship (2022), and GATE fellowship (2019). I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs at ETH Zurich and the University of Genoa, Italy. </p>
 
 <!-- # Research Visit Map -->
 
 <p>I teach Cloud Computing at live-courses in NPTEL. This is my latest class. You can find more details at teching section:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o9_QVS65WL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p>This Map represents all the places I have visited to present my research</p>
-<iframe src="/talkmap/map.html" height="500" width="500" style="border:none;"></iframe>
+# Recent News
+- 2025 Paper Accepted at ACM-SENSYS (poster)
+- 2025 IEEE ICASSP 2025 Conference Travel Grant, recipient (USA)
+- 2025 Paper Selected at ICASSP,"VibeGait"  2025
+- 2024 IEEE SPS Scholarship, 2024 IEEE Signal Processing Society Scholarship recipient, USA
+- 2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich
+- 2023 TensorFlow Developer Certificate, Credential ID:87883013, Remote
+- 2022 Raised 10k USD for "Eta-aide"- vibration based predictive maintenance, India
+- 2022 PMRF Scholarship, within top 0.5% of candidates among 2,12,568 candidates, India
+- 2019 GATE fellowship, within top 6% among 167376 candidates, India
+
+<!-- <p>This Map represents all the places I have visited to present my research</p>
+<iframe src="/talkmap/map.html" height="500" width="500" style="border:none;"></iframe> -->
 
 <!-- <iframe src="leaflet_debug.html" width="100%" height="600" style="border: none;"></iframe> -->
 
