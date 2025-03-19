@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Pursuing PhD at IIT-Delhi"
   location         : "New Delhi"
-  employer         : [IIT Delhi](https://home.iitd.ac.in/)
+  employer         : "IIT Delhi"
   uri              : # URL
   email            : "Mainak.Chakraborty@iddc.iitd.ac.in" 
 
