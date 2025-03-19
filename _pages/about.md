@@ -13,18 +13,19 @@ redirect_from:
 <p>I teach Cloud Computing at live-courses in NPTEL. This is my latest class. You can find more details at teching section:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o9_QVS65WL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 <h1>Recent News</h1>
 <ul>
   <li>2025 Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)</li>
   <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li>
   <li>2025 IEEE ICASSP 2025 Conference Travel Grant recipient</li>
-  <li>2025 Our Paper Selected at ICASSP, 2025 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">"VibeGait"</a></li>
+  <li>2025 Our Paper Selected at ICASSP, 2025 "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">VibeGait</a>"</li>
   <li>2024 IEEE SPS Scholarship, 2024 IEEE Signal Processing Society Scholarship recipient, USA</li>
   <li>2024 Poster Presentation at Applied Harmonic Analysis and Machine Learning 2024, MALGA, Genova, Italy </li>
-  <li>2024 Our Paper Selected at IEEE Sensor Letter, 2024 <a href="https://ieeexplore.ieee.org/document/10634750">"Gaj-Gamini"</a></li>
+  <li>2024 Our Paper Selected at IEEE Sensor Letter, 2024 "<a href="https://ieeexplore.ieee.org/document/10634750">Gaj-Gamini</a>"</li>
   <li>2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich</li>
   <li>2023 TensorFlow Developer Certificate, Credential ID:87883013, Remote</li>
-  <li>2024 Our Paper Selected at IEEE S.P Letter, 2024 <a href="https://ieeexplore.ieee.org/document/10314463">"GAN-SEIS"</a></li>
+  <li>2024 Our Paper Selected at IEEE Signal Processing Letter, 2024 "<a href="https://ieeexplore.ieee.org/document/10314463">GAN-SEIS</a>"</li>
   <li>2022 Raised 10k USD for "Eta-aide" - vibration based predictive maintenance, India</li>
   <li>2022 PMRF Scholarship, within top 0.5% of candidates among 2,12,568 candidates, India</li>
   <li>2019 GATE fellowship, within top 6% among 167376 candidates, India</li>
