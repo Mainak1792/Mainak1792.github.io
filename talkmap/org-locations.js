@@ -5,18 +5,13 @@ var addressPoints = [
     8.5410422
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
-  ],
-  [
     "Structural Vibration based Person Identification<br />Machine Learning Genoa Center; University of Genoa, Italy",
     44.4148861,
     8.9266707
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "Conference Proceeding talk 3 on GajGamini: Mitigating Man\u2013Animal Conflict by Detecting Moving Elephants Using Ground Vibration-Based Seismic Sensor<br />Kobe Portopia Hotel; Kobe, Japan",
+    34.6932379,
+    135.1943764
   ]
 ];
