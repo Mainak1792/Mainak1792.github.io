@@ -8,10 +8,13 @@ redirect_from:
 ---
 <div style="text-align: justify;"> <p> I am a PhD researcher at the Indian Institute of Technology, Delhi, focusing on advanced sensor‑based machine learning and seismic data analysis. My work combines deep learning, embedded systems, and signal processing to tackle challenges in predictive maintenance, remote health diagnostics, and wildlife conservation. Awarded fellowships such as the Prime Minister’s Research Fellowship (PMRF) and IEEE SPS Fellowship, I have led interdisciplinary teams to develop vibration sensor–based early warning systems and deploy AI models on edge devices. My research contributions have been published in premier venues like ICASSP and IEEE Signal Processing Letters, and I continually strive to engineer scalable, data‑driven solutions that bridge real‑world challenges with cutting‑edge AI technologies. </p>
 
-# Research Visit Map
+<!-- # Research Visit Map -->
+
+<p>I teach Cloud Computing at live-courses in NPTEL. This is my latest class. You can find more details at teching section:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o9_QVS65WL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <p>This Map represents all the places I have visited to present my research</p>
-<iframe src="/talkmap/map.html" height="700" width="850" style="border:none;"></iframe>
+<iframe src="/talkmap/map.html" height="500" width="500" style="border:none;"></iframe>
 
 <!-- <iframe src="leaflet_debug.html" width="100%" height="600" style="border: none;"></iframe> -->
 
@@ -52,6 +55,6 @@ Many people use a git client to create files on their local computer and then pu
 Example: editing a markdown file for a talk
 <!-- ![Editing a markdown file for a talk](/images/editing-talk.png) -->
 
-For more info -->
+<!-- For more info --> -->
 <!-- ------
 More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
