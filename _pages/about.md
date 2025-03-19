@@ -15,9 +15,9 @@ redirect_from:
 
 <h1>Recent News</h1>
 <ul>
-  <li>2025 Paper Accepted at ACM-SENSYS (poster)</li>
-  <li>2025 IEEE ICASSP 2025 Conference Travel Grant, recipient (USA)</li>
-  <li>2025 Paper Selected at ICASSP, "VibeGait" 2025</li>
+  <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li>
+  <li>2025 IEEE ICASSP 2025 Conference Travel Grant recipient</li>
+  <li>2025 Our Paper Selected at ICASSP, 2025 ["VibeGait"](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251)</li>
   <li>2024 IEEE SPS Scholarship, 2024 IEEE Signal Processing Society Scholarship recipient, USA</li>
   <li>2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich</li>
   <li>2023 TensorFlow Developer Certificate, Credential ID:87883013, Remote</li>
