@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
-Download my [CV](https://drive.google.com/file/d/1hspu7UHovxWJ4525ijE_H3uQ8TbArUNw/view?usp=sharing)
+Download my CV [Here](https://drive.google.com/file/d/1hspu7UHovxWJ4525ijE_H3uQ8TbArUNw/view?usp=sharing)
+
 Education
 ======
 * Ph.D in Multi-Modal Gait Recognition, Indian Institute Of Technology Delhi (IIT Delhi), 2025 (expected)
