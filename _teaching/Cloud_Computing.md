@@ -8,11 +8,12 @@ date: 2025-01-01
 location: "New Delhi, India"
 ---
 # Cloud Computing
+
 Course Name : NOC:Cloud Computing, IIT Kharagpur
 Professor : Prof. Soumya Kanti Ghosh 
 Host Institute :  IIT Kharagpur
 Notes : Available on Request
-Current Course Link ![NPTEL Website](https://onlinecourses.nptel.ac.in/noc25_cs11/preview)
+Current Course Link [NPTEL Website](https://onlinecourses.nptel.ac.in/noc25_cs11/preview)
 ---
 
 ## Video Lectures (PUBLIC SHEET)
