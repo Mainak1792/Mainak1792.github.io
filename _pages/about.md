@@ -8,7 +8,10 @@ redirect_from:
 ---
 <div style="text-align: justify;"> <p> I am a PhD researcher at the Indian Institute of Technology, Delhi, focusing on advanced sensor‑based machine learning and seismic data analysis. My work combines deep learning, embedded systems, and signal processing to tackle challenges in predictive maintenance, remote health diagnostics, and wildlife conservation. Awarded fellowships such as the Prime Minister’s Research Fellowship (PMRF) and IEEE SPS Fellowship, I have led interdisciplinary teams to develop vibration sensor–based early warning systems and deploy AI models on edge devices. My research contributions have been published in premier venues like ICASSP and IEEE Signal Processing Letters, and I continually strive to engineer scalable, data‑driven solutions that bridge real‑world challenges with cutting‑edge AI technologies. </p>
 
-<p> Places I have visited to present my research <a href="https://Mainak1792.github.io/talkmap.html">TalkMap</a>. </p> </div>
+# Research Visit Map
+
+<p>This Map represents all the places I have visited to present my research</p>
+<iframe src="/talkmap/map.html" height="700" width="850" style="border:none;"></iframe>
 
 <!-- <iframe src="leaflet_debug.html" width="100%" height="600" style="border: none;"></iframe> -->
 
