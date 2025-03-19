@@ -13,17 +13,18 @@ redirect_from:
 <p>I teach Cloud Computing at live-courses in NPTEL. This is my latest class. You can find more details at teching section:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o9_QVS65WL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Recent News
-
-* 2025 Paper Accepted at ACM-SENSYS (poster)
-* 2025 IEEE ICASSP 2025 Conference Travel Grant, recipient (USA)
-* 2025 Paper Selected at ICASSP, "VibeGait" 2025
-* 2024 IEEE SPS Scholarship, 2024 IEEE Signal Processing Society Scholarship recipient, USA
-* 2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich
-* 2023 TensorFlow Developer Certificate, Credential ID:87883013, Remote
-* 2022 Raised 10k USD for "Eta-aide" - vibration based predictive maintenance, India
-* 2022 PMRF Scholarship, within top 0.5% of candidates among 2,12,568 candidates, India
-* 2019 GATE fellowship, within top 6% among 167376 candidates, India
+<h1>Recent News</h1>
+<ul>
+  <li>2025 Paper Accepted at ACM-SENSYS (poster)</li>
+  <li>2025 IEEE ICASSP 2025 Conference Travel Grant, recipient (USA)</li>
+  <li>2025 Paper Selected at ICASSP, "VibeGait" 2025</li>
+  <li>2024 IEEE SPS Scholarship, 2024 IEEE Signal Processing Society Scholarship recipient, USA</li>
+  <li>2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich</li>
+  <li>2023 TensorFlow Developer Certificate, Credential ID:87883013, Remote</li>
+  <li>2022 Raised 10k USD for "Eta-aide" - vibration based predictive maintenance, India</li>
+  <li>2022 PMRF Scholarship, within top 0.5% of candidates among 2,12,568 candidates, India</li>
+  <li>2019 GATE fellowship, within top 6% among 167376 candidates, India</li>
+</ul>
 
 <!-- <p>This Map represents all the places I have visited to present my research</p>
 <iframe src="/talkmap/map.html" height="500" width="500" style="border:none;"></iframe> -->
