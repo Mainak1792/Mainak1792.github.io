@@ -10,9 +10,9 @@ var addressPoints = [
     -122.272863
   ],
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.5074456,
-    -0.1277653
+    "Structural Vibration based Person Identification<br />Machine Learning Genoa Center; University of Genoa, Italy",
+    44.4148861,
+    8.9266707
   ],
   [
     "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
