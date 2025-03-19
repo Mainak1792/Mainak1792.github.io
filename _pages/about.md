@@ -8,8 +8,9 @@ redirect_from:
 ---
 <div style="text-align: justify;"> <p> I am a PhD researcher at the Indian Institute of Technology, Delhi, focusing on advanced sensor‑based machine learning and seismic data analysis. My work combines deep learning, embedded systems, and signal processing to tackle challenges in predictive maintenance, remote health diagnostics, and wildlife conservation. Awarded fellowships such as the Prime Minister’s Research Fellowship (PMRF) and IEEE SPS Fellowship, I have led interdisciplinary teams to develop vibration sensor–based early warning systems and deploy AI models on edge devices. My research contributions have been published in premier venues like ICASSP and IEEE Signal Processing Letters, and I continually strive to engineer scalable, data‑driven solutions that bridge real‑world challenges with cutting‑edge AI technologies. </p>
 
-<p> Places I have visited to present my research <a href="https://academicpages.github.io/talkmap.html)">TalkMap</a>. </p> </div>
+<!-- <p> Places I have visited to present my research <a href="https://academicpages.github.io/talkmap.html">TalkMap</a>. </p> </div> -->
 
+<iframe src="leaflet_debug.html" width="100%" height="600" style="border: none;"></iframe>
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! -->
 
