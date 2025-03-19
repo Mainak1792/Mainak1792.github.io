@@ -2,11 +2,12 @@
 title: "Teaching experience 5"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2023-spring-teaching-1
+permalink: /teaching/2023-spring-teaching-2
 venue: "JNU, New Delhi"
 date: 2023-01-01
 location: "New Delhi, India"
 ---
+
 # JNU Introduction to Electrical and Electronics (IEE) 2023
 
 # Links:
