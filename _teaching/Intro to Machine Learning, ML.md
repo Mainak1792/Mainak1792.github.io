@@ -8,11 +8,13 @@ date: 2024-01-01
 location: "New Delhi, India"
 ---
 # Machine Learning,ML
-Course Name : Machine Learning,ML
-Professor : Prof. Carl Gustaf Jansson
-Notes : Available on Request
-Host Institute :  KTH, The Royal Institute of Technology
-Current Course Link [NPTEL Website](https://onlinecourses.nptel.ac.in/noc20_cs49/preview)
+
+- Course Name : Machine Learning,ML
+- Professor : Prof. Carl Gustaf Jansson
+- Notes : Available on Request
+- Host Institute :  KTH, The Royal Institute of Technology
+- Current Course Link [NPTEL Website](https://onlinecourses.nptel.ac.in/noc20_cs49/preview)
+
 ---
 
 ## Video Lectures (PUBLIC SHEET)
