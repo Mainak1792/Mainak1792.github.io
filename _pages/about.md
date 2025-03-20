@@ -20,7 +20,7 @@ redirect_from:
   <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li>
   <li>2025 IEEE ICASSP 2025 Conference Travel Grant recipient</li>
   <li>2025 Our Paper Selected at ICASSP, 2025 "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">VibeGait</a>"</li>
-  <li>2024 IEEE SPS Scholarship, 2024 IEEE Signal Processing Society Scholarship recipient, USA</li>
+  <li>2024 IEEE SPS Scholarship, within top 25% of the candidates, USA</li>
   <li>2024 Poster Presentation at Applied Harmonic Analysis and Machine Learning 2024, MALGA, Genova, Italy </li>
   <li>2024 Our Paper Selected at IEEE Sensor Letter, 2024 "<a href="https://ieeexplore.ieee.org/document/10634750">Gaj-Gamini</a>"</li>
   <li>2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich</li>
