@@ -16,8 +16,8 @@ redirect_from:
 
 <h1>Recent News</h1>
 <ul>
-  <li>2025 Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)</li>
-  <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li>
+  <!-- <li>2025 Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)</li>
+  <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li> -->
   <li>2025 IEEE ICASSP 2025 Conference Travel Grant recipient</li>
   <li>2025 Our Paper Selected at ICASSP, 2025 "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">VibeGait</a>"</li>
   <li>2024 IEEE SPS Scholarship, within top 25% of the candidates, USA</li>
