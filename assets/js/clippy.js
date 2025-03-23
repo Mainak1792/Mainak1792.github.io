@@ -21,6 +21,7 @@ class Clippy {
             "I can help you navigate the website!"
         ];
         this.currentMessageIndex = 0;
+        this.usedMessages = new Set(); // Track used messages
         this.init();
     }
 
@@ -111,6 +112,20 @@ class Clippy {
     }
 
     showMessage() {
+        // If all messages have been used, reset the used messages set
+        if (this.usedMessages.size >= this.messages.length) {
+            this.usedMessages.clear();
+        }
+
+        // Find the next unused message
+        let nextIndex;
+        do {
+            nextIndex = Math.floor(Math.random() * this.messages.length);
+        } while (this.usedMessages.has(nextIndex));
+
+        this.usedMessages.add(nextIndex);
+        const message = this.messages[nextIndex];
+
         const messageBox = document.createElement('div');
         messageBox.id = 'clippy-message';
         messageBox.style.position = 'absolute';
@@ -129,7 +144,7 @@ class Clippy {
         
         // Add message content
         const messageText = document.createElement('div');
-        messageText.textContent = this.messages[this.currentMessageIndex];
+        messageText.textContent = message;
         messageBox.appendChild(messageText);
 
         // Add close button
@@ -147,9 +162,6 @@ class Clippy {
         messageBox.appendChild(closeButton);
 
         document.getElementById('clippy-container').appendChild(messageBox);
-
-        // Rotate through messages
-        this.currentMessageIndex = (this.currentMessageIndex + 1) % this.messages.length;
     }
 
     hideMessage() {
