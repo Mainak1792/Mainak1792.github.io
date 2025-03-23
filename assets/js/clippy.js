@@ -19,9 +19,11 @@ class Clippy {
 
         // Create Clippy image
         const clippyImage = document.createElement('img');
-        clippyImage.src = 'https://clippy.js.org/agents/CLIPPY.gif';
+        clippyImage.src = 'https://raw.githubusercontent.com/smore-inc/clippy.js/master/agents/CLIPPY/CLIPPY.gif';
         clippyImage.style.width = '100px';
         clippyImage.style.height = '100px';
+        clippyImage.style.borderRadius = '50%';
+        clippyImage.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
         container.appendChild(clippyImage);
 
         // Add click event
