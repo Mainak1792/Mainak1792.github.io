@@ -19,7 +19,7 @@ class Clippy {
 
         // Create Clippy image
         const clippyImage = document.createElement('img');
-        clippyImage.src = 'https://raw.githubusercontent.com/smore-inc/clippy.js/master/agents/CLIPPY/CLIPPY.gif';
+        clippyImage.src = '/assets/images/clippy/clippy.gif';
         clippyImage.style.width = '100px';
         clippyImage.style.height = '100px';
         clippyImage.style.borderRadius = '50%';
