@@ -11,17 +11,17 @@ class Clippy {
         this.xOffset = 0;
         this.yOffset = 0;
         this.messages = [
-            "Hi! I'm Clippy! How can I help you today?",
-            "I love helping people! What can I do for you?",
-            "Did you know I can be dragged around? Try it!",
-            "I'm your friendly AI assistant!",
-            "Need help? Just ask!",
-            "I'm here to make your day better!",
-            "Want to play? Just click me!",
-            "I can help you navigate the website!"
+            "Hello! I'm your AI research assistant. How can I help you today?",
+            "I can help you navigate through my research publications and projects.",
+            "Did you know I'm a PhD candidate in AI at IIT Delhi?",
+            "Feel free to explore my teaching and research work!",
+            "I specialize in AI-driven signal processing and multi-modal learning.",
+            "Want to learn about my latest research in structural vibration-based recognition?",
+            "I'm here to help you understand my academic journey and achievements.",
+            "Check out my publications and conference presentations!"
         ];
         this.currentMessageIndex = 0;
-        this.usedMessages = new Set(); // Track used messages
+        this.usedMessages = new Set();
         this.init();
     }
 
@@ -34,16 +34,18 @@ class Clippy {
         container.style.right = '20px';
         container.style.zIndex = '9999';
         container.style.cursor = 'move';
-        container.style.transition = 'transform 0.2s ease';
+        container.style.transition = 'all 0.3s ease';
+        container.style.filter = 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))';
         document.body.appendChild(container);
 
         // Create Clippy image
         const clippyImage = document.createElement('img');
         clippyImage.src = '/assets/images/clippy/clippy.gif';
-        clippyImage.style.width = '100px';
-        clippyImage.style.height = '100px';
+        clippyImage.style.width = '80px';
+        clippyImage.style.height = '80px';
         clippyImage.style.borderRadius = '50%';
-        clippyImage.style.boxShadow = '0 2px 5px rgba(0,0,0,0.2)';
+        clippyImage.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+        clippyImage.style.border = '2px solid #ffffff';
         container.appendChild(clippyImage);
 
         // Add drag events
@@ -60,11 +62,13 @@ class Clippy {
 
         // Add hover effect
         container.addEventListener('mouseenter', () => {
-            container.style.transform = 'scale(1.1)';
+            container.style.transform = 'scale(1.05) translateY(-5px)';
+            container.style.filter = 'drop-shadow(0 6px 8px rgba(0,0,0,0.15))';
         });
 
         container.addEventListener('mouseleave', () => {
-            container.style.transform = 'scale(1)';
+            container.style.transform = 'scale(1) translateY(0)';
+            container.style.filter = 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))';
         });
     }
 
@@ -112,12 +116,10 @@ class Clippy {
     }
 
     showMessage() {
-        // If all messages have been used, reset the used messages set
         if (this.usedMessages.size >= this.messages.length) {
             this.usedMessages.clear();
         }
 
-        // Find the next unused message
         let nextIndex;
         do {
             nextIndex = Math.floor(Math.random() * this.messages.length);
@@ -129,35 +131,42 @@ class Clippy {
         const messageBox = document.createElement('div');
         messageBox.id = 'clippy-message';
         messageBox.style.position = 'absolute';
-        messageBox.style.bottom = '120px';
+        messageBox.style.bottom = '100px';
         messageBox.style.right = '0';
-        messageBox.style.backgroundColor = '#fff';
-        messageBox.style.padding = '15px';
-        messageBox.style.borderRadius = '10px';
-        messageBox.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
-        messageBox.style.maxWidth = '250px';
-        messageBox.style.fontFamily = 'Arial, sans-serif';
+        messageBox.style.backgroundColor = '#ffffff';
+        messageBox.style.padding = '15px 20px';
+        messageBox.style.borderRadius = '12px';
+        messageBox.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+        messageBox.style.maxWidth = '280px';
+        messageBox.style.fontFamily = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
         messageBox.style.fontSize = '14px';
-        messageBox.style.lineHeight = '1.4';
-        messageBox.style.color = '#333';
+        messageBox.style.lineHeight = '1.5';
+        messageBox.style.color = '#2c3e50';
         messageBox.style.animation = 'fadeIn 0.3s ease-in-out';
+        messageBox.style.border = '1px solid rgba(0,0,0,0.05)';
         
         // Add message content
         const messageText = document.createElement('div');
         messageText.textContent = message;
+        messageText.style.marginBottom = '8px';
         messageBox.appendChild(messageText);
 
         // Add close button
         const closeButton = document.createElement('button');
         closeButton.innerHTML = '×';
         closeButton.style.position = 'absolute';
-        closeButton.style.top = '5px';
-        closeButton.style.right = '5px';
+        closeButton.style.top = '8px';
+        closeButton.style.right = '8px';
         closeButton.style.border = 'none';
         closeButton.style.background = 'none';
-        closeButton.style.fontSize = '20px';
+        closeButton.style.fontSize = '18px';
         closeButton.style.cursor = 'pointer';
-        closeButton.style.color = '#666';
+        closeButton.style.color = '#95a5a6';
+        closeButton.style.padding = '0 4px';
+        closeButton.style.lineHeight = '1';
+        closeButton.style.transition = 'color 0.2s ease';
+        closeButton.onmouseover = () => closeButton.style.color = '#2c3e50';
+        closeButton.onmouseout = () => closeButton.style.color = '#95a5a6';
         closeButton.onclick = () => this.hideMessage();
         messageBox.appendChild(closeButton);
 
@@ -177,12 +186,24 @@ class Clippy {
 const style = document.createElement('style');
 style.textContent = `
     @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
+        from { 
+            opacity: 0; 
+            transform: translateY(10px);
+        }
+        to { 
+            opacity: 1; 
+            transform: translateY(0);
+        }
     }
     @keyframes fadeOut {
-        from { opacity: 1; transform: translateY(0); }
-        to { opacity: 0; transform: translateY(10px); }
+        from { 
+            opacity: 1; 
+            transform: translateY(0);
+        }
+        to { 
+            opacity: 0; 
+            transform: translateY(10px);
+        }
     }
 `;
 document.head.appendChild(style);
