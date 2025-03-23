@@ -6,6 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
+<script src="/assets/js/clippy.js"></script>
+
 <div style="text-align: justify;"> <p> I am a PhD candidate in Artificial Intelligence at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning. My research focuses on structural vibration-based recognition, and I am supported by the PMRF Fellowship. I earned my MTech in Mechatronics and Robotics from IIEST Shibpur with a GATE Fellowship. I have published my work in IEEE Signal Processing Letters, IEEE Sensors Letters, and top conferences like ICASSP, SENSYS (Poster). I hold multiple patents in seismic-based sensing applications and received the IEEE SPS Fellowship (2024). Beyond research, I have industry experience as a Deep Learning Engineer and have taught as a guest lecturer at JNU and course instructor at Delhi University. My expertise spans machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation. I actively contribute to open-source AI research and mentor students in sensor-based machine learning projects. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs in Machine Learning at ETH Zurich and the University of Genoa, Italy. </p>
 
 <!-- # Research Visit Map -->
@@ -18,6 +21,7 @@ redirect_from:
 <ul>
   <!-- <li>2025 Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)</li>
   <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li> -->
+  <!-- <li>2025 Selected as IEEE-SPS Delhi Chapter Student Head</li> -->
   <li>2025 IEEE ICASSP 2025 Conference Travel Grant recipient</li>
   <li>2025 Our Paper Selected at ICASSP, 2025 "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">VibeGait</a>"</li>
   <li>2024 IEEE SPS Scholarship, within top 25% of the candidates, USA</li>
@@ -60,8 +64,8 @@ The main configuration file for the site is in the base directory in [_config.ym
 Create content & metadata
 ------
 For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory). -->
-
-<!-- **Markdown generator**
+<!-- 
+**Markdown generator**
 
 The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
 ) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
