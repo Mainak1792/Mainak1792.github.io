@@ -13,8 +13,8 @@ redirect_from:
 
 <!-- # Research Visit Map -->
 
-<p>I teach Cloud Computing at live-courses in NPTEL. This is my latest class. You can find more details at teching section:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o9_QVS65WL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <p>I teach Cloud Computing at live-courses in NPTEL. This is my latest class. You can find more details at teching section:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o9_QVS65WL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 
 <h1>Recent News</h1>
