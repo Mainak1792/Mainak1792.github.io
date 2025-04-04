@@ -10,42 +10,31 @@ redirect_from:
 <script src="/assets/js/clippy.js"></script>
 
 <div style="text-align: justify;"> <p> I am a PhD candidate in Artificial Intelligence at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning. My research focuses on structural vibration-based recognition, and I am supported by the PMRF Fellowship. I earned my MTech in Mechatronics and Robotics from IIEST Shibpur with a GATE Fellowship. I have published my work in IEEE Signal Processing Letters, IEEE Sensors Letters, and top conferences like ICASSP, SENSYS (Poster). I hold multiple patents in seismic-based sensing applications and received the IEEE SPS Fellowship (2024). Beyond research, I have industry experience as a Deep Learning Engineer and have taught as a guest lecturer at JNU and course instructor at Delhi University. My expertise spans machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation. I actively contribute to open-source AI research and mentor students in sensor-based machine learning projects. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs in Machine Learning at ETH Zurich and the University of Genoa, Italy. </p>
-<!-- 
-<div class="video-grid">
-  <div class="video-item">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/o9_QVS65WL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="video-item">
-    <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=CwFXqIQOpPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="video-item">
-    <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=6fwoyNXvklY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>
 
-<!-- <style>
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin: 30px 0;
-}
+<h1>Education</h1>
+<ul>
+  <li><strong>Ph.D. in Artificial Intelligence</strong> (2022 - Present)<br>
+      Indian Institute of Technology Delhi<br>
+      Specialization: AI-driven signal processing and multi-modal learning</li>
+  <li><strong>M.Tech in Mechatronics and Robotics</strong> (2019 - 2021)<br>
+      Indian Institute of Engineering Science and Technology, Shibpur<br>
+      GATE Fellowship recipient</li>
+  <li><strong>B.Tech in Electronics and Communication Engineering</strong> (2015 - 2019)<br>
+      [Your University Name]</li>
+</ul>
 
-.video-item {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  height: 0;
-  overflow: hidden;
-}
+<h1>Publications</h1>
+<h2>Journal Publications</h2>
+<ul>
+  <li>Mainak, et al. (2024). "Gaj-Gamini: A Novel Approach to Sensor Data Processing" <em>IEEE Sensors Letters</em>. <a href="https://ieeexplore.ieee.org/document/10634750">[Link]</a></li>
+  <li>Mainak, et al. (2023). "GAN-SEIS: Generative Adversarial Networks for Seismic Data Analysis" <em>IEEE Signal Processing Letters</em>. <a href="https://ieeexplore.ieee.org/document/10314463">[Link]</a></li>
+</ul>
 
-.video-item iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-</style> --> -->
+<h2>Conference Publications</h2>
+<ul>
+  <li>Mainak, et al. (2025). "VibeGait: Vibration-based Gait Recognition" <em>IEEE ICASSP 2025</em>. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">[Link]</a></li>
+  <li>Mainak, et al. (2024). "Applied Harmonic Analysis and Machine Learning" <em>MALGA, Genova, Italy</em> (Poster Presentation)</li>
+</ul>
 
 <h1>Recent News</h1>
 <ul>
