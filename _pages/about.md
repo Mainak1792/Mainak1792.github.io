@@ -10,20 +10,20 @@ redirect_from:
 <script src="/assets/js/clippy.js"></script>
 
 <div style="text-align: justify;"> <p> I am a PhD candidate in Artificial Intelligence at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning. My research focuses on structural vibration-based recognition, and I am supported by the PMRF Fellowship. I earned my MTech in Mechatronics and Robotics from IIEST Shibpur with a GATE Fellowship. I have published my work in IEEE Signal Processing Letters, IEEE Sensors Letters, and top conferences like ICASSP, SENSYS (Poster). I hold multiple patents in seismic-based sensing applications and received the IEEE SPS Fellowship (2024). Beyond research, I have industry experience as a Deep Learning Engineer and have taught as a guest lecturer at JNU and course instructor at Delhi University. My expertise spans machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation. I actively contribute to open-source AI research and mentor students in sensor-based machine learning projects. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs in Machine Learning at ETH Zurich and the University of Genoa, Italy. </p>
-
+<!-- 
 <div class="video-grid">
   <div class="video-item">
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/o9_QVS65WL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="video-item">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=CwFXqIQOpPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="video-item">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=6fwoyNXvklY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 
-<style>
+<!-- <style>
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -45,7 +45,7 @@ redirect_from:
   width: 100%;
   height: 100%;
 }
-</style>
+</style> --> -->
 
 <h1>Recent News</h1>
 <ul>
