@@ -12,15 +12,27 @@ redirect_from:
 <div style="text-align: justify;"> <p> I am a PhD candidate in Artificial Intelligence at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning. My research focuses on structural vibration-based recognition, and I am supported by the PMRF Fellowship. I earned my MTech in Mechatronics and Robotics from IIEST Shibpur with a GATE Fellowship. I have published my work in IEEE Signal Processing Letters, IEEE Sensors Letters, and top conferences like ICASSP, SENSYS (Poster). I hold multiple patents in seismic-based sensing applications and received the IEEE SPS Fellowship (2024). Beyond research, I have industry experience as a Deep Learning Engineer and have taught as a guest lecturer at JNU and course instructor at Delhi University. My expertise spans machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation. I actively contribute to open-source AI research and mentor students in sensor-based machine learning projects. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs in Machine Learning at ETH Zurich and the University of Genoa, Italy. </p>
 
 <h1>Education</h1>
-<ul>
-  <li><strong>Ph.D. in Artificial Intelligence</strong> (2022 - Present)<br>
-      Indian Institute of Technology Delhi<br>
-      Specialization: AI-driven signal processing and multi-modal learning</li>
-  <li><strong>M.Tech in Mechatronics and Robotics</strong> (2019 - 2021)<br>
-      Indian Institute of Engineering Science and Technology, Shibpur<br>
-      GATE Fellowship recipient</li>
-  <li><strong>B.Tech in Electronics and Communication Engineering</strong> (2015 - 2019)<br>
-      [Your University Name]</li>
+<ul style="list-style: none; padding-left: 0;">
+  <li style="margin-bottom: 20px;">
+    <div style="display: flex; align-items: center;">
+      <img src="/assets/images/iitd_logo.png" alt="IIT Delhi Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+      <div>
+        <strong>Ph.D. in Artificial Intelligence</strong> (2022 - Present)<br>
+        Indian Institute of Technology Delhi<br>
+        Specialization: AI-driven signal processing and multi-modal learning
+      </div>
+    </div>
+  </li>
+  <li style="margin-bottom: 20px;">
+    <div style="display: flex; align-items: center;">
+      <img src="/assets/images/iiest_logo.png" alt="IIEST Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+      <div>
+        <strong>M.Tech in Mechatronics and Robotics</strong> (2019 - 2021)<br>
+        Indian Institute of Engineering Science and Technology, Shibpur<br>
+        GATE Fellowship recipient
+      </div>
+    </div>
+  </li>
 </ul>
 
 <h1>Publications</h1>
@@ -34,6 +46,26 @@ redirect_from:
 <ul>
   <li>Mainak, et al. (2025). "VibeGait: Vibration-based Gait Recognition" <em>IEEE ICASSP 2025</em>. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">[Link]</a></li>
   <li>Mainak, et al. (2024). "Applied Harmonic Analysis and Machine Learning" <em>MALGA, Genova, Italy</em> (Poster Presentation)</li>
+</ul>
+
+<h1>Patents</h1>
+<ul>
+  <li><strong>Seismic-based Sensing Applications</strong>
+    <ul>
+      <li>Patent Title 1: [Your Patent Title]</li>
+      <li>Patent Number: [Patent Number]</li>
+      <li>Status: [Granted/Pending]</li>
+      <li>Year: [Year]</li>
+    </ul>
+  </li>
+  <li><strong>Vibration-based Recognition Systems</strong>
+    <ul>
+      <li>Patent Title 2: [Your Patent Title]</li>
+      <li>Patent Number: [Patent Number]</li>
+      <li>Status: [Granted/Pending]</li>
+      <li>Year: [Year]</li>
+    </ul>
+  </li>
 </ul>
 
 <h1>Recent News</h1>
