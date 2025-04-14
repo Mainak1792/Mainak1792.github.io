@@ -111,7 +111,6 @@ Recognition using Vision" <em>IEEE ICASSP 2025</em>. <a href="https://ieeexplore
 <li>Mainak, et al. (2025). "Poster Abstract: A Structural Vibration‑based Gait Abnormality Detection
 System" <em>ACM SENSYS</em>(Accepted)</li>
 </ul> -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
