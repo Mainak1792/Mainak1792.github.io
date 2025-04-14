@@ -12,6 +12,64 @@ redirect_from:
 <div style="text-align: justify;"> <p> I am a PhD candidate at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning. My research focuses on structural vibration-based recognition, and I am supported by the PMRF Fellowship. I earned my MTech in Mechatronics and Robotics from IIEST Shibpur with a GATE Fellowship. I have published my work in IEEE Signal Processing Letters, IEEE Sensors Letters, and top conferences like ICASSP, SENSYS (Poster). I hold multiple patents in seismic-based sensing applications and received the IEEE SPS Fellowship (2024). Beyond research, I have industry experience as a Deep Learning Engineer and have taught as a guest lecturer at JNU and course instructor at Delhi University. My expertise spans machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation. I actively contribute to open-source AI research and mentor students in sensor-based machine learning projects. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs in Machine Learning at ETH Zurich and the University of Genoa, Italy. </p>
 
 <h1>Education</h1>
+
+<style>
+  .edu-block {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #ffe5e5; /* light red background */
+    border-left: 6px solid #cc0000; /* deep red left border */
+    box-shadow: 0 2px 8px rgba(204, 0, 0, 0.1); /* soft red shadow */
+    border-radius: 16px; /* rounded corners */
+    color: #330000;
+  }
+
+  .edu-block img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+
+  .edu-block strong {
+    font-size: 16px;
+  }
+
+  .edu-block-container {
+    list-style: none;
+    padding-left: 0;
+  }
+</style>
+
+<ul class="edu-block-container">
+  <li>
+    <div class="edu-block">
+      <img src="/assets/iitd_logo.png" alt="IIT Delhi Logo">
+      <div>
+        <strong>Ph.D. in Signal Processing and Machine Learning</strong> (2022 - Present)<br>
+        <a href="https://home.iitd.ac.in/" target="_blank" style="color: inherit; text-decoration: none;">Indian Institute of Technology Delhi</a><br>
+        Thesis: An Exploratory study in Human Cognition, movement and Locomotion using non-invasive sensors<br>
+        PMRF Fellowship and IEEE SPS Fellowship Recipient<br>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="edu-block">
+      <img src="/assets/iiest_logo.png" alt="IIEST Logo">
+      <div>
+        <strong>M.Tech in Mechatronics and Robotics</strong> (2019 - 2021)<br>
+        <a href="https://www.iiests.ac.in/" target="_blank" style="color: inherit; text-decoration: none;">Indian Institute of Engineering Science and Technology, Shibpur</a><br>
+        Thesis: Human Action Recognition using vibration and vision sensors<br>
+        GATE Fellowship recipient<br>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<!-- <h1>Education</h1>
 <ul style="list-style: none; padding-left: 0;">
   <li style="margin-bottom: 20px;">
     <div style="display: flex; align-items: center;">
@@ -35,7 +93,7 @@ redirect_from:
       </div>
     </div>
   </li>
-</ul>
+</ul> -->
 
 <!-- <h1>Publications</h1>
 <h2>Journal Publications</h2>
