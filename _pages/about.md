@@ -145,7 +145,7 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
     }
 
     .pub-block:hover {
-      background-color: #ffcccc; /* hover effect in lighter red */
+      background-color: #f0f8ff; /* hover effect in lighter red */
     }
 
     <!-- .pub-block:hover {
