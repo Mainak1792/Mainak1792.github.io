@@ -111,6 +111,7 @@ Recognition using Vision" <em>IEEE ICASSP 2025</em>. <a href="https://ieeexplore
 <li>Mainak, et al. (2025). "Poster Abstract: A Structural Vibration‑based Gait Abnormality Detection
 System" <em>ACM SENSYS</em>(Accepted)</li>
 </ul> -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -123,7 +124,7 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
     }
 
     h1, h2 {
-      color: #333;
+      color: #0033A0; /* IEEE deep blue */
     }
 
     .pub-section {
@@ -135,22 +136,18 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
       text-align: left;
       padding: 20px;
       margin: 15px 0;
-      background-color: #ffe5e5; /* light red background */
-      border-left: 6px solid #cc0000; /* deep red border */
-      box-shadow: 0 2px 8px rgba(204, 0, 0, 0.1); /* subtle red shadow */
+      background-color: #e6f0ff; /* IEEE light blue background */
+      border-left: 6px solid #0033A0; /* IEEE primary blue */
+      box-shadow: 0 2px 8px rgba(0, 51, 160, 0.1); /* subtle blue shadow */
       text-decoration: none;
-      color: #330000;
+      color: #00264d; /* deep navy text */
       transition: 0.3s ease;
-      border-radius: 16px; /* rounded corners */
+      border-radius: 16px;
     }
 
     .pub-block:hover {
-      background-color: #f0f8ff; /* hover effect in lighter red */
+      background-color: #d0e4ff; /* lighter blue hover */
     }
-
-    <!-- .pub-block:hover {
-      background-color: #f0f8ff;
-    } -->
 
     .pub-title {
       font-weight: bold;
@@ -160,7 +157,7 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
     .pub-meta {
       font-style: italic;
       font-size: 14px;
-      color: #666;
+      color: #336699;
     }
   </style>
 </head>
@@ -216,13 +213,13 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
   <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li> 
   <!-- <li>2025 Selected as IEEE-SPS Delhi Chapter Student Head</li> -->
   <li>2025 IEEE ICASSP 2025 Conference Travel Grant recipient</li>
-  <li>2025 Our Paper Selected at ICASSP, 2025 "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">VibeGait</a>"</li>
+  <li>2025 Our Paper Selected at ICASSP, 2025 "</li>
   <li>2024 IEEE SPS Scholarship, within top 25% of the candidates, USA</li>
   <li>2024 Poster Presentation at Applied Harmonic Analysis and Machine Learning 2024, MALGA, Genova, Italy </li>
-  <li>2024 Our Paper Selected at IEEE Sensor Letter, 2024 "<a href="https://ieeexplore.ieee.org/document/10634750">Gaj-Gamini</a>"</li>
+  <li>2024 Our Paper Selected at IEEE Sensor Letter, 2024 "</li>
   <li>2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich</li>
   <li>2023 TensorFlow Developer Certificate, Credential ID:87883013, Remote</li>
-  <li>2023 Our Paper Selected at IEEE Signal Processing Letter, 2023 "<a href="https://ieeexplore.ieee.org/document/10314463">GAN-SEIS</a>"</li>
+  <li>2023 Our Paper Selected at IEEE Signal Processing Letter, 2023 "</li>
   <li>2022 Raised 10k USD for "Eta-aide" - vibration based predictive maintenance startup (Exited 2023), India</li>
   <li>2022 PMRF Scholarship, within top 0.5% of candidates among 2,12,568 candidates, India</li>
   <li>2019 GATE fellowship, within top 6% among 167376 candidates, India</li>
