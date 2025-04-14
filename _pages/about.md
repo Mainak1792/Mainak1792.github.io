@@ -77,17 +77,22 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
       text-align: left;
       padding: 20px;
       margin: 15px 0;
-      background-color: #ffffff;
-      border-left: 6px solid #0073e6;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background-color: #ffe5e5; /* light red background */
+      border-left: 6px solid #cc0000; /* deep red border */
+      box-shadow: 0 2px 8px rgba(204, 0, 0, 0.1); /* subtle red shadow */
       text-decoration: none;
-      color: #333;
+      color: #330000;
       transition: 0.3s ease;
+      border-radius: 16px; /* rounded corners */
     }
 
     .pub-block:hover {
-      background-color: #f0f8ff;
+      background-color: #ffcccc; /* hover effect in lighter red */
     }
+
+    <!-- .pub-block:hover {
+      background-color: #f0f8ff;
+    } -->
 
     .pub-title {
       font-weight: bold;
@@ -132,15 +137,16 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
     <div class="pub-meta">Mainak, et al. (2025) — <em>ACM SENSYS</em> (Accepted)</div>
   </div>
 
+  <a class="pub-block" href="https://ieeexplore.ieee.org/document/9824819" target="_blank">
+    <div class="pub-title">Micro‑Seismic Event Detection using Statistical Feature Extraction and Machine Learning Techniques</div>
+    <div class="pub-meta">M. Chakraborty, M. Das, and S. Aruchamy (2022) — <em>IEEE I2CT 2022, Mumbai, India</em></div>
+  </a>
+
   <a class="pub-block" href="https://ieeexplore.ieee.org/document/9702317" target="_blank">
     <div class="pub-title">Human Action Classification using Seismic Sensor and Machine Learning Techniques</div>
     <div class="pub-meta">M. Chakraborty, S. A, S. Reddy, S. Kumar Mandal, and S. Bhaumik (2021) — <em>IEEE ISCON 2021, Mathura, India</em></div>
   </a>
 
-  <a class="pub-block" href="https://ieeexplore.ieee.org/document/9824819" target="_blank">
-    <div class="pub-title">Micro‑Seismic Event Detection using Statistical Feature Extraction and Machine Learning Techniques</div>
-    <div class="pub-meta">M. Chakraborty, M. Das, and S. Aruchamy (2022) — <em>IEEE I2CT 2022, Mumbai, India</em></div>
-  </a>
 </div>
 
 </body>
