@@ -11,16 +11,18 @@ redirect_from:
 
 <div style="text-align: justify;"> <p> I am a PhD candidate at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning. My research focuses on structural vibration-based recognition, and I am supported by the PMRF Fellowship. I earned my MTech in Mechatronics and Robotics from IIEST Shibpur with a GATE Fellowship. I have published my work in IEEE Signal Processing Letters, IEEE Sensors Letters, and top conferences like ICASSP, SENSYS (Poster). I hold multiple patents in seismic-based sensing applications and received the IEEE SPS Fellowship (2024). Beyond research, I have industry experience as a Deep Learning Engineer and have taught as a guest lecturer at JNU and course instructor at Delhi University. My expertise spans machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation. I actively contribute to open-source AI research and mentor students in sensor-based machine learning projects. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs in Machine Learning at ETH Zurich and the University of Genoa, Italy. </p>
 
+<h1>Education</h1>
+
 <style>
   .edu-block {
     display: flex;
     align-items: center;
     padding: 20px;
     margin: 15px 0;
-    background-color: #ffe5e5;
-    border-left: 6px solid #cc0000;
-    box-shadow: 0 2px 8px rgba(204, 0, 0, 0.1);
-    border-radius: 16px;
+    background-color: #ffe5e5; /* light red background */
+    border-left: 6px solid #cc0000; /* deep red left border */
+    box-shadow: 0 2px 8px rgba(204, 0, 0, 0.1); /* soft red shadow */
+    border-radius: 16px; /* rounded corners */
     color: #330000;
   }
 
@@ -39,42 +41,7 @@ redirect_from:
     list-style: none;
     padding-left: 0;
   }
-
-  .pub-section {
-    margin-bottom: 40px;
-  }
-
-  .pub-block {
-    display: block;
-    text-align: left;
-    padding: 20px;
-    margin: 15px 0;
-    background-color: #e6f0ff;
-    border-left: 6px solid #0033A0;
-    box-shadow: 0 2px 8px rgba(0, 51, 160, 0.1);
-    text-decoration: none;
-    color: #00264d;
-    transition: 0.3s ease;
-    border-radius: 16px;
-  }
-
-  .pub-block:hover {
-    background-color: #d0e4ff;
-  }
-
-  .pub-title {
-    font-weight: bold;
-    font-size: 16px;
-  }
-
-  .pub-meta {
-    font-style: italic;
-    font-size: 14px;
-    color: #336699;
-  }
 </style>
-
-<h1>Education</h1>
 
 <ul class="edu-block-container">
   <li>
@@ -84,7 +51,7 @@ redirect_from:
         <strong>Ph.D. in Signal Processing and Machine Learning</strong> (2022 - Present)<br>
         <a href="https://home.iitd.ac.in/" target="_blank" style="color: inherit; text-decoration: none;">Indian Institute of Technology Delhi</a><br>
         Thesis: An Exploratory study in Human Cognition, movement and Locomotion using non-invasive sensors<br>
-        PMRF Fellowship and IEEE SPS Fellowship Recipient
+        PMRF Fellowship and IEEE SPS Fellowship Recipient<br>
       </div>
     </div>
   </li>
@@ -96,11 +63,104 @@ redirect_from:
         <strong>M.Tech in Mechatronics and Robotics</strong> (2019 - 2021)<br>
         <a href="https://www.iiests.ac.in/" target="_blank" style="color: inherit; text-decoration: none;">Indian Institute of Engineering Science and Technology, Shibpur</a><br>
         Thesis: Human Action Recognition using vibration and vision sensors<br>
-        GATE Fellowship recipient
+        GATE Fellowship recipient<br>
       </div>
     </div>
   </li>
 </ul>
+
+<!-- <h1>Education</h1>
+<ul style="list-style: none; padding-left: 0;">
+  <li style="margin-bottom: 20px;">
+    <div style="display: flex; align-items: center;">
+      <img src="/assets/iitd_logo.png" alt="IIT Delhi Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+      <div>
+        <strong>Ph.D. in Signal Processing and Machine Learning</strong> (2022 - Present)<br>
+        Indian Institute of Technology Delhi<br>
+        Thesis: An Exploratory study in Human Cognition, movement and Locomotion using non-invasive sensors
+        <br> PMRF Fellowship and IEEE SPS Fellowship Recipient<br>
+      </div>
+    </div>
+  </li>
+  <li style="margin-bottom: 20px;">
+    <div style="display: flex; align-items: center;">
+      <img src="/assets/iiest_logo.png" alt="IIEST Logo" style="width: 50px; height: 50px; margin-right: 15px;">
+      <div>
+        <strong>M.Tech in Mechatronics and Robotics</strong> (2019 - 2021)<br>
+        Indian Institute of Engineering Science and Technology, Shibpur<br>
+        <br>Thesis: Human Action Recognition using vibration and vision sensors<br>
+        <br>GATE Fellowship recipient<br>
+      </div>
+    </div>
+  </li>
+</ul> -->
+
+<!-- <h1>Publications</h1>
+<h2>Journal Publications</h2>
+<ul>
+  <li>Mainak, et al. (2024). "Gaj-Gamini: Mitigating Man–Animal Conflict by Detecting
+Moving Elephants Using Ground Vibration‑Based Seismic Sensor" <em>IEEE Sensors Letters</em>. <a href="https://ieeexplore.ieee.org/document/10634750">[Link]</a></li>
+  <li>Mainak, et al. (2023). "Enhancing Person Identification Through Data Augmentation of Footstep‑Based Seismic Sig‑
+nals" <em>IEEE Signal Processing Letters</em>. <a href="https://ieeexplore.ieee.org/document/10314463">[Link]</a></li>
+</ul>
+
+<h2>Conference Publications</h2>
+<ul>
+  <li>Mainak, et al. (2025). " VibeGait: Enhancing Structural‑Vibration based Gait
+Recognition using Vision" <em>IEEE ICASSP 2025</em>. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">[Link]</a></li>
+<li>Mainak, et al. (2025). "Poster Abstract: A Structural Vibration‑based Gait Abnormality Detection
+System" <em>ACM SENSYS</em>(Accepted)</li>
+</ul> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2 {
+      color: #0033A0; /* IEEE deep blue */
+    }
+
+    .pub-section {
+      margin-bottom: 40px;
+    }
+
+    .pub-block {
+      display: block;
+      text-align: left;
+      padding: 20px;
+      margin: 15px 0;
+      background-color: #e6f0ff; /* IEEE light blue background */
+      border-left: 6px solid #0033A0; /* IEEE primary blue */
+      box-shadow: 0 2px 8px rgba(0, 51, 160, 0.1); /* subtle blue shadow */
+      text-decoration: none;
+      color: #00264d; /* deep navy text */
+      transition: 0.3s ease;
+      border-radius: 16px;
+    }
+
+    .pub-block:hover {
+      background-color: #d0e4ff; /* lighter blue hover */
+    }
+
+    .pub-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .pub-meta {
+      font-style: italic;
+      font-size: 14px;
+      color: #336699;
+    }
+  </style>
+</head>
+<body>
 
 <h1>Publications</h1>
 
@@ -109,12 +169,12 @@ redirect_from:
 
   <a class="pub-block" href="https://ieeexplore.ieee.org/document/10634750" target="_blank">
     <div class="pub-title">Gaj-Gamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants Using Ground Vibration‑Based Seismic Sensor</div>
-    <div class="pub-meta">M Chakraborty, chandan, B Mukhopadhyay, Sahil Anchal, S Kar (2024) — <em>IEEE Sensors Letters</em></div>
+    <div class="pub-meta">M Chakraborty, chandan, B Mukhopadhyay, Sahil Anchal, S Kar  (2024) — <em>IEEE Sensors Letters</em></div>
   </a>
 
   <a class="pub-block" href="https://ieeexplore.ieee.org/document/10314463" target="_blank">
     <div class="pub-title">Enhancing Person Identification Through Data Augmentation of Footstep‑Based Seismic Signals</div>
-    <div class="pub-meta">M Chakraborty, S Kar (2023) — <em>IEEE Signal Processing Letters</em></div>
+    <div class="pub-meta">M Chakraborty, S Kar  (2023) — <em>IEEE Signal Processing Letters</em></div>
   </a>
 </div>
 
@@ -140,7 +200,11 @@ redirect_from:
     <div class="pub-title">Human Action Classification using Seismic Sensor and Machine Learning Techniques</div>
     <div class="pub-meta">M. Chakraborty, S. A, S. Reddy, S. Kumar Mandal, and S. Bhaumik (2021) — <em>IEEE ISCON 2021, Mathura, India</em></div>
   </a>
+
 </div>
+
+</body>
+</html>
 
 <h1>Recent News</h1>
 <ul>

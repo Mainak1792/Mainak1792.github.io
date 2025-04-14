@@ -15,7 +15,8 @@ var addressPoints = [
     135.1943764
   ],
   [
-    "VibeGait: Enhancing Structural Vibration based Gait Recognition using Vision <br />Hydrabad, India",
-    17.439418, 78.378122
+    "VibeGait: Enhancing Structural-Vibration based Gait Recognition using Vision<br />Novotel Hyderabad Convention Centre; Hyderabad, India",
+    17.360589,
+    78.4740613
   ]
 ];
