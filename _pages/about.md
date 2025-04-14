@@ -20,6 +20,7 @@ redirect_from:
         <strong>Ph.D. in Signal Processing and Machine Learning</strong> (2022 - Present)<br>
         Indian Institute of Technology Delhi<br>
         Thesis: An Exploratory study in Human Cognition, movement and Locomotion using non-invasive sensors
+        <br> PMRF Fellowship and IEEE SPS Fellowship Recipient<br>
       </div>
     </div>
   </li>
@@ -29,7 +30,8 @@ redirect_from:
       <div>
         <strong>M.Tech in Mechatronics and Robotics</strong> (2019 - 2021)<br>
         Indian Institute of Engineering Science and Technology, Shibpur<br>
-        GATE Fellowship recipient
+        <br>Thesis: Human Action Recognition using vibration and vision sensors<br>
+        <br>GATE Fellowship recipient<br>
       </div>
     </div>
   </li>
@@ -108,12 +110,12 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
 
   <a class="pub-block" href="https://ieeexplore.ieee.org/document/10634750" target="_blank">
     <div class="pub-title">Gaj-Gamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants Using Ground Vibration‑Based Seismic Sensor</div>
-    <div class="pub-meta">Mainak, et al. (2024) — <em>IEEE Sensors Letters</em></div>
+    <div class="pub-meta">M Chakraborty, chandan, B Mukhopadhyay, Sahil Anchal, S Kar  (2024) — <em>IEEE Sensors Letters</em></div>
   </a>
 
   <a class="pub-block" href="https://ieeexplore.ieee.org/document/10314463" target="_blank">
     <div class="pub-title">Enhancing Person Identification Through Data Augmentation of Footstep‑Based Seismic Signals</div>
-    <div class="pub-meta">Mainak, et al. (2023) — <em>IEEE Signal Processing Letters</em></div>
+    <div class="pub-meta">M Chakraborty, S Kar  (2023) — <em>IEEE Signal Processing Letters</em></div>
   </a>
 </div>
 
@@ -122,13 +124,23 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
 
   <a class="pub-block" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" target="_blank">
     <div class="pub-title">VibeGait: Enhancing Structural‑Vibration based Gait Recognition using Vision</div>
-    <div class="pub-meta">Mainak, et al. (2025) — <em>IEEE ICASSP 2025</em></div>
+    <div class="pub-meta">M Chakraborty, chandan, B Mukhopadhyay, Sahil Anchal, S Kar (2025) — <em>IEEE ICASSP 2025</em></div>
   </a>
 
   <div class="pub-block">
-    <div class="pub-title">Poster Abstract: A Structural Vibration‑based Gait Abnormality Detection System</div>
+    <div class="pub-title">A Structural Vibration‑based Gait Abnormality Detection System</div>
     <div class="pub-meta">Mainak, et al. (2025) — <em>ACM SENSYS</em> (Accepted)</div>
   </div>
+
+  <a class="pub-block" href="https://ieeexplore.ieee.org/document/9702317" target="_blank">
+    <div class="pub-title">Human Action Classification using Seismic Sensor and Machine Learning Techniques</div>
+    <div class="pub-meta">M. Chakraborty, S. A, S. Reddy, S. Kumar Mandal, and S. Bhaumik (2021) — <em>IEEE ISCON 2021, Mathura, India</em></div>
+  </a>
+
+  <a class="pub-block" href="https://ieeexplore.ieee.org/document/9824819" target="_blank">
+    <div class="pub-title">Micro‑Seismic Event Detection using Statistical Feature Extraction and Machine Learning Techniques</div>
+    <div class="pub-meta">M. Chakraborty, M. Das, and S. Aruchamy (2022) — <em>IEEE I2CT 2022, Mumbai, India</em></div>
+  </a>
 </div>
 
 </body>
