@@ -13,5 +13,9 @@ var addressPoints = [
     "Conference Proceeding talk 3 on GajGamini: Mitigating Man\u2013Animal Conflict by Detecting Moving Elephants Using Ground Vibration-Based Seismic Sensor<br />Kobe Portopia Hotel; Kobe, Japan",
     34.6932379,
     135.1943764
+  ],
+  [
+    "VibeGait: Enhancing Structural Vibration based Gait Recognition using Vision <br />Hydrabad, India",
+    17.439418, 78.378122
   ]
 ];
