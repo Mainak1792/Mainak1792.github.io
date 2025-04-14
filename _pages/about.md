@@ -35,7 +35,7 @@ redirect_from:
   </li>
 </ul>
 
-<h1>Publications</h1>
+<!-- <h1>Publications</h1>
 <h2>Journal Publications</h2>
 <ul>
   <li>Mainak, et al. (2024). "Gaj-Gamini: Mitigating Man–Animal Conflict by Detecting
@@ -50,8 +50,89 @@ nals" <em>IEEE Signal Processing Letters</em>. <a href="https://ieeexplore.ieee.
 Recognition using Vision" <em>IEEE ICASSP 2025</em>. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251">[Link]</a></li>
 <li>Mainak, et al. (2025). "Poster Abstract: A Structural Vibration‑based Gait Abnormality Detection
 System" <em>ACM SENSYS</em>(Accepted)</li>
-</ul>
+</ul> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
 
+    h1, h2 {
+      color: #333;
+    }
+
+    .pub-section {
+      margin-bottom: 40px;
+    }
+
+    .pub-block {
+      display: block;
+      text-align: left;
+      padding: 20px;
+      margin: 15px 0;
+      background-color: #ffffff;
+      border-left: 6px solid #0073e6;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: #333;
+      transition: 0.3s ease;
+    }
+
+    .pub-block:hover {
+      background-color: #f0f8ff;
+    }
+
+    .pub-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .pub-meta {
+      font-style: italic;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Publications</h1>
+
+<div class="pub-section">
+  <h2>Journal Publications</h2>
+
+  <a class="pub-block" href="https://ieeexplore.ieee.org/document/10634750" target="_blank">
+    <div class="pub-title">Gaj-Gamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants Using Ground Vibration‑Based Seismic Sensor</div>
+    <div class="pub-meta">Mainak, et al. (2024) — <em>IEEE Sensors Letters</em></div>
+  </a>
+
+  <a class="pub-block" href="https://ieeexplore.ieee.org/document/10314463" target="_blank">
+    <div class="pub-title">Enhancing Person Identification Through Data Augmentation of Footstep‑Based Seismic Signals</div>
+    <div class="pub-meta">Mainak, et al. (2023) — <em>IEEE Signal Processing Letters</em></div>
+  </a>
+</div>
+
+<div class="pub-section">
+  <h2>Conference Publications</h2>
+
+  <a class="pub-block" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" target="_blank">
+    <div class="pub-title">VibeGait: Enhancing Structural‑Vibration based Gait Recognition using Vision</div>
+    <div class="pub-meta">Mainak, et al. (2025) — <em>IEEE ICASSP 2025</em></div>
+  </a>
+
+  <div class="pub-block">
+    <div class="pub-title">Poster Abstract: A Structural Vibration‑based Gait Abnormality Detection System</div>
+    <div class="pub-meta">Mainak, et al. (2025) — <em>ACM SENSYS</em> (Accepted)</div>
+  </div>
+</div>
+
+</body>
+</html>
 
 <h1>Recent News</h1>
 <ul>
