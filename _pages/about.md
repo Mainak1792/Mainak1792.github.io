@@ -212,9 +212,9 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
   <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li> 
   <!-- <li>2025 Selected as IEEE-SPS Delhi Chapter Student Head</li> -->
   <li>2025 IEEE ICASSP 2025 Conference Travel Grant recipient</li>
-  <li>2025 Our Paper Selected at ICASSP, 2025 "</li>
+  <li>2025 Our Paper Selected at ICASSP, 2025</li>
   <li>2024 IEEE SPS Scholarship, within top 25% of the candidates, USA</li>
-  <li>2024 Poster Presentation at Applied Harmonic Analysis and Machine Learning 2024, MALGA, Genova, Italy </li>
+  <li>2024 Poster Presentation at Applied Harmonic Analysis and Machine Learning 2024, MALGA, Genova, Italy</li>
   <li>2024 Our Paper Selected at IEEE Sensor Letter, 2024 "</li>
   <li>2024 ETH Zurich+Universitätsklinik Balgrist, Machine Learning Summer School, Zurich</li>
   <li>2023 TensorFlow Developer Certificate, Credential ID:87883013, Remote</li>
