@@ -208,7 +208,7 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
 
 <h1>Recent News</h1>
 <ul>
-  <li>2025 Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)</li>
+<!--   <li>2025 Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)</li> -->
   <li>2025 Our Paper Accepted at ACM-SENSYS (poster)</li> 
   <!-- <li>2025 Selected as IEEE-SPS Delhi Chapter Student Head</li> -->
   <li>2025 IEEE ICASSP 2025 Conference Travel Grant recipient</li>
