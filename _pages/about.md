@@ -187,7 +187,7 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
     <div class="pub-meta">M Chakraborty, chandan, B Mukhopadhyay, Sahil Anchal, S Kar (2025) — <em>IEEE ICASSP 2025</em></div>
   </a>
 
-  <div class="pub-block">
+  <div class="pub-block" href= "https://dl.acm.org/doi/10.1145/3715014.3724063" target="_blank">
     <div class="pub-title">Poster Abstract : A Structural Vibration-based Gait Abnormality Detection system. </div>
     <div class="pub-meta">Mainak Chakraborty, Bodhibrata Mukhopadhyay, and Subrat Kar — 23rd ACM Conference on Embedded Networked Sensor Systems. Association for Computing Machinery</div>
   </div>
