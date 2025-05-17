@@ -18,5 +18,10 @@ var addressPoints = [
     "VibeGait: Enhancing Structural-Vibration based Gait Recognition using Vision<br />Novotel Hyderabad Convention Centre; Hyderabad, India",
     17.360589,
     78.4740613
+  ],
+  [
+    "A Structural Vibration\u2011based Gait Abnormality Detection System<br />University of California, Irvine; Irvine, USA",
+    33.6856969,
+    -117.825981
   ]
 ];
