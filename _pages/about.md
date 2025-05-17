@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "PhD researcher in Signal Processing and Machine learning at IIT Delhi 🤖 "
+title: "PhD student at IIT Delhi 🤖 "
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,7 +9,7 @@ redirect_from:
 
 <script src="/assets/js/clippy.js"></script>
 
-<div style="text-align: justify;"> <p> Mainak Chakraborty, PhD Scholar at IIT Delhi, who specializes in AI-driven signal processing and multi-modal learning. He is a recipient of the prestigious PMRF Fellowship and the IEEE SPS Fellowship. With a strong foundation in mechatronics and robotics (M.Tech, IIEST Shibpur), Mainak has published in leading journals such as IEEE Signal Processing Letters and IEEE Sensors Letters, and presented at international conferences including ICASSP and SENSYS. He also holds multiple patents in the area of seismic-based sensing and has served as a deep learning engineer, guest lecturer at JNU, and instructor at Delhi University.</p> 
+<div style="text-align: justify;"> <p>I am a PhD Scholar at IIT Delhi, who specializes in AI-driven signal processing and multi-modal learning. He is a recipient of the prestigious PMRF Fellowship and the IEEE SPS Fellowship. With a strong foundation in mechatronics and robotics (M.Tech, IIEST Shibpur), Mainak has published in leading journals such as IEEE Signal Processing Letters and IEEE Sensors Letters, and presented at international conferences including ICASSP and SENSYS. He also holds multiple patents in the area of seismic-based sensing and has served as a deep learning engineer, guest lecturer at JNU, and instructor at Delhi University.</p> 
 <!-- I am a PhD candidate at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning. My research focuses on structural vibration-based recognition, and I am supported by the PMRF Fellowship. I earned my MTech in Mechatronics and Robotics from IIEST Shibpur with a GATE Fellowship. I have published my work in IEEE Signal Processing Letters, IEEE Sensors Letters, and top conferences like ICASSP, SENSYS (Poster). I hold multiple patents in seismic-based sensing applications and received the IEEE SPS Fellowship (2024). Beyond research, I have industry experience as a Deep Learning Engineer and have taught as a guest lecturer at JNU and course instructor at Delhi University. My expertise spans machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation. I actively contribute to open-source AI research and mentor students in sensor-based machine learning projects. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs in Machine Learning at ETH Zurich and the University of Genoa, Italy. </p> -->
 
 <h1>Education</h1>
