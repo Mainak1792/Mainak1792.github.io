@@ -184,25 +184,25 @@ System" <em>ACM SENSYS</em>(Accepted)</li>
 
   <a class="pub-block" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" target="_blank">
     <div class="pub-title">VibeGait: Enhancing Structural‑Vibration based Gait Recognition using Vision</div>
-    <div class="pub-meta">M Chakraborty, chandan, B Mukhopadhyay, Sahil Anchal, S Kar (2025) — <em>IEEE ICASSP 2025</em></div>
+    <div class="pub-meta">M Chakraborty, Chandan, B Mukhopadhyay, Sahil Anchal, S Kar (2025) — <em>IEEE ICASSP 2025</em></div>
   </a>
 
-  <div class="pub-block" href= "https://dl.acm.org/doi/10.1145/3715014.3724063" target="_blank">
-    <div class="pub-title">Poster Abstract : A Structural Vibration-based Gait Abnormality Detection system. </div>
-    <div class="pub-meta">Mainak Chakraborty, Bodhibrata Mukhopadhyay, and Subrat Kar — ACM SENSYS</div>
-  </div>
+  <a class="pub-block" href="https://dl.acm.org/doi/10.1145/3715014.3724063" target="_blank">
+    <div class="pub-title">Poster Abstract: A Structural Vibration-based Gait Abnormality Detection System</div>
+    <div class="pub-meta">Mainak Chakraborty, Bodhibrata Mukhopadhyay, and Subrat Kar — <em>ACM SENSYS 2025</em></div>
+  </a>
 
   <a class="pub-block" href="https://ieeexplore.ieee.org/document/9824819" target="_blank">
     <div class="pub-title">Micro‑Seismic Event Detection using Statistical Feature Extraction and Machine Learning Techniques</div>
-    <div class="pub-meta">M. Chakraborty, M. Das, and S. Aruchamy (2022) — <em>IEEE I2CT 2022, Mumbai, India</em></div>
+    <div class="pub-meta">M. Chakraborty, M. Das, and S. Aruchamy (2022) — <em>IEEE I2CT 2022</em></div>
   </a>
 
   <a class="pub-block" href="https://ieeexplore.ieee.org/document/9702317" target="_blank">
     <div class="pub-title">Human Action Classification using Seismic Sensor and Machine Learning Techniques</div>
-    <div class="pub-meta">M. Chakraborty, S. A, S. Reddy, S. Kumar Mandal, and S. Bhaumik (2021) — <em>IEEE ISCON 2021, Mathura, India</em></div>
+    <div class="pub-meta">M. Chakraborty, S. A, S. Reddy, S. Kumar Mandal, and S. Bhaumik (2021) — <em>IEEE ISCON 2021</em></div>
   </a>
-
 </div>
+
 
 </body>
 </html>
