@@ -72,20 +72,86 @@ redirect_from:
     <div class="publications-container">
       <h3>Journal Articles</h3>
       <div class="publications-list">
-        {% for post in site.publications reversed %}
-          {% if post.venue_type == 'journal' %}
-            {% include archive-single-cv.html %}
-          {% endif %}
-        {% endfor %}
+        <div class="publication-item">
+          <h4>
+            <a href="https://ieeexplore.ieee.org/document/10634750" target="_blank">Gaj-Gamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants Using Ground Vibration‑Based Seismic Sensor</a>
+          </h4>
+          <div class="publication-meta">
+            <p class="authors">M Chakraborty, chandan, B Mukhopadhyay, Sahil Anchal, S Kar</p>
+            <p class="venue">IEEE Sensors Letters, 2024</p>
+            <a href="https://ieeexplore.ieee.org/document/10634750" class="btn btn--primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> View Paper
+            </a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <h4>
+            <a href="https://ieeexplore.ieee.org/document/10314463" target="_blank">Enhancing Person Identification Through Data Augmentation of Footstep‑Based Seismic Signals</a>
+          </h4>
+          <div class="publication-meta">
+            <p class="authors">M Chakraborty, S Kar</p>
+            <p class="venue">IEEE Signal Processing Letters, 2023</p>
+            <a href="https://ieeexplore.ieee.org/document/10314463" class="btn btn--primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> View Paper
+            </a>
+          </div>
+        </div>
       </div>
 
       <h3>Conference Papers</h3>
       <div class="publications-list">
-        {% for post in site.publications reversed %}
-          {% if post.venue_type == 'conference' %}
-            {% include archive-single-cv.html %}
-          {% endif %}
-        {% endfor %}
+        <div class="publication-item">
+          <h4>
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" target="_blank">VibeGait: Enhancing Structural‑Vibration based Gait Recognition using Vision</a>
+          </h4>
+          <div class="publication-meta">
+            <p class="authors">M Chakraborty, Chandan, B Mukhopadhyay, Sahil Anchal, S Kar</p>
+            <p class="venue">IEEE ICASSP 2025</p>
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" class="btn btn--primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> View Paper
+            </a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <h4>
+            <a href="https://dl.acm.org/doi/10.1145/3715014.3724063" target="_blank">Poster Abstract: A Structural Vibration-based Gait Abnormality Detection System</a>
+          </h4>
+          <div class="publication-meta">
+            <p class="authors">Mainak Chakraborty, Bodhibrata Mukhopadhyay, and Subrat Kar</p>
+            <p class="venue">ACM SENSYS 2025</p>
+            <a href="https://dl.acm.org/doi/10.1145/3715014.3724063" class="btn btn--primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> View Paper
+            </a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <h4>
+            <a href="https://ieeexplore.ieee.org/document/9824819" target="_blank">Micro‑Seismic Event Detection using Statistical Feature Extraction and Machine Learning Techniques</a>
+          </h4>
+          <div class="publication-meta">
+            <p class="authors">M. Chakraborty, M. Das, and S. Aruchamy</p>
+            <p class="venue">IEEE I2CT 2022</p>
+            <a href="https://ieeexplore.ieee.org/document/9824819" class="btn btn--primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> View Paper
+            </a>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <h4>
+            <a href="https://ieeexplore.ieee.org/document/9702317" target="_blank">Human Action Classification using Seismic Sensor and Machine Learning Techniques</a>
+          </h4>
+          <div class="publication-meta">
+            <p class="authors">M. Chakraborty, S. A, S. Reddy, S. Kumar Mandal, and S. Bhaumik</p>
+            <p class="venue">IEEE ISCON 2021</p>
+            <a href="https://ieeexplore.ieee.org/document/9702317" class="btn btn--primary" target="_blank">
+              <i class="fas fa-external-link-alt"></i> View Paper
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -363,6 +429,51 @@ redirect_from:
   margin-top: 0.5rem;
 }
 
+.publication-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+.publication-item h4 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.publication-item h4 a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
+.publication-item h4 a:hover {
+  text-decoration: underline;
+}
+
+.publication-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.publication-meta .authors {
+  font-style: italic;
+  color: #666;
+  margin: 0;
+}
+
+.publication-meta .venue {
+  color: #888;
+  margin: 0;
+}
+
+.publication-meta .btn {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .cv-container {
     padding: 1rem;
@@ -379,6 +490,14 @@ redirect_from:
   .skill-tag {
     width: 100%;
     text-align: center;
+  }
+  
+  .publication-item {
+    padding: 1rem;
+  }
+  
+  .publication-item h4 {
+    font-size: 1rem;
   }
 }
 </style>
