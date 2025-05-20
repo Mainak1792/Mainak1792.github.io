@@ -91,15 +91,22 @@
     display: block;
     width: auto;
     height: auto;
+    margin-bottom: 1.5em;
   }
 
   img {
     max-width: 175px;
-    // border-radius: 50%;  // Removing this line to make the image square
+    border: 2px solid var(--global-border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid var(--global-border-color);
+      padding: 0;
+      border: 2px solid var(--global-border-color);
+      &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
     }
   }
 }
