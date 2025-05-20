@@ -6,6 +6,7 @@ permalink: /teaching/2025-spring-teaching-1
 venue: "NPTEL"
 date: 2025-01-01
 location: "New Delhi, India"
+video_url: "https://www.youtube.com/embed/o9_QVS65WL0"
 ---
 # Cloud Computing
 

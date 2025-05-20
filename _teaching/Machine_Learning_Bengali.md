@@ -6,6 +6,7 @@ permalink: /teaching/2023-fall-teaching-2
 venue: "NPTEL"
 date: 2024-06-01
 location: "New Delhi, India"
+video_url: "https://www.youtube.com/embed/2QIB5KKXCzU"
 ---
 # Foundations and Applications of Machine Learning (Bengali)
 

@@ -6,6 +6,7 @@ permalink: /teaching/2024-spring-teaching-1
 venue: "NPTEL"
 date: 2024-01-01
 location: "New Delhi, India"
+video_url: "https://www.youtube.com/embed/uS9Fygs3GMg"
 ---
 # Machine Learning,ML
 

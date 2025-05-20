@@ -6,6 +6,7 @@ permalink: /teaching/2023-spring-teaching-1
 venue: "NPTEL"
 date: 2023-01-01
 location: "New Delhi, India"
+video_url: "https://www.youtube.com/embed/6fwoyNXvklY"
 ---
 
 # Statistical Inference
