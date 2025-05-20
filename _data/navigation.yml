@@ -8,14 +8,13 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
+  - title: "About"
+    url: /about/
   - title: "Publications"
     url: /publications/
-
-  - title: "Presentations"
-    url: /talks/    
-
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/
+      url: /teaching/    
     
   # - title: "Portfolio"
   #   url: /portfolio/
@@ -23,9 +22,12 @@ main:
   - title: "Blog Posts"
     url: https://medium.com/@mainak1996/
     
+
+  # - title: "Portfolio"
+  #   url: /portfolio/
   - title: "CV"
     url: /cv/
-    
+
   # - title: "CV"
   #   url: /cv-json/
     
