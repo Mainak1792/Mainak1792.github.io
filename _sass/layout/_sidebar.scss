@@ -96,16 +96,20 @@
 
   img {
     max-width: 175px;
-    border: 2px solid var(--global-border-color);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     @include breakpoint($large) {
-      padding: 0;
-      border: 2px solid var(--global-border-color);
+      padding: 8px;
+      border: 1px solid var(--global-border-color);
+      background-color: #fff;
       &:hover {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
     }
   }
@@ -116,34 +120,33 @@
   vertical-align: top;
   padding-left: 15px;
   padding-right: 25px;
-  line-height: 1;
+  line-height: 1.4;
 
   @include breakpoint($large) {
     display: block;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    margin-top: 1em;
   }
 }
 
 .author__name {
   margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 1.4em;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
-}
-
-.sidebar .author__desktop {
-  display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
-  }
+  color: var(--global-text-color);
 }
 
 .author__pronouns {
@@ -157,6 +160,9 @@
 
 .author__bio {
   margin: 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -267,5 +273,12 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.author__desktop {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
   }
 }
