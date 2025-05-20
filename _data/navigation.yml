@@ -14,20 +14,16 @@ main:
     url: /publications/
   - title: "Teaching"
     url: /teaching/
-      url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
   - title: "Blog Posts"
     url: https://medium.com/@mainak1996/
-    
-
-  # - title: "Portfolio"
-  #   url: /portfolio/
   - title: "CV"
     url: /cv/
 
+  # - title: "Portfolio"
+  #   url: /portfolio/
+        
+  # - title: "Portfolio"
+  #   url: /portfolio/
   # - title: "CV"
   #   url: /cv-json/
     
