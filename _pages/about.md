@@ -11,7 +11,7 @@ redirect_from:
   <!-- Profile Section -->
   <div class="profile-section">
     <div class="profile-content">
-      <p class="profile-text">I am a PhD scholar at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning. My research focuses on structural vibration-based recognition, and I am supported by the PMRF Fellowship. I earned my MTech in Mechatronics and Robotics from IIEST Shibpur with a GATE Fellowship. I have published my work in IEEE Signal Processing Letters, IEEE Sensors Letters, and top conferences like ICASSP, SENSYS (Poster). I hold multiple patents in seismic-based sensing applications and received the IEEE SPS Fellowship (2024). Beyond research, I have industry experience as a Deep Learning Engineer and have taught as a guest lecturer at JNU and course instructor at Delhi University. My expertise spans machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation. I actively contribute to open-source AI research and mentor students in sensor-based machine learning projects. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and actively volunteer my expertise through workshops and mentoring programs. I have attended specialized programs in Machine Learning at ETH Zurich and the University of Genoa, Italy.</p>
+      <p class="profile-text">I am a PhD scholar at IIT Delhi, specializing in AI-driven signal processing and multi-modal learning, with a research focus on structural vibration-based recognition under <a href="https://web.iitd.ac.in/~subrat/" class="text-blue-600 hover:underline font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Professor Subrat Kar</a>. My doctoral studies are supported by the PMRF Fellowship. I hold an MTech in Mechatronics and Robotics from IIEST Shibpur, where I was a GATE Fellow. My work has been published in journals such as IEEE Signal Processing Letters and IEEE Sensors Letters, and presented at leading conferences including ICASSP and SENSYS. I am the recipient of the IEEE SPS Fellowship (2024) and hold multiple patents in seismic-based sensing applications. Prior to my PhD, I gained industry experience as a Deep Learning Engineer and have served as a guest lecturer at JNU and a course instructor at Delhi University. My expertise encompasses machine learning, computational perception, embedded systems, and robotics. I have led teams in developing real-time AI applications for predictive maintenance, gait recognition, and cognitive load estimation, and actively contribute to open-source AI research. I am proficient in Python, C/C++, TensorFlow, and PyTorch, and mentor students in sensor-based machine learning projects. I have also participated in specialized machine learning programs at ETH Zurich and the University of Genoa, Italy.</p>
     </div>
   </div>
 
@@ -22,7 +22,7 @@ redirect_from:
       <div class="timeline-item">
         <div class="timeline-content">
           <div class="institution-logo">
-            <img src="/assets/iitd_logo.png" alt="IIT Delhi Logo">
+      <img src="/assets/iitd_logo.png" alt="IIT Delhi Logo">
           </div>
           <div class="institution-details">
             <h3>Ph.D. in Signal Processing and Machine Learning</h3>
@@ -194,7 +194,7 @@ redirect_from:
   </section>
 </div>
 
-<style>
+  <style>
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -322,7 +322,7 @@ redirect_from:
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  text-decoration: none;
+      text-decoration: none;
   color: inherit;
 }
 
@@ -386,7 +386,7 @@ redirect_from:
 }
 
 .news-date {
-  font-weight: bold;
+      font-weight: bold;
   color: #2a7ae2;
   min-width: 80px;
 }
@@ -415,5 +415,5 @@ redirect_from:
   .news-date {
     min-width: auto;
   }
-}
-</style>
+    }
+  </style>
