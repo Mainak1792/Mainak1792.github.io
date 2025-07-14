@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Deep Multi-Class Novelty Detection in Structural Vibrations with Modified Contrastive Loss Framework">
-  <meta property="og:title" content="Deep Multi-Class Novelty Detection in Structural Vibrations"/>
-  <meta property="og:description" content="A framework for multi-class novelty detection using structural vibration signals with applications in elderly care and access control"/>
+  <meta name="description" content="Deepstep: A Deep Learning-based Indoor Person Identification Framework using Footstep-Induced Structural Vibration Signals">
+  <meta property="og:title" content="Deepstep: A Deep Learning-based Indoor Person Identification Framework using Footstep-Induced Structural Vibration Signals"/>
+  <meta property="og:description" content="A framework for multi-class Person Identification Framework using Footstep-Induced Structural Vibration Signals"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -130,8 +130,10 @@
     <div class="hero-body">
       <img src="static/images/abstract.png" alt="Abstract Figure" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
       <h2 class="subtitle has-text-centered">
-        Overview of the data pipeline for novelty detection in structural vibrations. (a) Data collection from footfall events, (b) Event extraction and Continuous Wavelet Transform (CWT) generation, (c) Novelty detection using a contrastive loss framework distinguishing regular and novel events.
-      </h2>
+        Workflow of a structural vibration-based person identification system. The process involves signal acquisition via an
+        embedded platform, followed by Analog-to-Digital Conversion (ADC). The captured waveform undergoes Continuous Wavelet
+        Transform (CWT) to generate time-frequency representations. These are then used to train an Residual Attention-based neural
+        network for person identification.
     </div>
   </div>
 </section>
@@ -158,8 +160,27 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In this paper, we introduce a framework for multi-class novelty detection using structural vibration signals. Structural vibration-based person identification is a promising soft-biometric approach with potential applications in elderly care and access control. However, current research faces two key challenges. The first challenge is the lack of large-scale datasets necessary for thorough evaluation in structural vibration gait recognition. To address this, we created a new dataset with recordings from fifty individuals. The second challenge lies in the limited exploration of deep learning methods for large-scale multi-class novelty detection in structural vibration data. To fill this gap, we propose the energy-shifted contrastive loss function, specifically designed for this task.
-            Our results demonstrate that the proposed framework achieves 96.57% accuracy in multi-class classification. For novelty detection, it achieves an Receiver Operating Characteristic—Area Under the Curve (ROC-AUC) score of 89.15% for single footsteps, which improves to 93.83% with five consecutive footsteps.
+            This paper introduces a large-scale, non-intrusive
+person identification framework using footstep-induced struc-
+tural vibration signals. The increasing adoption of structural vi-
+bration analysis for person identification comes from its inherent
+non-intrusiveness and privacy-preserving characteristics. How-
+ever, existing methodologies are often constrained by the scarcity
+of extensive datasets, both in terms of the number of subjects and
+the temporal length of individual recordings, and frequently rely
+on supervised learning paradigms coupled with manual feature
+engineering. Consequently, the generalization capabilities of these
+approaches to broader populations are typically limited. To ad-
+dress these limitations, we have curated a comprehensive dataset
+of structural vibration signals acquired from 100 individuals.
+In addition, we have developed an unsupervised event detection
+method using features based on time, frequency, and wavelet
+analysis. Furthermore, we have developed DeepStep, a residual
+attention-based framework specifically designed for efficient fea-
+ture extraction and classification of structural vibration signals.
+Experimental evaluation on our curated dataset demonstrates
+that the proposed approach achieves a Rank-1 accuracy of ∼92%
+and a Rank-5 accuracy of ∼96%.
           </p>
         </div>
       </div>
@@ -186,14 +207,14 @@
           t-SNE plots of before and after training using pre-trained ResNet-18 (S) model.
         </h2>
       </div>
-      <!-- <div class="item">
+      <div class="item">
         <img src="static/images/knn2.png" alt="Abstract Figure" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;"/>
         <h2 class="subtitle has-text-centered">
           class-specific novelty-detection framework. The dataset is partitioned into the target class (assumed normal) and the
 rest of the classes (treated as anomalies). Each subset is passed through its own pre-trained feature extractor to obtain
 discriminative embeddings. These embeddings are later used to compute distances for scoring.
         </h2>
-      </div> -->
+      </div>
     </div>
   </div>
 </div>
