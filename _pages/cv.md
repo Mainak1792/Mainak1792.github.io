@@ -14,14 +14,13 @@ redirect_from:
     <h1>Mainak Chakraborty</h1>
     <p class="cv-subtitle">Ph.D. Candidate in Multi-Modal Gait Recognition</p>
     <p class="cv-contact">Indian Institute of Technology Delhi</p>
-    <div class="cv-download">
-      <a href="resume.pdf" class="btn btn--primary">
-        <i class="fas fa-download"></i> Download Full CV
-      </a>
+    <div class="cv-pdf-viewer" style="margin-top:2rem;">
+      <iframe src="resume.pdf" width="100%" height="700px" style="border:1px solid #ccc;">
+        This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/Mainak1792/Mainak1792.github.io/blob/main/_pages/resume.pdf">Download PDF</a>.
+      </iframe>
     </div>
-  </div>
 
-  <section class="cv-section">
+  <!-- <section class="cv-section">
     <h2><i class="fas fa-graduation-cap"></i> Education</h2>
     <div class="cv-timeline">
       <div class="cv-timeline-item">
@@ -234,7 +233,8 @@ redirect_from:
       </div>
     </div>
   </section>
-</div>
+  
+</div> 
 
 <style>
 .cv-container {
