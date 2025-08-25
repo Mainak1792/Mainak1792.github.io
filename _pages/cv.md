@@ -17,13 +17,14 @@ redirect_from:
     
     <!-- PDF Viewer -->
     <div class="cv-pdf-viewer" style="margin-top:2rem;">
-      <object 
-        data="https://Mainak1792.github.io/assets/resume.pdf"
-        type="application/pdf" 
-        width="100%" 
+      <object
+        data="https://mainak1792.github.io/assets/resume.pdf"
+        type="application/pdf"
+        width="100%"
         height="700px">
         <p>It appears you don't have a PDF plugin for this browser.
-        You can <a href="https://Mainak1792.github.io/assets/resume.pdf">click here to download the PDF file.</a></p>
+        You can <a href="https://mainak1792.github.io/assets/resume.pdf">click here to download the PDF file.</a></p>
       </object>
     </div>
+  </div>
 </div>
