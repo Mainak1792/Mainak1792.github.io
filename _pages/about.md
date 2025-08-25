@@ -75,10 +75,6 @@ redirect_from:
             </div>
           </a>
     
-    <div class="publications-container">
-      <div class="publications-section">
-        <h3 class="subsection-title">Journal Publications</h3>
-        <div class="publications-grid">
           <a class="publication-card" href="https://ieeexplore.ieee.org/document/10634750" target="_blank">
             <div class="publication-content">
               <h4>Gaj-Gamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants Using Ground Vibration‑Based Seismic Sensor</h4>
