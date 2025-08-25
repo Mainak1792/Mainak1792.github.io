@@ -59,6 +59,21 @@ redirect_from:
   <!-- Publications Section -->
   <section class="section">
     <h2 class="section-title">Publications</h2>
+
+     <div class="publications-container">
+      <div class="publications-section">
+        <h3 class="subsection-title">Journal Publications</h3>
+        <div class="publications-grid">
+          <a class="publication-card" href=" " target="_blank">
+            <div class="publication-content">
+              <h4>Deep Multi-Class Novelty Detection in Structural Vibrations with Modified Contrastive Loss</h4>
+              <div class="publication-meta">
+                <span class="authors">M Chakraborty, chandan, B Mukhopadhyay, S Kar</span>
+                <span class="year">2025</span>
+                <span class="venue"><i class="fas fa-book"></i> IEEE Transactions on Mobile Computing</span>
+              </div>
+            </div>
+          </a>
     
     <div class="publications-container">
       <div class="publications-section">
@@ -142,6 +157,18 @@ redirect_from:
   <section class="section">
     <h2 class="section-title">Recent News</h2>
     <div class="news-timeline">
+    <!-- <div class="news-item">
+        <span class="news-date">2025</span>
+        <span class="news-content">Our Paper Accepted at IWSHM-2025</span>
+      </div> -->
+    <div class="news-item">
+        <span class="news-date">2025</span>
+        <span class="news-content">Our Paper Accepted at IEEE TMC</span>
+      </div>
+    <div class="news-item">
+        <span class="news-date">2025</span>
+        <span class="news-content">Our Paper Accepted at IWSHM-2025</span>
+      </div>
       <div class="news-item">
         <span class="news-date">2025</span>
         <span class="news-content">Our Paper Accepted at ACM-SENSYS</span>
