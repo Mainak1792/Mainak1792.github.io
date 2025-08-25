@@ -159,15 +159,15 @@ redirect_from:
       </div> -->
     <div class="news-item">
         <span class="news-date">2025</span>
-        <span class="news-content">Our Paper Accepted at IEEE TMC</span>
+        <span class="news-content">Our Paper Accepted at IEEE Transactions on Mobile Computing</span>
       </div>
     <div class="news-item">
         <span class="news-date">2025</span>
-        <span class="news-content">Our Paper Accepted at IWSHM-2025</span>
+        <span class="news-content">Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)-2025</span>
       </div>
       <div class="news-item">
         <span class="news-date">2025</span>
-        <span class="news-content">Our Paper Accepted at ACM-SENSYS</span>
+        <span class="news-content">Our Abstract Paper Accepted at ACM-SENSYS</span>
       </div>
       <div class="news-item">
         <span class="news-date">2025</span>
