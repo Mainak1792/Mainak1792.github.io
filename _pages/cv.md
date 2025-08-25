@@ -17,14 +17,18 @@ redirect_from:
     
     <!-- PDF Viewer -->
     <div class="cv-pdf-viewer" style="margin-top:2rem;">
-      <object
-        data="https://mainak1792.github.io/assets/resume.pdf"
-        type="application/pdf"
+      <iframe 
+        src="/assets/resume.pdf"
         width="100%"
-        height="700px">
-        <p>It appears you don't have a PDF plugin for this browser.
-        You can <a href="https://mainak1792.github.io/assets/resume.pdf">click here to download the PDF file.</a></p>
-      </object>
+        height="800px"
+        frameborder="0"
+        scrolling="auto">
+      </iframe>
+      <p style="text-align: center;">
+        <a href="/assets/resume.pdf" target="_blank" class="btn btn--primary">
+          Download PDF
+        </a>
+      </p>
     </div>
   </div>
 </div>
