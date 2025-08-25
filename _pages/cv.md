@@ -16,7 +16,7 @@ redirect_from:
     <p class="cv-contact">Indian Institute of Technology Delhi</p>
     <div class="cv-pdf-viewer" style="margin-top:2rem;">
       <iframe src="resume.pdf" width="100%" height="700px" style="border:1px solid #ccc;">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/Mainak1792/Mainak1792.github.io/blob/main/_pages/resume.pdf">Download PDF</a>.
+        This browser does not support PDFs. Please download the PDF to view it: <a href="main/_pages/resume.pdf">Download PDF</a>.
       </iframe>
     </div>
 
@@ -233,7 +233,7 @@ redirect_from:
       </div>
     </div>
   </section>
-  
+
 </div> 
 
 <style>
