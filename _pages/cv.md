@@ -14,11 +14,19 @@ redirect_from:
     <h1>Mainak Chakraborty</h1>
     <p class="cv-subtitle">Ph.D. Candidate in Multi-Modal Gait Recognition</p>
     <p class="cv-contact">Indian Institute of Technology Delhi</p>
+    
+    <!-- PDF Viewer -->
     <div class="cv-pdf-viewer" style="margin-top:2rem;">
-      <iframe src="resume.pdf" width="100%" height="700px" style="border:1px solid #ccc;">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/resume.pdf">Download PDF</a>.
-      </iframe>
+      <object 
+        data="{{ site.baseurl }}/assets/files/resume.pdf" 
+        type="application/pdf" 
+        width="100%" 
+        height="700px">
+        <p>It appears you don't have a PDF plugin for this browser.
+        You can <a href="{{ site.baseurl }}/assets/files/resume.pdf">click here to download the PDF file.</a></p>
+      </object>
     </div>
+</div>
 
   <!-- <section class="cv-section">
     <h2><i class="fas fa-graduation-cap"></i> Education</h2>
