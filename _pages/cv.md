@@ -65,8 +65,8 @@ redirect_from:
 <div class="cv-container">
   <div class="cv-header">
     <h1>Mainak Chakraborty</h1>
-    <p class="cv-subtitle">Last Updated 1st August 2025</p>
-    <p class="cv-contact">Indian Institute of Technology Delhi</p>
+    <p class="cv-subtitle">Full‑time PhD Student at IIT Delhi, interested in Signal Processing, Multi-Modal Learing</p>
+    <!-- <p class="cv-contact">Last Updated 1st August</p> -->
     
     <div class="cv-pdf-viewer">
       <iframe 
