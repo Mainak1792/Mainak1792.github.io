@@ -15,7 +15,7 @@ redirect_from:
     <p class="cv-subtitle">Ph.D. Candidate in Multi-Modal Gait Recognition</p>
     <p class="cv-contact">Indian Institute of Technology Delhi</p>
     <div class="cv-download">
-      <a href="https://drive.google.com/file/d/1hspu7UHovxWJ4525ijE_H3uQ8TbArUNw/view?usp=sharing" class="btn btn--primary">
+      <a href="resume.pdf" class="btn btn--primary">
         <i class="fas fa-download"></i> Download Full CV
       </a>
     </div>
