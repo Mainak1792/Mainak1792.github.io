@@ -64,7 +64,7 @@ redirect_from:
       <div class="publications-section">
         <h3 class="subsection-title">Journal Publications</h3>
         <div class="publications-grid">
-          <a class="publication-card" href=" " target="_blank">
+          <!-- <a class="publication-card" href=" " target="_blank">
             <div class="publication-content">
               <h4>Deep Multi-Class Novelty Detection in Structural Vibrations with Modified Contrastive Loss</h4>
               <div class="publication-meta">
@@ -73,7 +73,7 @@ redirect_from:
                 <span class="venue"><i class="fas fa-book"></i> IEEE Transactions on Mobile Computing</span>
               </div>
             </div>
-          </a>
+          </a> -->
     
           <a class="publication-card" href="https://ieeexplore.ieee.org/document/10634750" target="_blank">
             <div class="publication-content">
@@ -157,24 +157,24 @@ redirect_from:
         <span class="news-date">2025</span>
         <span class="news-content">Our Paper Accepted at IWSHM-2025</span>
       </div> -->
-    <div class="news-item">
-        <span class="news-date">2025</span>
+    <!-- <div class="news-item">
+        <span class="news-date">August 2025</span>
         <span class="news-content">Our Paper Accepted at IEEE Transactions on Mobile Computing</span>
       </div>
     <div class="news-item">
-        <span class="news-date">2025</span>
+        <span class="news-date">June 2025</span>
         <span class="news-content">Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)-2025</span>
-      </div>
+      </div> -->
       <div class="news-item">
-        <span class="news-date">2025</span>
+        <span class="news-date">March 2025</span>
         <span class="news-content">Our Abstract Paper Accepted at ACM-SENSYS</span>
       </div>
       <div class="news-item">
-        <span class="news-date">2025</span>
+        <span class="news-date">March 2025</span>
         <span class="news-content">IEEE ICASSP 2025 Conference Travel Grant recipient</span>
       </div>
       <div class="news-item">
-        <span class="news-date">2025</span>
+        <span class="news-date">January 2025</span>
         <span class="news-content">Our Paper Selected at ICASSP, 2025</span>
       </div>
       <div class="news-item">
