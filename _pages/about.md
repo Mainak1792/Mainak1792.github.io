@@ -64,7 +64,7 @@ redirect_from:
       <div class="publications-section">
         <h3 class="subsection-title">Journal Publications</h3>
         <div class="publications-grid">
-          <!-- <a class="publication-card" href=" " target="_blank">
+          <a class="publication-card" href="https://ieeexplore.ieee.org/document/11141764" target="_blank">
             <div class="publication-content">
               <h4>Deep Multi-Class Novelty Detection in Structural Vibrations with Modified Contrastive Loss</h4>
               <div class="publication-meta">
@@ -73,7 +73,7 @@ redirect_from:
                 <span class="venue"><i class="fas fa-book"></i> IEEE Transactions on Mobile Computing</span>
               </div>
             </div>
-          </a> -->
+          </a>
     
           <a class="publication-card" href="https://ieeexplore.ieee.org/document/10634750" target="_blank">
             <div class="publication-content">
