@@ -153,10 +153,10 @@ redirect_from:
   <section class="section">
     <h2 class="section-title">Recent News</h2>
     <div class="news-timeline">
-    <!-- <div class="news-item">
+    <div class="news-item">
         <span class="news-date">2025</span>
-        <span class="news-content">Our Paper Accepted at IWSHM-2025</span>
-      </div> -->
+        <span class="news-content">Our Paper presented at 15th International Workshop on Structural Health Monitoring (IWSHM), Stanford</span>
+      </div>
       <div class="news-item">
         <span class="news-date">August 2025</span>
         <span class="news-content">Our Paper Accepted at IEEE Transactions on Mobile Computing</span>
