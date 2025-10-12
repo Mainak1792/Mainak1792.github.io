@@ -176,8 +176,8 @@ redirect_from:
     <h2 class="section-title">Recent News</h2>
     <div class="news-timeline">
      <div class="news-item">
-        <span class="news-date">June 2025</span>
-        <span class="news-content">Our Paper Accepted at Scientific Data(Nature)</span>
+        <span class="news-date">November 2025</span>
+        <span class="news-content">Our Paper published at Scientific Data(Nature)</span>
       </div>   
     <div class="news-item">
         <span class="news-date">September 2025</span>
