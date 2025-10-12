@@ -64,6 +64,16 @@ redirect_from:
       <div class="publications-section">
         <h3 class="subsection-title">Journal Publications</h3>
         <div class="publications-grid">
+        <a class="publication-card" href="https://www.nature.com/articles/s41597-025-05517-4" target="_blank">
+            <div class="publication-content">
+              <h4>A Structural Vibration-based Dataset for Human Gait Recognition</h4>
+              <div class="publication-meta">
+                <span class="authors">M Chakraborty, chandan,  Sahil Anchal, B Mukhopadhyay, S Kar</span>
+                <span class="year">2025</span>
+                <span class="venue"><i class="fas fa-book"></i> Nature Scientific Data</span>
+              </div>
+            </div>
+          </a>
           <a class="publication-card" href="https://ieeexplore.ieee.org/document/11141764" target="_blank">
             <div class="publication-content">
               <h4>Deep Multi-Class Novelty Detection in Structural Vibrations with Modified Contrastive Loss</h4>
@@ -99,9 +109,21 @@ redirect_from:
         </div>
       </div>
 
+
       <div class="publications-section">
         <h3 class="subsection-title">Conference Publications</h3>
         <div class="publications-grid">
+         <a class="publication-card" href="https://www.dpi-proceedings.com/index.php/shm2025/article/view/37580" target="_blank">
+            <div class="publication-content">
+              <h4>Non-Intrusive Cognitive Load Estimation Using Footstep-Induced Structural Vibration Signals</h4>
+              <div class="publication-meta">
+                <span class="authors">M Chakraborty, Chandan, B Mukhopadhyay, S Kar</span>
+                <span class="year">2025</span>
+                <span class="venue"><i class="fas fa-users"></i>STRUCTURAL HEALTH MONITORING 2025</span>
+              </div>
+            </div>
+          </a>
+
           <a class="publication-card" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" target="_blank">
             <div class="publication-content">
               <h4>VibeGait: Enhancing Structural‑Vibration based Gait Recognition using Vision</h4>
