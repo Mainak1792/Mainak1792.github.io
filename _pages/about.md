@@ -175,18 +175,18 @@ redirect_from:
   <section class="section">
     <h2 class="section-title">Recent News</h2>
     <div class="news-timeline">
+     <div class="news-item">
+        <span class="news-date">June 2025</span>
+        <span class="news-content">Our Paper Accepted at Scientific Data(Nature)</span>
+      </div>   
     <div class="news-item">
         <span class="news-date">September 2025</span>
-        <span class="news-content">Our Paper presented at 15th International Workshop on Structural Health Monitoring (IWSHM), Stanford</span>
+        <span class="news-content">Our Paper presented at 15th IWSHM, Stanford</span>
       </div>
       <div class="news-item">
         <span class="news-date">August 2025</span>
         <span class="news-content">Our Paper Accepted at IEEE Transactions on Mobile Computing</span>
       </div>
-    <!-- <div class="news-item">
-        <span class="news-date">June 2025</span>
-        <span class="news-content">Our Paper Accepted at 15th International Workshop on Structural Health Monitoring (IWSHM)-2025</span>
-      </div> --> 
       <div class="news-item">
         <span class="news-date">March 2025</span>
         <span class="news-content">Our Abstract Paper Accepted at ACM-SENSYS</span>
