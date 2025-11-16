@@ -1,244 +1,452 @@
 <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-M">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Kid Food Startups</title>
-            <style>
-                body {
-                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-                    background-color: #f0f2f5;
-                    color: #333;
-                    margin: 0;
-                    padding: 20px;
-                }
-                h1 {
-                    text-align: center;
-                    color: #1c1e21;
-                }
-                .container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 20px;
-                }
-                .startup-card {
-                    background-color: #ffffff;
-                    border: 1px solid #dddfe2;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                    padding: 24px;
-                    width: 320px;
-                    box-sizing: border-box;
-                    transition: box-shadow 0.3s ease;
-                }
-                .startup-card:hover {
-                    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-                }
-                .startup-card img {
-                    display: block;
-                    width: 120px;
-                    height: 120px;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    margin: 0 auto 20px auto;
-                    border: 3px solid #f0f2f5;
-                    background-color: #eee; /* Placeholder bg */
-                }
-                .startup-card h2 {
-                    font-size: 1.4rem;
-                    font-weight: 600;
-                    color: #0056b3;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                    text-align: center;
-                }
-                .startup-card .pitch {
-                    font-size: 1rem;
-                    font-style: italic;
-                    color: #555;
-                    text-align: center;
-                    margin-bottom: 20px;
-                    border-left: 3px solid #0056b3;
-                    padding-left: 10px;
-                    background-color: #f9f9f9;
-                    padding: 8px 10px;
-                    border-radius: 4px;
-                }
-                .startup-card h3 {
-                    font-size: 1.1rem;
-                    font-weight: 600;
-                    color: #333;
-                    border-bottom: 1px solid #eee;
-                    padding-bottom: 5px;
-                    margin-top: 20px;
-                    margin-bottom: 10px;
-                }
-                .startup-card p.team {
-                    font-size: 0.95rem;
-                    line-height: 1.5;
-                    color: #444;
-                    white-space: pre-wrap; /* Respect newlines in the input */
-                }
-            </style>
-        </head>
-        <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kid Food Startups</title>
+    <style>
+        :root{
+            --bg:#eef2f6;
+            --card:#ffffff;
+            --muted:#6b7280;
+            --accent:#0b6cff;
+            --shadow: 0 6px 20px rgba(14,23,34,0.08);
+            --radius:12px;
+        }
+        *{box-sizing:border-box}
+        body{
+            margin:0;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: radial-gradient(800px 400px at 10% 10%, rgba(11,108,255,0.06), transparent),
+                        radial-gradient(800px 400px at 90% 90%, rgba(3,155,133,0.03), transparent),
+                        var(--bg);
+            color:#111827;
+            padding:36px;
+        }
+        .wrap{
+            max-width:1200px;
+            margin:0 auto;
+        }
+        header{
+            text-align:center;
+            margin-bottom:28px;
+        }
+        h1{
+            margin:0;
+            font-size:2rem;
+            letter-spacing:-0.01em;
+        }
+        .sub{
+            color:var(--muted);
+            margin-top:8px;
+            font-size:0.95rem;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap:20px;
+            align-items:start;
+        }
+
+        .startup-card{
+            background:var(--card);
+            border-radius:var(--radius);
+            box-shadow:var(--shadow);
+            padding:18px;
+            border:1px solid rgba(15,23,42,0.04);
+            transition:transform .28s ease, box-shadow .28s ease;
+            cursor:pointer;
+            position:relative;
+            overflow:hidden;
+            min-height:150px;
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+            outline: none;
+        }
+        .startup-card:focus{
+            box-shadow:0 8px 28px rgba(11,108,255,0.12);
+            transform: translateY(-4px);
+        }
+        .startup-card:hover{
+            transform: translateY(-6px);
+        }
+
+        .top{
+            display:flex;
+            gap:12px;
+            align-items:center;
+        }
+        .startup-card img{
+            width:84px;
+            height:84px;
+            object-fit:cover;
+            border-radius:12px;
+            flex:0 0 84px;
+            background:#f3f4f6;
+            border:1px solid rgba(0,0,0,0.04);
+        }
+        .meta{
+            flex:1;
+            min-width:0;
+        }
+        .meta h2{
+            margin:0;
+            font-size:1.1rem;
+            color:var(--accent);
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .pitch{
+            margin:8px 0 0 0;
+            color:var(--muted);
+            font-style:italic;
+            font-size:0.95rem;
+            display:block;
+            max-height:42px;
+            overflow:hidden;
+            transition: max-height .35s ease;
+        }
+
+        .chev{
+            width:36px;
+            height:36px;
+            display:inline-grid;
+            place-items:center;
+            border-radius:8px;
+            background:linear-gradient(180deg, rgba(11,108,255,0.06), transparent);
+            flex:0 0 36px;
+            transform: rotate(0deg);
+            transition: transform .28s ease;
+        }
+
+        .details{
+            margin-top:6px;
+            border-top:1px dashed rgba(15,23,42,0.06);
+            padding-top:10px;
+            color:#374151;
+            font-size:0.95rem;
+            line-height:1.45;
+            max-height:0;
+            overflow:hidden;
+            transition: max-height .35s ease;
+            white-space:pre-wrap;
+        }
+
+        .startup-card.expanded{
+            transform: translateY(-4px) scale(1.01);
+            z-index:2;
+        }
+        .startup-card.expanded .pitch{
+            max-height:320px;
+        }
+        .startup-card.expanded .details{
+            max-height:1000px;
+        }
+        .startup-card.expanded .chev{
+            transform: rotate(180deg);
+        }
+
+        /* subtle badge */
+        .badge{
+            position:absolute;
+            right:12px;
+            top:12px;
+            font-size:0.75rem;
+            padding:6px 8px;
+            border-radius:999px;
+            background:linear-gradient(90deg, rgba(11,108,255,0.12), rgba(3,155,133,0.06));
+            color:var(--accent);
+            border:1px solid rgba(11,108,255,0.06);
+            display:inline-flex;
+            gap:6px;
+            align-items:center;
+        }
+
+        @media (max-width:420px){
+            body{padding:18px}
+            .startup-card img{width:68px;height:68px;border-radius:10px}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
             <h1>Kid Food Startups</h1>
-            <div class="container">
-        
-                <div class="startup-card">
-                    <img src="logo\vunstop.jpg" alt="Vunstop Logo">
-                    <h2>Vunstop</h2>
-                    <p class="pitch">"1 stop for all ur sweet cravings"</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Aarav and viren-marketing, vaidik-cashier, ranveer-serves the dishes</p>
-                </div>
-            
-                <div class="startup-card">
-                    <img src="logo\desitales.jpg" alt="The Desi Tales Logo">
-                    <h2>The Desi Tales</h2>
-                    <p class="pitch">"The Desi Tales- Where every dish tells a story from the heart of India."</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Abhir_chef.. golgappa 
-Sarthak_chef... peanut butter salsa
-Prisha_marketing ...rasiya chickpea salad chiwda paan shots
-Vivin_Marketing... Palak patta chaat hummus 
-Laisha_cashier dates laddoo mukhwaas makhana</p>
-                </div>
-            
-                <div class="startup-card">
-                    <img src="logo\bloom_cake.jpg" alt="The bloom cafe Logo">
-                    <h2>The bloom cafe</h2>
-                    <p class="pitch">"Our idea is to make everyone stomach filled with healthy food. "</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Vedica-Pancakes/Waffles, Matcha Tea Shots 
-Ananya mandraha- kathi roll, kombucha
-Ananya Varshney - Fruit Parfe , Brownies 
-Purvi Chandravanshi - 
-Riddhima - </p>
-                </div>
-            
-                <div class="startup-card">
-                    <img src="logo\sportfood.jpg" alt="Sporty food enlterprises  Logo">
-                    <h2>Sporty food enlterprises </h2>
-                    <p class="pitch">"We are planning on making healthy, snacky items to have after doing sports. "</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Team members -
-Monish Chowdhry
-Viyan Mittal</p>
-                </div>
-            
-                <div class="startup-card">
-                    <img src="logo\bakehouse.jpg" alt="Soul Bakehouse Logo">
-                    <h2>Soul Bakehouse</h2>
-                    <p class="pitch">"Fuel your hustle with our vibrant, natural snacks and drinks!!!"</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Shlok- marketing head 
-Prisha- designer 
-Reet- creative head
-Rhythm- Baker
-Aadya- Baker
-Snigdha- Baker</p>
-                </div>
-            
-                <div class="startup-card">
-                    <img src="logo\sajaboys.jpg" alt="Saja Boyz Logo">
-                    <h2>Saja Boyz</h2>
-                    <p class="pitch">"We are here to steal your soul with our breathtaking food."</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Navya is our designer and manager. 
-Shanaya is the sales head.
-And all of us are making food items and drinks. 
-</p>
-                </div>
-            
-                <div class="startup-card">
-                    <img src="logo\panindia.png" alt="Pan India Logo">
-                    <h2>Pan India</h2>
-                    <p class="pitch">"Healthy Food alternatives for Desi Dishes"</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Ramakrishna- South Indian food and Technical Designing 
-Nishit-Marathi food 
-Vidit-Punjabi food
-Namish-Haryanvi food 
-Parth- Singaporean food</p>
-                </div>
-            
-                <div class="startup-card">
-                    <img src="logo\food_wizards.jpeg" alt="Food Wizards  Logo">
-                    <h2>Food Wizards </h2>
-                    <p class="pitch">"Our idea is to make a wonderful tasty and healthy food "</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Arnav Singhal, Rehansh, Krishang Sirohi, And me Aarav Sharma</p>
-                </div>
-            
-                <div class="startup-card">
-                    <img src="logo\Desi Delicacy.jpg" alt="Desi Delicacy Logo">
-                    <h2>Desi Delicacy</h2>
-                    <p class="pitch">"Our idea is to promote healthy food items and add the essence of indian culture"</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Tvisha Sarkar   Cloudy Shikanji, Veggie Roll
-Aadya Suknija  Malpura and Rabadi sandwich, Vala Pav (beetroot flavour)
-Rishika Jain     Golgappa with bhelpuri filling, Gujarat ka halwa (Gajarba)</p>
-                </div>
-            
-                <!-- <div class="startup-card">
-                    <img src="logo\Desi Delicacy.jpg" alt="Desi Delicacy Logo">
-                    <h2>Desi Delicacy</h2>
-                    <p class="pitch">"Our idea is to promote healthy items and add the essence indian culture."</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Aadya - Malpura and rabdi samdwich, Vada Pav(beetroot flavour)
-Rishika - Golgappa with bhelpuri filling, Gajar ka halwa
-Tvisha - Cloudy shikangi, Veggie Roll</p>
-                </div> -->
-            
-                <div class="startup-card">
-                    <img src="logo\IMG-20251109-WA0089 - Amitoz Singh.jpg" alt="Maharaja's feast, The Royal Tandoor Logo">
-                    <h2>Maharaja&#x27;s feast, The Royal Tandoor</h2>
-                    <p class="pitch">"Wel"l bring you the joy of junk food without any guilt"</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Cooking -  Yohaan and Shrihan
-Marketing - Mitanash
-Counter Recepsnist- Bhavya 
-</p>
-                </div>
-<!--             
-                <div class="startup-card">
-                    <img src="logo\Desi Delicacy.jpg" alt="Desi Delicacy Logo">
-                    <h2>Desi Delicacy</h2>
-                    <p class="pitch">"Our idea is to promote healthy items and add the essence of Indian culture."</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Aadya- Malpua and Rabri sandwich (Malra sandwich), beetroot vada pav
+            <div class="sub">Tap or press Enter/Space on a card to expand and view team & responsibilities.</div>
+        </header>
 
-Rishika- bhelpuri golgappa (bhelgappa), gajar halwa (gajalba)
-
-Tvisha- veggie roll (V-Roll), cloudy shikanji</p>
-                </div> -->
-            
-                <div class="startup-card">
-                    <img src="logo\rams.jpg" alt="HealthyRams Logo">
-                    <h2>HealthyRams</h2>
-                    <p class="pitch">"HealthIsWealth#67"</p>
-                    <h3>Team & Responsibilities</h3>
-                    <p class="team">Divit Dabas (Graphic Designer)-Healthy golgappe (Fresh water, Suji golgappe)
-
-Kabir Gupta -Healthy Pasta- Whole wheat, lots of vegetables
-
-Gaurik Sinha (Marketing Head)- Healthy lemonade (Nutritious lemonade squeezed out of fresh lemons)
-
-Daanish Nagpuria -Tokri chaat (A crispy, edible basket filled with a mixture of flavorful chaat ingredients, offering a vibrant combination of sweet, tangy, spicy, and crunchy textures with vegetables and sprouts)
-
-Virat Chauhan - Banana nutty tarts(Crunchy tart shells topped with fresh banana cream and delicious powdered nuts)</p>
+        <div class="container" id="cards">
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <span class="badge">Vunstop</span>
+                <div class="top">
+                    <img src="logo/vunstop.jpg" alt="Vunstop Logo">
+                    <div class="meta">
+                        <h2>Vunstop</h2>
+                        <div class="pitch">1 stop for all your sweet cravings.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
                 </div>
-            
-                <div class="startup-card">
-                    <img src="logo\drivedine.jpg" alt="Team fast and dribble Logo">
-                    <h2>Team fast and dribble</h2>
-                    <p class="pitch">"My idea is to serve unique , healthy and delicious food"</p>
+                <div class="details">
                     <h3>Team & Responsibilities</h3>
-                    <p class="team">Mahir -everything </p>
+                    <div class="team">Aarav — Marketing
+Viren — Marketing
+Vaidik — Cashier
+Ranveer — Server</div>
                 </div>
-            
             </div>
-        </body>
-        </html>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/desitales.jpg" alt="The Desi Tales Logo">
+                    <div class="meta">
+                        <h2>The Desi Tales</h2>
+                        <div class="pitch">The Desi Tales — Where every dish tells a story from the heart of India.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Abhir — Chef (Golgappa)
+Sarthak — Chef (Peanut butter salsa)
+Prisha — Marketing (Rasiya chickpea salad, chiwda, paan shots)
+Vivin — Marketing (Palak patta chaat, hummus)
+Laisha — Cashier (dates laddoo, makhana)</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/bloom_cake.jpg" alt="The bloom cafe Logo">
+                    <div class="meta">
+                        <h2>The Bloom Cafe</h2>
+                        <div class="pitch">Our idea is to make everyone's stomach filled with healthy food.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Vedica — Pancakes / Waffles, Matcha Tea Shots
+Ananya M. — Kathi roll, Kombucha
+Ananya V. — Fruit Parfait, Brownies
+Purvi — (role TBD)
+Riddhima — (role TBD)</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/sportfood.jpg" alt="Sporty food enterprises Logo">
+                    <div class="meta">
+                        <h2>Sporty Food Enterprises</h2>
+                        <div class="pitch">Healthy, snacky items for after sports.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Monish Chowdhry
+Viyan Mittal</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/bakehouse.jpg" alt="Soul Bakehouse Logo">
+                    <div class="meta">
+                        <h2>Soul Bakehouse</h2>
+                        <div class="pitch">Fuel your hustle with vibrant, natural snacks and drinks.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Shlok — Marketing Head
+Prisha — Designer
+Reet — Creative Head
+Rhythm — Baker
+Aadya — Baker
+Snigdha — Baker</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/sajaboys.jpg" alt="Saja Boyz Logo">
+                    <div class="meta">
+                        <h2>Saja Boyz</h2>
+                        <div class="pitch">We aim to amaze you with breathtaking food.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Navya — Designer & Manager
+Shanaya — Sales Head
+All members — Food & Drinks</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/panindia.png" alt="Pan India Logo">
+                    <div class="meta">
+                        <h2>Pan India</h2>
+                        <div class="pitch">Healthy food alternatives for desi dishes across regions.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Ramakrishna — South Indian & Technical Design
+Nishit — Marathi food
+Vidit — Punjabi food
+Namish — Haryanvi food
+Parth — Singaporean food</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/food_wizards.jpeg" alt="Food Wizards Logo">
+                    <div class="meta">
+                        <h2>Food Wizards</h2>
+                        <div class="pitch">Making tasty and healthy food for everyone.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Arnav Singhal, Rehansh, Krishang Sirohi, Aarav Sharma</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/Desi Delicacy.jpg" alt="Desi Delicacy Logo">
+                    <div class="meta">
+                        <h2>Desi Delicacy</h2>
+                        <div class="pitch">Promoting healthy items with the essence of Indian culture.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Tvisha Sarkar — Cloudy Shikanji, Veggie Roll
+Aadya Suknija — Malpura, Rabadi sandwich, Vada Pav (beetroot)
+Rishika Jain — Golgappa with bhelpuri filling, Gujarat ka halwa</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/IMG-20251109-WA0089 - Amitoz Singh.jpg" alt="Maharaja's feast Logo">
+                    <div class="meta">
+                        <h2>Maharaja's Feast — The Royal Tandoor</h2>
+                        <div class="pitch">We'll bring you the joy of junk food without the guilt.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Yohaan — Cooking
+Shrihan — Cooking
+Mitanash — Marketing
+Bhavya — Counter Receptionist</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/rams.jpg" alt="HealthyRams Logo">
+                    <div class="meta">
+                        <h2>HealthyRams</h2>
+                        <div class="pitch">Health is wealth — healthy twists on classic snacks.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Divit Dabas — Graphic Designer (Healthy golgappe)
+Kabir Gupta — Whole-wheat pasta with veg
+Gaurik Sinha — Marketing (Healthy lemonade)
+Daanish Nagpuria — Tokri chaat
+Virat Chauhan — Banana nutty tarts</div>
+                </div>
+            </div>
+
+            <div class="startup-card" role="button" tabindex="0" aria-expanded="false">
+                <div class="top">
+                    <img src="logo/drivedine.jpg" alt="Team fast and dribble Logo">
+                    <div class="meta">
+                        <h2>Team Fast & Dribble</h2>
+                        <div class="pitch">Unique, healthy and delicious food served with flair.</div>
+                    </div>
+                    <div class="chev" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0b6cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </div>
+                <div class="details">
+                    <h3>Team & Responsibilities</h3>
+                    <div class="team">Mahir — All operations</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        (function(){
+            const cards = document.querySelectorAll('.startup-card');
+            function closeAll(except){
+                cards.forEach(c=>{
+                    if(c !== except){
+                        c.classList.remove('expanded');
+                        c.setAttribute('aria-expanded','false');
+                    }
+                });
+            }
+            cards.forEach(card=>{
+                card.addEventListener('click', ()=> {
+                    const expanded = card.classList.toggle('expanded');
+                    card.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                    if(expanded) closeAll(card);
+                });
+                card.addEventListener('keydown', (e)=> {
+                    if(e.key === 'Enter' || e.key === ' '){
+                        e.preventDefault();
+                        card.click();
+                    } else if(e.key === 'Escape'){
+                        card.classList.remove('expanded');
+                        card.setAttribute('aria-expanded','false');
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
