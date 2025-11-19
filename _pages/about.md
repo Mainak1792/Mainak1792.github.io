@@ -71,13 +71,13 @@ redirect_from:
   <section class="section">
     <h2 class="section-title"><i class="fas fa-bullhorn"></i> Recent News</h2>
     <div class="news-scroller">
-      
+<!--       
       <div class="news-item">
         <div class="news-date">Nov 2025</div>
         <div class="news-content">
           Paper accepted at <strong>IEEE Transactions on Instrumentation and Measurement (TIM)</strong>.
         </div>
-      </div>
+      </div> -->
 
       <div class="news-item">
         <div class="news-date">Nov 2025</div>
@@ -124,6 +124,15 @@ redirect_from:
     </div>
   </section>
 
+<div class="hero-actions">
+          <a href="https://docs.google.com/document/d/1mdtiTfP7JDfBDd2_zCS7oCQ7EjhkuH7uMZCOC2RTFLc/edit?usp=sharing" class="btn-cv" target="_blank">
+            <i class="fas fa-file-arrow-down"></i> Download Curriculum Vitae
+          </a>
+          <!-- <a href="mailto:mainakchakraborty92@gmail.com" class="btn-cv btn-outline">
+            <i class="fas fa-envelope"></i> Contact
+          </a> -->
+        </div>
+
   <section class="section">
     <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
     <div class="timeline-vertical">
@@ -144,7 +153,7 @@ redirect_from:
         <div class="time-content">
           <h3 class="job-title">Product Architect & DL Engineer</h3>
           <div class="job-loc">Etaaide, New Delhi</div>
-          <p>Led design of a vibration-sensor-based predictive maintenance system. Secured <strong>TIDE 2.0 innovation grant</strong> and national incubation support.</p>
+          <p>Led design of a vibration-sensor-based predictive maintenance system. Secured innovation grants and national incubation support at IIT-Mandi and IIM-Bangalore.</p>
         </div>
       </div>
 
@@ -376,16 +385,45 @@ redirect_from:
     </div>
   </section>
 
-  <div class="split-section">
+<section class="section half">
+      <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
+      <ul class="compact-list">
+        <li>
+          <strong>NPTEL TA (2025):</strong> 
+          <a href="https://www.mainakchakraborty.com/teaching/2025-spring-teaching-1" class="academic-link" target="_blank">Cloud Computing - Prof. Soumya Kanti Ghosh (500+ Students)</a>
+        </li>
+        <li>
+          <strong>NPTEL TA (2024):</strong> 
+          <a href="https://www.mainakchakraborty.com/teaching/2023-fall-teaching-2" class="academic-link" target="_blank">Machine Learning (Bengali)- Prof. Adway Mitra (100+ students) </a>
+        </li>
+        <li>
+          <strong>NPTEL TA (2024):</strong> 
+          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Machine Learning -Prof. Carl Gustaf Jansson (500+ students) </a>
+        </li>
+          <li>
+          <strong>NPTEL TA (2023):</strong> 
+          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Statistical Inference - Prof. Niladri Chatterjee (50+ students) </a>
+        </li>
+        <li>
+          <strong>Guest Lecturer (2023):</strong> 
+          <a href="https://www.mainakchakraborty.com/teaching/2023-spring-teaching-2" class="academic-link" target="_blank">JNU Delhi, School of Engineering (Course EN-112) (100+ students) </a>
+        </li>
+        <li>
+          <strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects)
+        </li>
+      </ul>
+    </section>
+  <!-- <div class="split-section">
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
       <ul class="compact-list">
         <li><strong>NPTEL TA (2025):</strong> Cloud Computing (500+ Students)</li>
-        <li><strong>NPTEL TA (2024):</strong> Machine Learning (Bengali & English)</li>
+        <li><strong>NPTEL TA (2024):</strong> Machine Learning (Bengali)</li>
+        <li><strong>NPTEL TA (2024):</strong> Machine Learning </li>
         <li><strong>Guest Lecturer (2023):</strong> JNU Delhi, School of Engineering (Course EN-112)</li>
         <li><strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects)</li>
       </ul>
-    </section>
+    </section> -->
 
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-hand-holding-heart"></i> Service</h2>
@@ -563,6 +601,58 @@ a { text-decoration: none; color: inherit; }
 }
 .compact-list li::before {
   content: '▹'; position: absolute; left: 0; color: var(--accent-blue);
+}
+
+/* CV Button Styles */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #1e293b; /* Dark slate */
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-family: var(--code-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.btn-cv:hover {
+  background-color: var(--accent-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.btn-cv.btn-outline {
+  background-color: transparent;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+}
+
+.btn-cv.btn-outline:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  background-color: #eff6ff;
+}
+
+@media (max-width: 768px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-cv {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
