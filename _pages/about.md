@@ -385,7 +385,7 @@ redirect_from:
     </div>
   </section>
 
-<section class="section half">
+<!-- <section class="section half">
       <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
       <ul class="compact-list">
         <li>
@@ -412,19 +412,20 @@ redirect_from:
           <strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects)
         </li>
       </ul>
-    </section>
+    </section> -->
 
-  <!-- <div class="split-section">
+  <div class="split-section">
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
       <ul class="compact-list">
         <li><strong>NPTEL TA (2025):</strong> Cloud Computing (500+ Students)</li>
-        <li><strong>NPTEL TA (2024):</strong> Machine Learning (Bengali)</li>
-        <li><strong>NPTEL TA (2024):</strong> Machine Learning </li>
-        <li><strong>Guest Lecturer (2023):</strong> JNU Delhi, School of Engineering (Course EN-112)</li>
+        <li><strong>NPTEL TA (2024):</strong> Machine Learning (Bengali) (100+ students)</li>
+        <li><strong>NPTEL TA (2024):</strong> Machine Learning (50+ Students)</li>
+        <li><strong>NPTEL TA (2024):</strong> Statistical Inference (50+ students) </li>
+        <li><strong>Guest Lecturer (2023):</strong> JNU Delhi, School of Engineering (Course EN-112) (120 Students)</li>
         <li><strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects)</li>
       </ul>
-    </section> -->
+    </section>
 
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-hand-holding-heart"></i> Service</h2>
