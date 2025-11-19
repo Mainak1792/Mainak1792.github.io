@@ -15,47 +15,6 @@ redirect_from:
     </div>
   </div>
 
-  <!-- Education Section -->
-  <section class="section">
-    <h2 class="section-title">Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <div class="institution-logo">
-      <img src="/assets/iitd_logo.png" alt="IIT Delhi Logo">
-          </div>
-          <div class="institution-details">
-            <h3>Ph.D. in Signal Processing and Machine Learning</h3>
-            <p class="institution-name"><a href="https://home.iitd.ac.in/" target="_blank">Indian Institute of Technology Delhi</a></p>
-            <p class="timeline-date">2022 - Present</p>
-            <p class="thesis-title">Thesis: An Exploratory study in Human Cognition, movement and Locomotion using non-invasive sensors</p>
-            <div class="achievements">
-              <span class="achievement-tag">PMRF Fellowship</span>
-              <span class="achievement-tag">IEEE SPS Fellowship</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <div class="institution-logo">
-            <img src="/assets/iiest_logo.png" alt="IIEST Logo">
-          </div>
-          <div class="institution-details">
-            <h3>M.Tech in Mechatronics and Robotics</h3>
-            <p class="institution-name"><a href="https://www.iiests.ac.in/" target="_blank">Indian Institute of Engineering Science and Technology, Shibpur</a></p>
-            <p class="timeline-date">2019 - 2021</p>
-            <p class="thesis-title">Thesis: Human Action Recognition using vibration and vision sensors</p>
-            <div class="achievements">
-              <span class="achievement-tag">GATE Fellowship</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Publications Section -->
   <section class="section">
     <h2 class="section-title">Publications</h2>
@@ -170,13 +129,62 @@ redirect_from:
       </div>
     </div>
   </section>
+  <!-- Education Section -->
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="institution-logo">
+      <img src="/assets/iitd_logo.png" alt="IIT Delhi Logo">
+          </div>
+          <div class="institution-details">
+            <h3>Ph.D. in Signal Processing and Machine Learning</h3>
+            <p class="institution-name"><a href="https://home.iitd.ac.in/" target="_blank">Indian Institute of Technology Delhi</a></p>
+            <p class="timeline-date">2022 - Present</p>
+            <p class="thesis-title">Thesis: An Exploratory study in Human Cognition, movement and Locomotion using non-invasive sensors</p>
+            <div class="achievements">
+              <span class="achievement-tag">PMRF Fellowship</span>
+              <span class="achievement-tag">IEEE SPS Fellowship 2024</span>
+              <span class="achievement-tag">IEEE SPS Fellowship 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="institution-logo">
+            <img src="/assets/iiest_logo.png" alt="IIEST Logo">
+          </div>
+          <div class="institution-details">
+            <h3>M.Tech in Mechatronics and Robotics</h3>
+            <p class="institution-name"><a href="https://www.iiests.ac.in/" target="_blank">Indian Institute of Engineering Science and Technology, Shibpur</a></p>
+            <p class="timeline-date">2019 - 2021</p>
+            <p class="thesis-title">Thesis: Human Action Recognition using vibration and vision sensors</p>
+            <div class="achievements">
+              <span class="achievement-tag">GATE Fellowship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- News Section -->
   <section class="section">
     <h2 class="section-title">Recent News</h2>
     <div class="news-timeline">
-     <div class="news-item">
+    <!-- <div class="news-item">
         <span class="news-date">November 2025</span>
+        <span class="news-content">Awarded IEEE SPS 2025 Fellowship</span>
+      </div>    -->
+    <div class="news-item">
+        <span class="news-date">November 2025</span>
+        <span class="news-content">Awarded IEEE SPS 2025 Fellowship</span>
+      </div>   
+     <div class="news-item">
+        <span class="news-date">October 2025</span>
         <span class="news-content">Our Paper published at Scientific Data(Nature)</span>
       </div>   
     <div class="news-item">
