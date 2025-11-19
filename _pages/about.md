@@ -16,7 +16,7 @@ redirect_from:
     <div class="hero-grid">
       <div class="hero-bio">
         <h1 class="hero-name">Mainak Chakraborty <span class="blinking-cursor">_</span></h1>
-        <div class="hero-subtitle">PhD Scholar, IIT Delhi | PMRF Fellow | IEEE SPS Fellow</div>
+        <div class="hero-subtitle">PhD Scholar, IIT Delhi | PMRF Scholar | IEEE SPS Scholar</div>
         
         <p class="profile-text">
           I am a doctoral researcher at <span class="highlight">SENSE, IIT Delhi</span>, specializing in <span class="tech-highlight">Cross-Modal Gait Identification</span> and behavioral sensing. Working with <a href="https://web.iitd.ac.in/~subrat/" class="academic-link">Prof. Subrat Kar</a>, I develop non-intrusive recognition systems using structural vibration and vision.
