@@ -1,12 +1,12 @@
 ---
 permalink: /
-# title: ""
+title: "Mainak Chakraborty | PhD Candidate @ IIT Delhi"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-<!-- Mainak Chakraborty | PhD Candidate @ IIT Delhi -->
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -19,10 +19,10 @@ redirect_from:
         <div class="hero-subtitle">PhD Scholar, IIT Delhi | PMRF Fellow | IEEE SPS Fellow</div>
         
         <p class="profile-text">
-          I am a doctoral researcher at <span class="highlight">SENSE, IIT Delhi</span> [cite: 2], specializing in <span class="tech-highlight">Cross-Modal Gait Identification</span> and behavioral sensing[cite: 12]. Working with <a href="https://web.iitd.ac.in/~subrat/" class="academic-link">Prof. Subrat Kar</a>, I develop non-intrusive recognition systems using structural vibration and vision.
+          I am a doctoral researcher at <span class="highlight">SENSE, IIT Delhi</span>, specializing in <span class="tech-highlight">Cross-Modal Gait Identification</span> and behavioral sensing. Working with <a href="https://web.iitd.ac.in/~subrat/" class="academic-link">Prof. Subrat Kar</a>, I develop non-intrusive recognition systems using structural vibration and vision.
         </p>
         <p class="profile-text">
-          My background spans <strong>Mechatronics</strong> and <strong>Deep Learning</strong>. I have architected predictive maintenance systems for startups [cite: 14] and hold multiple patents in seismic sensing.
+          My background spans <strong>Mechatronics</strong> and <strong>Deep Learning</strong>. I have architected predictive maintenance systems for startups and hold multiple patents in seismic sensing.
         </p>
         
         <div class="skills-matrix">
@@ -78,7 +78,7 @@ redirect_from:
         <div class="time-content">
           <h3 class="job-title">Graduate Research Assistant</h3>
           <div class="job-loc">IIT Delhi, India</div>
-          <p>Exploring Cross-modal gait identification and behavioral sensing using structural vibration and vision-based deep learning frameworks[cite: 12].</p>
+          <p>Exploring Cross-modal gait identification and behavioral sensing using structural vibration and vision-based deep learning frameworks.</p>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ redirect_from:
         <div class="time-content">
           <h3 class="job-title">Product Architect & DL Engineer</h3>
           <div class="job-loc">Etaaide, New Delhi</div>
-          <p>Led design of a vibration-sensor-based predictive maintenance system. Secured <strong>TIDE 2.0 innovation grant</strong> and national incubation support[cite: 14].</p>
+          <p>Led design of a vibration-sensor-based predictive maintenance system. Secured <strong>TIDE 2.0 innovation grant</strong> and national incubation support.</p>
         </div>
       </div>
 
@@ -99,9 +99,9 @@ redirect_from:
           <h3 class="job-title">Research Internships</h3>
           <div class="job-loc">Multiple Organizations</div>
           <ul class="compact-list">
-            <li><strong>Proxmaq:</strong> Built pruned TF-Lite models for object detection in assistive smart glasses[cite: 18].</li>
-            <li><strong>RemoCare:</strong> Implemented Bi-LSTM for real-time arrhythmia classification[cite: 16].</li>
-            <li><strong>CSIR-CMERI:</strong> Developed CNN/LSTM models for seismic human activity recognition[cite: 21].</li>
+            <li><strong>Proxmaq:</strong> Built pruned TF-Lite models for object detection in assistive smart glasses.</li>
+            <li><strong>RemoCare:</strong> Implemented Bi-LSTM for real-time arrhythmia classification.</li>
+            <li><strong>CSIR-CMERI:</strong> Developed CNN/LSTM models for seismic human activity recognition.</li>
           </ul>
         </div>
       </div>
@@ -116,21 +116,21 @@ redirect_from:
         <div class="patent-icon"><i class="fas fa-certificate"></i></div>
         <div class="patent-details">
           <h4>System and Method for Individual Classification...</h4>
-          <span class="patent-meta">Filed: 202511042769 (2025) [cite: 55]</span>
+          <span class="patent-meta">Filed: 202511042769 (2025)</span>
         </div>
       </div>
       <div class="patent-card">
         <div class="patent-icon"><i class="fas fa-certificate"></i></div>
         <div class="patent-details">
           <h4>GajGamini: System for Elephant Detection...</h4>
-          <span class="patent-meta">Filed: 202411060463 (2024) [cite: 56]</span>
+          <span class="patent-meta">Filed: 202411060463 (2024)</span>
         </div>
       </div>
       <div class="patent-card">
         <div class="patent-icon"><i class="fas fa-certificate"></i></div>
         <div class="patent-details">
           <h4>Person Identification Through Data Augmentation...</h4>
-          <span class="patent-meta">Published: 202311045408 (2023) [cite: 57]</span>
+          <span class="patent-meta">Published: 202311045408 (2023)</span>
         </div>
       </div>
     </div>
@@ -140,12 +140,12 @@ redirect_from:
     <h2 class="section-title"><i class="fas fa-book-open"></i> Publications</h2>
     
     <div class="pub-category">
-      <h3 class="subsection-title">Selected Journal Papers</h3>
+      <h3 class="subsection-title">Journal Papers</h3>
       <div class="publications-list">
         
         <article class="pub-card">
           <div class="pub-main">
-            <h4 class="pub-title">Deepstep: A Deep Learning-based Indoor Person Identification Framework...</h4>
+            <h4 class="pub-title">Deepstep: A Deep Learning-based Indoor Person Identification Framework using Footstep-Induced Structural Vibration Signals</h4>
             <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, S Anchal, B Mukhopadhyay, S Kar</div>
             <div class="pub-venue">
               <span class="venue-tag ieee">IEEE TIM</span>
@@ -164,13 +164,13 @@ redirect_from:
             </div>
           </div>
           <div class="pub-actions">
-            <a href="#" class="btn-action">PDF</a>
+            <a href="https://www.nature.com/articles/s41597-025-05517-4" class="btn-action">Link</a>
           </div>
         </article>
 
         <article class="pub-card">
           <div class="pub-main">
-            <h4 class="pub-title">Deep Multi-Class Novelty Detection in Structural Vibrations...</h4>
+            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/11141764" target="_blank">Deep Multi-Class Novelty Detection in Structural Vibrations with Modified Contrastive Loss</a></h4>
             <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, B Mukhopadhyay, S Kar</div>
             <div class="pub-venue">
               <span class="venue-tag ieee">IEEE TMC</span>
@@ -178,18 +178,35 @@ redirect_from:
             </div>
           </div>
            <div class="pub-actions">
-            <a href="#" class="btn-action">PDF</a>
+            <a href="https://ieeexplore.ieee.org/document/11141764" class="btn-action">PDF</a>
           </div>
         </article>
 
          <article class="pub-card">
           <div class="pub-main">
-            <h4 class="pub-title">GajGamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants...</h4>
-            <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, S Anchal, S Kar</div>
+            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10634750" target="_blank">GajGamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants Using Ground Vibration‑Based Seismic Sensor</a></h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, S Anchal, B Mukhopadhyay, S Kar</div>
             <div class="pub-venue">
               <span class="venue-tag ieee">IEEE Sensors</span>
               <span class="pub-year">2024</span>
             </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://ieeexplore.ieee.org/document/10634750" class="btn-action">PDF</a>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-main">
+            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10314463" target="_blank">Enhancing Person Identification Through Data Augmentation of Footstep‑Based Seismic Signals</a></h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, S Kar</div>
+            <div class="pub-venue">
+              <span class="venue-tag ieee">IEEE SPL</span>
+              <span class="pub-year">2023</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://ieeexplore.ieee.org/document/10314463" class="btn-action">PDF</a>
           </div>
         </article>
 
@@ -197,18 +214,80 @@ redirect_from:
     </div>
 
     <div class="pub-category">
-      <h3 class="subsection-title">Conference Highlights</h3>
-      <ul class="conf-list">
-        <li>
-          <strong>[ICASSP 2025]</strong> VibeGait: Enhancing Structural-Vibration-based Gait Recognition using Vision[cite: 46].
-        </li>
-        <li>
-          <strong>[SenSys 2025]</strong> Poster Abstract: A Structural Vibration-based Gait Abnormality Detection System[cite: 44].
-        </li>
-        <li>
-          <strong>[IWSHM 2025]</strong> Non-Intrusive Cognitive Load Estimation Using Footstep-Induced Structural Vibration[cite: 48].
-        </li>
-      </ul>
+      <h3 class="subsection-title">Conference Proceedings</h3>
+      <div class="publications-list">
+        
+        <article class="pub-card">
+          <div class="pub-main">
+            <h4 class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3715014.3724063" target="_blank">Poster Abstract: A Structural Vibration-based Gait Abnormality Detection System</a></h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, B Mukhopadhyay, S Kar</div>
+            <div class="pub-venue">
+              <span class="venue-tag conf">ACM SenSys</span>
+              <span class="pub-year">2025</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://dl.acm.org/doi/10.1145/3715014.3724063" class="btn-action">PDF</a>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-main">
+            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" target="_blank">VibeGait: Enhancing Structural-Vibration-based Gait Recognition using Vision</a></h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, B Mukhopadhyay, S Anchal, S Kar</div>
+            <div class="pub-venue">
+              <span class="venue-tag conf">IEEE ICASSP</span>
+              <span class="pub-year">2025</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" class="btn-action">PDF</a>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-main">
+            <h4 class="pub-title"><a href="https://www.dpi-proceedings.com/index.php/shm2025/article/view/37580" target="_blank">Non-Intrusive Cognitive Load Estimation Using Footstep-Induced Structural Vibration Signals</a></h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, B Mukhopadhyay, S Kar</div>
+            <div class="pub-venue">
+              <span class="venue-tag conf">IWSHM Stanford</span>
+              <span class="pub-year">2025</span>
+            </div>
+          </div>
+           <div class="pub-actions">
+            <a href="https://www.dpi-proceedings.com/index.php/shm2025/article/view/37580" class="btn-action">Link</a>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-main">
+            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/9824819" target="_blank">Micro-Seismic Event Detection using Statistical Feature Extraction and Machine Learning Techniques</a></h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, M Das, S Aruchamy</div>
+            <div class="pub-venue">
+              <span class="venue-tag conf">IEEE I2CT</span>
+              <span class="pub-year">2022</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://ieeexplore.ieee.org/document/9824819" class="btn-action">PDF</a>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-main">
+            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/9702317" target="_blank">Human Action Classification using Seismic Sensor and Machine Learning Techniques</a></h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, et al.</div>
+            <div class="pub-venue">
+              <span class="venue-tag conf">IEEE ISCON</span>
+              <span class="pub-year">2021</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="https://ieeexplore.ieee.org/document/9702317" class="btn-action">PDF</a>
+          </div>
+        </article>
+
+      </div>
     </div>
   </section>
 
@@ -238,15 +317,6 @@ redirect_from:
         </div>
       </div>
 
-      <div class="edu-item">
-        <div class="edu-date">2014 - 2018</div>
-        <div class="edu-content">
-          <h3>B.Tech in Mechanical Engineering</h3>
-          <div class="edu-inst">JEM, Jaipur</div>
-          <p class="edu-detail">ASDC Undergraduate Scholarship (Top 1%) [cite: 74]</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -254,19 +324,19 @@ redirect_from:
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
       <ul class="compact-list">
-        <li><strong>NPTEL TA (2025):</strong> Cloud Computing (500+ Students) [cite: 26]</li>
+        <li><strong>NPTEL TA (2025):</strong> Cloud Computing (500+ Students)</li>
         <li><strong>NPTEL TA (2024):</strong> Machine Learning (Bengali & English)</li>
-        <li><strong>Guest Lecturer (2023):</strong> JNU Delhi, School of Engineering (Course EN-112) [cite: 31]</li>
-        <li><strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects) [cite: 28]</li>
+        <li><strong>Guest Lecturer (2023):</strong> JNU Delhi, School of Engineering (Course EN-112)</li>
+        <li><strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects)</li>
       </ul>
     </section>
 
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-hand-holding-heart"></i> Service</h2>
       <ul class="compact-list">
-        <li><strong>Head:</strong> IEEE Delhi Signal Processing Society (SPS) Student Chapter [cite: 78]</li>
-        <li><strong>Reviewer:</strong> IEEE Transactions on Instrumentation and Measurement (2025) [cite: 76]</li>
-        <li><strong>Volunteer:</strong> ICASSP 2025 Progress Workshop [cite: 80]</li>
+        <li><strong>Head:</strong> IEEE Delhi Signal Processing Society (SPS) Student Chapter</li>
+        <li><strong>Reviewer:</strong> IEEE Transactions on Instrumentation and Measurement (2025)</li>
+        <li><strong>Volunteer:</strong> ICASSP 2025 Progress Workshop</li>
       </ul>
     </section>
   </div>
@@ -371,16 +441,30 @@ a { text-decoration: none; color: inherit; }
   display: flex; justify-content: space-between; padding: 1rem;
   background: #fff; border-bottom: 1px solid var(--border-color);
   margin-bottom: 0.5rem;
+  transition: transform 0.2s;
 }
-.pub-title { margin: 0 0 0.3rem 0; font-size: 1rem; font-weight: 600; }
+.pub-card:hover { transform: translateY(-2px); border-color: var(--accent-blue); }
+
+.pub-main { flex: 1; padding-right: 1rem; }
+
+.pub-title { margin: 0 0 0.3rem 0; font-size: 1rem; font-weight: 600; color: #1e293b; }
+.pub-authors { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.3rem; }
 .venue-tag {
   font-family: var(--code-font); font-size: 0.75rem; padding: 2px 6px;
-  border-radius: 4px; font-weight: 700; margin-right: 0.5rem;
+  border-radius: 4px; font-weight: 700; margin-right: 0.5rem; display: inline-block;
 }
 .venue-tag.nature { background: #dcfce7; color: #15803d; }
 .venue-tag.ieee { background: #dbeafe; color: #1e40af; }
+.venue-tag.conf { background: #f1f5f9; color: #475569; }
+.pub-year { font-family: var(--code-font); font-size: 0.8rem; color: var(--text-secondary); }
 
-.conf-list li { margin-bottom: 0.8rem; font-size: 0.95rem; }
+.pub-actions { min-width: 60px; display: flex; align-items: flex-start; }
+.btn-action {
+  font-family: var(--code-font); font-size: 0.75rem; padding: 4px 8px;
+  border: 1px solid var(--border-color); border-radius: 4px;
+  color: var(--text-secondary);
+}
+.btn-action:hover { background: #1a202c; color: #fff; border-color: #1a202c; }
 
 /* Education (Reused Timeline styles roughly) */
 .edu-timeline { border-left: 2px solid var(--border-color); padding-left: 2rem; }
@@ -410,5 +494,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 768px) {
   .split-section { flex-direction: column; gap: 1rem; }
   .pub-card { flex-direction: column; gap: 0.5rem; }
+  .pub-actions { width: 100%; }
+  .btn-action { display: block; text-align: center; }
 }
 </style>
