@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Mainak Chakraborty | PhD Candidate @ IIT Delhi"
+title: " "
 author_profile: true
 redirect_from: 
   - /about/
@@ -69,6 +69,62 @@ redirect_from:
   <hr class="divider">
 
   <section class="section">
+    <h2 class="section-title"><i class="fas fa-bullhorn"></i> Recent News</h2>
+    <div class="news-scroller">
+      
+      <div class="news-item">
+        <div class="news-date">Nov 2025</div>
+        <div class="news-content">
+          Paper accepted at <strong>IEEE Transactions on Instrumentation and Measurement (TIM)</strong>.
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">Nov 2025</div>
+        <div class="news-content">
+          Awarded the prestigious <strong>IEEE Signal Processing Society (SPS) Scholarship 2025</strong>.
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">Oct 2025</div>
+        <div class="news-content">
+          Dataset paper published in <strong>Nature Scientific Data</strong>.
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">Sep 2025</div>
+        <div class="news-content">
+          Presented research at <strong>IWSHM 2025</strong> at Stanford University, USA.
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">Aug 2025</div>
+        <div class="news-content">
+          Paper accepted at <strong>IEEE Transactions on Mobile Computing (TMC)</strong>.
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">Mar 2025</div>
+        <div class="news-content">
+          Received <strong>IEEE ICASSP 2025 Travel Grant</strong> to present in USA.
+        </div>
+      </div>
+      
+      <div class="news-item">
+        <div class="news-date">Jan 2025</div>
+        <div class="news-content">
+          Appointed Head of <strong>IEEE Delhi SPS Student Chapter</strong>.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
     <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
     <div class="timeline-vertical">
       
@@ -106,33 +162,6 @@ redirect_from:
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <section class="section">
-    <h2 class="section-title"><i class="fas fa-scroll"></i> Patents</h2>
-    <div class="patent-grid">
-      <div class="patent-card">
-        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
-        <div class="patent-details">
-          <h4>System and Method for Individual Classification...</h4>
-          <span class="patent-meta">Filed: 202511042769 (2025)</span>
-        </div>
-      </div>
-      <div class="patent-card">
-        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
-        <div class="patent-details">
-          <h4>GajGamini: System for Elephant Detection...</h4>
-          <span class="patent-meta">Filed: 202411060463 (2024)</span>
-        </div>
-      </div>
-      <div class="patent-card">
-        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
-        <div class="patent-details">
-          <h4>Person Identification Through Data Augmentation...</h4>
-          <span class="patent-meta">Published: 202311045408 (2023)</span>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -292,6 +321,33 @@ redirect_from:
   </section>
 
   <section class="section">
+    <h2 class="section-title"><i class="fas fa-scroll"></i> Patents</h2>
+    <div class="patent-grid">
+      <div class="patent-card">
+        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
+        <div class="patent-details">
+          <h4>System and Method for Individual Classification...</h4>
+          <span class="patent-meta">Filed: 202511042769 (2025)</span>
+        </div>
+      </div>
+      <div class="patent-card">
+        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
+        <div class="patent-details">
+          <h4>GajGamini: System for Elephant Detection...</h4>
+          <span class="patent-meta">Filed: 202411060463 (2024)</span>
+        </div>
+      </div>
+      <div class="patent-card">
+        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
+        <div class="patent-details">
+          <h4>Person Identification Through Data Augmentation...</h4>
+          <span class="patent-meta">Published: 202311045408 (2023)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
     <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
     <div class="edu-timeline">
       
@@ -408,6 +464,24 @@ a { text-decoration: none; color: inherit; }
 }
 .code-tag { font-family: var(--code-font); background: #eff6ff; color: var(--accent-dark); border-color: #bfdbfe; }
 
+/* News Scroller */
+.news-scroller {
+  max-height: 220px;
+  overflow-y: auto;
+  border-left: 3px solid var(--border-color);
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.news-scroller::-webkit-scrollbar { width: 4px; }
+.news-scroller::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 4px; }
+
+.news-item { display: flex; gap: 1.5rem; margin-bottom: 1.2rem; font-size: 0.95rem; }
+.news-date {
+  font-family: var(--code-font); color: var(--accent-blue); font-size: 0.85rem;
+  min-width: 80px; font-weight: 700;
+}
+.news-content { flex: 1; }
+
 /* Timeline Vertical (Experience) */
 .timeline-vertical {
   position: relative;
@@ -496,5 +570,6 @@ a { text-decoration: none; color: inherit; }
   .pub-card { flex-direction: column; gap: 0.5rem; }
   .pub-actions { width: 100%; }
   .btn-action { display: block; text-align: center; }
+  .news-item { flex-direction: column; gap: 0.2rem; }
 }
 </style>
