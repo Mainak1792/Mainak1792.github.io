@@ -390,19 +390,19 @@ redirect_from:
       <ul class="compact-list">
         <li>
           <strong>NPTEL TA (2025):</strong> 
-          <a href="https://www.mainakchakraborty.com/teaching/2025-spring-teaching-1" class="academic-link" target="_blank">Cloud Computing - Prof. Soumya Kanti Ghosh (500+ Students)</a>
+          <a href="https://www.mainakchakraborty.com/teaching/2025-spring-teaching-1" class="academic-link" target="_blank">Cloud Computing (500+ Students)</a>
         </li>
         <li>
           <strong>NPTEL TA (2024):</strong> 
-          <a href="https://www.mainakchakraborty.com/teaching/2023-fall-teaching-2" class="academic-link" target="_blank">Machine Learning (Bengali)- Prof. Adway Mitra (100+ students) </a>
+          <a href="https://www.mainakchakraborty.com/teaching/2023-fall-teaching-2" class="academic-link" target="_blank">Machine Learning (Bengali) (100+ students) </a>
         </li>
         <li>
           <strong>NPTEL TA (2024):</strong> 
-          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Machine Learning -Prof. Carl Gustaf Jansson (500+ students) </a>
+          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Machine Learning (500+ students) </a>
         </li>
           <li>
           <strong>NPTEL TA (2023):</strong> 
-          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Statistical Inference - Prof. Niladri Chatterjee (50+ students) </a>
+          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Statistical Inference (50+ students) </a>
         </li>
         <li>
           <strong>Guest Lecturer (2023):</strong> 
@@ -413,6 +413,7 @@ redirect_from:
         </li>
       </ul>
     </section>
+
   <!-- <div class="split-section">
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
