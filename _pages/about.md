@@ -1,12 +1,12 @@
 ---
 permalink: /
-title: "Mainak Chakraborty | PhD Candidate @ IIT Delhi"
+# title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
+<!-- Mainak Chakraborty | PhD Candidate @ IIT Delhi -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -19,29 +19,46 @@ redirect_from:
         <div class="hero-subtitle">PhD Scholar, IIT Delhi | PMRF Fellow | IEEE SPS Fellow</div>
         
         <p class="profile-text">
-          I am a doctoral researcher at <span class="highlight">SENSE, IIT Delhi</span>, specializing in AI-driven signal processing and multi-modal learning. Working with <a href="https://web.iitd.ac.in/~subrat/" class="academic-link">Prof. Subrat Kar</a>, my research focuses on <span class="tech-highlight">Structural Vibration-based Recognition</span>.
+          I am a doctoral researcher at <span class="highlight">SENSE, IIT Delhi</span> [cite: 2], specializing in <span class="tech-highlight">Cross-Modal Gait Identification</span> and behavioral sensing[cite: 12]. Working with <a href="https://web.iitd.ac.in/~subrat/" class="academic-link">Prof. Subrat Kar</a>, I develop non-intrusive recognition systems using structural vibration and vision.
         </p>
         <p class="profile-text">
-          My work bridges the gap between <strong>physical sensing</strong> and <strong>computational perception</strong>. I hold patents in seismic sensing and have led teams developing real-time AI for predictive maintenance and gait recognition.
+          My background spans <strong>Mechatronics</strong> and <strong>Deep Learning</strong>. I have architected predictive maintenance systems for startups [cite: 14] and hold multiple patents in seismic sensing.
         </p>
         
-        <div class="skills-grid">
-          <div class="skill-col">
-            <span class="mono-label">Research Focus</span>
-            <div class="tag-cloud">
-              <span class="tag">Multi-modal Learning</span>
-              <span class="tag">Gait Analysis</span>
-              <span class="tag">Embedded AI</span>
-              <span class="tag">Seismic Sensing</span>
-            </div>
-          </div>
-          <div class="skill-col">
-            <span class="mono-label">Tech Stack</span>
+        <div class="skills-matrix">
+          <div class="skill-category">
+            <span class="mono-label"><i class="fas fa-code"></i> Languages</span>
             <div class="tag-cloud">
               <span class="tag code-tag">Python</span>
-              <span class="tag code-tag">PyTorch</span>
-              <span class="tag code-tag">TensorFlow</span>
               <span class="tag code-tag">C/C++</span>
+              <span class="tag code-tag">MATLAB</span>
+              <span class="tag code-tag">CUDA</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="mono-label"><i class="fas fa-microchip"></i> Hardware</span>
+            <div class="tag-cloud">
+              <span class="tag">NVIDIA Jetson</span>
+              <span class="tag">Raspberry Pi</span>
+              <span class="tag">ESP-32</span>
+              <span class="tag">Sony Spresence</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="mono-label"><i class="fas fa-tools"></i> Tools</span>
+            <div class="tag-cloud">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Unity Engine</span>
+              <span class="tag">OpenSim</span>
+            </div>
+          </div>
+           <div class="skill-category">
+            <span class="mono-label"><i class="fas fa-brain"></i> Focus</span>
+            <div class="tag-cloud">
+              <span class="tag">Edge AI / TinyML</span>
+              <span class="tag">Signal Processing</span>
+              <span class="tag">Gait Analysis</span>
             </div>
           </div>
         </div>
@@ -52,52 +69,108 @@ redirect_from:
   <hr class="divider">
 
   <section class="section">
-    <h2 class="section-title"><i class="fas fa-bell"></i> Updates</h2>
-    <div class="news-scroller">
-      <div class="news-item">
-        <span class="news-date">Nov 2025</span>
-        <span class="news-content">Awarded <strong>IEEE SPS 2025 Fellowship</strong>.</span>
+    <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+    <div class="timeline-vertical">
+      
+      <div class="timeline-entry">
+        <div class="time-marker"></div>
+        <div class="time-date">Feb 2022 - Present</div>
+        <div class="time-content">
+          <h3 class="job-title">Graduate Research Assistant</h3>
+          <div class="job-loc">IIT Delhi, India</div>
+          <p>Exploring Cross-modal gait identification and behavioral sensing using structural vibration and vision-based deep learning frameworks[cite: 12].</p>
+        </div>
       </div>
-      <div class="news-item">
-        <span class="news-date">Oct 2025</span>
-        <span class="news-content">Paper published in <strong>Nature Scientific Data</strong>.</span>
+
+      <div class="timeline-entry">
+        <div class="time-marker"></div>
+        <div class="time-date">Dec 2021 - Aug 2022</div>
+        <div class="time-content">
+          <h3 class="job-title">Product Architect & DL Engineer</h3>
+          <div class="job-loc">Etaaide, New Delhi</div>
+          <p>Led design of a vibration-sensor-based predictive maintenance system. Secured <strong>TIDE 2.0 innovation grant</strong> and national incubation support[cite: 14].</p>
+        </div>
       </div>
-      <div class="news-item">
-        <span class="news-date">Sep 2025</span>
-        <span class="news-content">Presented at <strong>15th IWSHM, Stanford</strong>.</span>
+
+      <div class="timeline-entry">
+        <div class="time-marker"></div>
+        <div class="time-date">May 2020 - Oct 2021</div>
+        <div class="time-content">
+          <h3 class="job-title">Research Internships</h3>
+          <div class="job-loc">Multiple Organizations</div>
+          <ul class="compact-list">
+            <li><strong>Proxmaq:</strong> Built pruned TF-Lite models for object detection in assistive smart glasses[cite: 18].</li>
+            <li><strong>RemoCare:</strong> Implemented Bi-LSTM for real-time arrhythmia classification[cite: 16].</li>
+            <li><strong>CSIR-CMERI:</strong> Developed CNN/LSTM models for seismic human activity recognition[cite: 21].</li>
+          </ul>
+        </div>
       </div>
-      <div class="news-item">
-        <span class="news-date">Aug 2025</span>
-        <span class="news-content">Accepted at <strong>IEEE Trans. on Mobile Computing</strong>.</span>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title"><i class="fas fa-scroll"></i> Patents</h2>
+    <div class="patent-grid">
+      <div class="patent-card">
+        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
+        <div class="patent-details">
+          <h4>System and Method for Individual Classification...</h4>
+          <span class="patent-meta">Filed: 202511042769 (2025) [cite: 55]</span>
+        </div>
+      </div>
+      <div class="patent-card">
+        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
+        <div class="patent-details">
+          <h4>GajGamini: System for Elephant Detection...</h4>
+          <span class="patent-meta">Filed: 202411060463 (2024) [cite: 56]</span>
+        </div>
+      </div>
+      <div class="patent-card">
+        <div class="patent-icon"><i class="fas fa-certificate"></i></div>
+        <div class="patent-details">
+          <h4>Person Identification Through Data Augmentation...</h4>
+          <span class="patent-meta">Published: 202311045408 (2023) [cite: 57]</span>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <h2 class="section-title"><i class="fas fa-book-open"></i> Selected Publications</h2>
+    <h2 class="section-title"><i class="fas fa-book-open"></i> Publications</h2>
     
     <div class="pub-category">
-      <h3 class="subsection-title">Journal Papers</h3>
+      <h3 class="subsection-title">Selected Journal Papers</h3>
       <div class="publications-list">
         
         <article class="pub-card">
           <div class="pub-main">
-            <h4 class="pub-title"><a href="https://www.nature.com/articles/s41597-025-05517-4" target="_blank">A Structural Vibration-based Dataset for Human Gait Recognition</a></h4>
+            <h4 class="pub-title">Deepstep: A Deep Learning-based Indoor Person Identification Framework...</h4>
             <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, S Anchal, B Mukhopadhyay, S Kar</div>
             <div class="pub-venue">
-              <span class="venue-tag nature"><i class="fas fa-certificate"></i> Nature Scientific Data</span>
-              <span class="pub-year">2025</span>
+              <span class="venue-tag ieee">IEEE TIM</span>
+              <span class="pub-year">Accepted Nov 2025</span>
             </div>
-          </div>
-          <div class="pub-actions">
-            <a href="https://www.nature.com/articles/s41597-025-05517-4" class="btn-action"><i class="fas fa-file-pdf"></i> PDF</a>
-            <a href="#" class="btn-action disabled"><i class="fas fa-code"></i> Code</a>
           </div>
         </article>
 
         <article class="pub-card">
           <div class="pub-main">
-            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/11141764" target="_blank">Deep Multi-Class Novelty Detection in Structural Vibrations with Modified Contrastive Loss</a></h4>
+            <h4 class="pub-title"><a href="https://www.nature.com/articles/s41597-025-05517-4" target="_blank">A Structural Vibration-based Dataset for Human Gait Recognition</a></h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, S Anchal, B Mukhopadhyay, S Kar</div>
+            <div class="pub-venue">
+              <span class="venue-tag nature">Scientific Data</span>
+              <span class="pub-year">2025</span>
+            </div>
+          </div>
+          <div class="pub-actions">
+            <a href="#" class="btn-action">PDF</a>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <div class="pub-main">
+            <h4 class="pub-title">Deep Multi-Class Novelty Detection in Structural Vibrations...</h4>
             <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, B Mukhopadhyay, S Kar</div>
             <div class="pub-venue">
               <span class="venue-tag ieee">IEEE TMC</span>
@@ -105,35 +178,18 @@ redirect_from:
             </div>
           </div>
            <div class="pub-actions">
-            <a href="https://ieeexplore.ieee.org/document/11141764" class="btn-action"><i class="fas fa-file-pdf"></i> PDF</a>
+            <a href="#" class="btn-action">PDF</a>
           </div>
         </article>
 
-        <article class="pub-card">
-          <div class="pub-main">
-            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10634750" target="_blank">Gaj-Gamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants</a></h4>
-            <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, B Mukhopadhyay, S Anchal, S Kar</div>
-            <div class="pub-venue">
-              <span class="venue-tag ieee">IEEE Sensors Letters</span>
-              <span class="pub-year">2024</span>
-            </div>
-          </div>
-           <div class="pub-actions">
-            <a href="https://ieeexplore.ieee.org/document/10634750" class="btn-action"><i class="fas fa-file-pdf"></i> PDF</a>
-          </div>
-        </article>
-        
          <article class="pub-card">
           <div class="pub-main">
-            <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10314463" target="_blank">Enhancing Person Identification Through Data Augmentation of Footstep‑Based Seismic Signals</a></h4>
-            <div class="pub-authors"><strong>M Chakraborty</strong>, S Kar</div>
+            <h4 class="pub-title">GajGamini: Mitigating Man–Animal Conflict by Detecting Moving Elephants...</h4>
+            <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, S Anchal, S Kar</div>
             <div class="pub-venue">
-              <span class="venue-tag ieee">IEEE SPL</span>
-              <span class="pub-year">2023</span>
+              <span class="venue-tag ieee">IEEE Sensors</span>
+              <span class="pub-year">2024</span>
             </div>
-          </div>
-           <div class="pub-actions">
-            <a href="https://ieeexplore.ieee.org/document/10314463" class="btn-action"><i class="fas fa-file-pdf"></i> PDF</a>
           </div>
         </article>
 
@@ -141,47 +197,18 @@ redirect_from:
     </div>
 
     <div class="pub-category">
-      <h3 class="subsection-title">Conference Proceedings</h3>
-      <div class="publications-list">
-        <article class="pub-card">
-          <div class="pub-main">
-            <h4 class="pub-title">Non-Intrusive Cognitive Load Estimation Using Footstep-Induced Structural Vibration Signals</h4>
-            <div class="pub-venue">
-              <span class="venue-tag conf">IWSHM (Stanford)</span>
-              <span class="pub-year">2025</span>
-            </div>
-          </div>
-          <div class="pub-actions">
-             <a href="https://www.dpi-proceedings.com/index.php/shm2025/article/view/37580" class="btn-action"><i class="fas fa-external-link-alt"></i> Link</a>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="pub-main">
-            <h4 class="pub-title">VibeGait: Enhancing Structural‑Vibration based Gait Recognition using Vision</h4>
-            <div class="pub-venue">
-              <span class="venue-tag conf">IEEE ICASSP</span>
-              <span class="pub-year">2025</span>
-            </div>
-          </div>
-          <div class="pub-actions">
-             <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10888251" class="btn-action"><i class="fas fa-file-pdf"></i> PDF</a>
-          </div>
-        </article>
-        
-        <article class="pub-card">
-          <div class="pub-main">
-            <h4 class="pub-title">Poster Abstract: A Structural Vibration-based Gait Abnormality Detection System</h4>
-            <div class="pub-venue">
-              <span class="venue-tag conf">ACM SENSYS</span>
-              <span class="pub-year">2025</span>
-            </div>
-          </div>
-          <div class="pub-actions">
-             <a href="https://dl.acm.org/doi/10.1145/3715014.3724063" class="btn-action"><i class="fas fa-file-pdf"></i> PDF</a>
-          </div>
-        </article>
-      </div>
+      <h3 class="subsection-title">Conference Highlights</h3>
+      <ul class="conf-list">
+        <li>
+          <strong>[ICASSP 2025]</strong> VibeGait: Enhancing Structural-Vibration-based Gait Recognition using Vision[cite: 46].
+        </li>
+        <li>
+          <strong>[SenSys 2025]</strong> Poster Abstract: A Structural Vibration-based Gait Abnormality Detection System[cite: 44].
+        </li>
+        <li>
+          <strong>[IWSHM 2025]</strong> Non-Intrusive Cognitive Load Estimation Using Footstep-Induced Structural Vibration[cite: 48].
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -190,14 +217,14 @@ redirect_from:
     <div class="edu-timeline">
       
       <div class="edu-item">
-        <div class="edu-date">2022 - Present</div>
+        <div class="edu-date">2022 - 2026 (Exp)</div>
         <div class="edu-content">
-          <h3>PhD in Signal Processing & ML</h3>
+          <h3>PhD in Cyber Physical Systems (Signal Processing)</h3>
           <div class="edu-inst">Indian Institute of Technology Delhi (IITD)</div>
-          <p class="edu-detail">Thesis: <em>Human Cognition, movement and Locomotion using non-invasive sensors</em></p>
+          <p class="edu-detail">CGPA: 9.07/10.00 | <em>Thesis: Human Cognition & Locomotion using non-invasive sensors</em></p>
           <div class="award-badges">
             <span class="award-badge">PMRF Fellow</span>
-            <span class="award-badge">IEEE SPS Fellow '24 & '25</span>
+            <span class="award-badge">IEEE SPS Scholarship '24, '25</span>
           </div>
         </div>
       </div>
@@ -205,17 +232,45 @@ redirect_from:
       <div class="edu-item">
         <div class="edu-date">2019 - 2021</div>
         <div class="edu-content">
-          <h3>M.Tech in Mechatronics & Robotics</h3>
+          <h3>M.Tech in Mechatronics Engineering</h3>
           <div class="edu-inst">IIEST Shibpur</div>
-          <p class="edu-detail">Thesis: <em>Human Action Recognition using vibration and vision sensors</em></p>
-          <div class="award-badges">
-            <span class="award-badge">GATE Fellow</span>
-          </div>
+          <p class="edu-detail">CGPA: 9.00/10.00 | GATE Fellowship</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-date">2014 - 2018</div>
+        <div class="edu-content">
+          <h3>B.Tech in Mechanical Engineering</h3>
+          <div class="edu-inst">JEM, Jaipur</div>
+          <p class="edu-detail">ASDC Undergraduate Scholarship (Top 1%) [cite: 74]</p>
         </div>
       </div>
 
     </div>
   </section>
+
+  <div class="split-section">
+    <section class="section half">
+      <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
+      <ul class="compact-list">
+        <li><strong>NPTEL TA (2025):</strong> Cloud Computing (500+ Students) [cite: 26]</li>
+        <li><strong>NPTEL TA (2024):</strong> Machine Learning (Bengali & English)</li>
+        <li><strong>Guest Lecturer (2023):</strong> JNU Delhi, School of Engineering (Course EN-112) [cite: 31]</li>
+        <li><strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects) [cite: 28]</li>
+      </ul>
+    </section>
+
+    <section class="section half">
+      <h2 class="section-title"><i class="fas fa-hand-holding-heart"></i> Service</h2>
+      <ul class="compact-list">
+        <li><strong>Head:</strong> IEEE Delhi Signal Processing Society (SPS) Student Chapter [cite: 78]</li>
+        <li><strong>Reviewer:</strong> IEEE Transactions on Instrumentation and Measurement (2025) [cite: 76]</li>
+        <li><strong>Volunteer:</strong> ICASSP 2025 Progress Workshop [cite: 80]</li>
+      </ul>
+    </section>
+  </div>
+
 </div>
 
 <style>
@@ -245,251 +300,115 @@ a { text-decoration: none; color: inherit; }
   padding: 2rem 1.5rem;
 }
 
-/* Typography Utilities */
+/* Utilities */
 .mono-label {
   font-family: var(--code-font);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--text-secondary);
-  margin-bottom: 0.5rem;
   display: block;
-}
-
-/* Hero Section */
-.hero-section { margin-bottom: 3rem; }
-.hero-name {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #111;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.03em;
 }
 
-.blinking-cursor {
-  animation: blink 1s step-end infinite;
-  color: var(--accent-blue);
-}
+.highlight { background: #e0e7ff; color: var(--accent-dark); padding: 0 4px; border-radius: 2px; }
+.tech-highlight { color: var(--accent-blue); font-weight: 600; }
+
+/* Hero & Skills */
+.hero-name { font-size: 2.5rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+.hero-subtitle { font-family: var(--code-font); color: var(--accent-blue); font-size: 0.9rem; margin-bottom: 1.5rem; }
+.blinking-cursor { animation: blink 1s step-end infinite; color: var(--accent-blue); }
 @keyframes blink { 50% { opacity: 0; } }
 
-.hero-subtitle {
-  font-family: var(--code-font);
-  color: var(--accent-blue);
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-}
-
-.profile-text {
-  color: var(--text-secondary);
-  font-size: 1.05rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.academic-link {
-  color: var(--accent-blue);
-  font-weight: 600;
-  border-bottom: 1px dashed var(--accent-blue);
-}
-
-.academic-link:hover { border-bottom-style: solid; }
-
-/* Skills Grid */
-.skills-grid {
+.skills-matrix {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
   background: #f8fafc;
   padding: 1.5rem;
   border-radius: 8px;
   border: 1px solid var(--border-color);
-}
-
-.tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-
-.tag {
-  background: #fff;
-  border: 1px solid var(--border-color);
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  color: #334155;
-  font-weight: 500;
-}
-
-.tag.code-tag {
-  font-family: var(--code-font);
-  background: #eff6ff;
-  color: var(--accent-dark);
-  border-color: #bfdbfe;
-}
-
-/* News Scroller */
-.news-scroller {
-  max-height: 200px;
-  overflow-y: auto;
-  border-left: 3px solid var(--border-color);
-  padding-left: 1.5rem;
-}
-.news-scroller::-webkit-scrollbar { width: 4px; }
-.news-scroller::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 4px;}
-
-.news-item {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
-}
-
-.news-date {
-  font-family: var(--code-font);
-  color: var(--accent-blue);
-  font-size: 0.85rem;
-  min-width: 80px;
-}
-
-/* Publications */
-.section-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #0f172a;
-}
-
-.subsection-title {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  border-bottom: 2px solid var(--border-color);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
   margin-top: 2rem;
 }
 
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tag {
+  background: #fff; border: 1px solid var(--border-color);
+  padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;
+}
+.code-tag { font-family: var(--code-font); background: #eff6ff; color: var(--accent-dark); border-color: #bfdbfe; }
+
+/* Timeline Vertical (Experience) */
+.timeline-vertical {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 2px solid var(--border-color);
+}
+
+.timeline-entry { position: relative; margin-bottom: 2rem; }
+.time-marker {
+  position: absolute; left: -2.4rem; top: 5px;
+  width: 12px; height: 12px; background: #fff;
+  border: 3px solid var(--accent-blue); border-radius: 50%;
+}
+.time-date { font-family: var(--code-font); font-size: 0.8rem; color: var(--accent-blue); margin-bottom: 0.2rem; }
+.job-title { font-size: 1.1rem; margin: 0; font-weight: 600; }
+.job-loc { font-size: 0.9rem; color: var(--text-secondary); font-style: italic; margin-bottom: 0.5rem; }
+
+/* Patent Cards */
+.patent-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+.patent-card {
+  display: flex; gap: 1rem; padding: 1rem;
+  border: 1px solid var(--border-color); border-radius: 6px;
+  background: #fff; align-items: center;
+}
+.patent-icon { font-size: 1.5rem; color: #d97706; }
+.patent-details h4 { margin: 0 0 0.2rem 0; font-size: 0.95rem; line-height: 1.3; }
+.patent-meta { font-family: var(--code-font); font-size: 0.75rem; color: var(--text-secondary); }
+
+/* Publications */
 .pub-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1.2rem;
-  margin-bottom: 1rem;
-  background: #fff;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.pub-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  border-color: var(--accent-blue);
-}
-
-.pub-main { flex: 1; padding-right: 1rem; }
-
-.pub-title {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.05rem;
-  color: #0f172a;
-  font-weight: 600;
-}
-
-.pub-authors {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
+  display: flex; justify-content: space-between; padding: 1rem;
+  background: #fff; border-bottom: 1px solid var(--border-color);
   margin-bottom: 0.5rem;
 }
-
+.pub-title { margin: 0 0 0.3rem 0; font-size: 1rem; font-weight: 600; }
 .venue-tag {
-  display: inline-block;
-  font-family: var(--code-font);
-  font-size: 0.75rem;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: 700;
+  font-family: var(--code-font); font-size: 0.75rem; padding: 2px 6px;
+  border-radius: 4px; font-weight: 700; margin-right: 0.5rem;
 }
-
 .venue-tag.nature { background: #dcfce7; color: #15803d; }
 .venue-tag.ieee { background: #dbeafe; color: #1e40af; }
-.venue-tag.conf { background: #f1f5f9; color: #475569; }
 
-.pub-year {
-  font-family: var(--code-font);
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin-left: 0.5rem;
-}
+.conf-list li { margin-bottom: 0.8rem; font-size: 0.95rem; }
 
-.pub-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  min-width: 80px;
-}
-
-.btn-action {
-  font-family: var(--code-font);
-  font-size: 0.75rem;
-  text-align: center;
-  padding: 4px 8px;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  color: var(--text-secondary);
-  transition: all 0.2s;
-}
-
-.btn-action:hover {
-  background: #1a202c;
-  color: #fff;
-  border-color: #1a202c;
-}
-.btn-action.disabled { opacity: 0.5; pointer-events: none; }
-
-/* Education Timeline */
+/* Education (Reused Timeline styles roughly) */
 .edu-timeline { border-left: 2px solid var(--border-color); padding-left: 2rem; }
-
-.edu-item { position: relative; margin-bottom: 2.5rem; }
-
+.edu-item { position: relative; margin-bottom: 2rem; }
 .edu-item::before {
-  content: '';
-  position: absolute;
-  left: -2.45rem;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  background: #fff;
-  border: 3px solid var(--accent-blue);
-  border-radius: 50%;
+  content: ''; position: absolute; left: -2.4rem; top: 5px;
+  width: 10px; height: 10px; background: var(--text-secondary); border-radius: 50%;
 }
-
-.edu-date {
-  font-family: var(--code-font);
-  font-size: 0.85rem;
-  color: var(--accent-blue);
-  margin-bottom: 0.25rem;
-}
-
-.edu-inst { font-weight: 600; color: #334155; }
-.edu-detail { font-size: 0.9rem; color: var(--text-secondary); margin: 0.5rem 0; }
-
+.edu-date { font-family: var(--code-font); font-size: 0.85rem; color: var(--text-secondary); }
 .award-badge {
-  display: inline-block;
-  background: #fff7ed;
-  color: #c2410c;
-  border: 1px solid #ffedd5;
-  font-size: 0.75rem;
-  padding: 2px 8px;
-  border-radius: 12px;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
+  display: inline-block; background: #fff7ed; color: #c2410c;
+  border: 1px solid #ffedd5; font-size: 0.75rem; padding: 2px 8px;
+  border-radius: 12px; margin-right: 0.5rem; margin-top: 0.3rem;
+}
+
+/* Split Section */
+.split-section { display: flex; gap: 2rem; margin-top: 3rem; }
+.half { flex: 1; }
+.compact-list { list-style: none; padding: 0; }
+.compact-list li {
+  margin-bottom: 0.8rem; padding-left: 1.2rem; position: relative; font-size: 0.95rem;
+}
+.compact-list li::before {
+  content: '▹'; position: absolute; left: 0; color: var(--accent-blue);
 }
 
 @media (max-width: 768px) {
-  .skills-grid { grid-template-columns: 1fr; }
-  .pub-card { flex-direction: column; }
-  .pub-actions { flex-direction: row; margin-top: 1rem; }
-  .hero-name { font-size: 2rem; }
+  .split-section { flex-direction: column; gap: 1rem; }
+  .pub-card { flex-direction: column; gap: 0.5rem; }
 }
 </style>
