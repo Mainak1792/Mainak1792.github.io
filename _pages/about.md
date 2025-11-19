@@ -429,12 +429,12 @@ redirect_from:
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-hand-holding-heart"></i> Service</h2>
       <ul class="compact-list">
-        <li><strong>Head:</strong> IEEE Delhi Signal Processing Society (SPS) Student Chapter</li>
+        <li><strong>Head:</strong> IEEE Delhi Signal Processing Society (SPS) Student Chapter (2025)</li>
         <li><strong>Reviewer:</strong> IEEE Transactions on Instrumentation and Measurement (2025)</li>
         <li><strong>Volunteer:</strong> ICASSP 2025 Progress Workshop</li>
       </ul>
     </section>
-  </div>
+  <!-- </div> -->
 
 </div>
 
