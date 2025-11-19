@@ -363,7 +363,7 @@ redirect_from:
       <div class="edu-item">
         <div class="edu-date">2022 - 2026 (Exp)</div>
         <div class="edu-content">
-          <h3>PhD in Cyber Physical Systems (Signal Processing)</h3>
+          <h3>PhD </h3>
           <div class="edu-inst">Indian Institute of Technology Delhi (IITD)</div>
           <p class="edu-detail">CGPA: 9.07/10.00 | <em>Thesis: Human Cognition & Locomotion using non-invasive sensors</em></p>
           <div class="award-badges">
