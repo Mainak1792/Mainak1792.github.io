@@ -71,14 +71,7 @@ redirect_from:
   <section class="section">
     <h2 class="section-title"><i class="fas fa-bullhorn"></i> Recent News</h2>
     <div class="news-scroller">
-<!--       
-      <div class="news-item">
-        <div class="news-date">Nov 2025</div>
-        <div class="news-content">
-          Paper accepted at <strong>IEEE Transactions on Instrumentation and Measurement (TIM)</strong>.
-        </div>
-      </div> -->
-
+      
       <div class="news-item">
         <div class="news-date">Nov 2025</div>
         <div class="news-content">
@@ -128,9 +121,6 @@ redirect_from:
           <a href="https://docs.google.com/document/d/1mdtiTfP7JDfBDd2_zCS7oCQ7EjhkuH7uMZCOC2RTFLc/edit?usp=sharing" class="btn-cv" target="_blank">
             <i class="fas fa-file-arrow-down"></i> Download Curriculum Vitae
           </a>
-          <!-- <a href="mailto:mainakchakraborty92@gmail.com" class="btn-cv btn-outline">
-            <i class="fas fa-envelope"></i> Contact
-          </a> -->
         </div>
 
   <section class="section">
@@ -186,7 +176,7 @@ redirect_from:
             <h4 class="pub-title">Deepstep: A Deep Learning-based Indoor Person Identification Framework using Footstep-Induced Structural Vibration Signals</h4>
             <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, S Anchal, B Mukhopadhyay, S Kar</div>
             <div class="pub-venue">
-              <span class="venue-tag ieee">IEEE TIM</span>
+              <span class="venue-tag trans">IEEE TIM</span>
               <span class="pub-year">Accepted Nov 2025</span>
             </div>
           </div>
@@ -211,7 +201,7 @@ redirect_from:
             <h4 class="pub-title"><a href="https://ieeexplore.ieee.org/document/11141764" target="_blank">Deep Multi-Class Novelty Detection in Structural Vibrations with Modified Contrastive Loss</a></h4>
             <div class="pub-authors"><strong>M Chakraborty</strong>, Chandan, B Mukhopadhyay, S Kar</div>
             <div class="pub-venue">
-              <span class="venue-tag ieee">IEEE TMC</span>
+              <span class="venue-tag trans">IEEE TMC</span>
               <span class="pub-year">2025</span>
             </div>
           </div>
@@ -385,7 +375,8 @@ redirect_from:
     </div>
   </section>
 
-<!-- <section class="section half">
+  <div class="split-section">
+    <section class="section half">
       <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
       <ul class="compact-list">
         <li>
@@ -394,35 +385,19 @@ redirect_from:
         </li>
         <li>
           <strong>NPTEL TA (2024):</strong> 
-          <a href="https://www.mainakchakraborty.com/teaching/2023-fall-teaching-2" class="academic-link" target="_blank">Machine Learning (Bengali) (100+ students) </a>
+          <a href="https://www.mainakchakraborty.com/teaching/2023-fall-teaching-2" class="academic-link" target="_blank">Machine Learning (Bengali) (100+ students)</a>
         </li>
         <li>
           <strong>NPTEL TA (2024):</strong> 
-          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Machine Learning (500+ students) </a>
+          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Machine Learning (50+ Students)</a>
         </li>
-          <li>
-          <strong>NPTEL TA (2023):</strong> 
-          <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Statistical Inference (50+ students) </a>
+        <li>
+          <strong>NPTEL TA (2024):</strong> Statistical Inference (50+ students) 
         </li>
         <li>
           <strong>Guest Lecturer (2023):</strong> 
-          <a href="https://www.mainakchakraborty.com/teaching/2023-spring-teaching-2" class="academic-link" target="_blank">JNU Delhi, School of Engineering (Course EN-112) (100+ students) </a>
+          <a href="https://www.mainakchakraborty.com/teaching/2023-spring-teaching-2" class="academic-link" target="_blank">JNU Delhi, School of Engineering (Course EN-112) (120 Students)</a>
         </li>
-        <li>
-          <strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects)
-        </li>
-      </ul>
-    </section> -->
-
-  <div class="split-section">
-    <section class="section half">
-      <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Teaching</h2>
-      <ul class="compact-list">
-        <li><strong>NPTEL TA (2025):</strong> Cloud Computing (500+ Students)</li>
-        <li><strong>NPTEL TA (2024):</strong> Machine Learning (Bengali) (100+ students)</li>
-        <li><strong>NPTEL TA (2024):</strong> Machine Learning (50+ Students)</li>
-        <li><strong>NPTEL TA (2024):</strong> Statistical Inference (50+ students) </li>
-        <li><strong>Guest Lecturer (2023):</strong> JNU Delhi, School of Engineering (Course EN-112) (120 Students)</li>
         <li><strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects)</li>
       </ul>
     </section>
@@ -432,12 +407,10 @@ redirect_from:
       <ul class="compact-list">
         <li><strong>Head:</strong> IEEE Delhi Signal Processing Society (SPS) Student Chapter (2025)</li>
         <li><strong>Reviewer:</strong> IEEE Transactions on Instrumentation and Measurement (2025)</li>
-        <li><strong>Volunteer:</strong> ICASSP 2025 Progress Workshop</li>
+        <li><strong>Volunteer:</strong> Youth Ideathon 2025, ICASSP 2025 Progress Workshop</li>
       </ul>
     </section>
-  <!-- </div> -->
-
-</div>
+  </div>
 
 <style>
 :root {
@@ -479,6 +452,8 @@ a { text-decoration: none; color: inherit; }
 
 .highlight { background: #e0e7ff; color: var(--accent-dark); padding: 0 4px; border-radius: 2px; }
 .tech-highlight { color: var(--accent-blue); font-weight: 600; }
+.academic-link { color: var(--accent-blue); border-bottom: 1px dashed var(--accent-blue); }
+.academic-link:hover { border-bottom-style: solid; }
 
 /* Hero & Skills */
 .hero-name { font-size: 2.5rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
@@ -567,9 +542,12 @@ a { text-decoration: none; color: inherit; }
   font-family: var(--code-font); font-size: 0.75rem; padding: 2px 6px;
   border-radius: 4px; font-weight: 700; margin-right: 0.5rem; display: inline-block;
 }
+/* Colors for Venues */
 .venue-tag.nature { background: #dcfce7; color: #15803d; }
 .venue-tag.ieee { background: #dbeafe; color: #1e40af; }
 .venue-tag.conf { background: #f1f5f9; color: #475569; }
+.venue-tag.trans { background: #f3e8ff; color: #7e22ce; } /* New Purple for Transactions */
+
 .pub-year { font-family: var(--code-font); font-size: 0.8rem; color: var(--text-secondary); }
 
 .pub-actions { min-width: 60px; display: flex; align-items: flex-start; }
