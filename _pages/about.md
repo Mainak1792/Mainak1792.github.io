@@ -129,7 +129,7 @@ redirect_from:
     <div class="news-item">
       <div class="news-date">Nov 2025</div>
       <div class="news-content">
-        Awarded the prestigious <strong>IEEE Signal Processing Society (SPS) Scholarship 2025</strong>.
+        Awarded the <strong>IEEE Signal Processing Society (SPS) Scholarship 2025</strong>.
       </div>
     </div>
 
