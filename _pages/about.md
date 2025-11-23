@@ -520,13 +520,17 @@ redirect_from:
           <a href="https://www.mainakchakraborty.com/teaching/2024-spring-teaching-1" class="academic-link" target="_blank">Machine Learning (50+ Students)</a>
         </li>
         <li>
-          <strong>NPTEL TA (2024):</strong> Statistical Inference (50+ students) 
+          <strong>NPTEL TA (2024):</strong> 
+          <a href="https://www.mainakchakraborty.com/teaching/2023-spring-teaching-1" class="academic-link" target="_blank">Statistical Inference (50+ students) </a>
         </li>
+        <!-- <li>
+          <strong>NPTEL TA (2024):</strong> Statistical Inference (50+ students) 
+        </li> -->
         <li>
           <strong>Guest Lecturer (2023):</strong> 
           <a href="https://www.mainakchakraborty.com/teaching/2023-spring-teaching-2" class="academic-link" target="_blank">JNU Delhi, School of Engineering (Course EN-112) (120 Students)</a>
         </li>
-        <li><strong>Course Instructor (2023):</strong> Hindu College, Delhi Univ. (Edge ML Projects)</li>
+        <li><strong>Course Instructor (2023):</strong> Delhi Universtiy (Edge ML Projects)</li>
       </ul>
     </section>
 
