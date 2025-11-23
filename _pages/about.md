@@ -130,25 +130,12 @@ redirect_from:
     </div>
 
     <div class="news-item">
-      <div class="news-date">November 2025</div>
-      <div class="news-content">
-        Awarded <strong>IEEE SPS 2025 Fellowship</strong>.
-      </div>
-    </div>
-
-    <div class="news-item">
       <div class="news-date">Oct 2025</div>
       <div class="news-content">
         Dataset paper published in <strong>Nature Scientific Data</strong>.
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-date">October 2025</div>
-      <div class="news-content">
-        Our Paper published at <strong>Scientific Data (Nature)</strong>.
-      </div>
-    </div>
 
     <div class="news-item">
       <div class="news-date">Sep 2025</div>
@@ -157,12 +144,6 @@ redirect_from:
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-date">September 2025</div>
-      <div class="news-content">
-        Our Paper presented at <strong>15th IWSHM, Stanford</strong>.
-      </div>
-    </div>
 
     <div class="news-item">
       <div class="news-date">Aug 2025</div>
@@ -171,12 +152,6 @@ redirect_from:
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-date">August 2025</div>
-      <div class="news-content">
-        Our Paper Accepted at <strong>IEEE Transactions on Mobile Computing</strong>.
-      </div>
-    </div>
 
     <div class="news-item">
       <div class="news-date">Mar 2025</div>
@@ -185,15 +160,9 @@ redirect_from:
       </div>
     </div>
 
-    <div class="news-item">
-      <div class="news-date">March 2025</div>
-      <div class="news-content">
-        Our Abstract Paper Accepted at <strong>ACM-SENSYS</strong>.
-      </div>
-    </div>
 
     <div class="news-item">
-      <div class="news-date">January 2025</div>
+      <div class="news-date">Jan 2025</div>
       <div class="news-content">
         Our Paper Selected at <strong>ICASSP 2025</strong>.
       </div>
