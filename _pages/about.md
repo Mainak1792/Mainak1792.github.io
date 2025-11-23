@@ -489,7 +489,7 @@ redirect_from:
           <div class="edu-inst">Indian Institute of Technology Delhi (IITD)</div>
           <p class="edu-detail">CGPA: 9.07/10.00 | <em>Thesis: Sensing Human Cognition & Locomotion using ubiquitous heterogenous sensors</em></p>
           <div class="award-badges">
-            <span class="award-badge">PMRF Fellow</span>
+            <span class="award-badge">PMRF Fellow '25</span>
             <span class="award-badge">IEEE SPS Scholarship '24, '25</span>
           </div>
         </div>
@@ -502,7 +502,7 @@ redirect_from:
           <div class="edu-inst">IIEST Shibpur</div>
           <p class="edu-detail">CGPA: 9.00/10.00 <em>Thesis: Human movement identifiction using seismic signals and vision sensors</em></p>
           <div class="award-badges">
-            <span class="award-badge">GATE Fellow</span>
+            <span class="award-badge">GATE Fellow '21</span>
             <span class="award-badge">CSIR-CMERI Student Researcher '20</span>
           </div>
         </div>
