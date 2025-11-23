@@ -68,7 +68,7 @@ redirect_from:
 
   <hr class="divider">
 
-  <section class="section">
+  <!-- <section class="section">
     <h2 class="section-title"><i class="fas fa-bullhorn"></i> Recent News</h2>
     <div class="news-scroller">
       
@@ -115,7 +115,166 @@ redirect_from:
       </div>
 
     </div>
-  </section>
+  </section> -->
+<section class="section">
+  <h2 class="section-title"><i class="fas fa-bullhorn"></i> Recent News</h2>
+
+  <div class="news-scroller">
+
+    <!-- 2025 -->
+    <div class="news-item">
+      <div class="news-date">Nov 2025</div>
+      <div class="news-content">
+        Awarded the prestigious <strong>IEEE Signal Processing Society (SPS) Scholarship 2025</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">November 2025</div>
+      <div class="news-content">
+        Awarded <strong>IEEE SPS 2025 Fellowship</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Oct 2025</div>
+      <div class="news-content">
+        Dataset paper published in <strong>Nature Scientific Data</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">October 2025</div>
+      <div class="news-content">
+        Our Paper published at <strong>Scientific Data (Nature)</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Sep 2025</div>
+      <div class="news-content">
+        Presented research at <strong>IWSHM 2025</strong>, Stanford University, USA.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">September 2025</div>
+      <div class="news-content">
+        Our Paper presented at <strong>15th IWSHM, Stanford</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Aug 2025</div>
+      <div class="news-content">
+        Paper accepted at <strong>IEEE Transactions on Mobile Computing (TMC)</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">August 2025</div>
+      <div class="news-content">
+        Our Paper Accepted at <strong>IEEE Transactions on Mobile Computing</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Mar 2025</div>
+      <div class="news-content">
+        Received <strong>IEEE ICASSP 2025 Travel Grant</strong> to present in USA.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">March 2025</div>
+      <div class="news-content">
+        Our Abstract Paper Accepted at <strong>ACM-SENSYS</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">January 2025</div>
+      <div class="news-content">
+        Our Paper Selected at <strong>ICASSP 2025</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">Jan 2025</div>
+      <div class="news-content">
+        Appointed Head of <strong>IEEE Delhi SPS Student Chapter</strong>.
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="news-item">
+      <div class="news-date">2024</div>
+      <div class="news-content">
+        IEEE SPS Scholarship, within top 25% of candidates, USA.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">2024</div>
+      <div class="news-content">
+        Poster Presentation at <strong>Applied Harmonic Analysis & ML 2024</strong>, MALGA, Genova, Italy.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">2024</div>
+      <div class="news-content">
+        Paper Selected at <strong>IEEE Sensor Letter</strong>.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">2024</div>
+      <div class="news-content">
+        Attended <strong>Machine Learning Summer School</strong>, ETH Zurich + Universitätsklinik Balgrist.
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div class="news-item">
+      <div class="news-date">2023</div>
+      <div class="news-content">
+        TensorFlow Developer Certificate — Credential ID: 87883013.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">2023</div>
+      <div class="news-content">
+        Paper Selected at <strong>IEEE Signal Processing Letter</strong>.
+      </div>
+    </div>
+
+    <!-- 2022 -->
+    <div class="news-item">
+      <div class="news-date">2022</div>
+      <div class="news-content">
+        Raised <strong>10k USD</strong> for “Eta-aide” predictive maintenance startup (Exited 2023), India.
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-date">2022</div>
+      <div class="news-content">
+        Awarded <strong>PMRF Scholarship</strong> — top 0.5% among 2,12,568 candidates, India.
+      </div>
+    </div>
+
+    <!-- 2019 -->
+    <div class="news-item">
+      <div class="news-date">2019</div>
+      <div class="news-content">
+        GATE Fellowship — top 6% among 1,67,376 candidates, India.
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <div class="hero-actions">
           <a href="https://docs.google.com/document/d/1mdtiTfP7JDfBDd2_zCS7oCQ7EjhkuH7uMZCOC2RTFLc/edit?usp=sharing" class="btn-cv" target="_blank">
