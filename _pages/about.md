@@ -44,6 +44,7 @@ redirect_from:
               <span class="tag">Sony Spresence</span>
             </div>
           </div>
+
           <div class="skill-category">
             <span class="mono-label"><i class="fas fa-tools"></i> Tools</span>
             <div class="tag-cloud">
@@ -52,14 +53,17 @@ redirect_from:
               <span class="tag">Unity Engine</span>
               <span class="tag">OpenSim</span>
             </div>
-          </div>
+
+          <!-- </div>
+
+
            <div class="skill-category">
             <span class="mono-label"><i class="fas fa-brain"></i> Focus</span>
             <div class="tag-cloud">
               <span class="tag">Edge AI / TinyML</span>
               <span class="tag">Signal Processing</span>
               <span class="tag">Gait Analysis</span>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
