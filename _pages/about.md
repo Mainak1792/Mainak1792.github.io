@@ -22,7 +22,7 @@ redirect_from:
           I am a doctoral researcher at <span class="highlight">SENSE, IIT Delhi</span>, specializing in <span class="tech-highlight">Cross-Modal Gait Identification</span> and behavioral sensing. Working with <a href="https://web.iitd.ac.in/~subrat/" class="academic-link">Prof. Subrat Kar</a>, I develop ubiquitous recognition systems using structural vibration and vision.
         </p>
         <p class="profile-text">
-          My background spans <strong>Cyber-Physical Systems, Robtics</strong> and <strong>Deep Learning</strong>. I have architected predictive maintenance systems for startups and hold multiple patents in sensing.
+          My background spans <strong>Cyber-Physical Systems, Edge AI, Signal Processing, Robtics</strong> and <strong>Practical Deep Learning</strong>. I have architected predictive maintenance systems for startups, Elephant Monitoring Devices for wildlife monitoring and hold multiple patents in sensing.
         </p>
         
         <div class="skills-matrix">
