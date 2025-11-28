@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Startup Summit</title>
+    
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Animations -->
+    <style>
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.3s ease-out forwards;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // --- Icons (Replaced imports with SVG Components) ---
+        const Icon = ({ path, size = 24, className = "" }) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+                {path}
+            </svg>
+        );
+
+        const Rocket = (props) => <Icon {...props} path={<><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-5.2L15 2a11 11 0 0 1 4 4l-4.8 4a25 25 0 0 1-5.2 2z"/></>} />;
+        const Users = (props) => <Icon {...props} path={<><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></>} />;
+        const Zap = (props) => <Icon {...props} path={<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>} />;
+        const Globe = (props) => <Icon {...props} path={<><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></>} />;
+        const Heart = (props) => <Icon {...props} path={<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>} />;
+        const Droplet = (props) => <Icon {...props} path={<path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.74-.96-.88-2.45-2.27-3.24-3.56a.8.8 0 0 0-1.5 0C10.45 7.11 8.96 8.5 8 9.38 6 11.23 5 13.12 5 15.12a7 7 0 0 0 7 6.88Z"/>} />;
+        const Shield = (props) => <Icon {...props} path={<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>} />;
+        const Smartphone = (props) => <Icon {...props} path={<rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/>} />;
+        const ChevronRight = (props) => <Icon {...props} path={<path d="m9 18 6-6-6-6"/>} />;
+        const Award = (props) => <Icon {...props} path={<><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></>} />;
+        const TrendingUp = (props) => <Icon {...props} path={<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>} />;
+        const X = (props) => <Icon {...props} path={<><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></>} />;
+        const Search = (props) => <Icon {...props} path={<><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></>} />;
+
+        // --- Data ---
+        const startups = [
+          {
+            id: 1,
+            section: "9A",
+            startupName: "RoSafe",
+            teamName: "Team Alpha",
+            members: ["Arnav Verma", "Arnav Saini", "Aryan Duggal", "Aarav", "Kanav"],
+            tagline: "Intelligent Mountain Safety Systems",
+            pitch: "Revolutionizing high-altitude driving safety. RoSafe integrates automated barriers activated by traffic signals on sharp mountain turns to prevent accidents. Coupled with in-car biometric sensors that detect alcohol levels, we ensure that a vehicle never starts if the driver is compromised.",
+            category: "Safety Tech",
+            icon: <Shield className="w-6 h-6" />
+          },
+          {
+            id: 2,
+            section: "9A",
+            startupName: "QuickPick",
+            teamName: "EmpowerMovers",
+            members: ["Stuti Tripathi", "Saanvi Gupta", "Lavanya Yadav", "Mehal Hooda"],
+            tagline: "Safe Mobility for Every Woman",
+            pitch: "A dedicated transport ecosystem focused on the safety and efficiency of female domestic workers. QuickPick provides reliable, verified, and scheduled commutes, ensuring dignity and security for the workforce that keeps our homes running.",
+            category: "Social Impact",
+            icon: <Heart className="w-6 h-6" />
+          },
+          {
+            id: 3,
+            section: "9A",
+            startupName: "Renew U",
+            teamName: "The New You",
+            members: ["Saanvi Goyal", "Vartika Gupta", "Anushka Katyaion", "Devanshaa Sirohi"],
+            tagline: "Gen-Z Circular Fashion Economy",
+            pitch: "A thrift store built by teenagers, for teenagers. We are destigmatizing pre-loved fashion and promoting sustainability. Renew U curates trendy, affordable clothing while reducing textile waste, proving that style doesn't have to cost the Earth.",
+            category: "Retail",
+            icon: <Globe className="w-6 h-6" />
+          },
+          {
+            id: 4,
+            section: "9B",
+            startupName: "Hurricanes",
+            teamName: "Hurricanes",
+            members: ["Devansh Malik"],
+            tagline: "Eco-Luxury Self Care",
+            pitch: "Handcrafted, eco-friendly soaps, candles, and skincare. We merge luxury with sustainability, utilizing organic ingredients and zero-waste packaging to provide a guilt-free pampering experience that nourishes both skin and soul.",
+            category: "Lifestyle",
+            icon: <Droplet className="w-6 h-6" />
+          },
+          {
+            id: 5,
+            section: "9B",
+            startupName: "Tenacious Four",
+            teamName: "Tenacious Four",
+            members: ["Tanmay Yadav", "Aadi Jain", "Chaitanya Arun", "Advait Ojha"],
+            tagline: "Pure Water, Anywhere",
+            pitch: "The future of hydration. We have engineered a self-cleaning smart bottle equipped with advanced UV-C technology. It eliminates 99.9% of bacteria and viruses from water instantly, ensuring safe drinking water is accessible on the go.",
+            category: "Health Tech",
+            icon: <Zap className="w-6 h-6" />
+          },
+          {
+            id: 6,
+            section: "9B",
+            startupName: "Desi Designers",
+            teamName: "Desi Designers",
+            members: ["Arhaan Yadav", "Team"],
+            tagline: "The Farmer's Smart Toolkit",
+            pitch: "Empowering Haryana's agriculture with a 3-in-1 portable solution. Our device combines a high-efficiency water pump, a rapid-deploy crop protection sheet, and a real-time soil fertility analyzer, giving farmers the data and tools they need to thrive.",
+            category: "AgriTech",
+            icon: <TrendingUp className="w-6 h-6" />
+          },
+          {
+            id: 7,
+            section: "9B",
+            startupName: "Road Fixers",
+            teamName: "Road Fixers",
+            members: ["Kartik", "Nipun", "Paarth"],
+            tagline: "Adaptive Non-Newtonian Infrastructure",
+            pitch: "Solving the speed breaker crisis. We utilize Non-Newtonian fluid dynamics to create smart speed breakers that remain soft for slow drivers but harden on impact for speeders. They are durable, easy to remove during roadworks, and cost-effective.",
+            category: "Infrastructure",
+            icon: <Rocket className="w-6 h-6" />
+          },
+          {
+            id: 8,
+            section: "9B",
+            startupName: "CulturalConnect",
+            teamName: "CulturalConnect",
+            members: ["Aadhya", "Lehar", "Soumya"],
+            tagline: "Bridging Roots and Future",
+            pitch: "A digital renaissance platform designed to reconnect India's youth with their heritage. Through interactive storytelling and events, we ensure that as we reach for the stars, we don't forget the soil we came from.",
+            category: "Education",
+            icon: <Users className="w-6 h-6" />
+          },
+          {
+            id: 9,
+            section: "9B",
+            startupName: "Rozzit",
+            teamName: "Rozzit",
+            members: ["Arshpreet Singh Kohli", "Shubhan Hiremath"],
+            tagline: "Hyper-Local Service Bridge",
+            pitch: "Digitizing the local gig economy. RozzIt connects urban households directly with trusted local service providers like tailors, press-walas, and plumbers. We provide steady income for workers and reliable, affordable service for homes.",
+            category: "Services",
+            icon: <Smartphone className="w-6 h-6" />
+          },
+          {
+            id: 10,
+            section: "9C",
+            startupName: "IntroPhones",
+            teamName: "IntroPhones",
+            members: ["Aarav Verma", "Kovidh Dhanger", "Kush Aggarwal", "Rihaan Arigala", "Samriddh"],
+            tagline: "Confidence in Every Sound",
+            pitch: "Audio wearables designed for the quiet ones. IntroPhones use specialized audio feedback and noise-cancellation algorithms to reduce social anxiety, helping introverts speak with confidence and communicate without stress.",
+            category: "Health Tech",
+            icon: <Users className="w-6 h-6" />
+          },
+          {
+            id: 11,
+            section: "9C",
+            startupName: "Cloud 1s",
+            teamName: "Cloud 1s",
+            members: ["Manas Mudgal", "Vivyaan Sharma", "Vedansh Malik", "Shaurya Salaria"],
+            tagline: "Autonomous Pollution Control",
+            pitch: "Combating Delhi NCR's pollution crisis from the sky. We deploy cost-effective, four-winged drone swarms equipped for precision cloud seeding, clearing the air and bringing rain where it's needed most.",
+            category: "EnviroTech",
+            icon: <Globe className="w-6 h-6" />
+          },
+          {
+            id: 12,
+            section: "9C",
+            startupName: "Tech 1",
+            teamName: "Tech 1",
+            members: ["Paarth", "Ahil", "Samarth"],
+            tagline: "Smart Waste Segregation",
+            pitch: "The dustbin, evolved. Our smart bin features auto-opening sensors for touchless hygiene and internal robotics that automatically segregate wet and dry waste, streamlining the recycling process at the source.",
+            category: "CleanTech",
+            icon: <Zap className="w-6 h-6" />
+          },
+          {
+            id: 13,
+            section: "9C",
+            startupName: "Atlas Policy Group 67",
+            teamName: "Atlas Policy",
+            members: ["Prisha", "Aditya", "Aaliya", "Keshvi"],
+            tagline: "Democratizing Legal Justice",
+            pitch: "Bridging the judicial gap for rural India. An AI-powered app offering legal literacy and document guidance in native languages, backed by a verified network of government officials to streamline case registration.",
+            category: "LegalTech",
+            icon: <Shield className="w-6 h-6" />
+          },
+          {
+            id: 14,
+            section: "9C",
+            startupName: "PAW.CO",
+            teamName: "PAW.CO",
+            members: ["Srishti Shelat", "Sana Sud", "Aarika Jain", "Aashvi Singal"],
+            tagline: "The Ultimate Pet Ecosystem",
+            pitch: "A comprehensive lifestyle solution for modern pet parents. From health tracking to adoption connections and premium care products, PAW.CO ensures your furry friends live their best, healthiest lives.",
+            category: "PetCare",
+            icon: <Heart className="w-6 h-6" />
+          },
+          {
+            id: 15,
+            section: "9C",
+            startupName: "NoBurn",
+            teamName: "NoBurn",
+            members: ["Krisha", "Tisya", "Madhuri"],
+            tagline: "Kitchen Safety Reinvented",
+            pitch: "Preventing culinary injuries before they happen. We have designed a universal, adjustable insulating belt made of high-grade heat-resistant material that fits onto utensil edges, preventing burns during cooking.",
+            category: "Consumer Goods",
+            icon: <Shield className="w-6 h-6" />
+          },
+          {
+            id: 16,
+            section: "9C",
+            startupName: "ZeroWaste Kitchen",
+            teamName: "ZeroWaste",
+            members: ["Eva", "Niharika", "Kaushiki", "Ritu"],
+            tagline: "From Excess to Access",
+            pitch: "A food rescue logistics network. We connect event caterers and functions directly with NGOs via our app, facilitating the immediate donation of leftover food to eliminate hunger and reduce food waste.",
+            category: "Social Impact",
+            icon: <Globe className="w-6 h-6" />
+          }
+        ];
+
+        // --- Helper Components ---
+        const Badge = ({ children, color = "blue", className = "" }) => {
+          const colors = {
+            blue: "bg-blue-100 text-blue-800 border-blue-200",
+            green: "bg-emerald-100 text-emerald-800 border-emerald-200",
+            purple: "bg-purple-100 text-purple-800 border-purple-200",
+            orange: "bg-orange-100 text-orange-800 border-orange-200",
+          };
+          return (
+            <span className={`px-2 py-1 rounded-md text-xs font-semibold border ${colors[color] || colors.blue} ${className}`}>
+              {children}
+            </span>
+          );
+        };
+
+        // --- Main App Component ---
+        function StartupSummit() {
+          const [activeTab, setActiveTab] = useState("All");
+          const [selectedStartup, setSelectedStartup] = useState(null);
+          const [investments, setInvestments] = useState({});
+          const [searchTerm, setSearchTerm] = useState("");
+          const [isScrolled, setIsScrolled] = useState(false);
+
+          useEffect(() => {
+            const handleScroll = () => {
+              setIsScrolled(window.scrollY > 20);
+            };
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+          }, []);
+
+          const handleInvest = (id, amount) => {
+            setInvestments(prev => ({
+              ...prev,
+              [id]: (prev[id] || 0) + amount
+            }));
+          };
+
+          const filteredStartups = startups.filter(s => {
+            const matchesTab = activeTab === "All" || s.section === activeTab;
+            const matchesSearch = s.startupName.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                                  s.category.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                                  s.pitch.toLowerCase().includes(searchTerm.toLowerCase());
+            return matchesTab && matchesSearch;
+          });
+
+          const totalFunded = Object.values(investments).reduce((a, b) => a + b, 0);
+
+          return (
+            <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+              
+              {/* Navbar */}
+              <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                  <div className="flex items-center gap-2">
+                    <div className="bg-indigo-600 p-2 rounded-lg text-white">
+                      <Rocket size={24} />
+                    </div>
+                    <div>
+                      <h1 className="text-xl font-bold tracking-tight text-slate-900 leading-none">STARTUP</h1>
+                      <span className="text-xs font-semibold text-indigo-600 tracking-widest uppercase">Summit Class 9</span>
+                    </div>
+                  </div>
+                  
+                  <div className="hidden md:flex items-center gap-6">
+                    <div className="flex bg-slate-100 rounded-full p-1 border border-slate-200">
+                      {["All", "9A", "9B", "9C"].map((tab) => (
+                        <button
+                          key={tab}
+                          onClick={() => setActiveTab(tab)}
+                          className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
+                            activeTab === tab 
+                              ? 'bg-white text-indigo-600 shadow-sm' 
+                              : 'text-slate-500 hover:text-slate-700'
+                          }`}
+                        >
+                          {tab === "All" ? "All Tracks" : `Track ${tab}`}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                     <div className="hidden sm:block text-right">
+                        <p className="text-xs text-slate-500 uppercase tracking-wider">Total Capital Committed</p>
+                        <p className="font-bold text-emerald-600">₹{totalFunded.toLocaleString()}</p>
+                     </div>
+                  </div>
+                </div>
+              </nav>
+
+              {/* Hero Section */}
+              <header className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 overflow-hidden text-white">
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500 rounded-full blur-3xl opacity-20 -mr-20 -mt-20 animate-pulse"></div>
+                
+                <div className="max-w-7xl mx-auto relative z-10 text-center">
+                  <Badge color="purple" className="text-white border-white/20">Event 2025</Badge>
+                  <h1 className="mt-4 text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                    The Future is <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Now.</span>
+                  </h1>
+                  <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 mb-10">
+                    Witness 16 visionary teams from Class 9 pitching ground-breaking solutions in Tech, Sustainability, and Social Impact.
+                  </p>
+                  
+                  {/* Search Bar */}
+                  <div className="max-w-xl mx-auto relative">
+                    <input
+                      type="text"
+                      placeholder="Search for startups, students, or ideas..."
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full py-4 pl-12 pr-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:bg-white/20 transition-all"
+                    />
+                    <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400" size={20} />
+                  </div>
+                </div>
+              </header>
+
+              {/* Main Content */}
+              <main className="max-w-7xl mx-auto px-4 py-16">
+                
+                {/* Mobile Filter */}
+                <div className="md:hidden flex overflow-x-auto gap-2 mb-8 pb-2 scrollbar-hide">
+                  {["All", "9A", "9B", "9C"].map((tab) => (
+                    <button
+                      key={tab}
+                      onClick={() => setActiveTab(tab)}
+                      className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap border ${
+                        activeTab === tab 
+                          ? 'bg-indigo-600 text-white border-indigo-600' 
+                          : 'bg-white text-slate-600 border-slate-200'
+                      }`}
+                    >
+                      {tab === "All" ? "All Tracks" : `Track ${tab}`}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Stats Row */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                  <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-4">
+                    <div className="p-3 bg-emerald-100 text-emerald-600 rounded-xl">
+                      <TrendingUp size={24} />
+                    </div>
+                    <div>
+                      <p className="text-sm text-slate-500">Active Startups</p>
+                      <p className="text-2xl font-bold text-slate-900">{filteredStartups.length}</p>
+                    </div>
+                  </div>
+                  <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-4">
+                    <div className="p-3 bg-blue-100 text-blue-600 rounded-xl">
+                      <Users size={24} />
+                    </div>
+                    <div>
+                      <p className="text-sm text-slate-500">Young Entrepreneurs</p>
+                      <p className="text-2xl font-bold text-slate-900">55+</p>
+                    </div>
+                  </div>
+                  <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-4">
+                    <div className="p-3 bg-purple-100 text-purple-600 rounded-xl">
+                      <Award size={24} />
+                    </div>
+                    <div>
+                      <p className="text-sm text-slate-500">Categories</p>
+                      <p className="text-2xl font-bold text-slate-900">8 Diverse Fields</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {filteredStartups.map((startup) => (
+                    <div 
+                      key={startup.id}
+                      onClick={() => setSelectedStartup(startup)}
+                      className="group bg-white rounded-2xl border border-slate-200 hover:border-indigo-300 hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden flex flex-col h-full"
+                    >
+                      <div className="h-2 bg-gradient-to-r from-indigo-500 to-cyan-500"></div>
+                      <div className="p-6 flex-grow">
+                        <div className="flex justify-between items-start mb-4">
+                          <div className="p-3 bg-slate-50 rounded-xl group-hover:bg-indigo-50 group-hover:text-indigo-600 transition-colors">
+                            {startup.icon}
+                          </div>
+                          <Badge color={startup.section === "9A" ? "blue" : startup.section === "9B" ? "purple" : "orange"}>
+                            Class {startup.section}
+                          </Badge>
+                        </div>
+                        
+                        <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-indigo-600 transition-colors">
+                          {startup.startupName}
+                        </h3>
+                        <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                          {startup.category}
+                        </p>
+                        
+                        <p className="text-slate-600 text-sm line-clamp-3 mb-4">
+                          {startup.pitch}
+                        </p>
+                      </div>
+
+                      <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex justify-between items-center">
+                        <div className="flex -space-x-2">
+                          {startup.members.slice(0, 3).map((m, i) => (
+                            <div key={i} className="w-8 h-8 rounded-full bg-indigo-100 border-2 border-white flex items-center justify-center text-[10px] font-bold text-indigo-700" title={m}>
+                              {m.charAt(0)}
+                            </div>
+                          ))}
+                          {startup.members.length > 3 && (
+                            <div className="w-8 h-8 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center text-[10px] font-bold text-slate-600">
+                              +{startup.members.length - 3}
+                            </div>
+                          )}
+                        </div>
+                        <span className="text-indigo-600 text-sm font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                          View Pitch <ChevronRight size={16} />
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {filteredStartups.length === 0 && (
+                  <div className="text-center py-20">
+                    <div className="bg-slate-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Search className="text-slate-400" size={32} />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900">No startups found</h3>
+                    <p className="text-slate-500">Try adjusting your search filters.</p>
+                  </div>
+                )}
+              </main>
+
+              {/* Modal */}
+              {selectedStartup && (
+                <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+                  <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => setSelectedStartup(null)}></div>
+                  <div className="bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative z-10 animate-fade-in-up">
+                    
+                    {/* Modal Header */}
+                    <div className="relative h-40 bg-gradient-to-r from-indigo-600 to-purple-600 overflow-hidden shrink-0">
+                       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
+                       <button 
+                        onClick={() => setSelectedStartup(null)}
+                        className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all"
+                      >
+                        <X size={20} />
+                      </button>
+                      <div className="absolute bottom-6 left-6 text-white">
+                        <Badge color="blue" className="bg-white/20 text-white border-white/30 backdrop-blur-md mb-2">
+                           {selectedStartup.category}
+                        </Badge>
+                        <h2 className="text-3xl font-bold">{selectedStartup.startupName}</h2>
+                        <p className="text-indigo-100 text-sm opacity-90">{selectedStartup.tagline}</p>
+                      </div>
+                    </div>
+
+                    {/* Modal Content */}
+                    <div className="p-8">
+                      <div className="mb-8">
+                        <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                          <Zap size={16} className="text-amber-500"/> The Pitch
+                        </h3>
+                        <p className="text-slate-700 leading-relaxed text-lg">
+                          {selectedStartup.pitch}
+                        </p>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
+                        <div>
+                           <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <Users size={16} className="text-indigo-500"/> The Team
+                          </h3>
+                          <div className="space-y-2">
+                            {selectedStartup.members.map((member, i) => (
+                              <div key={i} className="flex items-center gap-3 p-2 rounded-lg bg-slate-50 border border-slate-100">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 text-white flex items-center justify-center font-bold text-xs">
+                                  {member.charAt(0)}
+                                </div>
+                                <span className="text-slate-700 font-medium">{member}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                        
+                        <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between">
+                          <div>
+                            <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Current Valuation</h3>
+                            <p className="text-3xl font-bold text-slate-900">₹{(investments[selectedStartup.id] || 0).toLocaleString()}</p>
+                            <p className="text-xs text-slate-500 mt-1">Virtual Capital Raised</p>
+                          </div>
+                          
+                          <div className="mt-6 space-y-2">
+                            <button 
+                              onClick={() => handleInvest(selectedStartup.id, 10000)}
+                              className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold shadow-lg shadow-indigo-200 transition-all active:scale-95 flex items-center justify-center gap-2"
+                            >
+                              Invest ₹10,000
+                            </button>
+                            <button 
+                              onClick={() => handleInvest(selectedStartup.id, 50000)}
+                              className="w-full py-3 bg-white border-2 border-indigo-100 hover:border-indigo-600 text-indigo-600 rounded-xl font-bold transition-all active:scale-95"
+                            >
+                              Invest ₹50,000
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Footer */}
+              <footer className="bg-slate-900 text-slate-400 py-12 text-center">
+                <div className="flex justify-center items-center gap-2 mb-4 text-white">
+                  <Rocket size={20} />
+                  <span className="font-bold text-xl">STARTUP SUMMIT</span>
+                </div>
+                <p className="mb-4">Celebrating Innovation & Entrepreneurship • Class 9</p>
+                <p className="text-sm opacity-50">&copy; 2025 School Innovation Council. All rights reserved.</p>
+              </footer>
+            </div>
+          );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<StartupSummit />);
+    </script>
+</body>
+</html>
