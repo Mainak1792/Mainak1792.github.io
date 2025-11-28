@@ -41,7 +41,7 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
-        // --- Icons (Replaced imports with SVG Components) ---
+        // --- Icons ---
         const Icon = ({ path, size = 24, className = "" }) => (
             <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
                 {path}
@@ -58,12 +58,13 @@
         const Smartphone = (props) => <Icon {...props} path={<><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></>} />;
         const ChevronRight = (props) => <Icon {...props} path={<path d="m9 18 6-6-6-6"/>} />;
         const Award = (props) => <Icon {...props} path={<><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></>} />;
-        /* Fixed: Wrapped TrendingUp paths in a fragment <>...</> */
         const TrendingUp = (props) => <Icon {...props} path={<><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></>} />;
         const X = (props) => <Icon {...props} path={<><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></>} />;
         const Search = (props) => <Icon {...props} path={<><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></>} />;
+        const Play = (props) => <Icon {...props} path={<polygon points="5 3 19 12 5 21 5 3"/>} />;
 
         // --- Data ---
+        // NOTE: Make sure to put your video files in a folder named 'videos' next to this HTML file.
         const startups = [
           {
             id: 1,
@@ -74,7 +75,9 @@
             tagline: "Intelligent Mountain Safety Systems",
             pitch: "Revolutionizing high-altitude driving safety. RoSafe integrates automated barriers activated by traffic signals on sharp mountain turns to prevent accidents. Coupled with in-car biometric sensors that detect alcohol levels, we ensure that a vehicle never starts if the driver is compromised.",
             category: "Safety Tech",
-            icon: <Shield className="w-6 h-6" />
+            icon: <Shield className="w-6 h-6" />,
+            videoFile: "videos/rosafe.mp4",
+            valuation: "50,00,000"
           },
           {
             id: 2,
@@ -85,7 +88,9 @@
             tagline: "Safe Mobility for Every Woman",
             pitch: "A dedicated transport ecosystem focused on the safety and efficiency of female domestic workers. QuickPick provides reliable, verified, and scheduled commutes, ensuring dignity and security for the workforce that keeps our homes running.",
             category: "Social Impact",
-            icon: <Heart className="w-6 h-6" />
+            icon: <Heart className="w-6 h-6" />,
+            videoFile: "videos/quickpick.mp4",
+            valuation: "35,00,000"
           },
           {
             id: 3,
@@ -96,7 +101,9 @@
             tagline: "Gen-Z Circular Fashion Economy",
             pitch: "A thrift store built by teenagers, for teenagers. We are destigmatizing pre-loved fashion and promoting sustainability. Renew U curates trendy, affordable clothing while reducing textile waste, proving that style doesn't have to cost the Earth.",
             category: "Retail",
-            icon: <Globe className="w-6 h-6" />
+            icon: <Globe className="w-6 h-6" />,
+            videoFile: "videos/renewu.mp4",
+            valuation: "20,00,000"
           },
           {
             id: 4,
@@ -107,7 +114,9 @@
             tagline: "Eco-Luxury Self Care",
             pitch: "Handcrafted, eco-friendly soaps, candles, and skincare. We merge luxury with sustainability, utilizing organic ingredients and zero-waste packaging to provide a guilt-free pampering experience that nourishes both skin and soul.",
             category: "Lifestyle",
-            icon: <Droplet className="w-6 h-6" />
+            icon: <Droplet className="w-6 h-6" />,
+            videoFile: "videos/hurricanes.mp4",
+            valuation: "15,00,000"
           },
           {
             id: 5,
@@ -118,7 +127,9 @@
             tagline: "Pure Water, Anywhere",
             pitch: "The future of hydration. We have engineered a self-cleaning smart bottle equipped with advanced UV-C technology. It eliminates 99.9% of bacteria and viruses from water instantly, ensuring safe drinking water is accessible on the go.",
             category: "Health Tech",
-            icon: <Zap className="w-6 h-6" />
+            icon: <Zap className="w-6 h-6" />,
+            videoFile: "videos/tenacious4.mp4",
+            valuation: "45,00,000"
           },
           {
             id: 6,
@@ -129,7 +140,9 @@
             tagline: "The Farmer's Smart Toolkit",
             pitch: "Empowering Haryana's agriculture with a 3-in-1 portable solution. Our device combines a high-efficiency water pump, a rapid-deploy crop protection sheet, and a real-time soil fertility analyzer, giving farmers the data and tools they need to thrive.",
             category: "AgriTech",
-            icon: <TrendingUp className="w-6 h-6" />
+            icon: <TrendingUp className="w-6 h-6" />,
+            videoFile: "videos/desi.mp4",
+            valuation: "60,00,000"
           },
           {
             id: 7,
@@ -140,7 +153,9 @@
             tagline: "Adaptive Non-Newtonian Infrastructure",
             pitch: "Solving the speed breaker crisis. We utilize Non-Newtonian fluid dynamics to create smart speed breakers that remain soft for slow drivers but harden on impact for speeders. They are durable, easy to remove during roadworks, and cost-effective.",
             category: "Infrastructure",
-            icon: <Rocket className="w-6 h-6" />
+            icon: <Rocket className="w-6 h-6" />,
+            videoFile: "videos/roadfixers.mp4",
+            valuation: "80,00,000"
           },
           {
             id: 8,
@@ -151,7 +166,9 @@
             tagline: "Bridging Roots and Future",
             pitch: "A digital renaissance platform designed to reconnect India's youth with their heritage. Through interactive storytelling and events, we ensure that as we reach for the stars, we don't forget the soil we came from.",
             category: "Education",
-            icon: <Users className="w-6 h-6" />
+            icon: <Users className="w-6 h-6" />,
+            videoFile: "videos/culture.mp4",
+            valuation: "25,00,000"
           },
           {
             id: 9,
@@ -162,7 +179,9 @@
             tagline: "Hyper-Local Service Bridge",
             pitch: "Digitizing the local gig economy. RozzIt connects urban households directly with trusted local service providers like tailors, press-walas, and plumbers. We provide steady income for workers and reliable, affordable service for homes.",
             category: "Services",
-            icon: <Smartphone className="w-6 h-6" />
+            icon: <Smartphone className="w-6 h-6" />,
+            videoFile: "videos/rozzit.mp4",
+            valuation: "40,00,000"
           },
           {
             id: 10,
@@ -173,7 +192,9 @@
             tagline: "Confidence in Every Sound",
             pitch: "Audio wearables designed for the quiet ones. IntroPhones use specialized audio feedback and noise-cancellation algorithms to reduce social anxiety, helping introverts speak with confidence and communicate without stress.",
             category: "Health Tech",
-            icon: <Users className="w-6 h-6" />
+            icon: <Users className="w-6 h-6" />,
+            videoFile: "videos/introphones.mp4",
+            valuation: "55,00,000"
           },
           {
             id: 11,
@@ -184,7 +205,9 @@
             tagline: "Autonomous Pollution Control",
             pitch: "Combating Delhi NCR's pollution crisis from the sky. We deploy cost-effective, four-winged drone swarms equipped for precision cloud seeding, clearing the air and bringing rain where it's needed most.",
             category: "EnviroTech",
-            icon: <Globe className="w-6 h-6" />
+            icon: <Globe className="w-6 h-6" />,
+            videoFile: "videos/cloud1s.mp4",
+            valuation: "90,00,000"
           },
           {
             id: 12,
@@ -195,7 +218,9 @@
             tagline: "Smart Waste Segregation",
             pitch: "The dustbin, evolved. Our smart bin features auto-opening sensors for touchless hygiene and internal robotics that automatically segregate wet and dry waste, streamlining the recycling process at the source.",
             category: "CleanTech",
-            icon: <Zap className="w-6 h-6" />
+            icon: <Zap className="w-6 h-6" />,
+            videoFile: "videos/tech1.mp4",
+            valuation: "30,00,000"
           },
           {
             id: 13,
@@ -206,7 +231,9 @@
             tagline: "Democratizing Legal Justice",
             pitch: "Bridging the judicial gap for rural India. An AI-powered app offering legal literacy and document guidance in native languages, backed by a verified network of government officials to streamline case registration.",
             category: "LegalTech",
-            icon: <Shield className="w-6 h-6" />
+            icon: <Shield className="w-6 h-6" />,
+            videoFile: "videos/atlas.mp4",
+            valuation: "42,00,000"
           },
           {
             id: 14,
@@ -217,7 +244,9 @@
             tagline: "The Ultimate Pet Ecosystem",
             pitch: "A comprehensive lifestyle solution for modern pet parents. From health tracking to adoption connections and premium care products, PAW.CO ensures your furry friends live their best, healthiest lives.",
             category: "PetCare",
-            icon: <Heart className="w-6 h-6" />
+            icon: <Heart className="w-6 h-6" />,
+            videoFile: "videos/pawco.mp4",
+            valuation: "28,00,000"
           },
           {
             id: 15,
@@ -228,7 +257,9 @@
             tagline: "Kitchen Safety Reinvented",
             pitch: "Preventing culinary injuries before they happen. We have designed a universal, adjustable insulating belt made of high-grade heat-resistant material that fits onto utensil edges, preventing burns during cooking.",
             category: "Consumer Goods",
-            icon: <Shield className="w-6 h-6" />
+            icon: <Shield className="w-6 h-6" />,
+            videoFile: "videos/noburn.mp4",
+            valuation: "18,00,000"
           },
           {
             id: 16,
@@ -239,7 +270,9 @@
             tagline: "From Excess to Access",
             pitch: "A food rescue logistics network. We connect event caterers and functions directly with NGOs via our app, facilitating the immediate donation of leftover food to eliminate hunger and reduce food waste.",
             category: "Social Impact",
-            icon: <Globe className="w-6 h-6" />
+            icon: <Globe className="w-6 h-6" />,
+            videoFile: "videos/zerowaste.mp4",
+            valuation: "22,00,000"
           }
         ];
 
@@ -262,7 +295,6 @@
         function StartupSummit() {
           const [activeTab, setActiveTab] = useState("All");
           const [selectedStartup, setSelectedStartup] = useState(null);
-          const [investments, setInvestments] = useState({});
           const [searchTerm, setSearchTerm] = useState("");
           const [isScrolled, setIsScrolled] = useState(false);
 
@@ -274,13 +306,6 @@
             return () => window.removeEventListener('scroll', handleScroll);
           }, []);
 
-          const handleInvest = (id, amount) => {
-            setInvestments(prev => ({
-              ...prev,
-              [id]: (prev[id] || 0) + amount
-            }));
-          };
-
           const filteredStartups = startups.filter(s => {
             const matchesTab = activeTab === "All" || s.section === activeTab;
             const matchesSearch = s.startupName.toLowerCase().includes(searchTerm.toLowerCase()) || 
@@ -289,7 +314,11 @@
             return matchesTab && matchesSearch;
           });
 
-          const totalFunded = Object.values(investments).reduce((a, b) => a + b, 0);
+          // Calculate total ecosystem value based on static valuations
+          const totalValue = startups.reduce((acc, curr) => {
+              const val = parseInt(curr.valuation.replace(/,/g, ''));
+              return acc + val;
+          }, 0);
 
           return (
             <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
@@ -327,8 +356,8 @@
 
                   <div className="flex items-center gap-3">
                       <div className="hidden sm:block text-right">
-                        <p className="text-xs text-slate-500 uppercase tracking-wider">Total Capital Committed</p>
-                        <p className="font-bold text-emerald-600">₹{totalFunded.toLocaleString()}</p>
+                        <p className="text-xs text-slate-500 uppercase tracking-wider">Total Ecosystem Value</p>
+                        <p className="font-bold text-emerald-600">₹{totalValue.toLocaleString()}</p>
                       </div>
                   </div>
                 </div>
@@ -457,8 +486,8 @@
                             </div>
                           )}
                         </div>
-                        <span className="text-indigo-600 text-sm font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                          View Pitch <ChevronRight size={16} />
+                        <span className="text-indigo-600 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                          Watch Pitch <Play size={14} fill="currentColor" />
                         </span>
                       </div>
                     </div>
@@ -479,15 +508,15 @@
               {/* Modal */}
               {selectedStartup && (
                 <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
-                  <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => setSelectedStartup(null)}></div>
-                  <div className="bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative z-10 animate-fade-in-up">
+                  <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onClick={() => setSelectedStartup(null)}></div>
+                  <div className="bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[95vh] overflow-y-auto relative z-10 animate-fade-in-up">
                     
                     {/* Modal Header */}
-                    <div className="relative h-40 bg-gradient-to-r from-indigo-600 to-purple-600 overflow-hidden shrink-0">
+                    <div className="relative h-32 bg-gradient-to-r from-indigo-600 to-purple-600 overflow-hidden shrink-0">
                         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
                         <button 
                         onClick={() => setSelectedStartup(null)}
-                        className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all"
+                        className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-all z-20"
                       >
                         <X size={20} />
                       </button>
@@ -495,61 +524,93 @@
                         <Badge color="blue" className="bg-white/20 text-white border-white/30 backdrop-blur-md mb-2">
                            {selectedStartup.category}
                         </Badge>
-                        <h2 className="text-3xl font-bold">{selectedStartup.startupName}</h2>
-                        <p className="text-indigo-100 text-sm opacity-90">{selectedStartup.tagline}</p>
+                        <h2 className="text-3xl font-bold flex items-center gap-2">
+                            {selectedStartup.startupName}
+                        </h2>
                       </div>
                     </div>
 
                     {/* Modal Content */}
                     <div className="p-8">
+                      
+                      {/* Video Section */}
                       <div className="mb-8">
-                        <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
-                          <Zap size={16} className="text-amber-500"/> The Pitch
-                        </h3>
-                        <p className="text-slate-700 leading-relaxed text-lg">
-                          {selectedStartup.pitch}
-                        </p>
+                        <div className="bg-black rounded-xl overflow-hidden shadow-xl aspect-video relative flex items-center justify-center">
+                            {/* Video Player */}
+                            <video 
+                                controls 
+                                autoPlay 
+                                className="w-full h-full object-cover" 
+                                src={selectedStartup.videoFile}
+                                poster={`https://via.placeholder.com/1280x720/1e1e2e/ffffff?text=${encodeURIComponent(selectedStartup.startupName + " Pitch")}`}
+                            >
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p className="text-center text-sm text-slate-400 mt-2">Playing: {selectedStartup.videoFile}</p>
                       </div>
 
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
-                        <div>
-                           <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
-                            <Users size={16} className="text-indigo-500"/> The Team
-                          </h3>
-                          <div className="space-y-2">
-                            {selectedStartup.members.map((member, i) => (
-                              <div key={i} className="flex items-center gap-3 p-2 rounded-lg bg-slate-50 border border-slate-100">
-                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 text-white flex items-center justify-center font-bold text-xs">
-                                  {member.charAt(0)}
-                                </div>
-                                <span className="text-slate-700 font-medium">{member}</span>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        
+                        {/* Info Column */}
+                        <div className="md:col-span-2 space-y-6">
+                            <div>
+                                <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2 flex items-center gap-2">
+                                  <Zap size={16} className="text-amber-500"/> The Pitch
+                                </h3>
+                                <p className="text-slate-700 leading-relaxed text-lg">
+                                  {selectedStartup.pitch}
+                                </p>
+                            </div>
+
+                            <div>
+                               <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                                <Users size={16} className="text-indigo-500"/> The Team
+                              </h3>
+                              <div className="flex flex-wrap gap-2">
+                                {selectedStartup.members.map((member, i) => (
+                                  <div key={i} className="flex items-center gap-2 px-3 py-2 rounded-full bg-slate-100 border border-slate-200">
+                                    <div className="w-6 h-6 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 text-white flex items-center justify-center font-bold text-[10px]">
+                                      {member.charAt(0)}
+                                    </div>
+                                    <span className="text-slate-700 font-medium text-sm">{member}</span>
+                                  </div>
+                                ))}
                               </div>
-                            ))}
-                          </div>
+                            </div>
                         </div>
                         
-                        <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col justify-between">
-                          <div>
-                            <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-2">Current Valuation</h3>
-                            <p className="text-3xl font-bold text-slate-900">₹{(investments[selectedStartup.id] || 0).toLocaleString()}</p>
-                            <p className="text-xs text-slate-500 mt-1">Virtual Capital Raised</p>
-                          </div>
-                          
-                          <div className="mt-6 space-y-2">
-                            <button 
-                              onClick={() => handleInvest(selectedStartup.id, 10000)}
-                              className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold shadow-lg shadow-indigo-200 transition-all active:scale-95 flex items-center justify-center gap-2"
-                            >
-                              Invest ₹10,000
-                            </button>
-                            <button 
-                              onClick={() => handleInvest(selectedStartup.id, 50000)}
-                              className="w-full py-3 bg-white border-2 border-indigo-100 hover:border-indigo-600 text-indigo-600 rounded-xl font-bold transition-all active:scale-95"
-                            >
-                              Invest ₹50,000
-                            </button>
-                          </div>
+                        {/* Stats Column */}
+                        <div className="md:col-span-1">
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100 h-full">
+                                <div className="mb-6">
+                                    <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-1">Company Valuation</h3>
+                                    <div className="flex items-baseline gap-1">
+                                        <span className="text-3xl font-bold text-slate-900">₹{selectedStartup.valuation}</span>
+                                    </div>
+                                    <div className="h-1 w-full bg-slate-200 rounded-full mt-2 overflow-hidden">
+                                        <div className="h-full bg-emerald-500 w-3/4"></div>
+                                    </div>
+                                    <p className="text-xs text-slate-400 mt-2">Based on current traction</p>
+                                </div>
+
+                                <div className="space-y-3">
+                                    <div className="flex items-center gap-3 text-sm text-slate-600">
+                                        <div className="p-2 bg-white rounded-lg border border-slate-200">
+                                            <TrendingUp size={16} className="text-emerald-500"/>
+                                        </div>
+                                        <span>High Growth Potential</span>
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm text-slate-600">
+                                        <div className="p-2 bg-white rounded-lg border border-slate-200">
+                                            <Award size={16} className="text-purple-500"/>
+                                        </div>
+                                        <span>Class 9 Finalist</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -560,7 +621,7 @@
               <footer className="bg-slate-900 text-slate-400 py-12 text-center">
                 <div className="flex justify-center items-center gap-2 mb-4 text-white">
                   <Rocket size={20} />
-                  <span className="font-bold text-xl">THINK-STARTUP ShOWCASE DAY 2025</span>
+                  <span className="font-bold text-xl">THINK-STARTUP SHOWCASE DAY 2025</span>
                 </div>
                 <p className="mb-4">Celebrating Innovation & Entrepreneurship • Class 9</p>
                 <p className="text-sm opacity-50">&copy; 2025 thinkstartup. All rights reserved.</p>
