@@ -700,6 +700,42 @@ footer {
 .cat-dot.edu { background: #8B5CF6; }
 .cat-dot.food { background: #EC4899; }
 .cat-dot.fintech { background: #06B6D4; }
+
+.new-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background: #16A34A;
+  color: white;
+  animation: newPulse 2s ease-in-out infinite;
+}
+
+.updated-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background: #2563EB;
+  color: white;
+}
+
+@keyframes newPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.company[data-tag="new"] {
+  border-left: 3px solid #16A34A;
+}
+
+.company[data-tag="updated"] {
+  border-left: 3px solid #2563EB;
+}
 </style>
 </head>
 <body>
@@ -718,18 +754,18 @@ footer {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-overline">Spring 2026 · Demo Day</div>
-  <h1>20 startups ideas built in <em>48 hours</em> by the next generation</h1>
-  <p class="hero-desc">Class X students designed, built, and launched real startups from scratch.</p>
+  <h1>23 startups built in <em>48 hours</em> by the next generation</h1>
+  <p class="hero-desc">Class X students designed, built, and launched real startups from scratch. These are their companies — ready for the judges.</p>
 </section>
 
 <!-- STATS -->
 <div class="stats-row">
   <div class="stat-card">
-    <div class="stat-num">20</div>
+    <div class="stat-num">23</div>
     <div class="stat-label">Companies</div>
   </div>
   <div class="stat-card">
-    <div class="stat-num">80+</div>
+    <div class="stat-num">90+</div>
     <div class="stat-label">Founders</div>
   </div>
   <div class="stat-card">
@@ -741,7 +777,7 @@ footer {
     <div class="stat-label">Sections</div>
   </div>
   <div class="stat-card">
-    <div class="stat-num">30+</div>
+    <div class="stat-num">35+</div>
     <div class="stat-label">Products</div>
   </div>
 </div>
@@ -756,7 +792,7 @@ footer {
     <button class="tab-btn" onclick="filter('XBD',this)">X-BD</button>
   </div>
   <div style="display:flex;align-items:center;gap:1rem">
-    <span class="results-count" id="resultCount">20 companies</span>
+    <span class="results-count" id="resultCount">23 companies</span>
     <input class="search-input" type="text" placeholder="Search companies..." id="search" oninput="applyFilters()">
   </div>
 </div>
@@ -915,19 +951,21 @@ const TEAMS = [
   {
     name: "ReBloom",
     section: "XRD",
+    tag: "updated",
     category: "eco",
     tagline: "100% biodegradable pots from parali (crop stubble) and clay — turning agricultural waste into garden products.",
-    idea: "Making plant pots out of parali waste and clay that are 100% eco-friendly. They decompose within months, enriching the soil. Turning the agricultural stubble burning problem into a product solution.",
-    biz: "Selling designed, branded pots to nature lovers. Partnerships with nurseries and garden stores. Custom logo branding.",
+    idea: "ReBloom creates biodegradable plant pots that decompose naturally in soil after about six months, enriching it in the process. Made from clay and parali (crop stubble) — the very material that causes Delhi's pollution crisis. Sold to schools, nurseries, and garden stores. Key challenge: seasonal parali availability, which they're already planning around.",
+    biz: "Multiple sales channels: schools, nurseries, gardening stores, and institutional partnerships. Pot cost: ₹60, selling at ₹100, margin: ₹40 per pot. Custom logo branding available.",
     products: ["Parali Bio-Pots"],
     members: [
-      {name:"Unnati Aggarwal",roll:"35",role:"PPT Making"},
-      {name:"Garima",roll:"14",role:"Product & Packaging"},
-      {name:"Maysha Chauhan",roll:"22",role:"Logo Design"},
-      {name:"Yashika Bisht",roll:"38",role:"Script & Tagline"}
+      {name:"Unnati Aggarwal",roll:"35",role:"PPT & Finance"},
+      {name:"Garima",roll:"14",role:"Operations & Idea"},
+      {name:"Maysha Chauhan",roll:"22",role:"Logo & Design"},
+      {name:"Yashika Bisht",roll:"38",role:"Tech & Script"}
     ],
     links: [
-      {label:"Presentation",url:"https://drive.google.com/open?id=1pS9oP1C90Ac2ahsbxgB-P8hd-4Xjp7hN",type:"ppt"}
+      {label:"Presentation v1",url:"https://drive.google.com/open?id=1pS9oP1C90Ac2ahsbxgB-P8hd-4Xjp7hN",type:"ppt"},
+      {label:"Presentation v2",url:"https://drive.google.com/open?id=1-fTdBeSqqtl7sBlc-UtpMf1wcg71zpCW",type:"ppt"}
     ]
   },
   {
@@ -951,19 +989,21 @@ const TEAMS = [
   {
     name: "LearnLoop",
     section: "XRD",
+    tag: "updated",
     category: "edu",
     tagline: "Peer-to-peer skill marketplace — students who want to learn meet students who can teach.",
     idea: "A marketplace that connects students who want to learn with students who can teach. No expensive tutors, no impersonal videos — just peer-to-peer collaborative skill exchange.",
     biz: "15–20% service fee on each peer-to-peer transaction. Keeps the platform sustainable while keeping costs low for students.",
     products: ["LearnLoop App"],
     members: [
-      {name:"Anvi",roll:"10",role:"Content & Summary"},
+      {name:"Avni",roll:"10",role:"Script"},
       {name:"Akshiti",roll:"5",role:"PPT"},
       {name:"Aanya",roll:"2",role:"Website"},
-      {name:"Tanzil",roll:"33",role:"Research"}
+      {name:"Tanzil",roll:"33",role:"Content"}
     ],
     links: [
-      {label:"Presentation",url:"https://drive.google.com/open?id=1rgwdCqyeHc9Z-Zeo4Loqq24wfYElpEZ9",type:"ppt"}
+      {label:"Presentation v1",url:"https://drive.google.com/open?id=1rgwdCqyeHc9Z-Zeo4Loqq24wfYElpEZ9",type:"ppt"},
+      {label:"Presentation v2",url:"https://drive.google.com/open?id=1AMNXqBK6q9lO1mKYI7WHalJtoc_V-Qji",type:"ppt"}
     ]
   },
   {
@@ -1164,6 +1204,56 @@ const TEAMS = [
       {label:"Live Demo",url:"https://quickfixi.netlify.app",type:"website"},
       {label:"Presentation",url:"https://drive.google.com/open?id=1eJM1WelFfk7W9ZjvlW4AP1lem-8mC1rj",type:"ppt"}
     ]
+  },
+  {
+    name: "Trinity — Style Sphere",
+    section: "XRV",
+    tag: "new",
+    category: "tech",
+    tagline: "Helps teenagers create trendy outfits using ONLY the clothes they already own — personalized to body type and budget.",
+    idea: "Style Sphere helps teenagers build trendy outfits from their existing wardrobe. No shopping, no waste — just smart styling personalized to your body type and budget. Upload what you own, get outfit suggestions instantly.",
+    biz: "Freemium subscription model. Basic features (wardrobe organization, limited outfit suggestions) are free. Premium unlocks unlimited styling, trend alerts, and AI-powered mix-and-match.",
+    products: ["Style Sphere"],
+    members: [
+      {name:"Sanvi Aggarwal",roll:"27",role:"PPT & Business Model"},
+      {name:"Sanvi Monga",roll:"28",role:"Website"},
+      {name:"Tanya Solanki",roll:"31",role:"Pitch Content"}
+    ],
+    links: [
+      {label:"Presentation",url:"https://drive.google.com/open?id=1JI_lRgR8aj5wjmFTxvwSBniY_fsKS03t",type:"ppt"}
+    ]
+  },
+  {
+    name: "HealthKeepers",
+    section: "XRD",
+    tag: "new",
+    category: "health",
+    tagline: "SmartMed Box — alarm reminders and light alerts so no one forgets to take their medicine on time.",
+    idea: "Many people forget to take medicines on time. SmartMed Box solves this with alarm reminders and light alerts at scheduled times. Simple, affordable, and life-saving for elderly patients and busy families.",
+    biz: "Direct product sales. Cost to make: ₹800, selling price: higher margin. Target buyers: families, hospitals, pharmacies. Straightforward unit economics.",
+    products: ["SmartMed Box"],
+    members: [
+      {name:"Divij Dabas",roll:"13",role:"Tech"},
+      {name:"Samar Bharti",roll:"29",role:"Design"}
+    ],
+    links: []
+  },
+  {
+    name: "Aeria",
+    section: "XBD",
+    tag: "new",
+    category: "tech",
+    tagline: "Paradigm shift in hair care — replacing thermal styling with ultrasonic vibrations and Peltier cooling technology.",
+    idea: "Aeria replaces conventional thermal hair styling with high-frequency ultrasonic vibrations and integrated Peltier cooling. No heat damage, no burnt hair — just salon-quality results powered by next-gen physics.",
+    biz: "Premium direct-to-consumer sales to maximize margins. 'Razor & Blade' strategy — sell the device, then release new ultrasonic tip attachments as recurring revenue.",
+    products: ["Aeria Ultrasonic Styler"],
+    members: [
+      {name:"Ishita Jain",roll:"22",role:"Product Architect"},
+      {name:"Priyanshi Narula",roll:"33",role:"Brand Strategist"}
+    ],
+    links: [
+      {label:"Presentation",url:"https://drive.google.com/open?id=12yK9SB4J9GQk-M-17LqV2qy64zErYsE8",type:"ppt"}
+    ]
   }
 ];
 
@@ -1214,7 +1304,7 @@ function renderCompanies() {
     const searchText = [t.name, ...t.products, ...t.members.map(m=>m.name), t.tagline, t.category].join(' ').toLowerCase();
     
     return `
-    <div class="company" data-section="${t.section}" data-idx="${idx}" data-search="${searchText}" onclick="toggleExpand(${idx}, event)" style="transition-delay:${idx*30}ms">
+    <div class="company" data-section="${t.section}" data-idx="${idx}" data-tag="${t.tag || ''}" data-search="${searchText}" onclick="toggleExpand(${idx}, event)" style="transition-delay:${idx*30}ms">
       <div class="company-main">
         <div class="company-icon" style="background:${iconColor}">${getInitials(t.name)}</div>
         <div class="company-body">
@@ -1223,6 +1313,8 @@ function renderCompanies() {
             <span class="batch-badge">S26</span>
             <span class="section-badge">${t.section}</span>
             <span class="prod-chip" style="background:${cat.color};color:${cat.text};font-size:0.6rem;padding:0.15rem 0.45rem">${cat.label}</span>
+            ${t.tag === 'new' ? '<span class="new-badge">✦ NEW</span>' : ''}
+            ${t.tag === 'updated' ? '<span class="updated-badge">↑ UPDATED</span>' : ''}
           </div>
           <div class="company-tagline">${t.tagline}</div>
           <div class="company-products">
