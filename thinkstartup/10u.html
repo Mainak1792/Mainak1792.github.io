@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S26 Batch — 48-Hour & 100-Hour Startup Challenge Demo Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════
+   Y-COMBINATOR INSPIRED — DEMO DAY S26
+   Cream + Orange + Editorial Precision
+   ═══════════════════════════════════════════════════ */
+
+:root {
+  --cream: #FBF8F3;
+  --cream-dark: #F3EDE4;
+  --white: #FFFFFF;
+  --orange: #FF6B2B;
+  --orange-light: #FFF0E8;
+  --orange-dark: #E85D1E;
+  --black: #1A1A1A;
+  --gray-900: #2D2D2D;
+  --gray-700: #555555;
+  --gray-500: #888888;
+  --gray-400: #AAAAAA;
+  --gray-300: #D4D4D4;
+  --gray-200: #E8E8E8;
+  --gray-100: #F5F5F5;
+  --green: #16A34A;
+  --green-light: #DCFCE7;
+  --blue: #2563EB;
+  --blue-light: #DBEAFE;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-hover: 0 16px 60px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.06);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--black);
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── TOPBAR ─── */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(251,248,243,0.88);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.yc-shield {
+  width: 32px;
+  height: 32px;
+  background: var(--orange);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.topbar-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+}
+
+.topbar-batch {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--orange);
+  background: var(--orange-light);
+  padding: 0.25rem 0.6rem;
+  border-radius: 100px;
+}
+
+/* ─── HERO ─── */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem 3rem;
+}
+
+.hero-overline {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-overline::before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: var(--orange);
+  border-radius: 2px;
+}
+
+.hero h1 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--black);
+  max-width: 700px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--orange);
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--gray-700);
+  max-width: 560px;
+  margin-top: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ─── STATS ROW ─── */
+.stats-row {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  display: flex;
+  gap: 1px;
+}
+
+.stat-card {
+  flex: 1;
+  background: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  transition: all 0.3s;
+}
+
+.stat-card:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+.stat-card:last-child { border-radius: 0 var(--radius) var(--radius) 0; }
+.stat-card:not(:first-child) { border-left: none; }
+
+.stat-num {
+  font-family: 'Instrument Serif', serif;
+  font-size: 2.2rem;
+  color: var(--black);
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-top: 0.4rem;
+}
+
+/* ─── FILTER / SEARCH ─── */
+.controls {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section-tabs {
+  display: flex;
+  gap: 0.35rem;
+  background: var(--white);
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-200);
+}
+
+.tab-btn {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--gray-500);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover { color: var(--black); background: var(--gray-100); }
+
+.tab-btn.active {
+  background: var(--orange);
+  color: white;
+  box-shadow: 0 2px 8px rgba(255,107,43,0.3);
+}
+
+.search-input {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.85rem;
+  padding: 0.55rem 1rem 0.55rem 2.4rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23aaa' stroke-width='2'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='M16 16l-4-4'/%3E%3C/svg%3E") 0.8rem center no-repeat;
+  color: var(--black);
+  outline: none;
+  width: 240px;
+  transition: all 0.25s;
+}
+
+.search-input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(255,107,43,0.1);
+}
+
+.search-input::placeholder { color: var(--gray-400); }
+
+.results-count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--gray-500);
+}
+
+/* ─── COMPANY LIST ─── */
+.companies {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ─── COMPANY CARD ─── */
+.company {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 0;
+  transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.company.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.company:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-color: var(--gray-300);
+}
+
+.company-main {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 0;
+  align-items: start;
+  padding: 1.5rem;
+}
+
+.company-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.company-icon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+}
+
+.company-body { min-width: 0; }
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
+.company-name {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--black);
+}
+
+.batch-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background: var(--orange-light);
+  color: var(--orange);
+  letter-spacing: 0.02em;
+}
+
+.section-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: 500;
+  padding: 0.18rem 0.45rem;
+  border-radius: 4px;
+  background: var(--gray-100);
+  color: var(--gray-500);
+}
+
+.company-tagline {
+  font-size: 0.88rem;
+  color: var(--gray-700);
+  font-weight: 300;
+  line-height: 1.55;
+  margin-bottom: 0.7rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.company-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.prod-chip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.2rem 0.55rem;
+  border-radius: 5px;
+  letter-spacing: 0.01em;
+}
+
+.prod-chip:nth-child(6n+1) { background: #FEF3C7; color: #92400E; }
+.prod-chip:nth-child(6n+2) { background: #DBEAFE; color: #1E40AF; }
+.prod-chip:nth-child(6n+3) { background: #DCFCE7; color: #166534; }
+.prod-chip:nth-child(6n+4) { background: #FCE7F3; color: #9D174D; }
+.prod-chip:nth-child(6n+5) { background: #E0E7FF; color: #3730A3; }
+.prod-chip:nth-child(6n+6) { background: #FFF0E8; color: #C2410C; }
+
+.company-founders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.founder-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  color: var(--gray-700);
+}
+
+.founder-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+}
+
+.founder-roll {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  color: var(--gray-400);
+}
+
+.founder-sep {
+  color: var(--gray-300);
+  font-size: 0.6rem;
+}
+
+/* Right side - links column */
+.company-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+
+.action-link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  color: var(--gray-700);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.action-link:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+  background: var(--orange-light);
+}
+
+.action-link svg { width: 12px; height: 12px; flex-shrink: 0; }
+
+.action-link.primary {
+  background: var(--orange);
+  color: white;
+  border-color: var(--orange);
+}
+
+.action-link.primary:hover {
+  background: var(--orange-dark);
+}
+
+/* ─── EXPANDED DETAIL ─── */
+.company-detail {
+  display: none;
+  border-top: 1px solid var(--gray-200);
+  background: var(--cream);
+  padding: 1.5rem;
+}
+
+.company.expanded .company-detail { display: block; }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.detail-section {}
+
+.detail-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.6rem;
+}
+
+.detail-text {
+  font-size: 0.85rem;
+  color: var(--gray-700);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.detail-members {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-member {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gray-200);
+}
+
+.detail-member-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+}
+
+.detail-member-info { min-width: 0; }
+
+.detail-member-name {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.detail-member-role {
+  font-size: 0.7rem;
+  color: var(--gray-500);
+}
+
+.detail-member-roll {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--gray-400);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+/* ─── FOOTER ─── */
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-top: 1px solid var(--gray-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-logo {
+  width: 24px; height: 24px;
+  background: var(--orange);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.55rem;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.footer-right {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--gray-400);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .company-main {
+    grid-template-columns: 48px 1fr;
+    gap: 0;
+  }
+  .company-actions {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .stat-card:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+  .stat-card:last-child { border-radius: 0 0 var(--radius) var(--radius); }
+  .stat-card:not(:first-child) { border-left: 1px solid var(--gray-200); border-top: none; }
+  .controls { flex-direction: column; align-items: stretch; }
+  .search-input { width: 100%; }
+  .hero h1 { font-size: 2.4rem; }
+}
+
+@media (max-width: 480px) {
+  .company-main { grid-template-columns: 1fr; }
+  .company-icon { margin-bottom: 0.75rem; }
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-overline, .hero h1, .hero-desc { animation: fadeInUp 0.6s ease both; }
+.hero h1 { animation-delay: 0.05s; }
+.hero-desc { animation-delay: 0.1s; }
+.stats-row { animation: fadeInUp 0.6s ease 0.15s both; }
+
+/* ─── EXPAND/COLLAPSE ARROW ─── */
+.expand-indicator {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  font-family: 'IBM Plex Mono', monospace;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.company:hover .expand-indicator { opacity: 1; }
+
+/* Category color dots */
+.cat-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.15rem;
+}
+
+.cat-dot.health { background: #EF4444; }
+.cat-dot.tech { background: #3B82F6; }
+.cat-dot.eco { background: #22C55E; }
+.cat-dot.social { background: #F59E0B; }
+.cat-dot.edu { background: #8B5CF6; }
+.cat-dot.food { background: #EC4899; }
+.cat-dot.fintech { background: #06B6D4; }
+
+.new-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background: #16A34A;
+  color: white;
+  animation: newPulse 2s ease-in-out infinite;
+}
+
+.updated-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background: #2563EB;
+  color: white;
+}
+
+@keyframes newPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.company[data-tag="new"] {
+  border-left: 3px solid #16A34A;
+}
+
+.company[data-tag="updated"] {
+  border-left: 3px solid #2563EB;
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-logo" href="#">
+      <div class="yc-shield">100h</div>
+      <span class="topbar-title">Startup Challenge</span>
+    </a>
+    <div class="topbar-batch">S26 Batch · 48h + 100h Demo Day</div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overline">Spring 2026 · Demo Day</div>
+  <h1>26 startups built in <em>48 + 100 hours</em> by the next generation</h1>
+  <p class="hero-desc">Class X students designed, built, and launched real startups from scratch. From a 48-hour sprint to a 100-hour deep build — these are their companies.</p>
+</section>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat-card">
+    <div class="stat-num">26</div>
+    <div class="stat-label">Companies</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">95+</div>
+    <div class="stat-label">Founders</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">100h</div>
+    <div class="stat-label">Build Time</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">4</div>
+    <div class="stat-label">Sections</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">40+</div>
+    <div class="stat-label">Products</div>
+  </div>
+</div>
+
+<!-- CONTROLS -->
+<div class="controls">
+  <div class="section-tabs" id="tabs">
+    <button class="tab-btn active" onclick="filter('all',this)">All Companies</button>
+    <button class="tab-btn" onclick="filter('XLD',this)">X-LD</button>
+    <button class="tab-btn" onclick="filter('XRD',this)">X-RD</button>
+    <button class="tab-btn" onclick="filter('XRV',this)">X-RV</button>
+    <button class="tab-btn" onclick="filter('XBD',this)">X-BD</button>
+  </div>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <span class="results-count" id="resultCount">26 companies</span>
+    <input class="search-input" type="text" placeholder="Search companies..." id="search" oninput="applyFilters()">
+  </div>
+</div>
+
+<!-- COMPANIES -->
+<div class="companies" id="companies"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <div class="footer-logo">100h</div>
+    <span class="footer-text">48h + 100h Startup Challenge · Showcase Day 2026</span>
+  </div>
+  <div class="footer-right">Built by Class X Entrepreneurs</div>
+</footer>
+
+<script>
+// ─── Color palettes for avatars / icons ───
+const ICON_COLORS = [
+  '#E04E2B','#2563EB','#16A34A','#9333EA','#CA8A04',
+  '#0891B2','#BE185D','#4F46E5','#059669','#DC2626',
+  '#7C3AED','#0D9488','#D97706','#6366F1','#DB2777',
+  '#EA580C','#2DD4BF','#8B5CF6','#F43F5E','#10B981'
+];
+
+const AVATAR_COLORS = [
+  '#F87171','#60A5FA','#34D399','#A78BFA','#FBBF24',
+  '#22D3EE','#F472B6','#818CF8','#4ADE80','#FB923C'
+];
+
+const CATEGORIES = {
+  health: {label:'Healthcare', color:'#FEE2E2', text:'#991B1B'},
+  tech: {label:'Technology', color:'#DBEAFE', text:'#1E3A8A'},
+  eco: {label:'Sustainability', color:'#DCFCE7', text:'#14532D'},
+  social: {label:'Social Impact', color:'#FEF3C7', text:'#78350F'},
+  edu: {label:'Education', color:'#EDE9FE', text:'#3B0764'},
+  food: {label:'Food & Delivery', color:'#FCE7F3', text:'#831843'},
+  fintech: {label:'FinTech', color:'#CFFAFE', text:'#164E63'},
+};
+
+const TEAMS = [
+  {
+    name: "Re-Live",
+    section: "XLD",
+    tag: "updated",
+    category: "health",
+    tagline: "A smart healthcare platform with 5+ products — from AI medical scanner to wearable insulin patches, microsleep detectors, and emergency heating pads.",
+    idea: "ReLive is a smart healthcare ecosystem. MedAI turns any smartphone into a life-saving first responder with AI injury detection. JointPlus is a wearable for joint health. Azure is a smart insulin patch. E-Vac serves disaster-prone communities. Microsleep Detector prevents drowsy driving. All unified through one central app. In the 100-hour challenge, they added new products, improved their website, and approached real customers.",
+    biz: "Free demo to give an idea, then gradually increasing to a low selling price with social media and pamphlet marketing until break-even. Focusing on AI products first, then physical products.",
+    products: ["MedAI","JointPlus","Azure","E-Vac","Microsleep Detector"],
+    members: [
+      {name:"Ritwik Bali",roll:"29",role:"Team Lead"},
+      {name:"Aditaya Singh",roll:"5",role:"Product Dev"},
+      {name:"Aarav Malik",roll:"3",role:"Team Member"},
+      {name:"Ridhaan Mishra",roll:"28",role:"Team Member"},
+      {name:"Aarav Malik",roll:"2",role:"Team Member"}
+    ],
+    links: [
+      {label:"Live Website",url:"https://re-liveofficial.lovable.app",type:"website"},
+      {label:"Instagram",url:"https://www.instagram.com/relive_officialteam/",type:"website"}
+    ]
+  },
+  {
+    name: "Litso / Frand",
+    section: "XRD",
+    tag: "updated",
+    category: "tech",
+    tagline: "A social app for introverts to safely connect — with age verification, AI chat, and membership tiers.",
+    idea: "Frand is a social app designed for introverted teenagers to build real connections safely. Users log in, make friends, chat with them or with AI, and socialise. In the 100-hour challenge, they focused on Frand and are developing a verification feature using Digilocker to ensure users connect with real people.",
+    biz: "Revenue through memberships for chatting and meetups. Users can only meet in real life if they pay. Additional revenue through advertisements.",
+    products: ["Frand Social App"],
+    members: [
+      {name:"Kushagra Panwar",roll:"21",role:"Project Lead & Web Dev"},
+      {name:"Shreshth Rawat",roll:"31",role:"Membership Model"},
+      {name:"Saket Goel",roll:"29",role:"UI Design"},
+      {name:"Dhruv",roll:"11",role:"Assistant"},
+      {name:"Arnav",roll:"8",role:"Data Accumulation"}
+    ],
+    links: [
+      {label:"Live Website",url:"https://frand.lovable.app/",type:"website"}
+    ]
+  },
+  {
+    name: "Team MediTech",
+    section: "XRV",
+    tag: "updated",
+    category: "health",
+    tagline: "Smart medicine box with Arduino, RTC module, LCD, buzzer — with touch start, demo mode, and emergency alerts for Alzheimer's patients.",
+    idea: "A smart medicine box for Alzheimer's patients powered by Arduino with RTC module, LCD display, and piezo buzzer. Tells the user which medicine to take, at what time, and in what quantity. Features an emergency button to alert loved ones, a failsafe that warns if the wrong pill is taken, touch sensors for easy on/off, and a demo mode. Tested with 7 people from ATL group — 5 praised the prototype, 2 suggested a 3D-printed frame.",
+    biz: "Direct product sales. Want to finish building with a 3D-printed shell before launching to market.",
+    products: ["Smart Medicine Box"],
+    members: [
+      {name:"Advik Dabas",roll:"6",role:"Developer, Tester, PPT, Website, Prototype"},
+      {name:"Vakul Bhardwaj",roll:"13",role:"Support"},
+      {name:"Arnav Gogia",roll:"—",role:"Raw Materials"}
+    ],
+    links: [
+      {label:"Presentation",url:"https://docs.google.com/presentation/d/1D6-0ljvhT2YN5Rhmm8tXofWdw8DQICTj/edit?usp=drive_link",type:"ppt"},
+      {label:"Project Files",url:"https://drive.google.com/drive/folders/1JcXfTnRgR19ATVWtR_uPhLBv66T4Xefr?usp=drive_link",type:"ppt"}
+    ]
+  },
+  {
+    name: "KindKart",
+    section: "XBD",
+    tag: "updated",
+    category: "social",
+    tagline: "From food rescue to natural manure — turning food waste into fertiliser, star-shaped tins, and recycled bags.",
+    idea: "KindKart now produces natural manure from food that can't be reused, sells star-shaped tins, and recycled bags. They partner with restaurants to collect waste in exchange for payment, and also provide food to homeless people. In the 100-hour challenge, they added revenue streams, made the startup more ethical and innovative, created a demo video, and built an Instagram presence.",
+    biz: "Revenue from selling manure to farmers, tins, recycled bags, and restaurant partnerships. Detailed revenue model available.",
+    products: ["Natural Manure","Star-Shaped Tins","Recycled Bags"],
+    members: [
+      {name:"Mudita Malhotra",roll:"29",role:"Website, Video Director & Editor"},
+      {name:"Abhidha",roll:"03",role:"Website, Product Demo"},
+      {name:"Kashish",roll:"25",role:"PDF & Research"},
+      {name:"Divyanshi",roll:"19",role:"PDF & Discussion"},
+      {name:"Aditi",roll:"05",role:"PDF & Discussion"}
+    ],
+    links: [
+      {label:"Website",url:"https://sites.google.com/view/kindkart/our-idea",type:"website"},
+      {label:"Demo Video",url:"https://youtu.be/N0FAK6apXfo?si=QxrmjzhVYVoRfl5A",type:"video"},
+      {label:"Instagram",url:"https://www.instagram.com/kindkartit",type:"website"}
+    ]
+  },
+  {
+    name: "EcoFresh",
+    section: "XRV",
+    category: "eco",
+    tagline: "Biodegradable packaging material that decomposes in months, not centuries.",
+    idea: "Creating the next generation of packaging — biodegradable material that decomposes in months instead of polluting for centuries. Aimed at giving future generations a cleaner planet.",
+    biz: "B2B model — selling eco-packaging in bulk to businesses and local vendors.",
+    products: ["Biodegradable Packaging"],
+    members: [
+      {name:"Krish Rana",roll:"20",role:"Website & Operations"},
+      {name:"Avik Hooda",roll:"—",role:"Website & Tech"}
+    ],
+    links: [
+      {label:"Presentation",url:"https://drive.google.com/open?id=1SYeRiBWeLYAdlKTe_p0-nVXcRnhMMVOL",type:"ppt"}
+    ]
+  },
+  {
+    name: "InkStory — Inkly",
+    section: "XLD",
+    tag: "new",
+    category: "tech",
+    tagline: "Customisable pens with beautiful designs — choose and personalise your pen through a live website.",
+    idea: "InkStory's product Inkly is a customisable pen with beautiful designs. They built a website where users can choose and personalise their pen with features like engraving, special finishes, and gift packaging. The team pivoted completely from their original eco-nets idea to this implementable concept. Multiple prototypes were made before arriving at the final pen design.",
+    biz: "Revenue from selling customisable pens. Premium options like engraving, special finishes, and gift packaging add extra charges. Bulk and corporate orders for personalised pens.",
+    products: ["Inkly Customisable Pen"],
+    members: [
+      {name:"Sharvi Agrawal",roll:"—",role:"Graphic Design & Web Dev"},
+      {name:"Aarush Bahl",roll:"—",role:"Financial Management"},
+      {name:"Bhavyashmita P.",roll:"—",role:"Financial Management"},
+      {name:"Tejasv Bhandari",roll:"—",role:"Graphic Design & Web Dev"},
+      {name:"Manit Singh Sohal",roll:"—",role:"Marketing & Analysis"},
+      {name:"Aarav Chopra",roll:"—",role:"Marketing & Analysis"}
+    ],
+    links: [
+      {label:"Live Website",url:"https://your-pen-palette.lovable.app",type:"website"},
+      {label:"Instagram",url:"https://www.instagram.com/inkstory_myop",type:"website"},
+      {label:"Presentation",url:"https://www.canva.com/design/DAHEl2xNNr4/h3Mdjo0ldwM_lxLJuGBVVA/edit",type:"ppt"}
+    ]
+  },
+  {
+    name: "ReBloom",
+    section: "XRD",
+    tag: "updated",
+    category: "eco",
+    tagline: "100% biodegradable pots from parali and clay — now with a live ordering website and working prototypes.",
+    idea: "ReBloom creates biodegradable plant pots that decompose naturally in soil. Made from clay and parali (crop stubble). In the 100-hour challenge, they built a website for ordering pots, created working prototypes, and showed it to users who gave positive feedback. The hardest part was getting the perfect mix — pots kept cracking, collapsing, or losing shape.",
+    biz: "Small: ₹80, Medium: ₹100, Large: ₹120. Multiple sales channels: schools, nurseries, gardening stores. Spent under ₹500 on the prototype.",
+    products: ["Parali Bio-Pots"],
+    members: [
+      {name:"Unnati Aggarwal",roll:"34",role:"Marketing & Analysis"},
+      {name:"Yashika Bisht",roll:"37",role:"Tech & Website"},
+      {name:"Garima",roll:"14",role:"Packaging & Execution"},
+      {name:"Maysha",roll:"23",role:"Design & Management"}
+    ],
+    links: [
+      {label:"Website",url:"https://sites.google.com/view/rebloompots/home",type:"website"}
+    ]
+  },
+  {
+    name: "ASSK Bharat",
+    section: "XRD",
+    category: "social",
+    tagline: "Civic engagement platform for young leaders to access political info, report issues, and connect with representatives.",
+    idea: "ASSK Bharat enables citizens — particularly young leaders — to access accurate political information, report civic issues in their community, and directly connect with elected representatives. Democracy, simplified.",
+    biz: "Freemium model — basic political information free, premium features for deeper analytics, direct representative access, and institutional dashboards.",
+    products: ["ASSK Bharat Platform"],
+    members: [
+      {name:"Anushka Johri",roll:"7",role:"Operations"},
+      {name:"Saanvi Parashar",roll:"26",role:"Media & Design"},
+      {name:"Surabhi Gupta",roll:"33",role:"Tech"},
+      {name:"Kavya Arora",roll:"21",role:"Finance"}
+    ],
+    links: [
+      {label:"Website",url:"https://effective-scarlet-r2xpzxa3ej.edgeone.app/",type:"website"}
+    ]
+  },
+  {
+    name: "LearnLoop",
+    section: "XRD",
+    tag: "updated",
+    category: "edu",
+    tagline: "Peer-to-peer skill marketplace — students who want to learn meet students who can teach.",
+    idea: "A marketplace that connects students who want to learn with students who can teach. No expensive tutors, no impersonal videos — just peer-to-peer collaborative skill exchange.",
+    biz: "15–20% service fee on each peer-to-peer transaction. Keeps the platform sustainable while keeping costs low for students.",
+    products: ["LearnLoop App"],
+    members: [
+      {name:"Avni",roll:"10",role:"Script"},
+      {name:"Akshiti",roll:"5",role:"PPT"},
+      {name:"Aanya",roll:"2",role:"Website"},
+      {name:"Tanzil",roll:"33",role:"Content"}
+    ],
+    links: [
+      {label:"Presentation v1",url:"https://drive.google.com/open?id=1rgwdCqyeHc9Z-Zeo4Loqq24wfYElpEZ9",type:"ppt"},
+      {label:"Presentation v2",url:"https://drive.google.com/open?id=1AMNXqBK6q9lO1mKYI7WHalJtoc_V-Qji",type:"ppt"}
+    ]
+  },
+  {
+    name: "Canticard",
+    section: "XRV",
+    category: "fintech",
+    tagline: "Smart digital card system replacing cash in school canteens — no more queues, no more lost change.",
+    idea: "Making school canteens smart and fast with a digital card system. Students tap their Canticard instead of fumbling with cash. Parents can load money, track spending, and schools get clean transaction data.",
+    biz: "Revenue from card issuance, small transaction fees, brand partnerships, and scaling to other schools.",
+    products: ["Canticard"],
+    members: [
+      {name:"Jaskeerat (Jamsi)",roll:"18",role:"Marketing"},
+      {name:"Hargun",roll:"15",role:"Team Member"},
+      {name:"Aditya",roll:"4",role:"Team Member"},
+      {name:"Shaurya Gagneja",roll:"29",role:"Ideas & Tasks"}
+    ],
+    links: [
+      {label:"Presentation",url:"https://drive.google.com/open?id=1V_1nSVByQBF2hPEqKe_aV0yJO7VRGMlp",type:"ppt"}
+    ]
+  },
+  {
+    name: "P3NT4GON — NoQ",
+    section: "XLD",
+    tag: "updated",
+    category: "tech",
+    tagline: "Production-ready SaaS queue system — scan a QR, join a live queue, get SMS/WhatsApp alerts. Now with custom domain and real merchant testing.",
+    idea: "NoQ eliminates physical waiting lines. Customers scan a QR code to join a live digital queue with real-time position tracking and automated SMS/WhatsApp notifications. In the 100-hour challenge, they pivoted from proof-of-concept to production-ready SaaS with full-stack backend, user authentication, persistent database, and custom domain (noq4.xyz). Tested with school canteen, bookstore, and uniform shop — all committed to implementation.",
+    biz: "Subscription + transaction model. ₹150/month introductory rate for merchants. NoQ Premiere 'pay-to-skip' feature with 80/20 revenue split in favor of merchants. Spent ₹500–₹1,000 building it.",
+    products: ["NoQ Digital Queue"],
+    members: [
+      {name:"Vihaan",roll:"39",role:"Lead Developer"},
+      {name:"Rachit",roll:"25",role:"Team Member"},
+      {name:"Prishaa",roll:"23",role:"Team Member"},
+      {name:"Naisha",roll:"19",role:"Team Member"},
+      {name:"Avika",roll:"11",role:"Team Member"}
+    ],
+    links: [
+      {label:"Live Website",url:"https://noq4.xyz",type:"website"},
+      {label:"GitHub",url:"https://github.com/Vihaan-2011/NoQ",type:"ppt"},
+      {label:"Instagram",url:"https://www.instagram.com/noq4.xyz/",type:"website"}
+    ]
+  },
+  {
+    name: "Onnit",
+    section: "XBD",
+    category: "food",
+    tagline: "Empowering women to deliver homemade food to homesick college students at affordable rates.",
+    idea: "Boosting employment for women by connecting them with college students who miss home-cooked food. Women cook, Onnit delivers. Comfort food with a social mission.",
+    biz: "Fixed affordable rates. Women earn 40% commission, 10% goes to packaging, 50% is platform revenue.",
+    products: ["Comfort Food Connect"],
+    members: [
+      {name:"Kavya",roll:"—",role:"Website"},
+      {name:"Aaradhya",roll:"—",role:"Website"},
+      {name:"Riddhi",roll:"—",role:"Website"},
+      {name:"Ayaana",roll:"—",role:"Website"},
+      {name:"Spandana",roll:"—",role:"Website"},
+      {name:"Laranya",roll:"—",role:"Website"}
+    ],
+    links: [
+      {label:"Live Website",url:"https://comfort-food-connect.preview.emergentagent.com/",type:"website"}
+    ]
+  },
+  {
+    name: "EcoForge",
+    section: "XBD",
+    tag: "updated",
+    category: "eco",
+    tagline: "Hands-free upcycling machine turning plastic bottles into DIY kits — now with Arduino, LCD screen, and working prototype.",
+    idea: "A hands-free upcycling machine that transforms plastic bottles into usable DIY kits like baskets, lamps, and decorative frames. In the 100-hour challenge, Avleen added an Arduino Nano with an LCD screen to the front, programmed the machine, and created a full demo video. The hardest part was getting the Arduino to connect — debugging went past 1 AM. Next step: automatic bottle detection using Teachable Machine AI.",
+    biz: "Selling machines to schools at ₹3,000–₹5,000 each as hands-on sustainability education tools. Spent ₹500–₹1,000 on the prototype.",
+    products: ["EcoForge Upcycler"],
+    members: [
+      {name:"Avleen Kaur",roll:"13",role:"Solo Founder ✦"}
+    ],
+    links: [
+      {label:"Demo Video",url:"https://youtu.be/Qt_OQiSIsWA",type:"video"},
+      {label:"Presentation",url:"https://www.canva.com/design/DAGv2HfklUw/oc3oUQ-Mx-wgoF-hAg-qFw/edit",type:"ppt"}
+    ]
+  },
+  {
+    name: "SingleFC — MindNova",
+    section: "XRV",
+    tag: "updated",
+    category: "health",
+    tagline: "AI-powered mental wellness companion with crisis detection, mood tracking, emotional dashboard, and AI journal.",
+    idea: "MindNova evolved from a simple chatbot to a complete AI-powered mental wellness companion. Features include AI emotional support chat, AI-assisted journal, daily mood check-ins, emotional trend dashboard, and crisis support alerts when self-harm language is detected. Login system for secure tracking. Tested with 6 users — 4 said they'd use it daily. The hardest part was building safe and reliable AI crisis detection.",
+    biz: "Freemium subscription model. Free tier: AI chat, journaling, check-ins, mood tracking. Premium tiers: deeper emotional insights, burnout detection, personalised wellness roadmaps, panic support tools. Additional revenue from therapist session commissions and school/company partnerships.",
+    products: ["MindNova"],
+    members: [
+      {name:"Anant Dalmia",roll:"7",role:"CEO, Website, PPT"},
+      {name:"Aditya Singh Bedi",roll:"5",role:"Animation & Surveys"},
+      {name:"Garv",roll:"—",role:"Social Media Manager"},
+      {name:"Atharva Manohar",roll:"—",role:"Speaker"}
+    ],
+    links: [
+      {label:"Live Website",url:"https://mind-nova--ananttheboss.replit.app/",type:"website"},
+      {label:"Demo Video",url:"https://youtu.be/Dl8-DGMbJPE?si=lutCIQAZtJE3KawQ",type:"video"},
+      {label:"GitHub",url:"https://github.com/ananttheboss4/mind-nova",type:"ppt"},
+      {label:"Instagram",url:"https://www.instagram.com/mind.nova4/",type:"website"}
+    ]
+  },
+  {
+    name: "Rento",
+    section: "XRD",
+    category: "tech",
+    tagline: "Costume rental app — rent any outfit for any occasion from anywhere in India.",
+    idea: "A nationwide costume rental marketplace. Wedding outfits, cosplay, themed parties — rent what you need, return when you're done. No buying, no waste.",
+    biz: "25% of clothing price per day rental. Damage insurance fees for broken/damaged items.",
+    products: ["Rento App"],
+    members: [
+      {name:"Ritesh Sahoo",roll:"—",role:"Resources"},
+      {name:"Aahan Sharma",roll:"—",role:"Design"},
+      {name:"Vaibhav Rawat",roll:"—",role:"Operations"},
+      {name:"Shaurya Gavane",roll:"—",role:"Tech"}
+    ],
+    links: []
+  },
+  {
+    name: "Hollows Hope",
+    section: "XRD",
+    tag: "updated",
+    category: "health",
+    tagline: "AI chatbot with emotional intelligence plus an advanced journal with weekly analysis and mood-based prompts.",
+    idea: "Hollows Hope now features both an AI friend who listens to you AND an advanced journal. Write for a week and get a weekly analysis. Not sure what to write? Enter your mood through emojis and get AI-generated prompts. In the 100-hour challenge, they added the journal feature so teenagers don't just talk about feelings but can write them out to clear their minds.",
+    biz: "Deploy the model, scale with users. Revenue from premium emotional support features and institutional partnerships with schools.",
+    products: ["Hollows Hope AI","Advanced Journal"],
+    members: [
+      {name:"Aarna Barat",roll:"03",role:"Leader"},
+      {name:"Ishaan Aggarwal",roll:"18",role:"Website Creator"},
+      {name:"Miraya Malhotra",roll:"23",role:"Base Builder"},
+      {name:"Aditya Chaurasia",roll:"04",role:"Manager"},
+      {name:"Anmol Pandey",roll:"06",role:"GUI Designer"}
+    ],
+    links: [
+      {label:"Live Website",url:"https://ishaanaggarwal2011.wixsite.com/my-site-1",type:"website"}
+    ]
+  },
+  {
+    name: "Kesh Kash",
+    section: "XBD",
+    tag: "updated",
+    category: "social",
+    tagline: "Turn your hair fall into free household rewards — now with real vendor visits and a door-to-door pickup model.",
+    idea: "Kesh Kash connects families who collect shed hair with vendors (wig makers, fertiliser companies) through a door-to-door pickup and barter system. In the 100-hour challenge, the team hit the streets of Delhi visiting real barbers and vendors. Most rejected them as 'just students', but the pivot was crucial — they became the tech bridge between homes and vendors. Now building a Live Rate Card and booking system.",
+    biz: "15–20% commission per vendor on transactions. Commission varies vendor to vendor for non-remy hair. Spent under ₹500.",
+    products: ["Kesh Kash Platform"],
+    members: [
+      {name:"Ayushi Raj",roll:"16",role:"Website Builder & Ideas"},
+      {name:"Aashi Gupta",roll:"03",role:"Executive & General"}
+    ],
+    links: [
+      {label:"Demo Video",url:"https://youtu.be/wpAE1f63ALs",type:"video"}
+    ]
+  },
+  {
+    name: "Aspiro — SwiftCareer",
+    section: "XBD",
+    tag: "updated",
+    category: "edu",
+    tagline: "AI-powered career guidance — now with Career Intel, AI chatbot, student profiles, career simulations, and review system.",
+    idea: "SwiftCareer helps students explore career options, find suitable colleges, and learn about entrance exams. In the 100-hour challenge, they added a Career Intel page, an AI-powered career chatbot, a profile and portfolio system, a simulation page, and a 'Review Us' feature. Students can now compare several career options and discuss opinions with others.",
+    biz: "Affiliate marketing from relevant course/tool recommendations. Display advertising on content pages (starting with Google AdSense). Future subscription model for premium features.",
+    products: ["SwiftCareer"],
+    members: [
+      {name:"Ishgun Bakshi",roll:"21",role:"Founder & Web Dev"},
+      {name:"Vivaan Arora",roll:"46",role:"Team Member"},
+      {name:"Viaan Mehra",roll:"45",role:"Team Member"},
+      {name:"Sabyasachi Singh",roll:"38",role:"Team Member"},
+      {name:"Hardik Khatri",roll:"20",role:"Team Member"},
+      {name:"Aryaman Roy",roll:"10",role:"Team Member"}
+    ],
+    links: [
+      {label:"Live Website",url:"https://the-swift-career.base44.app",type:"website"},
+      {label:"Presentation",url:"https://www.canva.com/design/DAHEBrMGEis/hYqv4VRQIwWW-wHavRWZyQ/edit",type:"ppt"}
+    ]
+  },
+  {
+    name: "ReCarbon",
+    section: "XBD",
+    category: "eco",
+    tagline: "Converting Delhi's air pollution into fertile compost — turning poison into growth.",
+    idea: "ReCarbon captures carbon dust from Delhi's polluted air and blends it with organic waste to create 'SmokeSoil' — a fertile compost for urban gardeners. Also producing eco-inks from captured carbon. Turning the city's biggest problem into products.",
+    biz: "Product sales: SmokeSoil compost for urban gardeners & nurseries. Eco-inks for creative professionals. B2B partnerships with environmental agencies.",
+    products: ["SmokeSoil Compost","Eco-Inks"],
+    members: [
+      {name:"Rasgun Singh",roll:"—",role:"Project Lead"},
+      {name:"Aryaveer Pruthi",roll:"—",role:"Lead Researcher"},
+      {name:"Dhairya Bhatia",roll:"—",role:"Tech & Data"},
+      {name:"Adheesh Chattopadhyay",roll:"—",role:"Team Member"},
+      {name:"Agamjot Singh",roll:"—",role:"Team Member"}
+    ],
+    links: []
+  },
+  {
+    name: "QuickFix",
+    section: "XBD",
+    category: "tech",
+    tagline: "Peer-to-peer neighbourhood odd-jobs marketplace — connecting people who need help with people nearby who can help.",
+    idea: "QuickFix directly connects someone who needs a task done with someone nearby who can do it. From fixing a tap to walking a dog to assembling furniture. Live full-stack web app with real authentication and database.",
+    biz: "₹20 flat listing fee per task. Revenue from volume. Frontend live at quickfixi.netlify.app.",
+    products: ["QuickFix Marketplace"],
+    members: [
+      {name:"Adheesh Chattopadhyay",roll:"—",role:"Founder & Tech Lead"},
+      {name:"Aryaveer Pruthi",roll:"—",role:"Design & Strategy"},
+      {name:"Agamjot Singh",roll:"—",role:"Team Member"}
+    ],
+    links: [
+      {label:"Live Demo",url:"https://quickfixi.netlify.app",type:"website"},
+      {label:"Presentation",url:"https://drive.google.com/open?id=1eJM1WelFfk7W9ZjvlW4AP1lem-8mC1rj",type:"ppt"}
+    ]
+  },
+  {
+    name: "Trinity — Style Sphere",
+    section: "XRV",
+    tag: "updated",
+    category: "tech",
+    tagline: "AI wardrobe genie — helps teens style outfits from clothes they already own, personalised to body type.",
+    idea: "Style Sphere is a smart digital wardrobe that helps teenagers organise their clothes and get outfit suggestions based on items they already own. In the 100-hour challenge, they tested with 10 people (8 actively using it), planned phased app launches instead of all features at once, and built a working prototype. The team faced internal quarrels but pushed through because they believe in helping teens find their style sustainably.",
+    biz: "Haven't figured out monetisation yet — focused on building the product first. Future plans include freemium subscription model.",
+    products: ["Style Sphere"],
+    members: [
+      {name:"Sanvi Monga",roll:"28",role:"UI/UX, Fashion Design & Web Dev"},
+      {name:"Sanvi Aggarwal",roll:"27",role:"Risks, Benefits & Advertising"},
+      {name:"Tanya Solanki",roll:"32",role:"PPT & Prototype Video"}
+    ],
+    links: [
+      {label:"Prototype",url:"https://style-sphere-qhx.caffeine.xyz/",type:"website"}
+    ]
+  },
+  {
+    name: "HealthKeepers",
+    section: "XRD",
+    tag: "new",
+    category: "health",
+    tagline: "SmartMed Box — alarm reminders and light alerts so no one forgets to take their medicine on time.",
+    idea: "Many people forget to take medicines on time. SmartMed Box solves this with alarm reminders and light alerts at scheduled times. Simple, affordable, and life-saving for elderly patients and busy families.",
+    biz: "Direct product sales. Cost to make: ₹800, selling price: higher margin. Target buyers: families, hospitals, pharmacies.",
+    products: ["SmartMed Box"],
+    members: [
+      {name:"Divij Dabas",roll:"13",role:"Tech"},
+      {name:"Samar Bharti",roll:"29",role:"Design"}
+    ],
+    links: []
+  },
+  {
+    name: "Aeria",
+    section: "XBD",
+    tag: "new",
+    category: "tech",
+    tagline: "Paradigm shift in hair care — replacing thermal styling with ultrasonic vibrations and Peltier cooling technology.",
+    idea: "Aeria replaces conventional thermal hair styling with high-frequency ultrasonic vibrations and integrated Peltier cooling. No heat damage, no burnt hair — just salon-quality results powered by next-gen physics.",
+    biz: "Premium direct-to-consumer sales. 'Razor & Blade' strategy — sell the device, then release new ultrasonic tip attachments as recurring revenue.",
+    products: ["Aeria Ultrasonic Styler"],
+    members: [
+      {name:"Ishita Jain",roll:"22",role:"Product Architect"},
+      {name:"Priyanshi Narula",roll:"33",role:"Brand Strategist"}
+    ],
+    links: [
+      {label:"Presentation",url:"https://drive.google.com/open?id=12yK9SB4J9GQk-M-17LqV2qy64zErYsE8",type:"ppt"}
+    ]
+  },
+  {
+    name: "QuickVend",
+    section: "XBD",
+    tag: "new",
+    category: "tech",
+    tagline: "Vending machines for forgotten essentials — chargers, umbrellas, and more, available anytime, anywhere.",
+    idea: "QuickVend SmartStation gives instant access to essential items like chargers and umbrellas through vending machines. Users walk up, select an item, pay digitally, and receive it instantly. The team pivoted from a general vending machine to focus specifically on 'forgotten essential items' to make the concept more practical and focused.",
+    biz: "Revenue from selling items at a convenience markup. Profit comes from the margin on each sale. Currently concept/presentation stage.",
+    products: ["QuickVend SmartStation"],
+    members: [
+      {name:"Vaishnavi Yaduvanshi",roll:"43",role:"Solo Founder — CEO"}
+    ],
+    links: [
+      {label:"Demo Video",url:"https://www.youtube.com/watch?v=A_08Rp2fgWc",type:"video"}
+    ]
+  },
+  {
+    name: "H4XMPIRE",
+    section: "XLD",
+    tag: "new",
+    category: "tech",
+    tagline: "Advertisement company — we design and create ads to help businesses enhance their brand presence.",
+    idea: "H4XMPIRE is an advertisement company that helps businesses by designing and creating advertisements for their products. In the 100-hour challenge, they shifted their approach: instead of clients dictating the ad design, H4XMPIRE now takes creative control over the advertisement design process.",
+    biz: "Revenue from clients paying for advertisement creation. Additional income from sponsorships.",
+    products: ["H4XMPIRE Ad Services"],
+    members: [
+      {name:"Vansh",roll:"38",role:"Team Lead"},
+      {name:"Yatin",roll:"40",role:"Team Member"},
+      {name:"Nishant",roll:"21",role:"Team Member"}
+    ],
+    links: [
+      {label:"Presentation",url:"https://docs.google.com/presentation/d/1iq1lxY6WtU7Vqi4LG3Wsxarwa8xmDHFQ/edit",type:"ppt"}
+    ]
+  },
+  {
+    name: "Alphaverse",
+    section: "XBD",
+    tag: "new",
+    category: "tech",
+    tagline: "Child-friendly social media powered by AI — a safe, parent-approved platform for kids to interact and create.",
+    idea: "Alphaverse is a child-friendly social media platform that uses AI to provide a safe, controlled environment where kids can interact, create, and connect within a parent-approved space. The team focused on building the AI moderation features and designing the platform concept.",
+    biz: "Revenue through ads and commissions based on number of users.",
+    products: ["Alphaverse Platform"],
+    members: [
+      {name:"Avalroop Kaur Bedi",roll:"12",role:"Team Lead"},
+      {name:"Ayaan Malhotra",roll:"—",role:"Team Member"}
+    ],
+    links: []
+  }
+];
+
+// ─── STATE ───
+let activeFilter = 'all';
+
+function filter(section, btn) {
+  activeFilter = section;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  const q = document.getElementById('search').value.toLowerCase();
+  let count = 0;
+  document.querySelectorAll('.company').forEach(el => {
+    const matchSec = activeFilter === 'all' || el.dataset.section === activeFilter;
+    const matchQ = !q || el.dataset.search.includes(q);
+    const show = matchSec && matchQ;
+    el.style.display = show ? '' : 'none';
+    if (show) count++;
+  });
+  document.getElementById('resultCount').textContent = count + ' compan' + (count === 1 ? 'y' : 'ies');
+}
+
+function toggleExpand(idx, e) {
+  if (e.target.closest('.action-link')) return;
+  const el = document.querySelector(`.company[data-idx="${idx}"]`);
+  el.classList.toggle('expanded');
+}
+
+function getInitials(name) {
+  return name.split(' ').map(w => w[0]).filter(Boolean).slice(0, 2).join('').toUpperCase();
+}
+
+function getLinkIcon(type) {
+  if (type === 'website') return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`;
+  if (type === 'video') return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>`;
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M8 7h8M8 12h8M8 17h4"/></svg>`;
+}
+
+function renderCompanies() {
+  const container = document.getElementById('companies');
+  container.innerHTML = TEAMS.map((t, idx) => {
+    const iconColor = ICON_COLORS[idx % ICON_COLORS.length];
+    const cat = CATEGORIES[t.category];
+    const searchText = [t.name, ...t.products, ...t.members.map(m=>m.name), t.tagline, t.category].join(' ').toLowerCase();
+    
+    return `
+    <div class="company" data-section="${t.section}" data-idx="${idx}" data-tag="${t.tag || ''}" data-search="${searchText}" onclick="toggleExpand(${idx}, event)" style="transition-delay:${idx*30}ms">
+      <div class="company-main">
+        <div class="company-icon" style="background:${iconColor}">${getInitials(t.name)}</div>
+        <div class="company-body">
+          <div class="company-header">
+            <span class="company-name">${t.name}</span>
+            <span class="batch-badge">S26</span>
+            <span class="section-badge">${t.section}</span>
+            <span class="prod-chip" style="background:${cat.color};color:${cat.text};font-size:0.6rem;padding:0.15rem 0.45rem">${cat.label}</span>
+            ${t.tag === 'new' ? '<span class="new-badge">✦ NEW</span>' : ''}
+            ${t.tag === 'updated' ? '<span class="updated-badge">↑ UPDATED</span>' : ''}
+          </div>
+          <div class="company-tagline">${t.tagline}</div>
+          <div class="company-products">
+            ${t.products.map(p => `<span class="prod-chip">${p}</span>`).join('')}
+          </div>
+          <div class="company-founders">
+            ${t.members.slice(0, 4).map((m, mi) => `
+              <span class="founder-chip">
+                <span class="founder-avatar" style="background:${AVATAR_COLORS[mi % AVATAR_COLORS.length]}">${getInitials(m.name)}</span>
+                ${m.name.split(' ')[0]}${m.roll !== '—' ? ` <span class="founder-roll">#${m.roll}</span>` : ''}
+              </span>
+              ${mi < Math.min(t.members.length, 4) - 1 ? '<span class="founder-sep">·</span>' : ''}
+            `).join('')}
+            ${t.members.length > 4 ? `<span class="founder-chip" style="color:var(--gray-400)">+${t.members.length - 4} more</span>` : ''}
+          </div>
+        </div>
+        <div class="company-actions" onclick="event.stopPropagation()">
+          ${t.links.slice(0, 2).map((l, li) => `
+            <a href="${l.url}" target="_blank" rel="noopener" class="action-link ${li === 0 && l.type === 'website' ? 'primary' : ''}">${getLinkIcon(l.type)} ${l.label}</a>
+          `).join('')}
+          ${t.links.length === 0 ? '<span style="font-size:0.68rem;color:var(--gray-400);font-family:IBM Plex Mono,monospace">Pitch only</span>' : ''}
+        </div>
+      </div>
+
+      <!-- EXPANDED DETAIL -->
+      <div class="company-detail">
+        <div class="detail-grid">
+          <div class="detail-section">
+            <div class="detail-title">The Idea</div>
+            <div class="detail-text">${t.idea}</div>
+            <div style="margin-top:1.2rem">
+              <div class="detail-title">Business Model</div>
+              <div class="detail-text">${t.biz}</div>
+            </div>
+            ${t.links.length ? `
+            <div class="detail-links">
+              ${t.links.map((l, li) => `
+                <a href="${l.url}" target="_blank" rel="noopener" class="action-link ${li === 0 && l.type === 'website' ? 'primary' : ''}">${getLinkIcon(l.type)} ${l.label}</a>
+              `).join('')}
+            </div>` : ''}
+          </div>
+          <div class="detail-section">
+            <div class="detail-title">Team (${t.members.length} founder${t.members.length > 1 ? 's' : ''})</div>
+            <div class="detail-members">
+              ${t.members.map((m, mi) => `
+                <div class="detail-member">
+                  <div class="detail-member-avatar" style="background:${AVATAR_COLORS[mi % AVATAR_COLORS.length]}">${getInitials(m.name)}</div>
+                  <div class="detail-member-info">
+                    <div class="detail-member-name">${m.name}</div>
+                    <div class="detail-member-role">${m.role}</div>
+                  </div>
+                  ${m.roll !== '—' ? `<div class="detail-member-roll">Roll #${m.roll}</div>` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Intersection observer for fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05 });
+  document.querySelectorAll('.company').forEach(el => observer.observe(el));
+}
+
+renderCompanies();
+</script>
+</body>
+</html>
