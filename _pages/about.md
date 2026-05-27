@@ -129,19 +129,19 @@ redirect_from:
     <div class="news-item">
       <div class="news-date">June 2026</div>
       <div class="news-content">
-        13th Heidelberg Laureate Forum: Selected to participate as a young researcher. </strong>.
+        13th Heidelberg Laureate Forum: Selected to participate as a young researcher.
       </div>
     </div>
     <div class="news-item">
       <div class="news-date">June 2026</div>
       <div class="news-content">
-        Pre-Ph.D. synopsis presentation Aprroved </strong>.
+        Pre-Ph.D. synopsis presentation Aprroved.
       </div>
     </div>
     <div class="news-item">
-      <div class="news-date">March 2026</div>
+      <div class="news-date">Mar 2026</div>
       <div class="news-content">
-        Paper Accepted at CVPR 2026 Biometrics Workshop </strong>.
+        Paper Accepted at CVPR 2026 Biometrics Workshop.
       </div>
     </div>
     <div class="news-item">
