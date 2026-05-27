@@ -127,6 +127,24 @@ redirect_from:
 
     <!-- 2025 -->
     <div class="news-item">
+      <div class="news-date">June 2026</div>
+      <div class="news-content">
+        13th Heidelberg Laureate Forum: Selected to participate as a young researcher. </strong>.
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">June 2026</div>
+      <div class="news-content">
+        Pre-Ph.D. synopsis presentation Aprroved </strong>.
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">March 2026</div>
+      <div class="news-content">
+        Paper Accepted at CVPR 2026 Biometrics Workshop </strong>.
+      </div>
+    </div>
+    <div class="news-item">
       <div class="news-date">Nov 2025</div>
       <div class="news-content">
         Awarded the <strong>IEEE Signal Processing Society (SPS) Scholarship 2025</strong>.
