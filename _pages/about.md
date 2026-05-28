@@ -129,7 +129,7 @@ redirect_from:
     <div class="news-item">
       <div class="news-date">June 2026</div>
       <div class="news-content">
-        13th Heidelberg Laureate Forum: Selected to participate as a young researcher.
+        Selected to participate as a young researcher at 13th Heidelberg Laureate Forum, 2026.
       </div>
     </div>
     <div class="news-item">
