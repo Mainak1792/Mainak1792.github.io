@@ -135,7 +135,7 @@ redirect_from:
     <div class="news-item">
       <div class="news-date">June 2026</div>
       <div class="news-content">
-        Pre-Ph.D. synopsis presentation Aprroved.
+        Pre-Ph.D. synopsis presentation Aprroved by Dean.
       </div>
     </div>
     <div class="news-item">
@@ -284,6 +284,16 @@ redirect_from:
           <h3 class="job-title">Graduate Research Assistant</h3>
           <div class="job-loc">IIT Delhi, India</div>
           <p>Exploring Cross-modal gait identification and behavioral sensing using structural vibration and vision-based deep learning frameworks.</p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="time-marker"></div>
+        <div class="time-date">Jan 2026 - June 2026</div>
+        <div class="time-content">
+          <h3 class="job-title">Artificial Intelligence Expert</h3>
+          <div class="job-loc"> IIT Delhi Endowment Fund, India</div>
+          <p>Developed AI-driven technical pipelines, streamlining data processing and alumni engagement strategies for the Endowment Fund.</p>
         </div>
       </div>
 
