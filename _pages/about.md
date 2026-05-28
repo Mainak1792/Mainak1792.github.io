@@ -573,8 +573,8 @@ redirect_from:
     <section class="section half">
       <h2 class="section-title"><i class="fas fa-hand-holding-heart"></i> Service</h2>
       <ul class="compact-list">
-        <li><strong>Head:</strong> IEEE Delhi Signal Processing Society (SPS) Student Chapter (2025)</li>
-        <li><strong>Reviewer:</strong> IEEE Transactions on Instrumentation and Measurement (2025)</li>
+        <!-- <li><strong>Head:</strong> IEEE Delhi Signal Processing Society (SPS) Student Chapter (2025)</li> -->
+        <li><strong>Reviewer:</strong>  IEEE Transactions on Instrumentation and Measurement (TIM), NCC-2026, ICLR-2026, Earth Systems, Earth Science Informatics, Nature- Scientific Report, Array.</li>
         <li><strong>Volunteer:</strong> Youth Ideathon 2025, ICASSP 2025 Progress Workshop</li>
       </ul>
     </section>
