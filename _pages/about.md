@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: " "
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
@@ -22,7 +22,7 @@ redirect_from:
           I am a doctoral researcher at <span class="highlight">SENSE, IIT Delhi</span>, specializing in <span class="tech-highlight">Cross-Modal Gait Identification</span> and behavioral sensing. Working with <a href="https://web.iitd.ac.in/~subrat/" class="academic-link">Prof. Subrat Kar</a>, I develop ubiquitous recognition systems using structural vibration and vision.
         </p>
         <p class="profile-text">
-          My background spans <strong>Cyber-Physical Systems, Edge AI, Signal Processing, Robtics</strong> and <strong>Practical Deep Learning</strong>. I have architected predictive maintenance systems for startups, Elephant Monitoring Devices for wildlife monitoring and hold multiple patents in sensing.
+          My background spans <strong>Cyber-Physical Systems, Edge AI, Signal Processing, Robotics</strong>, and <strong>Practical Deep Learning</strong>. I have architected predictive maintenance systems for startups, developed elephant-monitoring devices for wildlife conservation, and hold multiple patents in sensing.
         </p>
         
         <div class="skills-matrix">
@@ -53,17 +53,15 @@ redirect_from:
               <span class="tag">Unity Engine</span>
               <span class="tag">OpenSim</span>
             </div>
+          </div>
 
-          <!-- </div>
-
-
-           <div class="skill-category">
+          <div class="skill-category">
             <span class="mono-label"><i class="fas fa-brain"></i> Focus</span>
             <div class="tag-cloud">
               <span class="tag">Edge AI / TinyML</span>
               <span class="tag">Signal Processing</span>
               <span class="tag">Gait Analysis</span>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -135,7 +133,7 @@ redirect_from:
     <div class="news-item">
       <div class="news-date">June 2026</div>
       <div class="news-content">
-        Pre-Ph.D. synopsis presentation Aprroved by Dean.
+        Pre-Ph.D. synopsis presentation approved by the Dean.
       </div>
     </div>
     <div class="news-item">
@@ -515,7 +513,7 @@ redirect_from:
         <div class="edu-content">
           <h3>PhD </h3>
           <div class="edu-inst">Indian Institute of Technology Delhi (IITD)</div>
-          <p class="edu-detail">CGPA: 9.07/10.00 | <em>Thesis: Sensing Human Cognition & Locomotion using ubiquitous heterogenous sensors</em></p>
+          <p class="edu-detail">CGPA: 9.07/10.00 | <em>Thesis: Sensing Human Cognition & Locomotion using ubiquitous heterogeneous sensors</em></p>
           <div class="award-badges">
             <span class="award-badge">PMRF Fellow '25</span>
             <span class="award-badge">IEEE SPS Scholarship '24, '25</span>
@@ -528,7 +526,7 @@ redirect_from:
         <div class="edu-content">
           <h3>M.Tech in Mechatronics Engineering</h3>
           <div class="edu-inst">IIEST Shibpur</div>
-          <p class="edu-detail">CGPA: 9.00/10.00 <em>Thesis: Human movement identifiction using seismic signals and vision sensors</em></p>
+          <p class="edu-detail">CGPA: 9.00/10.00 <em>Thesis: Human movement identification using seismic signals and vision sensors</em></p>
           <div class="award-badges">
             <span class="award-badge">GATE Fellow '21</span>
             <span class="award-badge">CSIR-CMERI Student Researcher '20</span>
@@ -566,7 +564,7 @@ redirect_from:
           <strong>Guest Lecturer (2023):</strong> 
           <a href="https://www.mainakchakraborty.com/teaching/2023-spring-teaching-2" class="academic-link" target="_blank">JNU Delhi, School of Engineering (Course EN-112) (120 Students)</a>
         </li>
-        <li><strong>Course Instructor (2023):</strong> Delhi Universtiy (Edge ML Projects)</li>
+        <li><strong>Course Instructor (2023):</strong> Delhi University (Edge ML Projects)</li>
       </ul>
     </section>
 
@@ -602,9 +600,10 @@ body {
 a { text-decoration: none; color: inherit; }
 
 .academic-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem 1.5rem 3rem;
 }
 
 /* Utilities */
@@ -757,13 +756,15 @@ a { text-decoration: none; color: inherit; }
   gap: 1rem;
   margin-bottom: 2rem;
   margin-top: 1.5rem;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .btn-cv {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background-color: #1e293b; /* Dark slate */
+  background-color: #1e293b;
   color: #fff;
   padding: 0.7rem 1.2rem;
   border-radius: 6px;
@@ -771,7 +772,9 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.2s ease;
-  border: 1px solid transparent;
+  border: 1px solid #1e293b;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
 }
 
 .btn-cv:hover {
