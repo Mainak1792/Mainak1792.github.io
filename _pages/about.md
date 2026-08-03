@@ -85,6 +85,18 @@ redirect_from:
   </section>
 
   <section>
+    <h2>Research Project / Consultancy</h2>
+    <ul class="plain-list">
+      <li>
+        <strong>Predictive Maintenance for IFB Washing Machines</strong>, IFB Industries. Consulting on a vibration-sensor-based predictive maintenance system for home appliances.
+      </li>
+      <li>
+        <strong>Elephant Monitoring with Nandankanan Zoological Park</strong>, Odisha. Consulting on a ground-vibration-based elephant detection and monitoring system to mitigate man&ndash;animal conflict.
+      </li>
+    </ul>
+  </section>
+
+  <section>
     <h2>Publications</h2>
 
     <h3>Journal Articles</h3>
