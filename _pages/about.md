@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-<div class="page">
+<div class="cv-page">
 
-  <header class="header">
+  <header class="cv-header">
     <h1>Mainak Chakraborty</h1>
     <p class="subtitle">Ph.D. Candidate, Cyber-Physical Systems<br>Indian Institute of Technology Delhi</p>
     <p class="quicklinks">
@@ -177,16 +177,16 @@ body {
   line-height: 1.6;
 }
 
-.page {
+.cv-page {
   max-width: 720px;
-  margin: 0 auto;
-  padding: 2rem 1.25rem 4rem;
+  margin: 0;
+  padding: 0 0 4rem;
 }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.header h1 {
+.cv-header h1 {
   font-size: 1.9rem;
   font-weight: 700;
   margin: 0 0 0.3rem;
