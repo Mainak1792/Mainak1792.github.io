@@ -10,7 +10,7 @@ redirect_from:
 <div class="cv-page">
 
   <header class="cv-header">
-    <h1>Mainak Chakraborty</h1>
+    <h1>Mainak Chakraborty <span class="blinking-cursor">_</span></h1>
     <p class="subtitle">Ph.D. Candidate, Cyber-Physical Systems<br>Indian Institute of Technology Delhi</p>
     <p class="quicklinks">
       <a href="mailto:Mainak.Chakraborty@iddc.iitd.ac.in">email</a> /
@@ -80,6 +80,18 @@ redirect_from:
       <li>
         <span class="date">May 2020 &ndash; Oct 2021</span>
         <strong>Research Internships</strong>, multiple organizations &mdash; Proxmaq: built pruned TF-Lite models for object detection in assistive smart glasses; RemoCare: implemented Bi-LSTM networks for real-time arrhythmia classification; CSIR-CMERI: developed CNN/LSTM models for seismic human activity recognition.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Consultancy</h2>
+    <ul class="plain-list">
+      <li>
+        <strong>Predictive Maintenance for IFB Washing Machines</strong>, IFB Industries. Consulting on a vibration-sensor-based predictive maintenance system for home appliances.
+      </li>
+      <li>
+        <strong>Elephant Monitoring with Nandankanan Zoological Park</strong>, Odisha. Consulting on a ground-vibration-based elephant detection and monitoring system to mitigate man&ndash;animal conflict.
       </li>
     </ul>
   </section>
@@ -192,6 +204,12 @@ a:hover { text-decoration: underline; }
   margin: 0 0 0.3rem;
   letter-spacing: -0.01em;
 }
+
+.blinking-cursor {
+  color: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
 
 .subtitle {
   margin: 0 0 0.7rem;
