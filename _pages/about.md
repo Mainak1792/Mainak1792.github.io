@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div class="academic-container">
@@ -15,9 +15,21 @@ redirect_from:
   <div class="hero-section">
     <div class="hero-grid">
       <div class="hero-bio">
-        <h1 class="hero-name">Mainak Chakraborty <span class="blinking-cursor">_</span></h1>
+        <h1 class="hero-name">Mainak Chakraborty</h1>
         <div class="hero-subtitle">PhD Scholar, IIT Delhi | PMRF Scholar | IEEE SPS Scholar</div>
-        
+
+        <div class="research-interests">
+          <span class="mono-label">Research Interests</span>
+          <div class="tag-cloud">
+            <span class="tag interest-tag">Multimodal Human Sensing</span>
+            <span class="tag interest-tag">Gait &amp; Biometric Recognition</span>
+            <span class="tag interest-tag">Structural Vibration Sensing</span>
+            <span class="tag interest-tag">Deep Learning for Time-Series</span>
+            <span class="tag interest-tag">Edge AI / TinyML</span>
+            <span class="tag interest-tag">Cyber-Physical Systems</span>
+          </div>
+        </div>
+
         <p class="profile-text">
           I am a doctoral researcher at <span class="highlight">SENSE, IIT Delhi</span>, specializing in <span class="tech-highlight">Cross-Modal Gait Identification</span> and behavioral sensing. Working with <a href="https://web.iitd.ac.in/~subrat/" class="academic-link">Prof. Subrat Kar</a>, I develop ubiquitous recognition systems using structural vibration and vision.
         </p>
@@ -52,15 +64,6 @@ redirect_from:
               <span class="tag">Docker</span>
               <span class="tag">Unity Engine</span>
               <span class="tag">OpenSim</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <span class="mono-label"><i class="fas fa-brain"></i> Focus</span>
-            <div class="tag-cloud">
-              <span class="tag">Edge AI / TinyML</span>
-              <span class="tag">Signal Processing</span>
-              <span class="tag">Gait Analysis</span>
             </div>
           </div>
         </div>
@@ -580,21 +583,22 @@ redirect_from:
 
 <style>
 :root {
-  --bg-color: #f8f9fa;
-  --text-primary: #1a202c;
-  --text-secondary: #4a5568;
-  --accent-blue: #2563eb;
-  --accent-dark: #1e3a8a;
-  --code-font: 'JetBrains Mono', monospace;
-  --body-font: 'Inter', sans-serif;
-  --border-color: #e2e8f0;
+  --bg-color: #faf8f4;
+  --text-primary: #1e1c1a;
+  --text-secondary: #5c5650;
+  --accent-navy: #1a2b4a;
+  --accent-maroon: #7a1f2b;
+  --heading-font: 'Merriweather', Georgia, serif;
+  --body-font: 'PT Serif', Georgia, serif;
+  --label-font: 'JetBrains Mono', monospace;
+  --border-color: #ddd6c9;
 }
 
 body {
   font-family: var(--body-font);
   color: var(--text-primary);
   background-color: #fff;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -608,33 +612,66 @@ a { text-decoration: none; color: inherit; }
 
 /* Utilities */
 .mono-label {
-  font-family: var(--code-font);
-  font-size: 0.75rem;
+  font-family: var(--label-font);
+  font-style: normal;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   color: var(--text-secondary);
   display: block;
   margin-bottom: 0.5rem;
 }
 
-.highlight { background: #e0e7ff; color: var(--accent-dark); padding: 0 4px; border-radius: 2px; }
-.tech-highlight { color: var(--accent-blue); font-weight: 600; }
-.academic-link { color: var(--accent-blue); border-bottom: 1px dashed var(--accent-blue); }
-.academic-link:hover { border-bottom-style: solid; }
+/* Research Interests */
+.research-interests { margin-bottom: 1.5rem; }
+.interest-tag {
+  font-family: var(--label-font);
+  font-size: 0.75rem;
+  background: #f6eeef;
+  color: var(--accent-maroon);
+  border-color: #ecdbdd;
+}
+
+.highlight { background: #f1ece0; color: var(--accent-navy); padding: 0 4px; border-radius: 2px; }
+.tech-highlight { color: var(--accent-maroon); font-weight: 700; font-style: italic; }
+.academic-link { color: var(--accent-navy); border-bottom: 1px solid var(--accent-navy); }
+.academic-link:hover { color: var(--accent-maroon); border-bottom-color: var(--accent-maroon); }
+
+/* Section Headings & Layout */
+.section { margin-top: 3rem; }
+.section-title {
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent-navy);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.section-title i { color: var(--accent-maroon); margin-right: 0.5rem; font-size: 1.1rem; }
+.subsection-title {
+  font-family: var(--heading-font);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+.pub-category { margin-bottom: 2rem; }
+.divider { border: none; border-top: 1px solid var(--border-color); margin: 2.5rem 0; }
+.hero-section { max-width: 760px; }
+.profile-text { margin-bottom: 1rem; }
 
 /* Hero & Skills */
-.hero-name { font-size: 2.5rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
-.hero-subtitle { font-family: var(--code-font); color: var(--accent-blue); font-size: 0.9rem; margin-bottom: 1.5rem; }
-.blinking-cursor { animation: blink 1s step-end infinite; color: var(--accent-blue); }
-@keyframes blink { 50% { opacity: 0; } }
+.hero-name { font-family: var(--heading-font); font-size: 2.4rem; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
+.hero-subtitle { font-family: var(--body-font); font-style: italic; color: var(--accent-maroon); font-size: 1rem; margin-bottom: 1.5rem; }
 
 .skills-matrix {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  background: #f8fafc;
+  background: #f8f6f0;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid var(--border-color);
   margin-top: 2rem;
 }
@@ -642,9 +679,9 @@ a { text-decoration: none; color: inherit; }
 .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .tag {
   background: #fff; border: 1px solid var(--border-color);
-  padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;
+  padding: 0.2rem 0.5rem; border-radius: 2px; font-size: 0.85rem;
 }
-.code-tag { font-family: var(--code-font); background: #eff6ff; color: var(--accent-dark); border-color: #bfdbfe; }
+.code-tag { background: #f1ece0; color: var(--accent-navy); border-color: var(--border-color); }
 
 /* News Scroller */
 .news-scroller {
@@ -659,7 +696,7 @@ a { text-decoration: none; color: inherit; }
 
 .news-item { display: flex; gap: 1.5rem; margin-bottom: 1.2rem; font-size: 0.95rem; }
 .news-date {
-  font-family: var(--code-font); color: var(--accent-blue); font-size: 0.85rem;
+  font-family: var(--label-font); color: var(--accent-maroon); font-size: 0.75rem;
   min-width: 80px; font-weight: 700;
 }
 .news-content { flex: 1; }
@@ -675,55 +712,55 @@ a { text-decoration: none; color: inherit; }
 .time-marker {
   position: absolute; left: -2.4rem; top: 5px;
   width: 12px; height: 12px; background: #fff;
-  border: 3px solid var(--accent-blue); border-radius: 50%;
+  border: 3px solid var(--accent-navy); border-radius: 50%;
 }
-.time-date { font-family: var(--code-font); font-size: 0.8rem; color: var(--accent-blue); margin-bottom: 0.2rem; }
-.job-title { font-size: 1.1rem; margin: 0; font-weight: 600; }
+.time-date { font-family: var(--label-font); font-size: 0.75rem; color: var(--accent-navy); margin-bottom: 0.2rem; }
+.job-title { font-family: var(--heading-font); font-size: 1.1rem; margin: 0; font-weight: 700; }
 .job-loc { font-size: 0.9rem; color: var(--text-secondary); font-style: italic; margin-bottom: 0.5rem; }
 
 /* Patent Cards */
 .patent-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
 .patent-card {
   display: flex; gap: 1rem; padding: 1rem;
-  border: 1px solid var(--border-color); border-radius: 6px;
+  border: 1px solid var(--border-color); border-radius: 2px;
   background: #fff; align-items: center;
 }
-.patent-icon { font-size: 1.5rem; color: #d97706; }
-.patent-details h4 { margin: 0 0 0.2rem 0; font-size: 0.95rem; line-height: 1.3; }
-.patent-meta { font-family: var(--code-font); font-size: 0.75rem; color: var(--text-secondary); }
+.patent-icon { font-size: 1.5rem; color: var(--accent-maroon); }
+.patent-details h4 { font-family: var(--heading-font); margin: 0 0 0.2rem 0; font-size: 0.95rem; line-height: 1.3; }
+.patent-meta { font-family: var(--label-font); font-size: 0.7rem; color: var(--text-secondary); }
 
 /* Publications */
 .pub-card {
   display: flex; justify-content: space-between; padding: 1rem;
   background: #fff; border-bottom: 1px solid var(--border-color);
   margin-bottom: 0.5rem;
-  transition: transform 0.2s;
 }
-.pub-card:hover { transform: translateY(-2px); border-color: var(--accent-blue); }
+.pub-card:hover { border-color: var(--accent-navy); }
 
 .pub-main { flex: 1; padding-right: 1rem; }
 
-.pub-title { margin: 0 0 0.3rem 0; font-size: 1rem; font-weight: 600; color: #1e293b; }
+.pub-title { font-family: var(--heading-font); margin: 0 0 0.3rem 0; font-size: 1rem; font-weight: 700; color: var(--text-primary); }
 .pub-authors { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.3rem; }
 .venue-tag {
-  font-family: var(--code-font); font-size: 0.75rem; padding: 2px 6px;
-  border-radius: 4px; font-weight: 700; margin-right: 0.5rem; display: inline-block;
+  font-family: var(--label-font); font-size: 0.68rem; padding: 2px 6px;
+  border-radius: 2px; font-weight: 700; margin-right: 0.5rem; display: inline-block;
+  border: 1px solid var(--border-color);
 }
 /* Colors for Venues */
-.venue-tag.nature { background: #dcfce7; color: #15803d; }
-.venue-tag.ieee { background: #dbeafe; color: #1e40af; }
-.venue-tag.conf { background: #f1f5f9; color: #475569; }
-.venue-tag.trans { background: #f3e8ff; color: #7e22ce; } /* New Purple for Transactions */
+.venue-tag.nature { background: #f0f3ea; color: #3f5c33; }
+.venue-tag.ieee { background: #eef1f6; color: var(--accent-navy); }
+.venue-tag.conf { background: #f8f6f0; color: var(--text-secondary); }
+.venue-tag.trans { background: #f6eeef; color: var(--accent-maroon); }
 
-.pub-year { font-family: var(--code-font); font-size: 0.8rem; color: var(--text-secondary); }
+.pub-year { font-family: var(--label-font); font-size: 0.7rem; color: var(--text-secondary); }
 
 .pub-actions { min-width: 60px; display: flex; align-items: flex-start; }
 .btn-action {
-  font-family: var(--code-font); font-size: 0.75rem; padding: 4px 8px;
-  border: 1px solid var(--border-color); border-radius: 4px;
+  font-family: var(--label-font); font-size: 0.7rem; padding: 4px 8px;
+  border: 1px solid var(--border-color); border-radius: 2px;
   color: var(--text-secondary);
 }
-.btn-action:hover { background: #1a202c; color: #fff; border-color: #1a202c; }
+.btn-action:hover { background: var(--accent-navy); color: #fff; border-color: var(--accent-navy); }
 
 /* Education (Reused Timeline styles roughly) */
 .edu-timeline { border-left: 2px solid var(--border-color); padding-left: 2rem; }
@@ -732,11 +769,13 @@ a { text-decoration: none; color: inherit; }
   content: ''; position: absolute; left: -2.4rem; top: 5px;
   width: 10px; height: 10px; background: var(--text-secondary); border-radius: 50%;
 }
-.edu-date { font-family: var(--code-font); font-size: 0.85rem; color: var(--text-secondary); }
+.edu-item h3 { font-family: var(--heading-font); }
+.edu-date { font-family: var(--label-font); font-size: 0.75rem; color: var(--text-secondary); }
 .award-badge {
-  display: inline-block; background: #fff7ed; color: #c2410c;
-  border: 1px solid #ffedd5; font-size: 0.75rem; padding: 2px 8px;
-  border-radius: 12px; margin-right: 0.5rem; margin-top: 0.3rem;
+  display: inline-block; background: #f8f6f0; color: var(--accent-maroon);
+  border: 1px solid var(--border-color); font-size: 0.68rem; padding: 2px 8px;
+  border-radius: 2px; margin-right: 0.5rem; margin-top: 0.3rem;
+  font-family: var(--label-font);
 }
 
 /* Split Section */
@@ -747,7 +786,7 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 0.8rem; padding-left: 1.2rem; position: relative; font-size: 0.95rem;
 }
 .compact-list li::before {
-  content: '▹'; position: absolute; left: 0; color: var(--accent-blue);
+  content: '\2013'; position: absolute; left: 0; color: var(--accent-navy);
 }
 
 /* CV Button Styles */
@@ -764,35 +803,33 @@ a { text-decoration: none; color: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background-color: #1e293b;
+  background-color: var(--accent-navy);
   color: #fff;
   padding: 0.7rem 1.2rem;
-  border-radius: 6px;
-  font-family: var(--code-font);
-  font-size: 0.9rem;
-  font-weight: 600;
+  border-radius: 2px;
+  font-family: var(--label-font);
+  font-size: 0.8rem;
+  font-weight: 700;
   transition: all 0.2s ease;
-  border: 1px solid #1e293b;
+  border: 1px solid var(--accent-navy);
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
 }
 
 .btn-cv:hover {
-  background-color: var(--accent-blue);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  background-color: var(--accent-maroon);
+  border-color: var(--accent-maroon);
 }
 
 .btn-cv.btn-outline {
   background-color: transparent;
-  border: 1px solid #cbd5e1;
-  color: #475569;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
 }
 
 .btn-cv.btn-outline:hover {
-  border-color: var(--accent-blue);
-  color: var(--accent-blue);
-  background-color: #eff6ff;
+  border-color: var(--accent-navy);
+  color: var(--accent-navy);
+  background-color: #f8f6f0;
 }
 
 @media (max-width: 768px) {
