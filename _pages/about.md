@@ -21,19 +21,19 @@ redirect_from:
     </p>
   </header>
 
-  <section>
+  <!-- <section>
     <p><strong>Research Interests:</strong> Signal Processing, Cross-Modal Learning, Human Gait Recognition, Novelty &amp; Anomaly Detection, Edge AI / TinyML, Cognitive Load Estimation, Human-Computer Interaction, Wearable &amp; Embedded Systems, Behavioral Sensing.</p>
-  </section>
+  </section> -->
 
   <section>
     <p>
       I am a doctoral researcher in Cyber-Physical Systems at the Indian Institute of Technology Delhi, working with <a href="https://web.iitd.ac.in/~subrat/" target="_blank">Prof. Subrat Kar</a>. My doctoral research investigates cross-modal gait identification and behavioral sensing, building recognition systems that fuse structural vibration and vision to understand how people move. Before this, I completed an M.Tech in Mechatronics Engineering at IIEST Shibpur, working on human movement identification using seismic and vision sensors.
     </p>
     <p>
-      My path into research has run alongside applied and industry work. As Product Architect &amp; Deep Learning Engineer at Etaaide, I led the design of a vibration-sensor-based predictive maintenance system that secured a TIDE 2.0 innovation grant and national incubation support. As a research intern, I built a pruned TensorFlow Lite model for on-device object detection at Proxmaq, implemented Bi-LSTM networks for real-time arrhythmia classification at RemoCare, and developed CNN/LSTM models for seismic human activity recognition at CSIR-CMERI.
+      My path into research has run alongside applied and industry work. As Product Architect &amp; Deep Learning Engineer, I led the design of a vibration-sensor-based predictive maintenance system that secured national incubation support. As a research intern, I built a pruned TensorFlow Lite model for on-device object detection at Proxmaq, implemented Bi-LSTM networks for real-time arrhythmia classification at RemoCare, and developed CNN/LSTM models for seismic human activity recognition at CSIR-CMERI.
     </p>
     <p>
-      My work has been recognized with a Prime Minister's Research Fellowship (top 0.5% of 212,568 candidates nationwide), consecutive IEEE Signal Processing Society Scholarships (2024, 2025), and selection as one of 200 young researchers worldwide to attend the 13th Heidelberg Laureate Forum in 2026. My research appears in venues including <em>Nature Scientific Data</em>, <em>IEEE Transactions on Mobile Computing</em>, and <em>IEEE Transactions on Instrumentation and Measurement</em>, alongside three patents in sensing and identification systems. Beyond the lab, I teach as an NPTEL graduate teaching assistant, and enjoy running, swimming, and writing.
+      My work has been recognized with a Prime Minister's Research Fellowship (2021-2025), consecutive IEEE Signal Processing Society Scholarships (2024, 2025), and selection as one of 200 young researchers worldwide to attend the 13th Heidelberg Laureate Forum in 2026. My research appears in venues including <em>Nature Scientific Data</em>, <em>IEEE Transactions on Mobile Computing</em>, and <em>IEEE Transactions on Instrumentation and Measurement</em>, alongside three patents in sensing and identification systems. Beyond the lab, I teach as an NPTEL graduate teaching assistant, and enjoy running, swimming, and writing.
     </p>
   </section>
 
@@ -56,7 +56,7 @@ redirect_from:
       <li><span class="date">2024</span> Attended the Machine Learning Summer School, ETH Zurich &amp; Universit&auml;tsklinik Balgrist.</li>
       <li><span class="date">2023</span> TensorFlow Developer Certificate &mdash; Credential ID: 87883013.</li>
       <li><span class="date">2023</span> Paper selected at IEEE Signal Processing Letters.</li>
-      <li><span class="date">2022</span> Raised $10k for &ldquo;Eta-aide&rdquo; predictive maintenance startup (exited 2023), India.</li>
+      <li><span class="date">2022</span> Raised $10k for a predictive maintenance startup (exited 2023), India.</li>
       <li><span class="date">2022</span> Awarded the PMRF Scholarship &mdash; top 0.5% among 212,568 candidates, India.</li>
       <li><span class="date">2019</span> GATE Fellowship &mdash; top 6% among 167,376 candidates, India.</li>
     </ul>
@@ -75,23 +75,11 @@ redirect_from:
       </li>
       <li>
         <span class="date">Dec 2021 &ndash; Aug 2022</span>
-        <strong>Product Architect &amp; Deep Learning Engineer</strong>, Etaaide, New Delhi. Led design of a vibration-sensor-based predictive maintenance system; secured innovation grants and national incubation support at IIT-Mandi and IIM-Bangalore.
+        <strong>Product Architect &amp; Deep Learning Engineer</strong>, New Delhi. Led design of a vibration-sensor-based predictive maintenance system; secured innovation grants and national incubation support at IIT-Mandi and IIM-Bangalore.
       </li>
       <li>
         <span class="date">May 2020 &ndash; Oct 2021</span>
         <strong>Research Internships</strong>, multiple organizations &mdash; Proxmaq: built pruned TF-Lite models for object detection in assistive smart glasses; RemoCare: implemented Bi-LSTM networks for real-time arrhythmia classification; CSIR-CMERI: developed CNN/LSTM models for seismic human activity recognition.
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Consultancy</h2>
-    <ul class="plain-list">
-      <li>
-        <strong>Predictive Maintenance for IFB Washing Machines</strong>, IFB Industries. Consulting on a vibration-sensor-based predictive maintenance system for home appliances.
-      </li>
-      <li>
-        <strong>Elephant Monitoring with Nandankanan Zoological Park</strong>, Odisha. Consulting on a ground-vibration-based elephant detection and monitoring system to mitigate man&ndash;animal conflict.
       </li>
     </ul>
   </section>
@@ -242,13 +230,21 @@ section h3 {
   margin: 1.3rem 0 0.6rem;
 }
 
-p { margin: 0 0 0.9rem; }
+p {
+  margin: 0 0 0.9rem;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
 
 .plain-list { list-style: none; padding: 0; margin: 0; }
 .plain-list li {
   margin-bottom: 0.8rem;
   padding-left: 0;
   font-size: 0.98rem;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 .plain-list .date {
   display: inline-block;
@@ -264,6 +260,9 @@ p { margin: 0 0 0.9rem; }
 .pub-list li {
   margin-bottom: 0.9rem;
   font-size: 0.98rem;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 .pub-title { font-weight: 700; }
 
