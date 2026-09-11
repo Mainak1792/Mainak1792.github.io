@@ -50,13 +50,13 @@ VAR_NAME = "geo_data"      # variable inside the .mat; falls back to the largest
 # (alphabetically) in the folder is used.
 GROUPS = {
     "environment": dict(
-        title="Three floors",
+        title="Two Different floors",
         intro="Footsteps recorded on three different floors. "
               "Listen to how much the floor itself changes the sound.",
         folders=[
-            dict(folder="e1", label="Floor 1", detail="Environment 1 (edit in prepare_data.py)"),
-            dict(folder="e2", label="Floor 2", detail="Environment 2 (edit in prepare_data.py)"),
-            dict(folder="e3", label="Floor 3", detail="Environment 3 (edit in prepare_data.py)"),
+            dict(folder="e1", label="Floor 1", detail="Wooden Floor"),
+            dict(folder="e2", label="Floor 2", detail="Carpetted Floor"),
+            # dict(folder="e3", label="Floor 3", detail="Environment 3 (edit in prepare_data.py)"),
         ],
     ),
     "gender": dict(
