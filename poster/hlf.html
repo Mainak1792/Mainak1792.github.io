@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What a footstep sounds like to a floor</title>
+<meta name="description" content="Footsteps recorded by a floor-mounted geophone: see them, zoom in, look at their wavelet scalogram, and listen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF1EC; --grid:#D3DBD4; --ink:#1C2430; --muted:#56645F; --panel:#F7F9F5;
+    --c1:#2F4BA8; --c2:#A8326E; --c3:#2E7D5B; --c4:#7A4FB0; --c5:#9A6400;
+    --play:#D99A00;
+    --font:"Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--paper);color:var(--ink);font-family:var(--font);
+       font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  body{margin:0}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  h1,h2,h3{margin:0;line-height:1.1}
+  p{margin:0}
+  .num{font-variant-numeric:tabular-nums}
+
+  header.hero{padding:56px 0 20px}
+  header.hero h1{font-size:clamp(2.3rem,5.4vw,4.4rem);font-weight:800;letter-spacing:-.025em;max-width:15ch}
+  .lede{margin-top:18px;font-size:1.2rem;max-width:58ch;color:var(--muted)}
+  .hero-actions{margin-top:26px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .hint{color:var(--muted);font-size:.9rem}
+
+  button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:.7em 1.3em;
+         font-weight:700;color:var(--ink);background:transparent;box-shadow:inset 0 0 0 2px var(--ink)}
+  button.primary{background:var(--ink);color:var(--paper);font-size:1.1rem;padding:.8em 1.6em}
+  button:focus-visible,input:focus-visible,canvas:focus-visible{outline:3px solid var(--play);outline-offset:3px}
+  button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+  button:disabled{opacity:.4;cursor:default}
+
+  /* comparison tabs */
+  .tabs{margin-top:40px;display:flex;gap:4px;border-bottom:2px solid var(--ink)}
+  .tabs button{border-radius:10px 10px 0 0;box-shadow:none;font-size:1.25rem;font-weight:800;
+               padding:.5em 1em;color:var(--muted)}
+  .tabs button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+  .group-intro{margin-top:14px;color:var(--muted);max-width:62ch}
+
+  .drum{margin-top:14px}
+  .drum-row{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center;
+            padding:12px 0;border-bottom:1px solid var(--grid)}
+  .drum-row .name{font-weight:700}
+  .drum-row .sub{font-size:.85rem;color:var(--muted)}
+  canvas{display:block;width:100%}
+  canvas.overview{height:70px;cursor:crosshair}
+  .drum-caption{font-size:.85rem;color:var(--muted);padding-top:8px}
+
+  .controls{margin:44px 0 10px;display:flex;flex-wrap:wrap;gap:22px 34px;align-items:flex-end;
+            padding:18px 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--grid)}
+  .ctl{display:flex;flex-direction:column;gap:6px}
+  .ctl > span{font-size:.85rem;color:var(--muted)}
+  .seg{display:flex;gap:6px;flex-wrap:wrap}
+  .seg button{padding:.45em .95em;font-size:.9rem;font-weight:500}
+  input[type=range]{width:160px;accent-color:var(--ink)}
+
+  .lane{padding:26px 0 30px;border-bottom:1px solid var(--grid)}
+  .lane-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+  .lane-head h2{font-size:1.7rem;font-weight:800}
+  .lane-head .who{color:var(--muted);font-size:1rem;font-weight:400;margin-left:.4em}
+  .facts{display:flex;gap:30px;flex-wrap:wrap}
+  .fact b{display:block;font-size:1.5rem;font-weight:800}
+  .fact span{font-size:.8rem;color:var(--muted)}
+  .lane canvas.zoom{height:180px;margin-top:16px;background:var(--panel)}
+  .lane canvas.freq{height:170px;margin-top:6px}
+  .lane-foot{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:12px;flex-wrap:wrap}
+  .axis-note{font-size:.8rem;color:var(--muted);max-width:70ch}
+  .swatch::before{content:"";display:inline-block;width:.7em;height:.7em;border-radius:50%;
+                  background:currentColor;margin-right:.45em;vertical-align:.08em}
+
+  section.closeup{padding:48px 0}
+  section.closeup h2,section.explain h2{font-size:2rem;font-weight:800;letter-spacing:-.015em}
+  .closeup-grid{display:grid;grid-template-columns:1fr 330px;gap:36px;margin-top:20px;align-items:start}
+  canvas.step{height:240px;background:var(--panel)}
+  .scalos{display:grid;gap:14px;margin-top:14px}
+  .scalo .cap{font-size:.85rem;font-weight:700;margin-bottom:4px}
+  .scalo canvas{height:150px}
+  .closeup p,.explain p{max-width:62ch}
+  .closeup p + p{margin-top:.8em}
+
+  section.explain{padding:10px 0 50px;border-top:2px solid var(--ink)}
+  .explain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:22px}
+  .explain-grid.two{grid-template-columns:repeat(2,1fr)}
+  .explain h3{font-size:1.15rem;font-weight:700;margin-bottom:.4em}
+  .explain-grid p{font-size:.95rem;color:var(--muted)}
+  footer{padding:24px 0 48px;font-size:.85rem;color:var(--muted);border-top:1px solid var(--grid)}
+  kbd{font-family:var(--font);font-weight:700;border:1px solid var(--muted);border-radius:4px;padding:0 .35em}
+  .empty{padding:40px 0;font-size:1.1rem;max-width:60ch}
+
+  body.blind .reveal-only{visibility:hidden}
+
+  @media (max-width:820px){
+    .drum-row{grid-template-columns:1fr;gap:6px}
+    .closeup-grid,.explain-grid,.explain-grid.two{grid-template-columns:1fr}
+    .wrap{padding:0 18px}
+    .tabs button{font-size:1rem}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>What a footstep sounds like to a floor</h1>
+    <p class="lede">A geophone lying on the floor records the tiny tremor each step sends through the
+      structure. No camera, no microphone, nothing worn. Press play and listen to people walking.</p>
+    <div class="hero-actions">
+      <button class="primary" id="playAll">Play all recordings</button>
+      <button id="blindBtn" aria-pressed="false">Blind listening</button>
+      <span class="hint">Click a long trace to choose which seconds you hear.</span>
+    </div>
+
+    <div class="tabs" id="tabs" role="group" aria-label="Choose a comparison"></div>
+    <p class="group-intro" id="groupIntro"></p>
+    <div class="drum" id="drum"></div>
+    <p class="drum-caption">Each strip is the full recording. The shaded box is the stretch shown and played below.</p>
+  </header>
+
+  <div class="controls" role="group" aria-label="Display and playback settings">
+    <div class="ctl"><span>Stretch length</span>
+      <div class="seg" id="winSeg">
+        <button data-v="2">2 s</button><button data-v="4" aria-pressed="true">4 s</button><button data-v="8">8 s</button>
+      </div>
+    </div>
+    <div class="ctl"><span>Frequency picture</span>
+      <div class="seg" id="viewSeg">
+        <button data-v="cwt" aria-pressed="true">Morlet wavelet</button>
+        <button data-v="stft">Spectrogram</button>
+      </div>
+    </div>
+    <div class="ctl"><span>How to listen</span>
+      <div class="seg" id="modeSeg">
+        <button data-v="lift" aria-pressed="true">Real rhythm, raised pitch</button>
+        <button data-v="fast">Sped up</button>
+        <button data-v="raw">Untouched</button>
+      </div>
+    </div>
+    <div class="ctl"><span id="liftLabel">Pitch raised ×6</span>
+      <input type="range" id="lift" min="2" max="16" step="1" value="6" aria-labelledby="liftLabel">
+    </div>
+  </div>
+
+  <main id="lanes"></main>
+
+  <section class="closeup">
+    <h2>One footstep, up close</h2>
+    <div class="closeup-grid">
+      <div>
+        <canvas class="step" id="stepCanvas" aria-label="A typical single footstep from each recording, overlaid"></canvas>
+        <div class="scalos" id="scalos"></div>
+      </div>
+      <div>
+        <p>A single step is over in well under half a second. The heel strikes and the floor answers with a
+          sharp jolt, then it keeps ringing and slowly dies away.</p>
+        <p>The wavelet pictures below the trace show the same step as time against frequency. The impact is a
+          short vertical streak reaching high frequencies; the ringing is a horizontal band that fades out.</p>
+        <p>That ringing belongs as much to the floor as to the person. Separating the person from the floor
+          is the hard part of the research.</p>
+        <p class="reveal-only" id="stepLegend"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="explain">
+    <h2>Two ways to see frequency</h2>
+    <div class="explain-grid two">
+      <div><h3>Spectrogram</h3>
+        <p>Cuts the signal into equal slices of time and measures the frequencies in each. One slice length
+          for everything: either the sharp impact is smeared in time, or the slow ringing is smeared in
+          frequency.</p></div>
+      <div><h3>Morlet wavelet</h3>
+        <p>Compares the signal with short wave packets of many sizes. Short packets catch high-frequency
+          detail at the exact moment it happens; long packets measure low tones precisely. That suits a
+          footstep: a sudden impact followed by slow ringing. Frequency runs on a log scale from 5 to 400 Hz.</p></div>
+    </div>
+  </section>
+
+  <section class="explain">
+    <h2>Why the sound has to be shifted</h2>
+    <div class="explain-grid">
+      <div><h3>Too low to hear</h3>
+        <p>Most footstep energy sits between 10 and 100 Hz, the bottom edge of human hearing. Laptop and
+          room speakers barely reproduce it, so “Untouched” needs a subwoofer.</p></div>
+      <div><h3>Sped up</h3>
+        <p>Playing the recording faster lifts every frequency by the same factor, into the range our ears
+          like. The price is time: a walk becomes a drum roll.</p></div>
+      <div><h3>Real rhythm, raised pitch</h3>
+        <p>Each detected step is sped up on its own but played at the moment it really happened. You hear
+          the true walking rhythm with a floor that sounds like a drum.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    Keyboard: <kbd>Space</kbd> plays all, <kbd>1</kbd> to <kbd>5</kbd> play one recording,
+    <kbd>B</kbd> toggles blind listening, <kbd>Tab</kbd> onto a long trace and use the arrow keys to move the stretch.
+    Data: single floor-mounted geophone, recorded at 8 kHz, shown at 2 kHz with power-line hum removed.
+  </footer>
+</div>
+
+<script src="assets/environment.js"></script>
+<script src="assets/gender.js"></script>
+<script>
+(() => {
+"use strict";
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const PALETTE = ["--c1", "--c2", "--c3", "--c4", "--c5"].map(css);
+const GROUPS = window.GROUPS || {};
+const ORDER = ["environment", "gender", ...Object.keys(GROUPS).filter(k => k !== "environment" && k !== "gender")]
+  .filter(k => GROUPS[k]);
+
+const state = { group: null, win: 4, view: "cwt", mode: "lift", lift: 6, blind: false, playing: null };
+let walkers = [];
+
+/* wavelet frequency grid: 5–400 Hz, log-spaced */
+const FMIN = 5, FMAX = 400, NF = 72, W0 = 6;
+const FREQS = Float64Array.from({ length: NF }, (_, i) => FMIN * Math.pow(FMAX / FMIN, i / (NF - 1)));
+
+const lanesEl = document.getElementById("lanes"), drum = document.getElementById("drum");
+if (!ORDER.length) {
+  lanesEl.innerHTML = `<p class="empty">No recordings found. Put your .mat files in data/environment/e1…e3
+    and data/gender/male, data/gender/female, run <b>python prepare_data.py</b>, and keep the generated
+    assets folder next to index.html.</p>`;
+  return;
+}
+
+/* ---------- data ---------- */
+function decode(group) {
+  if (group._ready) return group.walkers;
+  group.walkers.forEach((w, i) => {
+    const bin = atob(w.b64), u8 = new Uint8Array(bin.length);
+    for (let k = 0; k < bin.length; k++) u8[k] = bin.charCodeAt(k);
+    const i16 = new Int16Array(u8.buffer);
+    w.x = new Float32Array(i16.length);
+    for (let k = 0; k < i16.length; k++) w.x[k] = i16[k] / 32767;
+    delete w.b64;
+    w.color = PALETTE[i % PALETTE.length];
+    // open on the stretch with the most steps
+    const L = 4 * w.fs; let best = 0, bestCount = -1;
+    for (let j = 0, i0 = 0; j < w.steps.length; j++) {
+      while (w.steps[j] - w.steps[i0] > L) i0++;
+      if (j - i0 > bestCount) { bestCount = j - i0; best = w.steps[i0]; }
+    }
+    w.start = Math.max(0, best - Math.round(0.2 * w.fs));
+  });
+  group._ready = true;
+  return group.walkers;
+}
+const clampStart = (w, s) => Math.max(0, Math.min(w.n - state.win * w.fs, s));
+
+/* ---------- canvas helpers ---------- */
+function fit(c) {
+  const r = c.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+  const W = Math.max(1, Math.round(r.width * d)), H = Math.max(1, Math.round(r.height * d));
+  if (c.width !== W || c.height !== H) { c.width = W; c.height = H; }
+  const g = c.getContext("2d"); g.setTransform(1, 0, 0, 1, 0, 0);
+  return { g, W, H, d };
+}
+function drawTrace(g, x, i0, i1, X, Y, W, H, color, gain = 1) {
+  const n = i1 - i0, per = n / W, mid = Y + H / 2;
+  g.fillStyle = color; g.strokeStyle = color;
+  if (per >= 2) {
+    for (let px = 0; px < W; px++) {
+      const a = i0 + Math.floor(px * per), b = Math.min(i1, i0 + Math.floor((px + 1) * per));
+      let lo = 1, hi = -1;
+      for (let k = a; k < b; k++) { const v = x[k]; if (v < lo) lo = v; if (v > hi) hi = v; }
+      if (hi < lo) continue;
+      const y1 = mid - Math.min(1, hi * gain) * H / 2, y2 = mid - Math.max(-1, lo * gain) * H / 2;
+      g.fillRect(X + px, y1, 1, Math.max(1, y2 - y1));
+    }
+  } else {
+    g.beginPath();
+    for (let k = i0; k < i1; k++) {
+      const px = X + (k - i0) / n * W, py = mid - Math.max(-1, Math.min(1, x[k] * gain)) * H / 2;
+      k === i0 ? g.moveTo(px, py) : g.lineTo(px, py);
+    }
+    g.lineWidth = 1.2 * (window.devicePixelRatio || 1); g.stroke();
+  }
+}
+function winPeak(w, i0, i1) { let m = 1e-6; for (let k = i0; k < i1; k++) m = Math.max(m, Math.abs(w.x[k])); return m; }
+function hexRgb(h) { const v = parseInt(h.slice(1), 16); return [v >> 16 & 255, v >> 8 & 255, v & 255]; }
+
+/* ---------- FFT, spectrogram, Morlet CWT ---------- */
+function fft(re, im) {
+  const n = re.length;
+  for (let i = 1, j = 0; i < n; i++) {
+    let bit = n >> 1; for (; j & bit; bit >>= 1) j ^= bit; j ^= bit;
+    if (i < j) { let t = re[i]; re[i] = re[j]; re[j] = t; t = im[i]; im[i] = im[j]; im[j] = t; }
+  }
+  for (let len = 2; len <= n; len <<= 1) {
+    const ang = -2 * Math.PI / len, wr = Math.cos(ang), wi = Math.sin(ang), half = len >> 1;
+    for (let i = 0; i < n; i += len) {
+      let cr = 1, ci = 0;
+      for (let k = 0; k < half; k++) {
+        const a = i + k, b = a + half;
+        const tr = re[b] * cr - im[b] * ci, ti = re[b] * ci + im[b] * cr;
+        re[b] = re[a] - tr; im[b] = im[a] - ti; re[a] += tr; im[a] += ti;
+        const nr = cr * wr - ci * wi; ci = cr * wi + ci * wr; cr = nr;
+      }
+    }
+  }
+}
+
+/* short-time Fourier transform, 0–400 Hz linear; returns rows=freq, cols=time, in dB */
+function stft(x, i0, len, fs) {
+  const N = 256, hop = 16, bins = Math.floor(400 / (fs / N)), cols = Math.max(1, Math.floor((len - N) / hop));
+  const han = Float64Array.from({ length: N }, (_, k) => 0.5 - 0.5 * Math.cos(2 * Math.PI * k / N));
+  const M = new Float32Array(cols * bins), re = new Float64Array(N), im = new Float64Array(N);
+  let mx = -Infinity;
+  for (let c = 0; c < cols; c++) {
+    for (let k = 0; k < N; k++) { re[k] = (x[i0 + c * hop + k] || 0) * han[k]; im[k] = 0; }
+    fft(re, im);
+    for (let b = 0; b < bins; b++) {
+      const v = 10 * Math.log10(re[b] * re[b] + im[b] * im[b] + 1e-20);
+      M[b * cols + c] = v; if (v > mx) mx = v;
+    }
+  }
+  return { M, mx, rows: bins, cols, yOf: f => 1 - (f / (fs / N) + 0.5) / bins, ticks: [100, 200, 300] };
+}
+
+/* continuous wavelet transform with an analytic Morlet (w0 = 6), computed in the
+   frequency domain. Real signal on each side (pad) keeps edges honest.
+   Amplitude-normalised: a sine of amplitude A shows as A at every frequency. */
+function cwt(x, i0, len, fs, cols, pad) {
+  const a = Math.max(0, i0 - pad), b = Math.min(x.length, i0 + len + pad), n = b - a;
+  let N = 1; while (N < n) N <<= 1;
+  const re = new Float64Array(N), im = new Float64Array(N);
+  let mean = 0; for (let k = 0; k < n; k++) mean += x[a + k]; mean /= n;
+  for (let k = 0; k < n; k++) re[k] = x[a + k] - mean;
+  fft(re, im);
+  const M = new Float32Array(NF * cols), br = new Float64Array(N), bi = new Float64Array(N), off = i0 - a;
+  let mx = -Infinity;
+  for (let r = 0; r < NF; r++) {
+    const s = W0 / (2 * Math.PI * FREQS[r]);
+    br.fill(0); bi.fill(0);
+    for (let k = 1; k <= N / 2; k++) {
+      const e = s * (2 * Math.PI * k * fs / N) - W0;
+      if (e > 7) break;
+      if (e < -7) continue;
+      const h = 2 * Math.exp(-0.5 * e * e);
+      br[k] = re[k] * h; bi[k] = -im[k] * h;       // conjugate: forward FFT acts as inverse
+    }
+    fft(br, bi);
+    for (let c = 0; c < cols; c++) {
+      const p0 = off + Math.floor(c * len / cols), p1 = Math.max(p0 + 1, off + Math.floor((c + 1) * len / cols));
+      let m = 0; for (let p = p0; p < p1; p++) { const v = br[p] * br[p] + bi[p] * bi[p]; if (v > m) m = v; }
+      const db = 10 * Math.log10(m / (N * N) + 1e-20);
+      M[r * cols + c] = db; if (db > mx) mx = db;
+    }
+  }
+  const lg = Math.log(FMAX / FMIN);
+  return { M, mx, rows: NF, cols, yOf: f => 1 - (Math.log(f / FMIN) / lg * (NF - 1) + 0.5) / NF, ticks: [10, 20, 50, 100, 200] };
+}
+
+function paintMap(canvas, T, color, range = 45) {
+  const { g, W, H, d } = fit(canvas);
+  const img = g.createImageData(W, H), P = hexRgb(css("--paper")), C = hexRgb(color), K = hexRgb(css("--ink"));
+  for (let px = 0; px < W; px++) {
+    const c = Math.min(T.cols - 1, Math.floor(px / W * T.cols));
+    for (let py = 0; py < H; py++) {
+      const r = Math.min(T.rows - 1, Math.floor((1 - py / H) * T.rows));
+      const t = Math.max(0, Math.min(1, (T.M[r * T.cols + c] - T.mx + range) / range));
+      const [c1, c2, u] = t < 0.6 ? [P, C, t / 0.6] : [C, K, (t - 0.6) / 0.4];
+      const o = (py * W + px) * 4;
+      img.data[o] = c1[0] + (c2[0] - c1[0]) * u;
+      img.data[o + 1] = c1[1] + (c2[1] - c1[1]) * u;
+      img.data[o + 2] = c1[2] + (c2[2] - c1[2]) * u;
+      img.data[o + 3] = 255;
+    }
+  }
+  g.putImageData(img, 0, 0);
+  g.font = `500 ${11 * d}px ${css("--font")}`; g.lineWidth = 3 * d; g.lineJoin = "round";
+  T.ticks.forEach(f => {
+    const y = T.yOf(f) * H; if (y < 8 * d || y > H - 4 * d) return;
+    g.fillStyle = css("--ink"); g.fillRect(0, y, 5 * d, d);
+    g.strokeStyle = css("--paper"); g.strokeText(`${f} Hz`, 8 * d, y + 4 * d);
+    g.fillText(`${f} Hz`, 8 * d, y + 4 * d);
+  });
+}
+
+/* ---------- build a comparison ---------- */
+const tabs = document.getElementById("tabs");
+ORDER.forEach(k => {
+  const b = document.createElement("button");
+  b.dataset.k = k; b.textContent = GROUPS[k].title; tabs.appendChild(b);
+});
+if (ORDER.length < 2) tabs.style.display = "none";
+tabs.addEventListener("click", e => { const b = e.target.closest("button"); if (b) showGroup(b.dataset.k); });
+
+function showGroup(k) {
+  stop();
+  state.group = k;
+  tabs.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.k === k));
+  document.getElementById("groupIntro").textContent = GROUPS[k].intro || "";
+  walkers = decode(GROUPS[k]);
+  walkers.forEach(w => { w.start = clampStart(w, w.start); w._cwtKey = null; });
+  buildDom();
+  drawAll();
+}
+
+function durationText(w) {
+  const s = w.n / w.fs; return s < 90 ? `${Math.round(s)} s` : `${Math.round(s / 60)} minutes`;
+}
+
+function buildDom() {
+  drum.innerHTML = ""; lanesEl.innerHTML = "";
+  const scalos = document.getElementById("scalos"); scalos.innerHTML = "";
+  walkers.forEach((w, i) => {
+    const row = document.createElement("div"); row.className = "drum-row";
+    row.innerHTML = `<div><div class="name swatch" style="color:${w.color}"><span style="color:var(--ink)">${w.label}</span></div>
+      <div class="sub reveal-only">${w.detail}</div></div>
+      <canvas class="overview" tabindex="0" aria-label="${w.label} full recording. Arrow keys move the stretch."></canvas>`;
+    drum.appendChild(row); w.ov = row.querySelector("canvas");
+
+    const lane = document.createElement("section"); lane.className = "lane";
+    const clipped = w.clipFraction
+      ? `<div class="fact"><b class="num">${(w.clipFraction * 100).toFixed(2)}%</b><span>samples at sensor limit</span></div>` : "";
+    lane.innerHTML = `
+      <div class="lane-head">
+        <h2 class="swatch" style="color:${w.color}"><span style="color:var(--ink)">${w.label}</span><span class="who reveal-only">${w.detail}</span></h2>
+        <div class="facts reveal-only">
+          <div class="fact"><b class="num">${Math.round(w.cadence)}</b><span>steps per minute</span></div>
+          <div class="fact"><b class="num">${w.steps.length}</b><span>steps in ${durationText(w)}</span></div>
+          <div class="fact"><b class="num">${Math.round(w.dominantHz)} Hz</b><span>strongest frequency</span></div>
+          ${clipped}
+        </div>
+      </div>
+      <canvas class="zoom" aria-label="${w.label} waveform of the selected stretch"></canvas>
+      <canvas class="freq" aria-label="${w.label} time-frequency picture"></canvas>
+      <div class="lane-foot">
+        <span class="axis-note freq-note"></span>
+        <button class="playOne">Play ${w.label}</button>
+      </div>`;
+    lanesEl.appendChild(lane);
+    w.zoom = lane.querySelector(".zoom"); w.freq = lane.querySelector(".freq"); w.note = lane.querySelector(".freq-note");
+    lane.querySelector(".playOne").addEventListener("click", () => playSequence([w]));
+
+    const sc = document.createElement("div"); sc.className = "scalo";
+    sc.innerHTML = `<div class="cap swatch" style="color:${w.color}"><span style="color:var(--ink)">${w.label}</span></div>
+      <canvas aria-label="${w.label} wavelet picture of one footstep"></canvas>`;
+    scalos.appendChild(sc); w.scalo = sc.querySelector("canvas");
+
+    const setFromEvent = e => {
+      const r = w.ov.getBoundingClientRect(), t = (e.clientX - r.left) / r.width;
+      moveWindow(w, Math.round(t * w.n - state.win * w.fs / 2));
+    };
+    let drag = false;
+    w.ov.addEventListener("pointerdown", e => { drag = true; w.ov.setPointerCapture(e.pointerId); setFromEvent(e); });
+    w.ov.addEventListener("pointermove", e => drag && setFromEvent(e));
+    w.ov.addEventListener("pointerup", () => drag = false);
+    w.ov.addEventListener("keydown", e => {
+      const step = w.fs * (e.shiftKey ? 10 : 1);
+      if (e.key === "ArrowRight") { moveWindow(w, w.start + step); e.preventDefault(); }
+      if (e.key === "ArrowLeft") { moveWindow(w, w.start - step); e.preventDefault(); }
+    });
+  });
+  document.getElementById("playAll").textContent = walkers.length > 1 ? "Play all recordings" : "Play recording";
+}
+
+function moveWindow(w, s) {
+  stop();
+  w.start = clampStart(w, s);
+  drawOverview(w); drawZoom(w); scheduleFreq(w);
+}
+function scheduleFreq(w) { clearTimeout(w._ft); w._ft = setTimeout(() => drawFreq(w), 90); }
+
+/* ---------- drawing ---------- */
+function drawOverview(w, playT = null) {
+  const { g, W, H, d } = fit(w.ov);
+  g.clearRect(0, 0, W, H);
+  g.fillStyle = css("--grid");
+  const secs = w.n / w.fs;
+  for (let s = 30; s < secs; s += 30) g.fillRect(Math.round(s / secs * W), 0, d, H);
+  const x0 = w.start / w.n * W, xw = state.win * w.fs / w.n * W;
+  g.fillStyle = "rgba(217,154,0,.22)"; g.fillRect(x0, 0, xw, H);
+  drawTrace(g, w.x, 0, w.n, 0, 2 * d, W, H - 4 * d, w.color);
+  g.strokeStyle = css("--play"); g.lineWidth = 2 * d; g.strokeRect(x0, d, xw, H - 2 * d);
+  if (playT != null) { g.fillStyle = css("--ink"); g.fillRect(x0 + playT / state.win * xw, 0, 2 * d, H); }
+}
+
+function drawZoom(w, playT = null) {
+  const { g, W, H, d } = fit(w.zoom);
+  const i0 = w.start, i1 = w.start + state.win * w.fs, padB = 22 * d;
+  g.clearRect(0, 0, W, H);
+  g.font = `${12 * d}px ${css("--font")}`;
+  for (let s = 0; s <= state.win; s += state.win <= 2 ? 0.25 : 0.5) {
+    const px = Math.round(s / state.win * W);
+    g.fillStyle = css("--grid"); g.fillRect(px, 0, d, H - padB);
+    if (Number.isInteger(s)) {
+      g.fillStyle = css("--muted");
+      g.fillText(`${(i0 / w.fs + s).toFixed(0)} s`, Math.min(px + 4 * d, W - 40 * d), H - 6 * d);
+    }
+  }
+  g.fillStyle = css("--grid"); g.fillRect(0, (H - padB) / 2, W, d);
+  drawTrace(g, w.x, i0, i1, 0, 6 * d, W, H - padB - 12 * d, w.color, 0.95 / winPeak(w, i0, i1));
+  g.fillStyle = css("--ink");
+  w.steps.forEach(s => { if (s >= i0 && s < i1) g.fillRect(Math.round((s - i0) / (i1 - i0) * W) - d, 0, 3 * d, 9 * d); });
+  if (playT != null) { g.fillStyle = css("--play"); g.fillRect(playT / state.win * W - d, 0, 3 * d, H - padB); }
+}
+
+function drawFreq(w) {
+  const len = state.win * w.fs;
+  if (state.view === "cwt") {
+    const cols = Math.min(900, Math.round(w.freq.getBoundingClientRect().width));
+    const key = `${w.start}|${state.win}|${cols}`;
+    if (w._cwtKey !== key) { w._cwt = cwt(w.x, w.start, len, w.fs, cols, Math.round(1.5 * w.fs)); w._cwtKey = key; }
+    paintMap(w.freq, w._cwt, w.color, 40);
+    w.note.textContent = "Top: ground motion, ticks mark detected steps. Bottom: Morlet wavelet scalogram, 5 to 400 Hz on a log scale, darker is stronger.";
+  } else {
+    paintMap(w.freq, stft(w.x, w.start, len, w.fs), w.color, 55);
+    w.note.textContent = "Top: ground motion, ticks mark detected steps. Bottom: spectrogram, 0 to 400 Hz, darker is stronger.";
+  }
+}
+
+/* one typical footstep per recording: median-strength step, aligned on its largest sample */
+function typicalStep(w) {
+  if (w._typ) return w._typ;
+  const r = Math.round(0.05 * w.fs);
+  const pk = w.steps.map(s => winPeak(w, Math.max(0, s - r), Math.min(w.n, s + r)));
+  const order = pk.map((v, i) => [v, i]).sort((a, b) => a[0] - b[0]);
+  const s = w.steps[order[Math.floor(order.length / 2)][1]];
+  let best = s, m = 0;
+  for (let k = Math.max(0, s - r); k < Math.min(w.n, s + r); k++) if (Math.abs(w.x[k]) > m) { m = Math.abs(w.x[k]); best = k; }
+  const a = Math.max(0, best - Math.round(0.08 * w.fs)), len = Math.min(w.n - a, Math.round(0.5 * w.fs));
+  return (w._typ = { a, len, peak: m });
+}
+function drawStep() {
+  const c = document.getElementById("stepCanvas"), { g, W, H, d } = fit(c);
+  g.clearRect(0, 0, W, H);
+  const padB = 22 * d;
+  g.font = `${12 * d}px ${css("--font")}`;
+  for (let ms = 0; ms <= 500; ms += 100) {
+    const px = Math.round(ms / 500 * W);
+    g.fillStyle = css("--grid"); g.fillRect(px, 0, d, H - padB);
+    g.fillStyle = css("--muted"); g.fillText(`${ms - 80} ms`, Math.min(px + 4 * d, W - 50 * d), H - 6 * d);
+  }
+  walkers.forEach(w => {
+    const t = typicalStep(w);
+    g.globalAlpha = 0.9;
+    drawTrace(g, w.x, t.a, t.a + t.len, 0, 8 * d, W, H - padB - 16 * d, w.color, 0.95 / t.peak);
+  });
+  g.globalAlpha = 1;
+  walkers.forEach(w => {
+    const t = typicalStep(w), cols = Math.min(700, Math.round(w.scalo.getBoundingClientRect().width));
+    paintMap(w.scalo, cwt(w.x, t.a, t.len, w.fs, cols, Math.round(0.5 * w.fs)), w.color, 40);
+  });
+  document.getElementById("stepLegend").innerHTML = walkers.map(w =>
+    `<span class="swatch" style="color:${w.color}"></span>${w.label}: ${w.detail}`).join("<br>");
+}
+
+/* ---------- audio ---------- */
+let ctx = null;
+function render(w) {
+  const sr = ctx.sampleRate, fs = w.fs, i0 = w.start, len = state.win * fs, k = state.lift;
+  const seg = w.x.subarray(i0, i0 + len), inv = 1 / winPeak(w, i0, i0 + len);
+  const at = p => { const j = Math.floor(p), f = p - j; return j + 1 < seg.length ? (seg[j] * (1 - f) + seg[j + 1] * f) * inv : 0; };
+  let out, rate;
+  if (state.mode === "raw" || state.mode === "fast") {
+    rate = state.mode === "raw" ? 1 : k;
+    out = new Float32Array(Math.floor(len / fs * sr / rate));
+    for (let i = 0; i < out.length; i++) out[i] = at(i * rate * fs / sr);
+  } else {
+    rate = 1; out = new Float32Array(Math.floor(len / fs * sr));
+    const grain = Math.round(0.45 * fs), pre = Math.round(0.04 * fs);
+    w.steps.forEach(s => {
+      const on = s - pre - i0; if (on < 0 || on >= len) return;
+      const m = Math.floor(grain / k * sr / fs), o0 = Math.floor(on / fs * sr);
+      for (let j = 0; j < m && o0 + j < out.length; j++) {
+        const env = j < m * 0.02 ? j / (m * 0.02) : 1 - Math.pow(j / m, 3);
+        out[o0 + j] += at(on + j * k * fs / sr) * env;
+      }
+    });
+  }
+  let pk = 1e-6; for (const v of out) pk = Math.max(pk, Math.abs(v));
+  const fade = Math.min(out.length / 4, sr * 0.01);
+  for (let i = 0; i < out.length; i++) {
+    let e = 0.9 / pk; if (i < fade) e *= i / fade; if (out.length - i < fade) e *= (out.length - i) / fade;
+    out[i] *= e;
+  }
+  const buf = ctx.createBuffer(1, out.length, sr); buf.copyToChannel(out, 0);
+  return { buf, rate };
+}
+function stop() {
+  if (state.playing) { state.playing.cancelled = true; try { state.playing.src && state.playing.src.stop(); } catch (e) {} }
+  state.playing = null; walkers.forEach(w => { if (w.zoom) { drawZoom(w); drawOverview(w); } });
+}
+async function playSequence(list) {
+  ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+  if (ctx.state === "suspended") await ctx.resume();
+  stop();
+  const job = { cancelled: false }; state.playing = job;
+  for (const w of list) {
+    if (job.cancelled) return;
+    const { buf, rate } = render(w), src = ctx.createBufferSource();
+    src.buffer = buf; src.connect(ctx.destination); job.src = src;
+    const t0 = ctx.currentTime; src.start();
+    await new Promise(res => {
+      src.onended = res;
+      const tick = () => {
+        if (job.cancelled) return res();
+        const t = Math.min(state.win, (ctx.currentTime - t0) * rate);
+        drawZoom(w, t); drawOverview(w, t);
+        if (t < state.win) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+    drawZoom(w); drawOverview(w);
+    if (!job.cancelled && list.length > 1) await new Promise(r => setTimeout(r, 600));
+  }
+  if (state.playing === job) state.playing = null;
+}
+
+/* ---------- controls ---------- */
+function segGroup(id, onPick) {
+  const el = document.getElementById(id);
+  el.addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    el.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    onPick(b.dataset.v);
+  });
+}
+segGroup("winSeg", v => { state.win = +v; walkers.forEach(w => moveWindow(w, w.start)); });
+segGroup("viewSeg", v => { state.view = v; walkers.forEach(drawFreq); });
+segGroup("modeSeg", v => { stop(); state.mode = v; updateLiftLabel(); });
+const lift = document.getElementById("lift");
+function updateLiftLabel() {
+  document.getElementById("liftLabel").textContent =
+    state.mode === "raw" ? "No pitch change" : state.mode === "fast" ? `Played ×${state.lift} faster` : `Pitch raised ×${state.lift}`;
+  lift.disabled = state.mode === "raw";
+}
+lift.addEventListener("input", () => { state.lift = +lift.value; updateLiftLabel(); });
+
+document.getElementById("playAll").addEventListener("click", () => playSequence(walkers));
+const blindBtn = document.getElementById("blindBtn");
+function toggleBlind() {
+  state.blind = !state.blind; document.body.classList.toggle("blind", state.blind);
+  blindBtn.setAttribute("aria-pressed", state.blind);
+  blindBtn.textContent = state.blind ? "Reveal the answers" : "Blind listening";
+}
+blindBtn.addEventListener("click", toggleBlind);
+document.addEventListener("keydown", e => {
+  if (e.target.closest("input") || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.code === "Space" && !e.target.closest("button")) { e.preventDefault(); state.playing ? stop() : playSequence(walkers); }
+  else if (/^[1-9]$/.test(e.key) && walkers[+e.key - 1]) playSequence([walkers[+e.key - 1]]);
+  else if (e.key.toLowerCase() === "b") toggleBlind();
+});
+
+/* ---------- start ---------- */
+function drawAll() { walkers.forEach(w => { drawOverview(w); drawZoom(w); drawFreq(w); }); drawStep(); }
+let rt, lastW = 0;
+new ResizeObserver(() => {
+  const wNow = document.body.clientWidth; if (wNow === lastW) return; lastW = wNow;
+  clearTimeout(rt); rt = setTimeout(drawAll, 120);
+}).observe(document.body);
+showGroup(ORDER[0]);
+})();
+</script>
+</body>
+</html>
