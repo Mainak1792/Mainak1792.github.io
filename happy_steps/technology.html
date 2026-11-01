@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technology — Happy Steps</title>
+<meta name="description" content="The physics, pipeline and published results behind Happy Steps floor-vibration sensing.">
+<meta property="og:title" content="Technology — Happy Steps">
+<meta property="og:description" content="The physics, pipeline and published results behind Happy Steps floor-vibration sensing.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 32 32' aria-hidden='true'%3E%3Cdefs%3E%3ClinearGradient id='f' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231A73E8'/%3E%3Cstop offset='1' stop-color='%231E8E3E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23f)'/%3E%3Cellipse cx='11.6' cy='12.4' rx='3.1' ry='4.9' fill='%23fff' transform='rotate(-14 11.6 12.4)'/%3E%3Cellipse cx='20.4' cy='15.6' rx='3.1' ry='4.9' fill='%23fff' fill-opacity='.82' transform='rotate(14 20.4 15.6)'/%3E%3Cpath d='M10.2 24.2q5.8 3.4 11.6 0' stroke='%23fff' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..700&family=Roboto+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<header class="appbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Happy Steps home"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg-h" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1A73E8"/><stop offset="1" stop-color="#1E8E3E"/></linearGradient></defs>
+<rect width="32" height="32" rx="9" fill="url(#lg-h)"/>
+<ellipse cx="11.6" cy="12.4" rx="3.1" ry="4.9" fill="#fff" transform="rotate(-14 11.6 12.4)"/>
+<ellipse cx="20.4" cy="15.6" rx="3.1" ry="4.9" fill="#fff" fill-opacity=".82" transform="rotate(14 20.4 15.6)"/>
+<path d="M10.2 24.2q5.8 3.4 11.6 0" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span>Happy Steps</span></a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Product</a><a href="how-it-works.html">How it works</a><a href="technology.html" aria-current="page">Technology</a><a href="demo.html">Live demo</a><a href="privacy.html">Privacy & safety</a><a href="about.html">About</a></nav>
+    <a class="btn btn-primary cta" href="demo.html">Try the live demo</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero"><div class="wrap">
+  <span class="eyebrow green">Technology</span>
+  <h1 class="h1">Footsteps are a signal. We learned to read it.</h1>
+  <p class="lead">Every step is a short burst of force that rings through the floor. Happy Steps separates the person from the floor, and turns what is left into identity, gait and change over time.</p>
+  <p class="ja">足音は信号です。床の響きから「人」を取り出します。</p>
+</div></section>
+
+<section class="section tight"><div class="wrap split">
+  <div class="reveal">
+    <span class="kicker">THE PHYSICS</span>
+    <h2 class="h2" style="margin-top:12px">Source × filter, like a voice.</h2>
+    <p class="lead" style="margin-top:16px">In speech, sound is a source (the vocal cords) shaped by a filter (the vocal tract). A footstep works the same way. The foot strike is the source. The floor is the filter.</p>
+    <p style="margin-top:16px;color:var(--ink-2)">The same person sounds different on wood and on concrete, just as one speaker sounds different through two microphones. The slow envelope of the floor response follows the force of the foot, so separating person from floor becomes a blind deconvolution problem. Solving it is what makes the method work in real homes.</p>
+  </div>
+  <div class="card reveal" style="padding:28px">
+    <svg viewBox="0 0 480 220" role="img" aria-label="Diagram: foot strike force (source) passes through the floor response (filter) to give the measured vibration">
+      <style>.tt{font:500 14px 'Google Sans Flex','Roboto Flex',sans-serif;fill:#202124}.ss{font:400 12px 'Roboto Flex',sans-serif;fill:#5F6368}</style>
+      <rect x="10" y="40" width="120" height="110" rx="16" fill="#E8F0FE"/><path d="M28 120 L50 120 L58 70 L66 112 L76 96 L112 120" stroke="#1A73E8" stroke-width="2.5" fill="none"/>
+      <text x="22" y="176" class="tt">Foot strike</text><text x="22" y="194" class="ss">source · the person</text>
+      <text x="146" y="102" class="tt" style="font-size:24px">×</text>
+      <rect x="180" y="40" width="120" height="110" rx="16" fill="#E6F4EA"/><path d="M196 95 q8-40 16 0 t16 0 t16 0 t16 0 t16 0 t8 0" stroke="#188038" stroke-width="2.5" fill="none"/>
+      <text x="192" y="176" class="tt">Floor</text><text x="192" y="194" class="ss">filter · wood, concrete…</text>
+      <text x="316" y="102" class="tt" style="font-size:24px">=</text>
+      <rect x="350" y="40" width="120" height="110" rx="16" fill="#F8F9FA"/><path d="M362 95 l8 0 l4 -40 l4 75 l4 -60 l4 45 l4 -30 l4 20 l4 -12 l6 6 l8 -4 l8 2 l10 0 l10 0 l10 0" stroke="#202124" stroke-width="2" fill="none"/>
+      <text x="362" y="176" class="tt">What we measure</text><text x="362" y="194" class="ss">geophone signal</text>
+    </svg>
+  </div>
+</div></section>
+
+<section class="section gray"><div class="wrap">
+  <div class="section-head reveal"><span class="kicker">THE PIPELINE</span><h2 class="h2">Five steps from vibration to meaning.</h2></div>
+  <div class="grid g3" style="margin-top:48px">
+    <div class="card reveal"><div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 12h3l2-6 3 12 3-9 2 3h5"/></svg></div><h3>1 · Footstep isolation</h3><p>An unsupervised Gaussian mixture, fitted with EM, separates footstep events from background vibration. No labels needed.</p></div>
+    <div class="card reveal"><div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 20h16"/><rect x="5" y="12" width="3" height="6"/><rect x="10.5" y="8" width="3" height="10"/><rect x="16" y="4" width="3" height="14"/></svg></div><h3>2 · Time–frequency view</h3><p>A continuous wavelet transform with a complex Morlet wavelet shows each step as a picture: sharp in time at high pitch, fine in frequency at low pitch.</p></div>
+    <div class="card reveal"><div class="icon-chip green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><h3>3 · DeepStep identity</h3><p>A residual network with attention, trained with a contrastive open-set loss, says who walked, or that this is someone new.</p></div>
+    <div class="card reveal"><div class="icon-chip yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 18l5-6 4 3 7-8"/><path d="M15 7h5v5"/></svg></div><h3>4 · Gait health</h3><p>A multi-task ResNet-18 flags unusual gait. Step timing gives pace, steadiness and rhythm balance.</p></div>
+    <div class="card reveal"><div class="icon-chip red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21.5h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></svg></div><h3>5 · Cognitive load (research)</h3><p>A dual-task walking study shows the mind’s load changes the footstep, something that usually needs EEG or questionnaires.</p></div>
+    <div class="card reveal"><div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9z"/><path d="M19 17l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg></div><h3>+ Gemini on top</h3><p>The outputs become small events. Gemini reasons over them across days, and talks to people.</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="results"><div class="wrap">
+  <div class="section-head reveal"><span class="kicker">RESULTS</span><h2 class="h2">Measured, not promised.</h2>
+    <p class="lead">From the VIBeID dataset: 100+ participants, 96+ hours of footsteps, recorded on wood, carpet, cement and outdoor surfaces at different walking speeds.</p></div>
+  <div class="table-wrap reveal" style="margin-top:40px">
+    <table class="t">
+      <thead><tr><th>Task</th><th>Result</th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td>Person identification (100+ people)</td><td class="num"><b>92.68%</b> Rank-1</td><td>About 1 wrong in 14</td></tr>
+        <tr><td>Spotting an unknown person (open-set)</td><td class="num"><b>93.83%</b> AUC</td><td>Visitors are recognised as “not the resident”</td></tr>
+        <tr><td>Gait-abnormality detection</td><td class="num"><b>93.67%</b></td><td>About 1 missed in 16</td></tr>
+        <tr><td>Cognitive load from walking</td><td class="num"><b>68.49%</b></td><td>Better than 2-to-1 odds over chance; early research</td></tr>
+        <tr><td>Fusion of tasks</td><td class="num"><b>89.10%</b></td><td>Joint model across outputs</td></tr>
+        <tr><td>On-device cost</td><td class="num"><b>22 MB</b> · <b>0.78 s</b></td><td>Runs on a Raspberry Pi, no cloud needed</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="figcap" style="text-align:left">All numbers are from controlled lab studies in the author’s doctoral thesis. Real homes are harder; see limits below.</p>
+</div></section>
+
+<section class="section gray"><div class="wrap split">
+  <div class="reveal">
+    <span class="kicker">PUBLISHED WORK</span>
+    <h2 class="h2" style="margin-top:12px">Peer-reviewed foundations.</h2>
+    <p class="lead" style="margin-top:16px">The methods behind Happy Steps are published in five journals and five conferences, with four patents.</p>
+    <ul class="checks">
+      <li><span><b>IEEE Transactions on Mobile Computing</b></span></li>
+      <li><span><b>Scientific Data</b> (Nature portfolio) · the VIBeID dataset</span></li>
+      <li><span><b>IEEE Signal Processing Letters</b></span></li>
+      <li><span><b>IEEE Sensors Journal</b></span></li>
+      <li><span><b>IEEE Transactions on Instrumentation and Measurement</b></span></li>
+    </ul>
+  </div>
+  <div class="card reveal" id="limits">
+    <div class="icon-chip yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21.5h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></svg></div>
+    <h3>Honest limits</h3>
+    <ul style="margin:14px 0 0;padding-left:18px;color:var(--muted);display:grid;gap:8px">
+      <li>Each new floor needs a short setup walk to learn how it rings.</li>
+      <li>Two people walking at once is harder; we tag those walks as mixed.</li>
+      <li>Lab results will drop in busy homes with washing machines and pets. A home pilot is the next step.</li>
+      <li>It is a care helper, not a medical device. It describes change; it never diagnoses.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head reveal"><span class="kicker">RESEARCH ROADMAP</span><h2 class="h2">What we are building next.</h2></div>
+  <div class="road" style="margin-top:48px">
+    <div class="card reveal"><div class="when">Vision → vibration</div><h3>Synthetic footsteps</h3><ul><li>Generate floor signals from video of walking</li><li>Like text-to-speech, but for footsteps</li><li>New floors without new recordings</li></ul></div>
+    <div class="card reveal"><div class="when">On device</div><h3>Smaller, local reasoning</h3><ul><li>TinyML step models on microcontrollers</li><li>Explore on-device Gemini Nano for offline notes</li><li>Lower cost per room</li></ul></div>
+    <div class="card reveal"><div class="when">Across days</div><h3>Longer memory</h3><ul><li>Months of baseline, seasonal patterns</li><li>Early, gentle trend reports for families</li><li>Studies with care professionals</li></ul></div>
+  </div>
+</div></section>
+
+<section class="section tight"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><h2>See a real footstep become a kind word.</h2>
+      <p>The live demo runs real floor recordings through the full pipeline and calls Gemini in your browser.</p></div>
+    <div class="btns"><a class="btn btn-primary btn-lg" href="demo.html">Open the live demo</a>
+      <a class="btn btn-outline btn-lg" href="how-it-works.html">How it works</a></div>
+  </div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg-f" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1A73E8"/><stop offset="1" stop-color="#1E8E3E"/></linearGradient></defs>
+<rect width="32" height="32" rx="9" fill="url(#lg-f)"/>
+<ellipse cx="11.6" cy="12.4" rx="3.1" ry="4.9" fill="#fff" transform="rotate(-14 11.6 12.4)"/>
+<ellipse cx="20.4" cy="15.6" rx="3.1" ry="4.9" fill="#fff" fill-opacity=".82" transform="rotate(14 20.4 15.6)"/>
+<path d="M10.2 24.2q5.8 3.4 11.6 0" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span>Happy Steps</span></a>
+        <p class="about">Camera-free care that turns everyday footsteps into kind words for the family. Built on floor-vibration research and the Gemini API.</p>
+        <p class="about ja" style="margin-top:6px">足音を、家族へのやさしい言葉に。</p>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="index.html">Overview</a></li><li><a href="how-it-works.html">How it works</a></li>
+        <li><a href="demo.html">Live demo</a></li></ul></div>
+      <div><h4>Research</h4><ul>
+        <li><a href="technology.html">Technology</a></li><li><a href="technology.html#results">Results</a></li>
+        <li><a href="technology.html#limits">Limits</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy &amp; safety</a></li>
+        <li><a href="https://mainakchakraborty.com">Contact</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Happy Steps · Mainak Chakraborty. A research prototype, not a medical device.</span>
+      <span>Built with Gemini and Google AI Studio · Google AI Challenge 2026 entry</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

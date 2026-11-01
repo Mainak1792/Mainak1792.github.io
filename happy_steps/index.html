@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Steps — every step says “I’m okay”</title>
+<meta name="description" content="Camera-free care. A floor sensor feels footsteps, a home device turns them into a tiny summary, and Gemini writes a kind daily note for the family.">
+<meta property="og:title" content="Happy Steps — every step says “I’m okay”">
+<meta property="og:description" content="Camera-free care. A floor sensor feels footsteps, a home device turns them into a tiny summary, and Gemini writes a kind daily note for the family.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 32 32' aria-hidden='true'%3E%3Cdefs%3E%3ClinearGradient id='f' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231A73E8'/%3E%3Cstop offset='1' stop-color='%231E8E3E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23f)'/%3E%3Cellipse cx='11.6' cy='12.4' rx='3.1' ry='4.9' fill='%23fff' transform='rotate(-14 11.6 12.4)'/%3E%3Cellipse cx='20.4' cy='15.6' rx='3.1' ry='4.9' fill='%23fff' fill-opacity='.82' transform='rotate(14 20.4 15.6)'/%3E%3Cpath d='M10.2 24.2q5.8 3.4 11.6 0' stroke='%23fff' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..700&family=Roboto+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<header class="appbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Happy Steps home"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg-h" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1A73E8"/><stop offset="1" stop-color="#1E8E3E"/></linearGradient></defs>
+<rect width="32" height="32" rx="9" fill="url(#lg-h)"/>
+<ellipse cx="11.6" cy="12.4" rx="3.1" ry="4.9" fill="#fff" transform="rotate(-14 11.6 12.4)"/>
+<ellipse cx="20.4" cy="15.6" rx="3.1" ry="4.9" fill="#fff" fill-opacity=".82" transform="rotate(14 20.4 15.6)"/>
+<path d="M10.2 24.2q5.8 3.4 11.6 0" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span>Happy Steps</span></a>
+    <nav class="nav" aria-label="Main"><a href="index.html" aria-current="page">Product</a><a href="how-it-works.html">How it works</a><a href="technology.html">Technology</a><a href="demo.html">Live demo</a><a href="privacy.html">Privacy & safety</a><a href="about.html">About</a></nav>
+    <a class="btn btn-primary cta" href="demo.html">Try the live demo</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16"><path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9z"/><path d="M19 17l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg> Ambient care, powered by Gemini</span>
+      <h1 class="display">Every step says <em>“I’m okay.”</em></h1>
+      <p class="lead">Happy Steps turns the footsteps your parents already take into a kind daily note for the family. No cameras. No microphones. Nothing to wear.</p>
+      <p class="ja">毎日の足音を、家族へのやさしいメッセージに。カメラも、マイクも、身につける機器もいりません。</p>
+      <div class="btns">
+        <a class="btn btn-primary btn-lg" href="demo.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Try the live demo</a>
+        <a class="btn btn-outline btn-lg" href="how-it-works.html">See how it works</a>
+      </div>
+      <div class="meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 3l18 18"/><path d="M10.6 6.1A10 10 0 0 1 12 6c5 0 9 6 9 6a17 17 0 0 1-3.2 3.8"/><path d="M6.5 7.6C4.3 9.2 3 12 3 12s4 6 9 6a9 9 0 0 0 4.4-1.1"/></svg> No images, no audio</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></svg> Signal stays in the home</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg> Never diagnoses</span>
+      </div>
+    </div>
+    <div class="hv" aria-label="Product preview: a floor signal becomes a short summary, then a message to the family">
+      <div class="hv-card">
+        <div class="hv-head"><span class="live-dot"></span> Living room floor · geophone <span class="right">real recording · 7 s</span></div>
+        <canvas id="heroWave" aria-hidden="true"></canvas>
+        <div class="hv-foot"><span><b class="num" id="heroSteps">0</b> steps</span><span><b>111</b> steps/min</span><span><b>Resident</b> recognised</span></div>
+      </div>
+      <div class="hv-json"><code>{<span class="k">"person"</span>:<span class="s">"resident_01"</span>, <span class="k">"steps"</span>:<span class="n">17</span>, <span class="k">"cadence_spm"</span>:<span class="n">111</span>, …}</code><small>~300 bytes leave home</small></div>
+      <div class="hv-card hv-note"><svg class="app" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="ai" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1A73E8"/><stop offset="1" stop-color="#1E8E3E"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#ai)"/><ellipse cx="11.6" cy="12.4" rx="3.1" ry="4.9" fill="#fff" transform="rotate(-14 11.6 12.4)"/><ellipse cx="20.4" cy="15.6" rx="3.1" ry="4.9" fill="#fff" fill-opacity=".82" transform="rotate(14 20.4 15.6)"/><path d="M10.2 24.2q5.8 3.4 11.6 0" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+        <div><div class="top"><b>Happy Steps</b> · now</div>
+          <h4>お母さんは今日も元気に歩いています</h4>
+          <p>Mother is walking well today. Her pace is steady, and she rested well last night.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="padding:28px 0;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)">
+  <div class="wrap trust">
+    <span>Built on <b>5+ years</b> of PhD research</span><span class="sep"></span>
+    <span><b>100-person</b> footstep dataset</span><span class="sep"></span>
+    <span>Runs on a <b>Raspberry Pi</b></span><span class="sep"></span>
+    <span><b>Gemini API</b> with function calling &amp; voice</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">THE PROBLEM</span>
+      <h2 class="h2">More parents live alone. Families worry from far away.</h2>
+      <p class="lead">Japan is the first country to face this at scale. Most of us cannot call every day, and most parents do not want to be watched.</p>
+    </div>
+    <div class="grid g3" style="margin-top:56px">
+      <div class="stat blue reveal"><b class="num">7.4M</b><p class="what">people aged 65+ lived alone in Japan in 2020.</p><p class="src">National Institute of Population and Social Security Research</p></div>
+      <div class="stat green reveal"><b class="num">10.8M</b><p class="what">expected to live alone by 2050, one in five households.</p><p class="src">IPSS household projection, 2024</p></div>
+      <div class="stat red reveal"><b class="num">58,044</b><p class="what">older people died alone at home in 2024, many found days later.</p><p class="src">National Police Agency, 2025</p></div>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:96px">
+      <h2 class="h2">Today’s options ask too much.</h2>
+      <p class="lead">Cameras feel like being watched. Wearables get forgotten or run flat. A help button only works if you can press it.</p>
+    </div>
+    <div class="table-wrap reveal" style="margin-top:32px">
+      <table class="t">
+        <thead><tr><th></th><th class="us">Happy Steps</th><th>Home camera</th><th>Smartwatch</th><th>Help button</th></tr></thead>
+        <tbody>
+          <tr><td>Nothing to wear or charge</td><td class="us">Yes</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td></tr>
+          <tr><td>No images or sound recorded</td><td class="us">Yes</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><td>Works if the person cannot ask for help</td><td class="us">Yes · impact, then silence</td><td class="yes">Yes</td><td class="meh">Only if worn</td><td class="no">No</td></tr>
+          <tr><td>Notices slow change over weeks</td><td class="us">Yes · personal baseline</td><td class="meh">Hard to review</td><td class="meh">Only if worn</td><td class="no">No</td></tr>
+          <tr><td>Knows who is walking</td><td class="us">Yes · footstep signature</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section gray">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker">THE PRODUCT</span>
+      <h2 class="h2">One small sensor. Three kind outcomes.</h2>
+      <p class="ja">小さなセンサー１つで、３つのやさしさ。</p>
+    </div>
+    <div class="grid g3" style="margin-top:56px">
+      <div class="card reveal"><div class="icon-chip green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div><h3>A daily note for the family</h3>
+        <p>Each evening the family gets a short, warm update in plain words: how she walked, how she slept, anything new.</p></div>
+      <div class="card reveal"><div class="icon-chip red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M6 16v-5a6 6 0 1 1 12 0v5l2 2H4l2-2z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></div><h3>A gentle alert when it matters</h3>
+        <p>A heavy impact followed by silence, or an unusually quiet day, becomes a clear request to check in, with a suggested action.</p></div>
+      <div class="card reveal"><div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg></div><h3>A friendly voice for her</h3>
+        <p>Gemini speaks a short, cheerful message at home: “You walked well today.” Care that talks to her, not only about her.</p></div>
+    </div>
+
+    <div class="feature reveal" style="margin-top:24px">
+      <div class="txt">
+        <span class="kicker">PERSONAL, NOT AVERAGE</span>
+        <h3 class="h2" style="margin-top:12px">“Slower” means slower than <i>her</i> usual days.</h3>
+        <p class="lead" style="margin-top:16px">Gemini compares today with the resident’s own last two weeks. Small changes in pace, rhythm or night-time walking become early, gentle signals, long before they become emergencies.</p>
+        <ul class="checks">
+          <li><span><b>Walking speed</b> and steadiness of rhythm</span></li>
+          <li><span><b>Night walks</b> between midnight and 5 a.m.</span></li>
+          <li><span><b>Quiet hours</b> with no movement at all</span></li>
+          <li><span><b>Visitors</b>, recognised as “not the resident”</span></li>
+        </ul>
+      </div>
+      <div class="vis">
+        <div class="phone" aria-label="Example messages on a family member's phone">
+          <div class="sb"><span>18:30</span><span>Happy Steps</span></div>
+          <div class="msg good"><div class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M5 12l5 5 9-10"/></svg> Mon</div><h5>今日も元気に歩いています</h5><p>Usual pace, slept through the night.</p></div>
+          <div class="msg watch"><div class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg> Tue</div><h5>夜中に何度か起きていたようです</h5><p>Up 3 times at night. Usually 0.</p></div>
+          <div class="msg watch"><div class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M4 18l5-6 4 3 7-8"/><path d="M15 7h5v5"/></svg> Wed</div><h5>いつもより、ゆっくり歩いていました</h5><p>Pace 95 vs usual 111 steps/min.</p></div>
+          <div class="msg alert"><div class="who"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14"><path d="M6 16v-5a6 6 0 1 1 12 0v5l2 2H4l2-2z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg> Now</div><h5>様子を確かめてください</h5><p>Heavy impact at 10:04, no steps since.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">HOW IT WORKS</span>
+      <h2 class="h2">From a footstep to a kind word.</h2>
+      <p class="lead">The hard signal work happens inside the home. Gemini does the human part.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01 · SENSE</div><h3>Feel the floor</h3><p>A geophone on the floor feels each step as a tiny vibration.</p><span class="ja">床の振動を感じる</span></div>
+      <div class="step reveal"><div class="n">02 · UNDERSTAND</div><h3>Read each step at home</h3><p>A small edge device finds steps, who is walking, and how.</p><span class="ja">家の中で一歩ずつ読み取る</span></div>
+      <div class="step reveal"><div class="n">03 · SUMMARISE</div><h3>Send only numbers</h3><p>About 300 bytes per walk leave the home. Never the raw signal.</p><span class="ja">数字だけを送る</span></div>
+      <div class="step reveal"><div class="n">04 · CARE</div><h3>Gemini writes and speaks</h3><p>Gemini compares with her usual days, chooses an action, and writes kindly.</p><span class="ja">Geminiがやさしく伝える</span></div>
+    </div>
+    <p style="margin-top:32px"><a class="btn btn-tonal" href="how-it-works.html">Explore the architecture <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<section class="section gray">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="kicker">WHY GEMINI</span>
+      <h2 class="h2" style="margin-top:12px">The right job for each part.</h2>
+      <p class="lead" style="margin-top:16px">Gemini is not asked to read raw vibration. A small, proven model at home does that. Gemini does what it is best at: judging change over time, choosing an action, and speaking to people with warmth.</p>
+      <ul class="checks">
+        <li><span><b>Long-context reasoning</b> over today plus a 14-day personal baseline</span></li>
+        <li><span><b>Function calling</b> that plugs into any app: LINE, email, a care-home dashboard</span></li>
+        <li><span><b>Natural Japanese and English</b> for families across borders</span></li>
+        <li><span><b>Text-to-speech</b> for a friendly voice in the home</span></li>
+      </ul>
+    </div>
+    <div class="code-card reveal">
+      <div class="bar"><i></i><i></i><i></i> gemini · function call</div>
+<pre class="code"><span class="c">// Gemini must pick exactly one action</span>
+{
+  <span class="k">"name"</span>: <span class="s">"send_family_report"</span>,
+  <span class="k">"args"</span>: {
+    <span class="k">"status"</span>: <span class="s">"gentle_watch"</span>,
+    <span class="k">"headline_ja"</span>: <span class="s">"夜中に何度か起きていたようです"</span>,
+    <span class="k">"headline_en"</span>: <span class="s">"She was up a few times at night"</span>,
+    <span class="k">"changes"</span>: [{
+      <span class="k">"metric"</span>: <span class="s">"walks at night"</span>,
+      <span class="k">"today"</span>: <span class="s">"4"</span>, <span class="k">"usual"</span>: <span class="s">"0.2"</span> }],
+    <span class="k">"message_to_resident_ja"</span>:
+      <span class="s">"今夜はゆっくり眠れるといいですね。"</span>
+  }
+}</pre>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">RESEARCH FOUNDATION</span>
+      <h2 class="h2">Not an idea on paper. Years of measured results.</h2>
+      <p class="lead">Happy Steps is built on doctoral research in floor-vibration sensing, published in IEEE and Nature-portfolio journals. Lab results:</p>
+    </div>
+    <div class="grid g4" style="margin-top:48px">
+      <div class="metric reveal"><b class="num">92.7%</b><span>correct person, out of 100+</span><small>Rank-1 identification, DeepStep</small></div>
+      <div class="metric reveal"><b class="num">93.8%</b><span>AUC for spotting strangers</span><small>Open-set detection</small></div>
+      <div class="metric reveal"><b class="num">93.7%</b><span>gait-abnormality detection</span><small>Multi-task model</small></div>
+      <div class="metric reveal"><b class="num">0.78 s</b><span>per step on a Raspberry Pi</span><small>22 MB model, fully on device</small></div>
+    </div>
+    <p style="margin-top:32px"><a class="btn btn-tonal" href="technology.html">Read the technology <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<section class="section gray">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker">WHERE IT GOES NEXT</span>
+      <h2 class="h2">Every building already has a floor.</h2>
+    </div>
+    <div class="grid g4" style="margin-top:56px">
+      <div class="card reveal"><div class="icon-chip green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg></div><h3>Homes</h3><p>Parents living alone, and families living far away.</p></div>
+      <div class="card reveal"><div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></svg></div><h3>Care homes</h3><p>Quiet night rounds without cameras in private rooms.</p></div>
+      <div class="card reveal"><div class="icon-chip yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></div><h3>Hospitals</h3><p>Early signs of change in walking during recovery.</p></div>
+      <div class="card reveal"><div class="icon-chip red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M3 20h18"/><path d="M6 20V10l6-5 6 5v10"/><path d="M11 11l2 2-2 2 2 2"/></svg></div><h3>Disasters</h3><p>After an earthquake, which rooms still have people moving.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><h2>See a real footstep become a kind word.</h2>
+      <p>The live demo runs real floor recordings through the full pipeline and calls Gemini in your browser.</p></div>
+    <div class="btns"><a class="btn btn-primary btn-lg" href="demo.html">Open the live demo</a>
+      <a class="btn btn-outline btn-lg" href="how-it-works.html">How it works</a></div>
+  </div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg-f" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1A73E8"/><stop offset="1" stop-color="#1E8E3E"/></linearGradient></defs>
+<rect width="32" height="32" rx="9" fill="url(#lg-f)"/>
+<ellipse cx="11.6" cy="12.4" rx="3.1" ry="4.9" fill="#fff" transform="rotate(-14 11.6 12.4)"/>
+<ellipse cx="20.4" cy="15.6" rx="3.1" ry="4.9" fill="#fff" fill-opacity=".82" transform="rotate(14 20.4 15.6)"/>
+<path d="M10.2 24.2q5.8 3.4 11.6 0" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span>Happy Steps</span></a>
+        <p class="about">Camera-free care that turns everyday footsteps into kind words for the family. Built on floor-vibration research and the Gemini API.</p>
+        <p class="about ja" style="margin-top:6px">足音を、家族へのやさしい言葉に。</p>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="index.html">Overview</a></li><li><a href="how-it-works.html">How it works</a></li>
+        <li><a href="demo.html">Live demo</a></li></ul></div>
+      <div><h4>Research</h4><ul>
+        <li><a href="technology.html">Technology</a></li><li><a href="technology.html#results">Results</a></li>
+        <li><a href="technology.html#limits">Limits</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy &amp; safety</a></li>
+        <li><a href="https://mainakchakraborty.com">Contact</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Happy Steps · Mainak Chakraborty. A research prototype, not a medical device.</span>
+      <span>Built with Gemini and Google AI Studio · Google AI Challenge 2026 entry</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/hero-data.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

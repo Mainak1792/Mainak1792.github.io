@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works — Happy Steps</title>
+<meta name="description" content="Sense, understand at the edge, summarise, reason with Gemini, and speak. The architecture of Happy Steps.">
+<meta property="og:title" content="How it works — Happy Steps">
+<meta property="og:description" content="Sense, understand at the edge, summarise, reason with Gemini, and speak. The architecture of Happy Steps.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 32 32' aria-hidden='true'%3E%3Cdefs%3E%3ClinearGradient id='f' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231A73E8'/%3E%3Cstop offset='1' stop-color='%231E8E3E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23f)'/%3E%3Cellipse cx='11.6' cy='12.4' rx='3.1' ry='4.9' fill='%23fff' transform='rotate(-14 11.6 12.4)'/%3E%3Cellipse cx='20.4' cy='15.6' rx='3.1' ry='4.9' fill='%23fff' fill-opacity='.82' transform='rotate(14 20.4 15.6)'/%3E%3Cpath d='M10.2 24.2q5.8 3.4 11.6 0' stroke='%23fff' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..700&family=Roboto+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<header class="appbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Happy Steps home"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg-h" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1A73E8"/><stop offset="1" stop-color="#1E8E3E"/></linearGradient></defs>
+<rect width="32" height="32" rx="9" fill="url(#lg-h)"/>
+<ellipse cx="11.6" cy="12.4" rx="3.1" ry="4.9" fill="#fff" transform="rotate(-14 11.6 12.4)"/>
+<ellipse cx="20.4" cy="15.6" rx="3.1" ry="4.9" fill="#fff" fill-opacity=".82" transform="rotate(14 20.4 15.6)"/>
+<path d="M10.2 24.2q5.8 3.4 11.6 0" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span>Happy Steps</span></a>
+    <nav class="nav" aria-label="Main"><a href="index.html">Product</a><a href="how-it-works.html" aria-current="page">How it works</a><a href="technology.html">Technology</a><a href="demo.html">Live demo</a><a href="privacy.html">Privacy & safety</a><a href="about.html">About</a></nav>
+    <a class="btn btn-primary cta" href="demo.html">Try the live demo</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero"><div class="wrap">
+  <span class="eyebrow">How it works</span>
+  <h1 class="h1">From a footstep to a kind word, in five stages.</h1>
+  <p class="lead">Happy Steps splits the work in two. Signal processing stays inside the home, on a small device. Only a short summary goes to Gemini, which reasons, decides and speaks.</p>
+  <p class="ja">信号処理は家の中で。Geminiには短いまとめだけを送ります。</p>
+</div></section>
+
+<section class="section tight" style="padding-top:24px"><div class="wrap">
+  <div class="figure reveal"><svg viewBox="0 0 1100 420" role="img" aria-labelledby="archT">
+<title id="archT">Architecture: floor sensor and edge device inside the home; only JSON events cross to the Gemini API; Gemini calls one of two functions that reach the family app and the home speaker.</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5F6368"/></marker></defs>
+<style>.b{fill:#fff;stroke:#DADCE0;stroke-width:1.5}.t{font:500 15px 'Google Sans Flex','Roboto Flex',sans-serif;fill:#202124}.s{font:400 12.5px 'Roboto Flex',sans-serif;fill:#5F6368}.l{stroke:#5F6368;stroke-width:1.6;fill:none;marker-end:url(#ar)}.k{font:500 12px 'Roboto Flex',sans-serif;letter-spacing:.08em}</style>
+<rect x="10" y="20" width="520" height="380" rx="28" fill="#E6F4EA"/>
+<text x="34" y="52" class="k" fill="#188038">INSIDE THE HOME</text>
+<rect x="580" y="20" width="510" height="380" rx="28" fill="#E8F0FE"/>
+<text x="604" y="52" class="k" fill="#174EA6">CLOUD · GEMINI API</text>
+<line x1="555" y1="30" x2="555" y2="390" stroke="#9AA0A6" stroke-dasharray="6 6" stroke-width="1.5"/>
+<rect class="b" x="34" y="80" width="150" height="76" rx="16"/><text x="56" y="113" class="t">Geophone</text><text x="56" y="135" class="s">floor vibration</text>
+<rect class="b" x="34" y="196" width="470" height="182" rx="18"/>
+<text x="56" y="226" class="t">Edge device · Raspberry Pi</text>
+<rect x="56" y="242" width="132" height="56" rx="12" fill="#F8F9FA"/><text x="70" y="266" class="t" style="font-size:13px">Step isolation</text><text x="70" y="284" class="s">GMM / EM</text>
+<rect x="198" y="242" width="132" height="56" rx="12" fill="#F8F9FA"/><text x="212" y="266" class="t" style="font-size:13px">Time–frequency</text><text x="212" y="284" class="s">CWT · Morlet</text>
+<rect x="340" y="242" width="144" height="56" rx="12" fill="#F8F9FA"/><text x="354" y="266" class="t" style="font-size:13px">Who &amp; how</text><text x="354" y="284" class="s">DeepStep · gait</text>
+<rect x="56" y="312" width="428" height="48" rx="12" fill="#1F2023"/><text x="74" y="341" style="font:500 13px 'Roboto Mono',monospace;fill:#81C995">footstep-event/v1  ·  ~300 bytes per walk</text>
+<path class="l" d="M109 156v38"/>
+<path class="l" d="M188 270h8"/><path class="l" d="M330 270h8"/>
+<rect class="b" x="264" y="80" width="240" height="76" rx="16"/><text x="286" y="113" class="t">Home speaker</text><text x="286" y="135" class="s">kind voice for the resident</text>
+<path class="l" d="M484 336h120"/>
+<text x="500" y="326" class="s">only JSON</text>
+<rect class="b" x="606" y="290" width="230" height="86" rx="16"/><text x="628" y="322" class="t">Gemini reasoning</text><text x="628" y="344" class="s">today vs 14-day baseline</text><text x="628" y="362" class="s">forced function calling</text>
+<rect class="b" x="606" y="80" width="230" height="76" rx="16"/><text x="628" y="113" class="t">Gemini text-to-speech</text><text x="628" y="135" class="s">Japanese voice</text>
+<rect class="b" x="866" y="80" width="200" height="86" rx="16"/><text x="886" y="112" class="t">send_family_report</text><text x="886" y="134" class="s">daily note · gentle watch</text>
+<rect class="b" x="866" y="196" width="200" height="86" rx="16"/><text x="886" y="228" class="t">raise_alert</text><text x="886" y="250" class="s">check in · urgent</text>
+<rect class="b" x="866" y="304" width="200" height="72" rx="16"/><text x="886" y="336" class="t">Family app</text><text x="886" y="356" class="s">LINE · email · dashboard</text>
+<path class="l" d="M836 318C850 250 850 150 864 125"/><path class="l" d="M836 330C852 290 852 250 864 240"/>
+<path class="l" d="M966 282v20"/><path class="l" d="M966 166v28"/>
+<path class="l" d="M721 290v-132"/>
+<path class="l" d="M606 118H506"/>
+</svg></div>
+  <p class="figcap">The dashed line is the home boundary. Raw vibration never crosses it.</p>
+</div></section>
+
+<section class="section tight"><div class="wrap">
+  <div class="stage reveal">
+    <div class="no">01</div>
+    <div><h3>Sense the floor</h3><span class="ja">床の振動を感じる</span>
+      <p>A geophone lies on the floor. When someone walks, each heel strike makes the floor move by about a millionth of a metre per second. The geophone turns that motion into a voltage, which we sample at 2–8 kHz.</p>
+      <div class="where"><span class="pill green">In the home</span> <span class="pill gray">No camera · no microphone</span></div></div>
+    <div class="card flat"><h3>Why the floor?</h3><p>A floor carries footsteps for several metres, so one sensor can cover a room. It sees nothing and hears no speech. It only feels force on the floor.</p></div>
+  </div>
+
+  <div class="stage reveal">
+    <div class="no">02</div>
+    <div><h3>Understand each step, at the edge</h3><span class="ja">家の中で一歩ずつ読み取る</span>
+      <p>A Raspberry Pi isolates each footstep from background vibration, turns it into a time–frequency picture with a continuous wavelet transform, and runs DeepStep, a 22 MB model, to answer two questions: <b>who</b> is walking, and <b>how</b>.</p>
+      <div class="where"><span class="pill green">In the home</span> <span class="pill gray">~0.8 s per step</span></div></div>
+    <div class="card flat"><h3>What it measures</h3>
+      <ul class="checks" style="margin-top:12px">
+        <li><span><b>Identity</b>: the resident, or someone new (open-set)</span></li>
+        <li><span><b>Pace</b>: steps per minute</span></li>
+        <li><span><b>Steadiness</b>: how even the step timing is</span></li>
+        <li><span><b>Balance of rhythm</b>: left–right timing symmetry</span></li>
+      </ul></div>
+  </div>
+
+  <div class="stage reveal">
+    <div class="no">03</div>
+    <div><h3>Summarise to a tiny event</h3><span class="ja">数字だけのまとめにする</span>
+      <p>When a walk ends, the device writes one small JSON event. Every home, floor and sensor uses the same format, so one home and one thousand homes look the same to the cloud.</p>
+      <div class="where"><span class="pill blue">Crosses the boundary</span> <span class="pill gray">~8 KB a day instead of ~350 MB raw</span></div></div>
+    <div class="code-card"><div class="bar"><i></i><i></i><i></i> footstep-event/v1</div>
+<pre class="code">{
+  <span class="k">"schema"</span>: <span class="s">"footstep-event/v1"</span>,
+  <span class="k">"home_id"</span>: <span class="s">"H001"</span>,
+  <span class="k">"time"</span>: <span class="s">"2026-11-01T10:00:42+09:00"</span>,
+  <span class="k">"duration_s"</span>: <span class="n">8.3</span>,
+  <span class="k">"person"</span>: <span class="s">"resident_01"</span>,
+  <span class="k">"id_similarity"</span>: <span class="n">0.97</span>,
+  <span class="k">"steps"</span>: <span class="n">17</span>,
+  <span class="k">"cadence_spm"</span>: <span class="n">114</span>,
+  <span class="k">"step_interval_cv"</span>: <span class="n">0.041</span>,
+  <span class="k">"temporal_symmetry"</span>: <span class="n">0.97</span>,
+  <span class="k">"event_type"</span>: <span class="s">"walk"</span>,
+  <span class="k">"raw_signal_included"</span>: <span class="n">false</span>
+}</pre></div>
+  </div>
+
+  <div class="stage reveal">
+    <div class="no">04</div>
+    <div><h3>Reason with Gemini</h3><span class="ja">Geminiが「いつも」と比べる</span>
+      <p>Gemini receives today’s events and the resident’s 14-day baseline. A system instruction keeps it kind and careful: never diagnose, treat unknown people as visitors, suggest simple human actions. Function calling is set to <code>ANY</code>, so Gemini must choose one action.</p>
+      <div class="where"><span class="pill blue">Gemini API</span> <span class="pill gray">function calling · JSON</span></div></div>
+    <div class="code-card"><div class="bar"><i></i><i></i><i></i> request · generateContent</div>
+<pre class="code">{
+  <span class="k">"systemInstruction"</span>: { … },
+  <span class="k">"contents"</span>: [{ <span class="k">"parts"</span>: [{ <span class="k">"text"</span>: <span class="s">"today + baseline JSON"</span> }] }],
+  <span class="k">"tools"</span>: [{ <span class="k">"functionDeclarations"</span>: [
+    { <span class="k">"name"</span>: <span class="s">"send_family_report"</span>, … },
+    { <span class="k">"name"</span>: <span class="s">"raise_alert"</span>, … }
+  ]}],
+  <span class="k">"toolConfig"</span>: {
+    <span class="k">"functionCallingConfig"</span>: { <span class="k">"mode"</span>: <span class="s">"ANY"</span> }
+  }
+}</pre></div>
+  </div>
+
+  <div class="stage reveal">
+    <div class="no">05</div>
+    <div><h3>Speak and deliver</h3><span class="ja">家族へ届け、本人に語りかける</span>
+      <p>The function call goes to the family through any channel: a messaging app, email, or a care-home dashboard. The message for the resident is spoken at home with Gemini text-to-speech, in a warm Japanese voice.</p>
+      <div class="where"><span class="pill blue">Gemini TTS</span> <span class="pill green">Home speaker</span></div></div>
+    <div class="card flat"><h3>Two calls, any app</h3><p><code>send_family_report</code> for usual days and small changes. <code>raise_alert</code> when someone should check soon. Integrators only need to handle these two calls.</p></div>
+  </div>
+</div></section>
+
+<section class="section gray"><div class="wrap">
+  <div class="section-head reveal"><span class="kicker">BUILT TO SCALE</span><h2 class="h2">Designed to grow from one home to a city.</h2></div>
+  <div class="grid g3" style="margin-top:48px">
+    <div class="card reveal"><div class="icon-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M9 15l6-6"/><path d="M7 11l-2 2a3 3 0 0 0 4 4l2-2"/><path d="M17 13l2-2a3 3 0 0 0-4-4l-2 2"/></svg></div><h3>One open format</h3><p>Any sensor that can write <code>footstep-event/v1</code> can join: geophones, accelerometers, smart flooring.</p></div>
+    <div class="card reveal"><div class="icon-chip green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></svg></div><h3>Cheap at the edge</h3><p>A sensor and a Raspberry Pi per room. No GPU, no streaming, very little bandwidth.</p></div>
+    <div class="card reveal"><div class="icon-chip yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M4 20h16"/><rect x="5" y="12" width="3" height="6"/><rect x="10.5" y="8" width="3" height="10"/><rect x="16" y="4" width="3" height="14"/></svg></div><h3>Light in the cloud</h3><p>One Gemini call per home per day, plus rare alerts. Cost grows with homes, not with hours of signal.</p></div>
+  </div>
+</div></section>
+
+<section class="section tight"><div class="wrap">
+  <div class="cta-band reveal">
+    <div><h2>See a real footstep become a kind word.</h2>
+      <p>The live demo runs real floor recordings through the full pipeline and calls Gemini in your browser.</p></div>
+    <div class="btns"><a class="btn btn-primary btn-lg" href="demo.html">Open the live demo</a>
+      <a class="btn btn-outline btn-lg" href="how-it-works.html">How it works</a></div>
+  </div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg-f" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1A73E8"/><stop offset="1" stop-color="#1E8E3E"/></linearGradient></defs>
+<rect width="32" height="32" rx="9" fill="url(#lg-f)"/>
+<ellipse cx="11.6" cy="12.4" rx="3.1" ry="4.9" fill="#fff" transform="rotate(-14 11.6 12.4)"/>
+<ellipse cx="20.4" cy="15.6" rx="3.1" ry="4.9" fill="#fff" fill-opacity=".82" transform="rotate(14 20.4 15.6)"/>
+<path d="M10.2 24.2q5.8 3.4 11.6 0" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><span>Happy Steps</span></a>
+        <p class="about">Camera-free care that turns everyday footsteps into kind words for the family. Built on floor-vibration research and the Gemini API.</p>
+        <p class="about ja" style="margin-top:6px">足音を、家族へのやさしい言葉に。</p>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="index.html">Overview</a></li><li><a href="how-it-works.html">How it works</a></li>
+        <li><a href="demo.html">Live demo</a></li></ul></div>
+      <div><h4>Research</h4><ul>
+        <li><a href="technology.html">Technology</a></li><li><a href="technology.html#results">Results</a></li>
+        <li><a href="technology.html#limits">Limits</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy &amp; safety</a></li>
+        <li><a href="https://mainakchakraborty.com">Contact</a></li></ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Happy Steps · Mainak Chakraborty. A research prototype, not a medical device.</span>
+      <span>Built with Gemini and Google AI Studio · Google AI Challenge 2026 entry</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
